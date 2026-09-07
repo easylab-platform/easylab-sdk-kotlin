@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializemodelInfo")
-public inline fun modelInfo(block: com.agent.v1.ModelInfoKt.Dsl.() -> kotlin.Unit): com.agent.v1.ModelInfo =
-  com.agent.v1.ModelInfoKt.Dsl._create(com.agent.v1.ModelInfo.newBuilder()).apply { block() }._build()
+public inline fun modelInfo(block: agent.v1.ModelInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelInfo =
+  agent.v1.ModelInfoKt.Dsl._create(agent.v1.Agent.ModelInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ModelInfo`
  */
@@ -17,17 +17,17 @@ public object ModelInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.ModelInfo.Builder
+    private val _builder: agent.v1.Agent.ModelInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.ModelInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ModelInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.ModelInfo = _builder.build()
+    internal fun _build(): agent.v1.Agent.ModelInfo = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -64,6 +64,7 @@ public object ModelInfoKt {
     }
   }
 }
-public inline fun com.agent.v1.ModelInfo.copy(block: `com.agent.v1`.ModelInfoKt.Dsl.() -> kotlin.Unit): com.agent.v1.ModelInfo =
-  `com.agent.v1`.ModelInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.ModelInfo.copy(block: `agent.v1`.ModelInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelInfo =
+  `agent.v1`.ModelInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

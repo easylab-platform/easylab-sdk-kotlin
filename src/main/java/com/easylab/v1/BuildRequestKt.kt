@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializebuildRequest")
-public inline fun buildRequest(block: com.easylab.v1.BuildRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BuildRequest =
-  com.easylab.v1.BuildRequestKt.Dsl._create(com.easylab.v1.BuildRequest.newBuilder()).apply { block() }._build()
+public inline fun buildRequest(block: easylab.v1.BuildRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BuildRequest =
+  easylab.v1.BuildRequestKt.Dsl._create(easylab.v1.Easylab.BuildRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.BuildRequest`
  */
@@ -17,17 +17,17 @@ public object BuildRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.BuildRequest.Builder
+    private val _builder: easylab.v1.Easylab.BuildRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.BuildRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.BuildRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.BuildRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.BuildRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -149,6 +149,7 @@ public object BuildRequestKt {
     }
   }
 }
-public inline fun com.easylab.v1.BuildRequest.copy(block: `com.easylab.v1`.BuildRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BuildRequest =
-  `com.easylab.v1`.BuildRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.BuildRequest.copy(block: `easylab.v1`.BuildRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BuildRequest =
+  `easylab.v1`.BuildRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

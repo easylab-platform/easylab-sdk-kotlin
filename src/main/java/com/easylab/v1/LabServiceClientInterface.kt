@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package com.easylab.v1
+package easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
@@ -11,53 +11,53 @@ import com.connectrpc.ResponseMessage
  *  LabService covers the revision-native repo + filesystem surface.
  */
 public interface LabServiceClientInterface {
-  public suspend fun health(request: HealthRequest, headers: Headers = emptyMap()): ResponseMessage<HealthResponse>
+  public suspend fun health(request: Easylab.HealthRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.HealthResponse>
 
-  public suspend fun status(request: StatusRequest, headers: Headers = emptyMap()): ResponseMessage<StatusResponse>
+  public suspend fun status(request: Easylab.StatusRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.StatusResponse>
 
-  public suspend fun listRepos(request: ListReposRequest, headers: Headers = emptyMap()): ResponseMessage<ListReposResponse>
+  public suspend fun listRepos(request: Easylab.ListReposRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListReposResponse>
 
-  public suspend fun createRepo(request: CreateRepoRequest, headers: Headers = emptyMap()): ResponseMessage<CreateRepoResponse>
+  public suspend fun createRepo(request: Easylab.CreateRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateRepoResponse>
 
-  public suspend fun deleteRepo(request: DeleteRepoRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteRepoResponse>
+  public suspend fun deleteRepo(request: Easylab.DeleteRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteRepoResponse>
 
-  public suspend fun ensureRepo(request: EnsureRepoRequest, headers: Headers = emptyMap()): ResponseMessage<EnsureRepoResponse>
+  public suspend fun ensureRepo(request: Easylab.EnsureRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.EnsureRepoResponse>
 
-  public suspend fun ensureOrg(request: EnsureOrgRequest, headers: Headers = emptyMap()): ResponseMessage<EnsureOrgResponse>
+  public suspend fun ensureOrg(request: Easylab.EnsureOrgRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.EnsureOrgResponse>
 
-  public suspend fun forkRepo(request: ForkRepoRequest, headers: Headers = emptyMap()): ResponseMessage<ForkRepoResponse>
+  public suspend fun forkRepo(request: Easylab.ForkRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ForkRepoResponse>
 
-  public suspend fun cloneRepo(request: CloneRepoRequest, headers: Headers = emptyMap()): ResponseMessage<CloneRepoResponse>
+  public suspend fun cloneRepo(request: Easylab.CloneRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CloneRepoResponse>
 
-  public suspend fun tree(request: TreeRequest, headers: Headers = emptyMap()): ResponseMessage<TreeResponse>
+  public suspend fun tree(request: Easylab.TreeRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.TreeResponse>
 
-  public suspend fun readBlob(request: ReadBlobRequest, headers: Headers = emptyMap()): ResponseMessage<ReadBlobResponse>
+  public suspend fun readBlob(request: Easylab.ReadBlobRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ReadBlobResponse>
 
-  public suspend fun writeBlob(request: WriteBlobRequest, headers: Headers = emptyMap()): ResponseMessage<WriteBlobResponse>
+  public suspend fun writeBlob(request: Easylab.WriteBlobRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.WriteBlobResponse>
 
-  public suspend fun log(request: LogRequest, headers: Headers = emptyMap()): ResponseMessage<LogResponse>
+  public suspend fun log(request: Easylab.LogRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.LogResponse>
 
-  public suspend fun tags(request: TagsRequest, headers: Headers = emptyMap()): ResponseMessage<TagsResponse>
+  public suspend fun tags(request: Easylab.TagsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.TagsResponse>
 
-  public suspend fun branches(request: BranchesRequest, headers: Headers = emptyMap()): ResponseMessage<BranchesResponse>
+  public suspend fun branches(request: Easylab.BranchesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.BranchesResponse>
 
-  public suspend fun revisions(request: RevisionsRequest, headers: Headers = emptyMap()): ResponseMessage<RevisionsResponse>
+  public suspend fun revisions(request: Easylab.RevisionsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RevisionsResponse>
 
-  public suspend fun diff(request: DiffRequest, headers: Headers = emptyMap()): ResponseMessage<DiffResponse>
+  public suspend fun diff(request: Easylab.DiffRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DiffResponse>
 
-  public suspend fun blame(request: BlameRequest, headers: Headers = emptyMap()): ResponseMessage<BlameResponse>
+  public suspend fun blame(request: Easylab.BlameRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.BlameResponse>
 
-  public suspend fun deleteBranch(request: DeleteBranchRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteBranchResponse>
+  public suspend fun deleteBranch(request: Easylab.DeleteBranchRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteBranchResponse>
 
-  public suspend fun createBranch(request: CreateBranchRequest, headers: Headers = emptyMap()): ResponseMessage<CreateBranchResponse>
+  public suspend fun createBranch(request: Easylab.CreateBranchRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateBranchResponse>
 
-  public suspend fun fileHistory(request: FileHistoryRequest, headers: Headers = emptyMap()): ResponseMessage<FileHistoryResponse>
+  public suspend fun fileHistory(request: Easylab.FileHistoryRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.FileHistoryResponse>
 
-  public suspend fun search(request: SearchRequest, headers: Headers = emptyMap()): ResponseMessage<SearchResponse>
+  public suspend fun search(request: Easylab.SearchRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SearchResponse>
 
-  public suspend fun graph(request: GraphRequest, headers: Headers = emptyMap()): ResponseMessage<GraphResponse>
+  public suspend fun graph(request: Easylab.GraphRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GraphResponse>
 
-  public suspend fun compare(request: CompareRequest, headers: Headers = emptyMap()): ResponseMessage<CompareResponse>
+  public suspend fun compare(request: Easylab.CompareRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CompareResponse>
 
-  public suspend fun rebase(request: RebaseRequest, headers: Headers = emptyMap()): ResponseMessage<RebaseResponse>
+  public suspend fun rebase(request: Easylab.RebaseRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RebaseResponse>
 }

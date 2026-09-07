@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializepackageVersionFile")
-public inline fun packageVersionFile(block: com.easylab.v1.PackageVersionFileKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageVersionFile =
-  com.easylab.v1.PackageVersionFileKt.Dsl._create(com.easylab.v1.PackageVersionFile.newBuilder()).apply { block() }._build()
+public inline fun packageVersionFile(block: easylab.v1.PackageVersionFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageVersionFile =
+  easylab.v1.PackageVersionFileKt.Dsl._create(easylab.v1.Easylab.PackageVersionFile.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.PackageVersionFile`
  */
@@ -17,17 +17,17 @@ public object PackageVersionFileKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.PackageVersionFile.Builder
+    private val _builder: easylab.v1.Easylab.PackageVersionFile.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.PackageVersionFile.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.PackageVersionFile.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.PackageVersionFile = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.PackageVersionFile = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -98,6 +98,7 @@ public object PackageVersionFileKt {
     }
   }
 }
-public inline fun com.easylab.v1.PackageVersionFile.copy(block: `com.easylab.v1`.PackageVersionFileKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageVersionFile =
-  `com.easylab.v1`.PackageVersionFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.PackageVersionFile.copy(block: `easylab.v1`.PackageVersionFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageVersionFile =
+  `easylab.v1`.PackageVersionFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

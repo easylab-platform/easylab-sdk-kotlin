@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeok")
-public inline fun ok(block: com.easylab.v1.OkKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Ok =
-  com.easylab.v1.OkKt.Dsl._create(com.easylab.v1.Ok.newBuilder()).apply { block() }._build()
+public inline fun ok(block: easylab.v1.OkKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Ok =
+  easylab.v1.OkKt.Dsl._create(easylab.v1.Easylab.Ok.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.Ok`
  */
@@ -17,17 +17,17 @@ public object OkKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.Ok.Builder
+    private val _builder: easylab.v1.Easylab.Ok.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.Ok.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.Ok.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.Ok = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.Ok = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object OkKt {
     }
   }
 }
-public inline fun com.easylab.v1.Ok.copy(block: `com.easylab.v1`.OkKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Ok =
-  `com.easylab.v1`.OkKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.Ok.copy(block: `easylab.v1`.OkKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Ok =
+  `easylab.v1`.OkKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

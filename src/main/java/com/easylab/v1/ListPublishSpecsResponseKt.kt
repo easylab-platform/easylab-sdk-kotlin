@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistPublishSpecsResponse")
-public inline fun listPublishSpecsResponse(block: com.easylab.v1.ListPublishSpecsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListPublishSpecsResponse =
-  com.easylab.v1.ListPublishSpecsResponseKt.Dsl._create(com.easylab.v1.ListPublishSpecsResponse.newBuilder()).apply { block() }._build()
+public inline fun listPublishSpecsResponse(block: easylab.v1.ListPublishSpecsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPublishSpecsResponse =
+  easylab.v1.ListPublishSpecsResponseKt.Dsl._create(easylab.v1.Easylab.ListPublishSpecsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListPublishSpecsResponse`
  */
@@ -17,17 +17,17 @@ public object ListPublishSpecsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.ListPublishSpecsResponse.Builder
+    private val _builder: easylab.v1.Easylab.ListPublishSpecsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.ListPublishSpecsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.ListPublishSpecsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.ListPublishSpecsResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.ListPublishSpecsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListPublishSpecsResponseKt {
     /**
      * `repeated .easylab.v1.PublishSpec specs = 1 [json_name = "specs"];`
      */
-     public val specs: com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>
+     public val specs: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.specsList
@@ -49,7 +49,7 @@ public object ListPublishSpecsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addSpecs")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>.add(value: com.easylab.v1.PublishSpec) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>.add(value: easylab.v1.Easylab.PublishSpec) {
       _builder.addSpecs(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListPublishSpecsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignSpecs")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>.plusAssign(value: com.easylab.v1.PublishSpec) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>.plusAssign(value: easylab.v1.Easylab.PublishSpec) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListPublishSpecsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllSpecs")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.PublishSpec>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.PublishSpec>) {
       _builder.addAllSpecs(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListPublishSpecsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllSpecs")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.PublishSpec>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.PublishSpec>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListPublishSpecsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setSpecs")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>.set(index: kotlin.Int, value: com.easylab.v1.PublishSpec) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.PublishSpec) {
       _builder.setSpecs(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListPublishSpecsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearSpecs")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PublishSpec, SpecsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PublishSpec, SpecsProxy>.clear() {
       _builder.clearSpecs()
     }
   }
 }
-public inline fun com.easylab.v1.ListPublishSpecsResponse.copy(block: `com.easylab.v1`.ListPublishSpecsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListPublishSpecsResponse =
-  `com.easylab.v1`.ListPublishSpecsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.ListPublishSpecsResponse.copy(block: `easylab.v1`.ListPublishSpecsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPublishSpecsResponse =
+  `easylab.v1`.ListPublishSpecsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

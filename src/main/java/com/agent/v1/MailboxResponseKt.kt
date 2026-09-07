@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializemailboxResponse")
-public inline fun mailboxResponse(block: com.agent.v1.MailboxResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.MailboxResponse =
-  com.agent.v1.MailboxResponseKt.Dsl._create(com.agent.v1.MailboxResponse.newBuilder()).apply { block() }._build()
+public inline fun mailboxResponse(block: agent.v1.MailboxResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxResponse =
+  agent.v1.MailboxResponseKt.Dsl._create(agent.v1.Agent.MailboxResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.MailboxResponse`
  */
@@ -17,17 +17,17 @@ public object MailboxResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.MailboxResponse.Builder
+    private val _builder: agent.v1.Agent.MailboxResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.MailboxResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.MailboxResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.MailboxResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.MailboxResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -55,7 +55,7 @@ public object MailboxResponseKt {
     /**
      * `repeated .agent.v1.MailboxEntry mailbox = 2 [json_name = "mailbox"];`
      */
-     public val mailbox: com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>
+     public val mailbox: com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.mailboxList
@@ -66,7 +66,7 @@ public object MailboxResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addMailbox")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>.add(value: com.agent.v1.MailboxEntry) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>.add(value: agent.v1.Agent.MailboxEntry) {
       _builder.addMailbox(value)
     }
     /**
@@ -76,7 +76,7 @@ public object MailboxResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignMailbox")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>.plusAssign(value: com.agent.v1.MailboxEntry) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>.plusAssign(value: agent.v1.Agent.MailboxEntry) {
       add(value)
     }
     /**
@@ -85,7 +85,7 @@ public object MailboxResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllMailbox")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.MailboxEntry>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.MailboxEntry>) {
       _builder.addAllMailbox(values)
     }
     /**
@@ -95,7 +95,7 @@ public object MailboxResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllMailbox")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.MailboxEntry>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.MailboxEntry>) {
       addAll(values)
     }
     /**
@@ -105,7 +105,7 @@ public object MailboxResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setMailbox")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>.set(index: kotlin.Int, value: com.agent.v1.MailboxEntry) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>.set(index: kotlin.Int, value: agent.v1.Agent.MailboxEntry) {
       _builder.setMailbox(index, value)
     }
     /**
@@ -113,11 +113,12 @@ public object MailboxResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearMailbox")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.MailboxEntry, MailboxProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.MailboxEntry, MailboxProxy>.clear() {
       _builder.clearMailbox()
     }
   }
 }
-public inline fun com.agent.v1.MailboxResponse.copy(block: `com.agent.v1`.MailboxResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.MailboxResponse =
-  `com.agent.v1`.MailboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.MailboxResponse.copy(block: `agent.v1`.MailboxResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxResponse =
+  `agent.v1`.MailboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

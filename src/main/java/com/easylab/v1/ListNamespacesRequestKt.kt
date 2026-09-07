@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistNamespacesRequest")
-public inline fun listNamespacesRequest(block: com.easylab.v1.ListNamespacesRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListNamespacesRequest =
-  com.easylab.v1.ListNamespacesRequestKt.Dsl._create(com.easylab.v1.ListNamespacesRequest.newBuilder()).apply { block() }._build()
+public inline fun listNamespacesRequest(block: easylab.v1.ListNamespacesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListNamespacesRequest =
+  easylab.v1.ListNamespacesRequestKt.Dsl._create(easylab.v1.Easylab.ListNamespacesRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListNamespacesRequest`
  */
@@ -17,19 +17,20 @@ public object ListNamespacesRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.ListNamespacesRequest.Builder
+    private val _builder: easylab.v1.Easylab.ListNamespacesRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.ListNamespacesRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.ListNamespacesRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.ListNamespacesRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.ListNamespacesRequest = _builder.build()
   }
 }
-public inline fun com.easylab.v1.ListNamespacesRequest.copy(block: `com.easylab.v1`.ListNamespacesRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListNamespacesRequest =
-  `com.easylab.v1`.ListNamespacesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.ListNamespacesRequest.copy(block: `easylab.v1`.ListNamespacesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListNamespacesRequest =
+  `easylab.v1`.ListNamespacesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

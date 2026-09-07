@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerevisionsRequest")
-public inline fun revisionsRequest(block: com.easylab.v1.RevisionsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionsRequest =
-  com.easylab.v1.RevisionsRequestKt.Dsl._create(com.easylab.v1.RevisionsRequest.newBuilder()).apply { block() }._build()
+public inline fun revisionsRequest(block: easylab.v1.RevisionsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionsRequest =
+  easylab.v1.RevisionsRequestKt.Dsl._create(easylab.v1.Easylab.RevisionsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RevisionsRequest`
  */
@@ -17,17 +17,17 @@ public object RevisionsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.RevisionsRequest.Builder
+    private val _builder: easylab.v1.Easylab.RevisionsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.RevisionsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.RevisionsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.RevisionsRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.RevisionsRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,7 @@ public object RevisionsRequestKt {
     }
   }
 }
-public inline fun com.easylab.v1.RevisionsRequest.copy(block: `com.easylab.v1`.RevisionsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionsRequest =
-  `com.easylab.v1`.RevisionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.RevisionsRequest.copy(block: `easylab.v1`.RevisionsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionsRequest =
+  `easylab.v1`.RevisionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

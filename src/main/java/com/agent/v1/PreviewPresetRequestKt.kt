@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializepreviewPresetRequest")
-public inline fun previewPresetRequest(block: com.agent.v1.PreviewPresetRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.PreviewPresetRequest =
-  com.agent.v1.PreviewPresetRequestKt.Dsl._create(com.agent.v1.PreviewPresetRequest.newBuilder()).apply { block() }._build()
+public inline fun previewPresetRequest(block: agent.v1.PreviewPresetRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PreviewPresetRequest =
+  agent.v1.PreviewPresetRequestKt.Dsl._create(agent.v1.Agent.PreviewPresetRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.PreviewPresetRequest`
  */
@@ -17,17 +17,17 @@ public object PreviewPresetRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.PreviewPresetRequest.Builder
+    private val _builder: agent.v1.Agent.PreviewPresetRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.PreviewPresetRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.PreviewPresetRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.PreviewPresetRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.PreviewPresetRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -47,6 +47,7 @@ public object PreviewPresetRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.PreviewPresetRequest.copy(block: `com.agent.v1`.PreviewPresetRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.PreviewPresetRequest =
-  `com.agent.v1`.PreviewPresetRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.PreviewPresetRequest.copy(block: `agent.v1`.PreviewPresetRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PreviewPresetRequest =
+  `agent.v1`.PreviewPresetRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

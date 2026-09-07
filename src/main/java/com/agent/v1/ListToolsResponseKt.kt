@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistToolsResponse")
-public inline fun listToolsResponse(block: com.agent.v1.ListToolsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListToolsResponse =
-  com.agent.v1.ListToolsResponseKt.Dsl._create(com.agent.v1.ListToolsResponse.newBuilder()).apply { block() }._build()
+public inline fun listToolsResponse(block: agent.v1.ListToolsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListToolsResponse =
+  agent.v1.ListToolsResponseKt.Dsl._create(agent.v1.Agent.ListToolsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListToolsResponse`
  */
@@ -17,17 +17,17 @@ public object ListToolsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.ListToolsResponse.Builder
+    private val _builder: agent.v1.Agent.ListToolsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.ListToolsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ListToolsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.ListToolsResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.ListToolsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListToolsResponseKt {
     /**
      * `repeated .agent.v1.ToolInfo tools = 1 [json_name = "tools"];`
      */
-     public val tools: com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>
+     public val tools: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.toolsList
@@ -49,7 +49,7 @@ public object ListToolsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addTools")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>.add(value: com.agent.v1.ToolInfo) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>.add(value: agent.v1.Agent.ToolInfo) {
       _builder.addTools(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListToolsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignTools")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>.plusAssign(value: com.agent.v1.ToolInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>.plusAssign(value: agent.v1.Agent.ToolInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListToolsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllTools")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.ToolInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ToolInfo>) {
       _builder.addAllTools(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListToolsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllTools")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.ToolInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ToolInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListToolsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setTools")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>.set(index: kotlin.Int, value: com.agent.v1.ToolInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ToolInfo) {
       _builder.setTools(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListToolsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearTools")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolInfo, ToolsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolInfo, ToolsProxy>.clear() {
       _builder.clearTools()
     }
   }
 }
-public inline fun com.agent.v1.ListToolsResponse.copy(block: `com.agent.v1`.ListToolsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListToolsResponse =
-  `com.agent.v1`.ListToolsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.ListToolsResponse.copy(block: `agent.v1`.ListToolsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListToolsResponse =
+  `agent.v1`.ListToolsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

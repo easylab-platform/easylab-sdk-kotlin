@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeopsStatusRequest")
-public inline fun opsStatusRequest(block: com.easylab.v1.OpsStatusRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.OpsStatusRequest =
-  com.easylab.v1.OpsStatusRequestKt.Dsl._create(com.easylab.v1.OpsStatusRequest.newBuilder()).apply { block() }._build()
+public inline fun opsStatusRequest(block: easylab.v1.OpsStatusRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OpsStatusRequest =
+  easylab.v1.OpsStatusRequestKt.Dsl._create(easylab.v1.Easylab.OpsStatusRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.OpsStatusRequest`
  */
@@ -17,19 +17,20 @@ public object OpsStatusRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.OpsStatusRequest.Builder
+    private val _builder: easylab.v1.Easylab.OpsStatusRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.OpsStatusRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.OpsStatusRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.OpsStatusRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.OpsStatusRequest = _builder.build()
   }
 }
-public inline fun com.easylab.v1.OpsStatusRequest.copy(block: `com.easylab.v1`.OpsStatusRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.OpsStatusRequest =
-  `com.easylab.v1`.OpsStatusRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.OpsStatusRequest.copy(block: `easylab.v1`.OpsStatusRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OpsStatusRequest =
+  `easylab.v1`.OpsStatusRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

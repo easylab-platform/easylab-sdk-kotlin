@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateRepoResponse")
-public inline fun createRepoResponse(block: com.easylab.v1.CreateRepoResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateRepoResponse =
-  com.easylab.v1.CreateRepoResponseKt.Dsl._create(com.easylab.v1.CreateRepoResponse.newBuilder()).apply { block() }._build()
+public inline fun createRepoResponse(block: easylab.v1.CreateRepoResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateRepoResponse =
+  easylab.v1.CreateRepoResponseKt.Dsl._create(easylab.v1.Easylab.CreateRepoResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CreateRepoResponse`
  */
@@ -17,17 +17,17 @@ public object CreateRepoResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.CreateRepoResponse.Builder
+    private val _builder: easylab.v1.Easylab.CreateRepoResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.CreateRepoResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.CreateRepoResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.CreateRepoResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.CreateRepoResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object CreateRepoResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.CreateRepoResponse.copy(block: `com.easylab.v1`.CreateRepoResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateRepoResponse =
-  `com.easylab.v1`.CreateRepoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.CreateRepoResponse.copy(block: `easylab.v1`.CreateRepoResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateRepoResponse =
+  `easylab.v1`.CreateRepoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecompareResponse")
-public inline fun compareResponse(block: com.easylab.v1.CompareResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CompareResponse =
-  com.easylab.v1.CompareResponseKt.Dsl._create(com.easylab.v1.CompareResponse.newBuilder()).apply { block() }._build()
+public inline fun compareResponse(block: easylab.v1.CompareResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CompareResponse =
+  easylab.v1.CompareResponseKt.Dsl._create(easylab.v1.Easylab.CompareResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CompareResponse`
  */
@@ -17,17 +17,17 @@ public object CompareResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.CompareResponse.Builder
+    private val _builder: easylab.v1.Easylab.CompareResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.CompareResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.CompareResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.CompareResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.CompareResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object CompareResponseKt {
     /**
      * `repeated .easylab.v1.DiffFile files = 1 [json_name = "files"];`
      */
-     public val files: com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>
+     public val files: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.filesList
@@ -49,7 +49,7 @@ public object CompareResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addFiles")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>.add(value: com.easylab.v1.DiffFile) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>.add(value: easylab.v1.Easylab.DiffFile) {
       _builder.addFiles(value)
     }
     /**
@@ -59,7 +59,7 @@ public object CompareResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignFiles")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>.plusAssign(value: com.easylab.v1.DiffFile) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>.plusAssign(value: easylab.v1.Easylab.DiffFile) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object CompareResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllFiles")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.DiffFile>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.DiffFile>) {
       _builder.addAllFiles(values)
     }
     /**
@@ -78,7 +78,7 @@ public object CompareResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllFiles")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.DiffFile>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.DiffFile>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object CompareResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setFiles")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>.set(index: kotlin.Int, value: com.easylab.v1.DiffFile) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.DiffFile) {
       _builder.setFiles(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object CompareResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearFiles")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.DiffFile, FilesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.DiffFile, FilesProxy>.clear() {
       _builder.clearFiles()
     }
   }
 }
-public inline fun com.easylab.v1.CompareResponse.copy(block: `com.easylab.v1`.CompareResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CompareResponse =
-  `com.easylab.v1`.CompareResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.CompareResponse.copy(block: `easylab.v1`.CompareResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CompareResponse =
+  `easylab.v1`.CompareResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteBranchResponse")
-public inline fun deleteBranchResponse(block: com.easylab.v1.DeleteBranchResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteBranchResponse =
-  com.easylab.v1.DeleteBranchResponseKt.Dsl._create(com.easylab.v1.DeleteBranchResponse.newBuilder()).apply { block() }._build()
+public inline fun deleteBranchResponse(block: easylab.v1.DeleteBranchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteBranchResponse =
+  easylab.v1.DeleteBranchResponseKt.Dsl._create(easylab.v1.Easylab.DeleteBranchResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeleteBranchResponse`
  */
@@ -17,17 +17,17 @@ public object DeleteBranchResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.DeleteBranchResponse.Builder
+    private val _builder: easylab.v1.Easylab.DeleteBranchResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.DeleteBranchResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.DeleteBranchResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.DeleteBranchResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.DeleteBranchResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object DeleteBranchResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.DeleteBranchResponse.copy(block: `com.easylab.v1`.DeleteBranchResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteBranchResponse =
-  `com.easylab.v1`.DeleteBranchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.DeleteBranchResponse.copy(block: `easylab.v1`.DeleteBranchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteBranchResponse =
+  `easylab.v1`.DeleteBranchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

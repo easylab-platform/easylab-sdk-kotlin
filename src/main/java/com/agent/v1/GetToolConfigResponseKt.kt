@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetToolConfigResponse")
-public inline fun getToolConfigResponse(block: com.agent.v1.GetToolConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetToolConfigResponse =
-  com.agent.v1.GetToolConfigResponseKt.Dsl._create(com.agent.v1.GetToolConfigResponse.newBuilder()).apply { block() }._build()
+public inline fun getToolConfigResponse(block: agent.v1.GetToolConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetToolConfigResponse =
+  agent.v1.GetToolConfigResponseKt.Dsl._create(agent.v1.Agent.GetToolConfigResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetToolConfigResponse`
  */
@@ -17,22 +17,22 @@ public object GetToolConfigResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.GetToolConfigResponse.Builder
+    private val _builder: agent.v1.Agent.GetToolConfigResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.GetToolConfigResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.GetToolConfigResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.GetToolConfigResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.GetToolConfigResponse = _builder.build()
 
     /**
      * `.agent.v1.ToolConfig config = 1 [json_name = "config"];`
      */
-    public var config: com.agent.v1.ToolConfig
+    public var config: agent.v1.Agent.ToolConfig
       @kotlin.jvm.JvmName("getConfig")
         get() = _builder.config
       @kotlin.jvm.JvmName("setConfig")
@@ -53,13 +53,14 @@ public object GetToolConfigResponseKt {
       return _builder.hasConfig()
     }
 
-    public val GetToolConfigResponseKt.Dsl.configOrNull: com.agent.v1.ToolConfig?
+    public val GetToolConfigResponseKt.Dsl.configOrNull: agent.v1.Agent.ToolConfig?
       get() = _builder.configOrNull
   }
 }
-public inline fun com.agent.v1.GetToolConfigResponse.copy(block: `com.agent.v1`.GetToolConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetToolConfigResponse =
-  `com.agent.v1`.GetToolConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.GetToolConfigResponse.copy(block: `agent.v1`.GetToolConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetToolConfigResponse =
+  `agent.v1`.GetToolConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.agent.v1.GetToolConfigResponseOrBuilder.configOrNull: com.agent.v1.ToolConfig?
+public val agent.v1.Agent.GetToolConfigResponseOrBuilder.configOrNull: agent.v1.Agent.ToolConfig?
   get() = if (hasConfig()) getConfig() else null
 

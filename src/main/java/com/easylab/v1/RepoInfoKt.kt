@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerepoInfo")
-public inline fun repoInfo(block: com.easylab.v1.RepoInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RepoInfo =
-  com.easylab.v1.RepoInfoKt.Dsl._create(com.easylab.v1.RepoInfo.newBuilder()).apply { block() }._build()
+public inline fun repoInfo(block: easylab.v1.RepoInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RepoInfo =
+  easylab.v1.RepoInfoKt.Dsl._create(easylab.v1.Easylab.RepoInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RepoInfo`
  */
@@ -17,17 +17,17 @@ public object RepoInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.RepoInfo.Builder
+    private val _builder: easylab.v1.Easylab.RepoInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.RepoInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.RepoInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.RepoInfo = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.RepoInfo = _builder.build()
 
     /**
      * `string namespace = 1 [json_name = "namespace"];`
@@ -159,6 +159,7 @@ public object RepoInfoKt {
        }
   }
 }
-public inline fun com.easylab.v1.RepoInfo.copy(block: `com.easylab.v1`.RepoInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RepoInfo =
-  `com.easylab.v1`.RepoInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.RepoInfo.copy(block: `easylab.v1`.RepoInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RepoInfo =
+  `easylab.v1`.RepoInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

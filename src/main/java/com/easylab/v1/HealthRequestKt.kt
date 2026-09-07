@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializehealthRequest")
-public inline fun healthRequest(block: com.easylab.v1.HealthRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.HealthRequest =
-  com.easylab.v1.HealthRequestKt.Dsl._create(com.easylab.v1.HealthRequest.newBuilder()).apply { block() }._build()
+public inline fun healthRequest(block: easylab.v1.HealthRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.HealthRequest =
+  easylab.v1.HealthRequestKt.Dsl._create(easylab.v1.Easylab.HealthRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.HealthRequest`
  */
@@ -17,19 +17,20 @@ public object HealthRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.HealthRequest.Builder
+    private val _builder: easylab.v1.Easylab.HealthRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.HealthRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.HealthRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.HealthRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.HealthRequest = _builder.build()
   }
 }
-public inline fun com.easylab.v1.HealthRequest.copy(block: `com.easylab.v1`.HealthRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.HealthRequest =
-  `com.easylab.v1`.HealthRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.HealthRequest.copy(block: `easylab.v1`.HealthRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.HealthRequest =
+  `easylab.v1`.HealthRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

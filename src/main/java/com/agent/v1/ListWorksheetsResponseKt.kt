@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistWorksheetsResponse")
-public inline fun listWorksheetsResponse(block: com.agent.v1.ListWorksheetsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListWorksheetsResponse =
-  com.agent.v1.ListWorksheetsResponseKt.Dsl._create(com.agent.v1.ListWorksheetsResponse.newBuilder()).apply { block() }._build()
+public inline fun listWorksheetsResponse(block: agent.v1.ListWorksheetsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListWorksheetsResponse =
+  agent.v1.ListWorksheetsResponseKt.Dsl._create(agent.v1.Agent.ListWorksheetsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListWorksheetsResponse`
  */
@@ -17,17 +17,17 @@ public object ListWorksheetsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.ListWorksheetsResponse.Builder
+    private val _builder: agent.v1.Agent.ListWorksheetsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.ListWorksheetsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ListWorksheetsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.ListWorksheetsResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.ListWorksheetsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListWorksheetsResponseKt {
     /**
      * `repeated .agent.v1.Worksheet worksheets = 1 [json_name = "worksheets"];`
      */
-     public val worksheets: com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>
+     public val worksheets: com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.worksheetsList
@@ -49,7 +49,7 @@ public object ListWorksheetsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addWorksheets")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>.add(value: com.agent.v1.Worksheet) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>.add(value: agent.v1.Agent.Worksheet) {
       _builder.addWorksheets(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListWorksheetsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignWorksheets")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>.plusAssign(value: com.agent.v1.Worksheet) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>.plusAssign(value: agent.v1.Agent.Worksheet) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListWorksheetsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllWorksheets")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.Worksheet>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.Worksheet>) {
       _builder.addAllWorksheets(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListWorksheetsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllWorksheets")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.Worksheet>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.Worksheet>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListWorksheetsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setWorksheets")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>.set(index: kotlin.Int, value: com.agent.v1.Worksheet) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.Worksheet) {
       _builder.setWorksheets(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListWorksheetsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearWorksheets")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Worksheet, WorksheetsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Worksheet, WorksheetsProxy>.clear() {
       _builder.clearWorksheets()
     }
   }
 }
-public inline fun com.agent.v1.ListWorksheetsResponse.copy(block: `com.agent.v1`.ListWorksheetsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListWorksheetsResponse =
-  `com.agent.v1`.ListWorksheetsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.ListWorksheetsResponse.copy(block: `agent.v1`.ListWorksheetsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListWorksheetsResponse =
+  `agent.v1`.ListWorksheetsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

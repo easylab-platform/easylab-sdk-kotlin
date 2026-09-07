@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializemailboxEntry")
-public inline fun mailboxEntry(block: com.agent.v1.MailboxEntryKt.Dsl.() -> kotlin.Unit): com.agent.v1.MailboxEntry =
-  com.agent.v1.MailboxEntryKt.Dsl._create(com.agent.v1.MailboxEntry.newBuilder()).apply { block() }._build()
+public inline fun mailboxEntry(block: agent.v1.MailboxEntryKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxEntry =
+  agent.v1.MailboxEntryKt.Dsl._create(agent.v1.Agent.MailboxEntry.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Mailbox entry.
@@ -21,17 +21,17 @@ public object MailboxEntryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.MailboxEntry.Builder
+    private val _builder: agent.v1.Agent.MailboxEntry.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.MailboxEntry.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.MailboxEntry.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.MailboxEntry = _builder.build()
+    internal fun _build(): agent.v1.Agent.MailboxEntry = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -187,6 +187,7 @@ public object MailboxEntryKt {
     }
   }
 }
-public inline fun com.agent.v1.MailboxEntry.copy(block: `com.agent.v1`.MailboxEntryKt.Dsl.() -> kotlin.Unit): com.agent.v1.MailboxEntry =
-  `com.agent.v1`.MailboxEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.MailboxEntry.copy(block: `agent.v1`.MailboxEntryKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxEntry =
+  `agent.v1`.MailboxEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -2,7 +2,7 @@
 //
 // Source: agent/v1/agent.proto
 //
-package com.agent.v1
+package agent.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
@@ -12,83 +12,83 @@ import com.connectrpc.ServerOnlyStreamInterface
  *  AgentService is the session-backend API.
  */
 public interface AgentServiceClientInterface {
-  public suspend fun health(request: HealthRequest, headers: Headers = emptyMap()): ResponseMessage<HealthResponse>
+  public suspend fun health(request: Agent.HealthRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.HealthResponse>
 
-  public suspend fun listSessions(request: ListSessionsRequest, headers: Headers = emptyMap()): ResponseMessage<ListSessionsResponse>
+  public suspend fun listSessions(request: Agent.ListSessionsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListSessionsResponse>
 
-  public suspend fun createSession(request: CreateSessionRequest, headers: Headers = emptyMap()): ResponseMessage<CreateSessionResponse>
+  public suspend fun createSession(request: Agent.CreateSessionRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.CreateSessionResponse>
 
-  public suspend fun getSession(request: GetSessionRequest, headers: Headers = emptyMap()): ResponseMessage<GetSessionResponse>
+  public suspend fun getSession(request: Agent.GetSessionRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetSessionResponse>
 
-  public suspend fun deleteSession(request: DeleteSessionRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteSessionResponse>
+  public suspend fun deleteSession(request: Agent.DeleteSessionRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DeleteSessionResponse>
 
-  public suspend fun listMessages(request: ListMessagesRequest, headers: Headers = emptyMap()): ResponseMessage<ListMessagesResponse>
+  public suspend fun listMessages(request: Agent.ListMessagesRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListMessagesResponse>
 
-  public suspend fun prompt(headers: Headers = emptyMap()): ServerOnlyStreamInterface<PromptRequest, PromptResponse>
+  public suspend fun prompt(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Agent.PromptRequest, Agent.PromptResponse>
 
-  public suspend fun watchSession(headers: Headers = emptyMap()): ServerOnlyStreamInterface<WatchSessionRequest, WatchSessionResponse>
+  public suspend fun watchSession(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Agent.WatchSessionRequest, Agent.WatchSessionResponse>
 
-  public suspend fun fork(request: ForkRequest, headers: Headers = emptyMap()): ResponseMessage<ForkResponse>
+  public suspend fun fork(request: Agent.ForkRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ForkResponse>
 
-  public suspend fun rename(request: RenameRequest, headers: Headers = emptyMap()): ResponseMessage<RenameResponse>
+  public suspend fun rename(request: Agent.RenameRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.RenameResponse>
 
-  public suspend fun setModel(request: SetModelRequest, headers: Headers = emptyMap()): ResponseMessage<SetModelResponse>
+  public suspend fun setModel(request: Agent.SetModelRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.SetModelResponse>
 
-  public suspend fun undo(request: UndoRequest, headers: Headers = emptyMap()): ResponseMessage<UndoResponse>
+  public suspend fun undo(request: Agent.UndoRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.UndoResponse>
 
-  public suspend fun state(request: StateRequest, headers: Headers = emptyMap()): ResponseMessage<StateResponse>
+  public suspend fun state(request: Agent.StateRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.StateResponse>
 
-  public suspend fun mailbox(request: MailboxRequest, headers: Headers = emptyMap()): ResponseMessage<MailboxResponse>
+  public suspend fun mailbox(request: Agent.MailboxRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.MailboxResponse>
 
-  public suspend fun updateSettings(request: UpdateSettingsRequest, headers: Headers = emptyMap()): ResponseMessage<UpdateSettingsResponse>
+  public suspend fun updateSettings(request: Agent.UpdateSettingsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.UpdateSettingsResponse>
 
-  public suspend fun interrupt(request: InterruptRequest, headers: Headers = emptyMap()): ResponseMessage<InterruptResponse>
+  public suspend fun interrupt(request: Agent.InterruptRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.InterruptResponse>
 
-  public suspend fun compact(request: CompactRequest, headers: Headers = emptyMap()): ResponseMessage<CompactResponse>
+  public suspend fun compact(request: Agent.CompactRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.CompactResponse>
 
-  public suspend fun listProviders(request: ListProvidersRequest, headers: Headers = emptyMap()): ResponseMessage<ListProvidersResponse>
+  public suspend fun listProviders(request: Agent.ListProvidersRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListProvidersResponse>
 
-  public suspend fun listProvidersCatalog(request: ListProvidersCatalogRequest, headers: Headers = emptyMap()): ResponseMessage<ListProvidersCatalogResponse>
+  public suspend fun listProvidersCatalog(request: Agent.ListProvidersCatalogRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListProvidersCatalogResponse>
 
-  public suspend fun registerProvider(request: RegisterProviderRequest, headers: Headers = emptyMap()): ResponseMessage<RegisterProviderResponse>
+  public suspend fun registerProvider(request: Agent.RegisterProviderRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.RegisterProviderResponse>
 
-  public suspend fun deleteProvider(request: DeleteProviderRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteProviderResponse>
+  public suspend fun deleteProvider(request: Agent.DeleteProviderRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DeleteProviderResponse>
 
-  public suspend fun testProvider(request: TestProviderRequest, headers: Headers = emptyMap()): ResponseMessage<TestProviderResponse>
+  public suspend fun testProvider(request: Agent.TestProviderRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.TestProviderResponse>
 
-  public suspend fun listModels(request: ListModelsRequest, headers: Headers = emptyMap()): ResponseMessage<ListModelsResponse>
+  public suspend fun listModels(request: Agent.ListModelsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListModelsResponse>
 
-  public suspend fun listPresets(request: ListPresetsRequest, headers: Headers = emptyMap()): ResponseMessage<ListPresetsResponse>
+  public suspend fun listPresets(request: Agent.ListPresetsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListPresetsResponse>
 
-  public suspend fun upsertPreset(request: UpsertPresetRequest, headers: Headers = emptyMap()): ResponseMessage<UpsertPresetResponse>
+  public suspend fun upsertPreset(request: Agent.UpsertPresetRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.UpsertPresetResponse>
 
-  public suspend fun deletePreset(request: DeletePresetRequest, headers: Headers = emptyMap()): ResponseMessage<DeletePresetResponse>
+  public suspend fun deletePreset(request: Agent.DeletePresetRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DeletePresetResponse>
 
-  public suspend fun previewPreset(request: PreviewPresetRequest, headers: Headers = emptyMap()): ResponseMessage<PreviewPresetResponse>
+  public suspend fun previewPreset(request: Agent.PreviewPresetRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.PreviewPresetResponse>
 
-  public suspend fun getConfig(request: GetConfigRequest, headers: Headers = emptyMap()): ResponseMessage<GetConfigResponse>
+  public suspend fun getConfig(request: Agent.GetConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetConfigResponse>
 
-  public suspend fun setConfig(request: SetConfigRequest, headers: Headers = emptyMap()): ResponseMessage<SetConfigResponse>
+  public suspend fun setConfig(request: Agent.SetConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.SetConfigResponse>
 
-  public suspend fun listTools(request: ListToolsRequest, headers: Headers = emptyMap()): ResponseMessage<ListToolsResponse>
+  public suspend fun listTools(request: Agent.ListToolsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListToolsResponse>
 
-  public suspend fun getToolConfig(request: GetToolConfigRequest, headers: Headers = emptyMap()): ResponseMessage<GetToolConfigResponse>
+  public suspend fun getToolConfig(request: Agent.GetToolConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetToolConfigResponse>
 
-  public suspend fun setToolConfig(request: SetToolConfigRequest, headers: Headers = emptyMap()): ResponseMessage<SetToolConfigResponse>
+  public suspend fun setToolConfig(request: Agent.SetToolConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.SetToolConfigResponse>
 
-  public suspend fun setExtensionConfig(request: SetExtensionConfigRequest, headers: Headers = emptyMap()): ResponseMessage<SetExtensionConfigResponse>
+  public suspend fun setExtensionConfig(request: Agent.SetExtensionConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.SetExtensionConfigResponse>
 
-  public suspend fun uploadFile(request: UploadFileRequest, headers: Headers = emptyMap()): ResponseMessage<UploadFileResponse>
+  public suspend fun uploadFile(request: Agent.UploadFileRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.UploadFileResponse>
 
-  public suspend fun ingestFile(request: IngestFileRequest, headers: Headers = emptyMap()): ResponseMessage<IngestFileResponse>
+  public suspend fun ingestFile(request: Agent.IngestFileRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.IngestFileResponse>
 
-  public suspend fun getFile(request: GetFileRequest, headers: Headers = emptyMap()): ResponseMessage<GetFileResponse>
+  public suspend fun getFile(request: Agent.GetFileRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetFileResponse>
 
-  public suspend fun getFileMeta(request: GetFileMetaRequest, headers: Headers = emptyMap()): ResponseMessage<GetFileMetaResponse>
+  public suspend fun getFileMeta(request: Agent.GetFileMetaRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetFileMetaResponse>
 
-  public suspend fun listWorksheets(request: ListWorksheetsRequest, headers: Headers = emptyMap()): ResponseMessage<ListWorksheetsResponse>
+  public suspend fun listWorksheets(request: Agent.ListWorksheetsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListWorksheetsResponse>
 
-  public suspend fun decideWorksheet(request: DecideWorksheetRequest, headers: Headers = emptyMap()): ResponseMessage<DecideWorksheetResponse>
+  public suspend fun decideWorksheet(request: Agent.DecideWorksheetRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DecideWorksheetResponse>
 
-  public suspend fun getAgentConfig(request: GetAgentConfigRequest, headers: Headers = emptyMap()): ResponseMessage<GetAgentConfigResponse>
+  public suspend fun getAgentConfig(request: Agent.GetAgentConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetAgentConfigResponse>
 }

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializepackageInfo")
-public inline fun packageInfo(block: com.easylab.v1.PackageInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageInfo =
-  com.easylab.v1.PackageInfoKt.Dsl._create(com.easylab.v1.PackageInfo.newBuilder()).apply { block() }._build()
+public inline fun packageInfo(block: easylab.v1.PackageInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageInfo =
+  easylab.v1.PackageInfoKt.Dsl._create(easylab.v1.Easylab.PackageInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.PackageInfo`
  */
@@ -17,17 +17,17 @@ public object PackageInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.PackageInfo.Builder
+    private val _builder: easylab.v1.Easylab.PackageInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.PackageInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.PackageInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.PackageInfo = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.PackageInfo = _builder.build()
 
     /**
      * `string type = 1 [json_name = "type"];`
@@ -72,7 +72,7 @@ public object PackageInfoKt {
     /**
      * `repeated .easylab.v1.PackageVersion versions = 3 [json_name = "versions"];`
      */
-     public val versions: com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>
+     public val versions: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.versionsList
@@ -83,7 +83,7 @@ public object PackageInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addVersions")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>.add(value: com.easylab.v1.PackageVersion) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.add(value: easylab.v1.Easylab.PackageVersion) {
       _builder.addVersions(value)
     }
     /**
@@ -93,7 +93,7 @@ public object PackageInfoKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignVersions")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>.plusAssign(value: com.easylab.v1.PackageVersion) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.plusAssign(value: easylab.v1.Easylab.PackageVersion) {
       add(value)
     }
     /**
@@ -102,7 +102,7 @@ public object PackageInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllVersions")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.PackageVersion>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.PackageVersion>) {
       _builder.addAllVersions(values)
     }
     /**
@@ -112,7 +112,7 @@ public object PackageInfoKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllVersions")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.PackageVersion>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.PackageVersion>) {
       addAll(values)
     }
     /**
@@ -122,7 +122,7 @@ public object PackageInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setVersions")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>.set(index: kotlin.Int, value: com.easylab.v1.PackageVersion) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.PackageVersion) {
       _builder.setVersions(index, value)
     }
     /**
@@ -130,11 +130,12 @@ public object PackageInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearVersions")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageVersion, VersionsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.clear() {
       _builder.clearVersions()
     }
   }
 }
-public inline fun com.easylab.v1.PackageInfo.copy(block: `com.easylab.v1`.PackageInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageInfo =
-  `com.easylab.v1`.PackageInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.PackageInfo.copy(block: `easylab.v1`.PackageInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageInfo =
+  `easylab.v1`.PackageInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

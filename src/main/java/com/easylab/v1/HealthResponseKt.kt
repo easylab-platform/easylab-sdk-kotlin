@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializehealthResponse")
-public inline fun healthResponse(block: com.easylab.v1.HealthResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.HealthResponse =
-  com.easylab.v1.HealthResponseKt.Dsl._create(com.easylab.v1.HealthResponse.newBuilder()).apply { block() }._build()
+public inline fun healthResponse(block: easylab.v1.HealthResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.HealthResponse =
+  easylab.v1.HealthResponseKt.Dsl._create(easylab.v1.Easylab.HealthResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.HealthResponse`
  */
@@ -17,17 +17,17 @@ public object HealthResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.HealthResponse.Builder
+    private val _builder: easylab.v1.Easylab.HealthResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.HealthResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.HealthResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.HealthResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.HealthResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object HealthResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.HealthResponse.copy(block: `com.easylab.v1`.HealthResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.HealthResponse =
-  `com.easylab.v1`.HealthResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.HealthResponse.copy(block: `easylab.v1`.HealthResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.HealthResponse =
+  `easylab.v1`.HealthResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

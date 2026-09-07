@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetFileMetaRequest")
-public inline fun getFileMetaRequest(block: com.agent.v1.GetFileMetaRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetFileMetaRequest =
-  com.agent.v1.GetFileMetaRequestKt.Dsl._create(com.agent.v1.GetFileMetaRequest.newBuilder()).apply { block() }._build()
+public inline fun getFileMetaRequest(block: agent.v1.GetFileMetaRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileMetaRequest =
+  agent.v1.GetFileMetaRequestKt.Dsl._create(agent.v1.Agent.GetFileMetaRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetFileMetaRequest`
  */
@@ -17,17 +17,17 @@ public object GetFileMetaRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.GetFileMetaRequest.Builder
+    private val _builder: agent.v1.Agent.GetFileMetaRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.GetFileMetaRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.GetFileMetaRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.GetFileMetaRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.GetFileMetaRequest = _builder.build()
 
     /**
      * `string code = 1 [json_name = "code"];`
@@ -47,6 +47,7 @@ public object GetFileMetaRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.GetFileMetaRequest.copy(block: `com.agent.v1`.GetFileMetaRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetFileMetaRequest =
-  `com.agent.v1`.GetFileMetaRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.GetFileMetaRequest.copy(block: `agent.v1`.GetFileMetaRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileMetaRequest =
+  `agent.v1`.GetFileMetaRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

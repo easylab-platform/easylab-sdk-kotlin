@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetSessionRequest")
-public inline fun getSessionRequest(block: com.agent.v1.GetSessionRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetSessionRequest =
-  com.agent.v1.GetSessionRequestKt.Dsl._create(com.agent.v1.GetSessionRequest.newBuilder()).apply { block() }._build()
+public inline fun getSessionRequest(block: agent.v1.GetSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetSessionRequest =
+  agent.v1.GetSessionRequestKt.Dsl._create(agent.v1.Agent.GetSessionRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetSessionRequest`
  */
@@ -17,17 +17,17 @@ public object GetSessionRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.GetSessionRequest.Builder
+    private val _builder: agent.v1.Agent.GetSessionRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.GetSessionRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.GetSessionRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.GetSessionRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.GetSessionRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -47,6 +47,7 @@ public object GetSessionRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.GetSessionRequest.copy(block: `com.agent.v1`.GetSessionRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetSessionRequest =
-  `com.agent.v1`.GetSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.GetSessionRequest.copy(block: `agent.v1`.GetSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetSessionRequest =
+  `agent.v1`.GetSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

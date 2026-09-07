@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateBranchResponse")
-public inline fun createBranchResponse(block: com.easylab.v1.CreateBranchResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateBranchResponse =
-  com.easylab.v1.CreateBranchResponseKt.Dsl._create(com.easylab.v1.CreateBranchResponse.newBuilder()).apply { block() }._build()
+public inline fun createBranchResponse(block: easylab.v1.CreateBranchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateBranchResponse =
+  easylab.v1.CreateBranchResponseKt.Dsl._create(easylab.v1.Easylab.CreateBranchResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CreateBranchResponse`
  */
@@ -17,17 +17,17 @@ public object CreateBranchResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.CreateBranchResponse.Builder
+    private val _builder: easylab.v1.Easylab.CreateBranchResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.CreateBranchResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.CreateBranchResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.CreateBranchResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.CreateBranchResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object CreateBranchResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.CreateBranchResponse.copy(block: `com.easylab.v1`.CreateBranchResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateBranchResponse =
-  `com.easylab.v1`.CreateBranchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.CreateBranchResponse.copy(block: `easylab.v1`.CreateBranchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateBranchResponse =
+  `easylab.v1`.CreateBranchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

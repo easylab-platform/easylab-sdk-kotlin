@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetagsResponse")
-public inline fun tagsResponse(block: com.easylab.v1.TagsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TagsResponse =
-  com.easylab.v1.TagsResponseKt.Dsl._create(com.easylab.v1.TagsResponse.newBuilder()).apply { block() }._build()
+public inline fun tagsResponse(block: easylab.v1.TagsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TagsResponse =
+  easylab.v1.TagsResponseKt.Dsl._create(easylab.v1.Easylab.TagsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.TagsResponse`
  */
@@ -17,17 +17,17 @@ public object TagsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.TagsResponse.Builder
+    private val _builder: easylab.v1.Easylab.TagsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.TagsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.TagsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.TagsResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.TagsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object TagsResponseKt {
     /**
      * `repeated .easylab.v1.TagInfo tags = 1 [json_name = "tags"];`
      */
-     public val tags: com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>
+     public val tags: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.tagsList
@@ -49,7 +49,7 @@ public object TagsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addTags")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>.add(value: com.easylab.v1.TagInfo) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>.add(value: easylab.v1.Easylab.TagInfo) {
       _builder.addTags(value)
     }
     /**
@@ -59,7 +59,7 @@ public object TagsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignTags")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>.plusAssign(value: com.easylab.v1.TagInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>.plusAssign(value: easylab.v1.Easylab.TagInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object TagsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllTags")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.TagInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.TagInfo>) {
       _builder.addAllTags(values)
     }
     /**
@@ -78,7 +78,7 @@ public object TagsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllTags")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.TagInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.TagInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object TagsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setTags")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>.set(index: kotlin.Int, value: com.easylab.v1.TagInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.TagInfo) {
       _builder.setTags(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object TagsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearTags")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.TagInfo, TagsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.TagInfo, TagsProxy>.clear() {
       _builder.clearTags()
     }
   }
 }
-public inline fun com.easylab.v1.TagsResponse.copy(block: `com.easylab.v1`.TagsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TagsResponse =
-  `com.easylab.v1`.TagsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.TagsResponse.copy(block: `easylab.v1`.TagsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TagsResponse =
+  `easylab.v1`.TagsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

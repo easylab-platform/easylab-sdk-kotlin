@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package com.easylab.v1
+package easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
@@ -12,37 +12,35 @@ import com.connectrpc.ServerOnlyStreamInterface
  *  OpsService covers the dev/deploy surface (services, sandboxes, builds).
  */
 public interface OpsServiceClientInterface {
-  public suspend fun opsStatus(request: OpsStatusRequest, headers: Headers = emptyMap()): ResponseMessage<OpsStatusResponse>
+  public suspend fun opsStatus(request: Easylab.OpsStatusRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.OpsStatusResponse>
 
-  public suspend fun listNamespaces(request: ListNamespacesRequest, headers: Headers = emptyMap()): ResponseMessage<ListNamespacesResponse>
+  public suspend fun listNamespaces(request: Easylab.ListNamespacesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListNamespacesResponse>
 
-  public suspend fun listServices(request: ListServicesRequest, headers: Headers = emptyMap()): ResponseMessage<ListServicesResponse>
+  public suspend fun listServices(request: Easylab.ListServicesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListServicesResponse>
 
-  public suspend fun getService(request: GetServiceRequest, headers: Headers = emptyMap()): ResponseMessage<GetServiceResponse>
+  public suspend fun getService(request: Easylab.GetServiceRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetServiceResponse>
 
-  public suspend fun launchService(request: LaunchServiceRequest, headers: Headers = emptyMap()): ResponseMessage<LaunchServiceResponse>
+  public suspend fun launchService(request: Easylab.LaunchServiceRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.LaunchServiceResponse>
 
-  public suspend fun deleteService(request: DeleteServiceRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteServiceResponse>
+  public suspend fun deleteService(request: Easylab.DeleteServiceRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteServiceResponse>
 
-  public suspend fun scaleService(request: ScaleServiceRequest, headers: Headers = emptyMap()): ResponseMessage<ScaleServiceResponse>
+  public suspend fun scaleService(request: Easylab.ScaleServiceRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ScaleServiceResponse>
 
-  public suspend fun sandboxExec(request: SandboxExecRequest, headers: Headers = emptyMap()): ResponseMessage<SandboxExecResponse>
+  public suspend fun sandboxExec(request: Easylab.SandboxExecRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SandboxExecResponse>
 
-  public suspend fun sandboxRead(request: SandboxReadRequest, headers: Headers = emptyMap()): ResponseMessage<SandboxReadResponse>
+  public suspend fun sandboxRead(request: Easylab.SandboxReadRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SandboxReadResponse>
 
-  public suspend fun sandboxWrite(request: SandboxWriteRequest, headers: Headers = emptyMap()): ResponseMessage<SandboxWriteResponse>
+  public suspend fun sandboxWrite(request: Easylab.SandboxWriteRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SandboxWriteResponse>
 
-  public suspend fun sandboxJobKill(request: SandboxJobKillRequest, headers: Headers = emptyMap()): ResponseMessage<SandboxJobKillResponse>
+  public suspend fun sandboxJobKill(request: Easylab.SandboxJobKillRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SandboxJobKillResponse>
 
-  public suspend fun listTasks(request: ListTasksRequest, headers: Headers = emptyMap()): ResponseMessage<ListTasksResponse>
+  public suspend fun listTasks(request: Easylab.ListTasksRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListTasksResponse>
 
-  public suspend fun getTask(request: GetTaskRequest, headers: Headers = emptyMap()): ResponseMessage<GetTaskResponse>
+  public suspend fun getTask(request: Easylab.GetTaskRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetTaskResponse>
 
-  public suspend fun build(request: BuildRequest, headers: Headers = emptyMap()): ResponseMessage<BuildResponse>
+  public suspend fun build(request: Easylab.BuildRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.BuildResponse>
 
-  public suspend fun run(request: RunRequest, headers: Headers = emptyMap()): ResponseMessage<RunResponse>
+  public suspend fun taskLog(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Easylab.TaskLogRequest, Easylab.TaskLogResponse>
 
-  public suspend fun taskLog(headers: Headers = emptyMap()): ServerOnlyStreamInterface<TaskLogRequest, TaskLogResponse>
-
-  public suspend fun sync(request: SyncRequest, headers: Headers = emptyMap()): ResponseMessage<SyncResponse>
+  public suspend fun sync(request: Easylab.SyncRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SyncResponse>
 }

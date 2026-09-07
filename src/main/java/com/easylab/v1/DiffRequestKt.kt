@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializediffRequest")
-public inline fun diffRequest(block: com.easylab.v1.DiffRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DiffRequest =
-  com.easylab.v1.DiffRequestKt.Dsl._create(com.easylab.v1.DiffRequest.newBuilder()).apply { block() }._build()
+public inline fun diffRequest(block: easylab.v1.DiffRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffRequest =
+  easylab.v1.DiffRequestKt.Dsl._create(easylab.v1.Easylab.DiffRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DiffRequest`
  */
@@ -17,17 +17,17 @@ public object DiffRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.DiffRequest.Builder
+    private val _builder: easylab.v1.Easylab.DiffRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.DiffRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.DiffRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.DiffRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.DiffRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -132,6 +132,7 @@ public object DiffRequestKt {
     }
   }
 }
-public inline fun com.easylab.v1.DiffRequest.copy(block: `com.easylab.v1`.DiffRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DiffRequest =
-  `com.easylab.v1`.DiffRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.DiffRequest.copy(block: `easylab.v1`.DiffRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffRequest =
+  `easylab.v1`.DiffRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistProvidersResponse")
-public inline fun listProvidersResponse(block: com.agent.v1.ListProvidersResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListProvidersResponse =
-  com.agent.v1.ListProvidersResponseKt.Dsl._create(com.agent.v1.ListProvidersResponse.newBuilder()).apply { block() }._build()
+public inline fun listProvidersResponse(block: agent.v1.ListProvidersResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListProvidersResponse =
+  agent.v1.ListProvidersResponseKt.Dsl._create(agent.v1.Agent.ListProvidersResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListProvidersResponse`
  */
@@ -17,17 +17,17 @@ public object ListProvidersResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.ListProvidersResponse.Builder
+    private val _builder: agent.v1.Agent.ListProvidersResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.ListProvidersResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ListProvidersResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.ListProvidersResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.ListProvidersResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListProvidersResponseKt {
     /**
      * `repeated .agent.v1.Provider providers = 1 [json_name = "providers"];`
      */
-     public val providers: com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>
+     public val providers: com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.providersList
@@ -49,7 +49,7 @@ public object ListProvidersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addProviders")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>.add(value: com.agent.v1.Provider) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>.add(value: agent.v1.Agent.Provider) {
       _builder.addProviders(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListProvidersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignProviders")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>.plusAssign(value: com.agent.v1.Provider) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>.plusAssign(value: agent.v1.Agent.Provider) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListProvidersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllProviders")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.Provider>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.Provider>) {
       _builder.addAllProviders(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListProvidersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllProviders")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.Provider>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.Provider>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListProvidersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setProviders")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>.set(index: kotlin.Int, value: com.agent.v1.Provider) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>.set(index: kotlin.Int, value: agent.v1.Agent.Provider) {
       _builder.setProviders(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListProvidersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearProviders")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Provider, ProvidersProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Provider, ProvidersProxy>.clear() {
       _builder.clearProviders()
     }
   }
 }
-public inline fun com.agent.v1.ListProvidersResponse.copy(block: `com.agent.v1`.ListProvidersResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListProvidersResponse =
-  `com.agent.v1`.ListProvidersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.ListProvidersResponse.copy(block: `agent.v1`.ListProvidersResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListProvidersResponse =
+  `agent.v1`.ListProvidersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

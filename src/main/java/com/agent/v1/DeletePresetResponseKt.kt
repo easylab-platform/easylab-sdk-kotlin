@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializedeletePresetResponse")
-public inline fun deletePresetResponse(block: com.agent.v1.DeletePresetResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.DeletePresetResponse =
-  com.agent.v1.DeletePresetResponseKt.Dsl._create(com.agent.v1.DeletePresetResponse.newBuilder()).apply { block() }._build()
+public inline fun deletePresetResponse(block: agent.v1.DeletePresetResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeletePresetResponse =
+  agent.v1.DeletePresetResponseKt.Dsl._create(agent.v1.Agent.DeletePresetResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.DeletePresetResponse`
  */
@@ -17,17 +17,17 @@ public object DeletePresetResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.DeletePresetResponse.Builder
+    private val _builder: agent.v1.Agent.DeletePresetResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.DeletePresetResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.DeletePresetResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.DeletePresetResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.DeletePresetResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,7 @@ public object DeletePresetResponseKt {
     }
   }
 }
-public inline fun com.agent.v1.DeletePresetResponse.copy(block: `com.agent.v1`.DeletePresetResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.DeletePresetResponse =
-  `com.agent.v1`.DeletePresetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.DeletePresetResponse.copy(block: `agent.v1`.DeletePresetResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeletePresetResponse =
+  `agent.v1`.DeletePresetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

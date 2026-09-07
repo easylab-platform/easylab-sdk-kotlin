@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetaskLogResponse")
-public inline fun taskLogResponse(block: com.easylab.v1.TaskLogResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TaskLogResponse =
-  com.easylab.v1.TaskLogResponseKt.Dsl._create(com.easylab.v1.TaskLogResponse.newBuilder()).apply { block() }._build()
+public inline fun taskLogResponse(block: easylab.v1.TaskLogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TaskLogResponse =
+  easylab.v1.TaskLogResponseKt.Dsl._create(easylab.v1.Easylab.TaskLogResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.TaskLogResponse`
  */
@@ -17,17 +17,17 @@ public object TaskLogResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.TaskLogResponse.Builder
+    private val _builder: easylab.v1.Easylab.TaskLogResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.TaskLogResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.TaskLogResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.TaskLogResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.TaskLogResponse = _builder.build()
 
     /**
      * ```
@@ -72,6 +72,7 @@ public object TaskLogResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.TaskLogResponse.copy(block: `com.easylab.v1`.TaskLogResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TaskLogResponse =
-  `com.easylab.v1`.TaskLogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.TaskLogResponse.copy(block: `easylab.v1`.TaskLogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TaskLogResponse =
+  `easylab.v1`.TaskLogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

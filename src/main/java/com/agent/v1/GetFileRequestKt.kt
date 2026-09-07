@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetFileRequest")
-public inline fun getFileRequest(block: com.agent.v1.GetFileRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetFileRequest =
-  com.agent.v1.GetFileRequestKt.Dsl._create(com.agent.v1.GetFileRequest.newBuilder()).apply { block() }._build()
+public inline fun getFileRequest(block: agent.v1.GetFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileRequest =
+  agent.v1.GetFileRequestKt.Dsl._create(agent.v1.Agent.GetFileRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetFileRequest`
  */
@@ -17,17 +17,17 @@ public object GetFileRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.GetFileRequest.Builder
+    private val _builder: agent.v1.Agent.GetFileRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.GetFileRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.GetFileRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.GetFileRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.GetFileRequest = _builder.build()
 
     /**
      * `string code = 1 [json_name = "code"];`
@@ -47,6 +47,7 @@ public object GetFileRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.GetFileRequest.copy(block: `com.agent.v1`.GetFileRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetFileRequest =
-  `com.agent.v1`.GetFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.GetFileRequest.copy(block: `agent.v1`.GetFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileRequest =
+  `agent.v1`.GetFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

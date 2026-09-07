@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializeundoRequest")
-public inline fun undoRequest(block: com.agent.v1.UndoRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UndoRequest =
-  com.agent.v1.UndoRequestKt.Dsl._create(com.agent.v1.UndoRequest.newBuilder()).apply { block() }._build()
+public inline fun undoRequest(block: agent.v1.UndoRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UndoRequest =
+  agent.v1.UndoRequestKt.Dsl._create(agent.v1.Agent.UndoRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UndoRequest`
  */
@@ -17,17 +17,17 @@ public object UndoRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.UndoRequest.Builder
+    private val _builder: agent.v1.Agent.UndoRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.UndoRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.UndoRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.UndoRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.UndoRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -64,6 +64,7 @@ public object UndoRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.UndoRequest.copy(block: `com.agent.v1`.UndoRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UndoRequest =
-  `com.agent.v1`.UndoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.UndoRequest.copy(block: `agent.v1`.UndoRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UndoRequest =
+  `agent.v1`.UndoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

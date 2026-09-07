@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteProviderResponse")
-public inline fun deleteProviderResponse(block: com.agent.v1.DeleteProviderResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.DeleteProviderResponse =
-  com.agent.v1.DeleteProviderResponseKt.Dsl._create(com.agent.v1.DeleteProviderResponse.newBuilder()).apply { block() }._build()
+public inline fun deleteProviderResponse(block: agent.v1.DeleteProviderResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteProviderResponse =
+  agent.v1.DeleteProviderResponseKt.Dsl._create(agent.v1.Agent.DeleteProviderResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.DeleteProviderResponse`
  */
@@ -17,17 +17,17 @@ public object DeleteProviderResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.DeleteProviderResponse.Builder
+    private val _builder: agent.v1.Agent.DeleteProviderResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.DeleteProviderResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.DeleteProviderResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.DeleteProviderResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.DeleteProviderResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,7 @@ public object DeleteProviderResponseKt {
     }
   }
 }
-public inline fun com.agent.v1.DeleteProviderResponse.copy(block: `com.agent.v1`.DeleteProviderResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.DeleteProviderResponse =
-  `com.agent.v1`.DeleteProviderResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.DeleteProviderResponse.copy(block: `agent.v1`.DeleteProviderResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteProviderResponse =
+  `agent.v1`.DeleteProviderResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

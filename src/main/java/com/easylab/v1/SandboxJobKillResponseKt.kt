@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesandboxJobKillResponse")
-public inline fun sandboxJobKillResponse(block: com.easylab.v1.SandboxJobKillResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SandboxJobKillResponse =
-  com.easylab.v1.SandboxJobKillResponseKt.Dsl._create(com.easylab.v1.SandboxJobKillResponse.newBuilder()).apply { block() }._build()
+public inline fun sandboxJobKillResponse(block: easylab.v1.SandboxJobKillResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxJobKillResponse =
+  easylab.v1.SandboxJobKillResponseKt.Dsl._create(easylab.v1.Easylab.SandboxJobKillResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SandboxJobKillResponse`
  */
@@ -17,17 +17,17 @@ public object SandboxJobKillResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.SandboxJobKillResponse.Builder
+    private val _builder: easylab.v1.Easylab.SandboxJobKillResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.SandboxJobKillResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.SandboxJobKillResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.SandboxJobKillResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.SandboxJobKillResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object SandboxJobKillResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.SandboxJobKillResponse.copy(block: `com.easylab.v1`.SandboxJobKillResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SandboxJobKillResponse =
-  `com.easylab.v1`.SandboxJobKillResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.SandboxJobKillResponse.copy(block: `easylab.v1`.SandboxJobKillResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxJobKillResponse =
+  `easylab.v1`.SandboxJobKillResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

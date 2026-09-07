@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetTaskRequest")
-public inline fun getTaskRequest(block: com.easylab.v1.GetTaskRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetTaskRequest =
-  com.easylab.v1.GetTaskRequestKt.Dsl._create(com.easylab.v1.GetTaskRequest.newBuilder()).apply { block() }._build()
+public inline fun getTaskRequest(block: easylab.v1.GetTaskRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskRequest =
+  easylab.v1.GetTaskRequestKt.Dsl._create(easylab.v1.Easylab.GetTaskRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetTaskRequest`
  */
@@ -17,17 +17,17 @@ public object GetTaskRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.GetTaskRequest.Builder
+    private val _builder: easylab.v1.Easylab.GetTaskRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.GetTaskRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.GetTaskRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.GetTaskRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.GetTaskRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -47,6 +47,7 @@ public object GetTaskRequestKt {
     }
   }
 }
-public inline fun com.easylab.v1.GetTaskRequest.copy(block: `com.easylab.v1`.GetTaskRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetTaskRequest =
-  `com.easylab.v1`.GetTaskRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.GetTaskRequest.copy(block: `easylab.v1`.GetTaskRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskRequest =
+  `easylab.v1`.GetTaskRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

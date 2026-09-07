@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializediffFile")
-public inline fun diffFile(block: com.easylab.v1.DiffFileKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DiffFile =
-  com.easylab.v1.DiffFileKt.Dsl._create(com.easylab.v1.DiffFile.newBuilder()).apply { block() }._build()
+public inline fun diffFile(block: easylab.v1.DiffFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffFile =
+  easylab.v1.DiffFileKt.Dsl._create(easylab.v1.Easylab.DiffFile.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DiffFile`
  */
@@ -17,17 +17,17 @@ public object DiffFileKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.DiffFile.Builder
+    private val _builder: easylab.v1.Easylab.DiffFile.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.DiffFile.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.DiffFile.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.DiffFile = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.DiffFile = _builder.build()
 
     /**
      * `string path = 1 [json_name = "path"];`
@@ -98,6 +98,7 @@ public object DiffFileKt {
     }
   }
 }
-public inline fun com.easylab.v1.DiffFile.copy(block: `com.easylab.v1`.DiffFileKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DiffFile =
-  `com.easylab.v1`.DiffFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.DiffFile.copy(block: `easylab.v1`.DiffFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffFile =
+  `easylab.v1`.DiffFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

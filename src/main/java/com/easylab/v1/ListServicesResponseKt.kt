@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistServicesResponse")
-public inline fun listServicesResponse(block: com.easylab.v1.ListServicesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListServicesResponse =
-  com.easylab.v1.ListServicesResponseKt.Dsl._create(com.easylab.v1.ListServicesResponse.newBuilder()).apply { block() }._build()
+public inline fun listServicesResponse(block: easylab.v1.ListServicesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListServicesResponse =
+  easylab.v1.ListServicesResponseKt.Dsl._create(easylab.v1.Easylab.ListServicesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListServicesResponse`
  */
@@ -17,17 +17,17 @@ public object ListServicesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.ListServicesResponse.Builder
+    private val _builder: easylab.v1.Easylab.ListServicesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.ListServicesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.ListServicesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.ListServicesResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.ListServicesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListServicesResponseKt {
     /**
      * `repeated .easylab.v1.ServiceInfo services = 1 [json_name = "services"];`
      */
-     public val services: com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>
+     public val services: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.servicesList
@@ -49,7 +49,7 @@ public object ListServicesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addServices")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>.add(value: com.easylab.v1.ServiceInfo) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>.add(value: easylab.v1.Easylab.ServiceInfo) {
       _builder.addServices(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListServicesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignServices")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>.plusAssign(value: com.easylab.v1.ServiceInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>.plusAssign(value: easylab.v1.Easylab.ServiceInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListServicesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllServices")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.ServiceInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.ServiceInfo>) {
       _builder.addAllServices(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListServicesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllServices")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.ServiceInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.ServiceInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListServicesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setServices")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>.set(index: kotlin.Int, value: com.easylab.v1.ServiceInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.ServiceInfo) {
       _builder.setServices(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListServicesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearServices")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServiceInfo, ServicesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServiceInfo, ServicesProxy>.clear() {
       _builder.clearServices()
     }
   }
 }
-public inline fun com.easylab.v1.ListServicesResponse.copy(block: `com.easylab.v1`.ListServicesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListServicesResponse =
-  `com.easylab.v1`.ListServicesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.ListServicesResponse.copy(block: `easylab.v1`.ListServicesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListServicesResponse =
+  `easylab.v1`.ListServicesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

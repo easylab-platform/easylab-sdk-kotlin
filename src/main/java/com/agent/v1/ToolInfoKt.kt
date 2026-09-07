@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializetoolInfo")
-public inline fun toolInfo(block: com.agent.v1.ToolInfoKt.Dsl.() -> kotlin.Unit): com.agent.v1.ToolInfo =
-  com.agent.v1.ToolInfoKt.Dsl._create(com.agent.v1.ToolInfo.newBuilder()).apply { block() }._build()
+public inline fun toolInfo(block: agent.v1.ToolInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolInfo =
+  agent.v1.ToolInfoKt.Dsl._create(agent.v1.Agent.ToolInfo.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Tool discovery entry.
@@ -21,17 +21,17 @@ public object ToolInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.ToolInfo.Builder
+    private val _builder: agent.v1.Agent.ToolInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.ToolInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ToolInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.ToolInfo = _builder.build()
+    internal fun _build(): agent.v1.Agent.ToolInfo = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -120,7 +120,7 @@ public object ToolInfoKt {
     /**
      * `repeated .agent.v1.ToolConfigField config_fields = 5 [json_name = "configFields"];`
      */
-     public val configFields: com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>
+     public val configFields: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.configFieldsList
@@ -131,7 +131,7 @@ public object ToolInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addConfigFields")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>.add(value: com.agent.v1.ToolConfigField) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>.add(value: agent.v1.Agent.ToolConfigField) {
       _builder.addConfigFields(value)
     }
     /**
@@ -141,7 +141,7 @@ public object ToolInfoKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignConfigFields")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>.plusAssign(value: com.agent.v1.ToolConfigField) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>.plusAssign(value: agent.v1.Agent.ToolConfigField) {
       add(value)
     }
     /**
@@ -150,7 +150,7 @@ public object ToolInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllConfigFields")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.ToolConfigField>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ToolConfigField>) {
       _builder.addAllConfigFields(values)
     }
     /**
@@ -160,7 +160,7 @@ public object ToolInfoKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllConfigFields")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.ToolConfigField>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ToolConfigField>) {
       addAll(values)
     }
     /**
@@ -170,7 +170,7 @@ public object ToolInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setConfigFields")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>.set(index: kotlin.Int, value: com.agent.v1.ToolConfigField) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ToolConfigField) {
       _builder.setConfigFields(index, value)
     }
     /**
@@ -178,7 +178,7 @@ public object ToolInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearConfigFields")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ToolConfigField, ConfigFieldsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ToolConfigField, ConfigFieldsProxy>.clear() {
       _builder.clearConfigFields()
     }
 
@@ -253,9 +253,10 @@ public object ToolInfoKt {
       _builder.clearRequiredConfig()
     }}
 }
-public inline fun com.agent.v1.ToolInfo.copy(block: `com.agent.v1`.ToolInfoKt.Dsl.() -> kotlin.Unit): com.agent.v1.ToolInfo =
-  `com.agent.v1`.ToolInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.ToolInfo.copy(block: `agent.v1`.ToolInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolInfo =
+  `agent.v1`.ToolInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.agent.v1.ToolInfoOrBuilder.parametersOrNull: com.google.protobuf.Struct?
+public val agent.v1.Agent.ToolInfoOrBuilder.parametersOrNull: com.google.protobuf.Struct?
   get() = if (hasParameters()) getParameters() else null
 

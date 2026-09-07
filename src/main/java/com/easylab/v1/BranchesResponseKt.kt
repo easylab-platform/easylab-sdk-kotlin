@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializebranchesResponse")
-public inline fun branchesResponse(block: com.easylab.v1.BranchesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BranchesResponse =
-  com.easylab.v1.BranchesResponseKt.Dsl._create(com.easylab.v1.BranchesResponse.newBuilder()).apply { block() }._build()
+public inline fun branchesResponse(block: easylab.v1.BranchesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BranchesResponse =
+  easylab.v1.BranchesResponseKt.Dsl._create(easylab.v1.Easylab.BranchesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.BranchesResponse`
  */
@@ -17,17 +17,17 @@ public object BranchesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.BranchesResponse.Builder
+    private val _builder: easylab.v1.Easylab.BranchesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.BranchesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.BranchesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.BranchesResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.BranchesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object BranchesResponseKt {
     /**
      * `repeated .easylab.v1.BranchInfo branches = 1 [json_name = "branches"];`
      */
-     public val branches: com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>
+     public val branches: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.branchesList
@@ -49,7 +49,7 @@ public object BranchesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addBranches")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>.add(value: com.easylab.v1.BranchInfo) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>.add(value: easylab.v1.Easylab.BranchInfo) {
       _builder.addBranches(value)
     }
     /**
@@ -59,7 +59,7 @@ public object BranchesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignBranches")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>.plusAssign(value: com.easylab.v1.BranchInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>.plusAssign(value: easylab.v1.Easylab.BranchInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object BranchesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllBranches")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.BranchInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.BranchInfo>) {
       _builder.addAllBranches(values)
     }
     /**
@@ -78,7 +78,7 @@ public object BranchesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllBranches")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.BranchInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.BranchInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object BranchesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setBranches")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>.set(index: kotlin.Int, value: com.easylab.v1.BranchInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.BranchInfo) {
       _builder.setBranches(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object BranchesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearBranches")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.BranchInfo, BranchesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.BranchInfo, BranchesProxy>.clear() {
       _builder.clearBranches()
     }
   }
 }
-public inline fun com.easylab.v1.BranchesResponse.copy(block: `com.easylab.v1`.BranchesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BranchesResponse =
-  `com.easylab.v1`.BranchesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.BranchesResponse.copy(block: `easylab.v1`.BranchesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BranchesResponse =
+  `easylab.v1`.BranchesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

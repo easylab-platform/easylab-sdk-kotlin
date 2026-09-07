@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteSessionRequest")
-public inline fun deleteSessionRequest(block: com.agent.v1.DeleteSessionRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.DeleteSessionRequest =
-  com.agent.v1.DeleteSessionRequestKt.Dsl._create(com.agent.v1.DeleteSessionRequest.newBuilder()).apply { block() }._build()
+public inline fun deleteSessionRequest(block: agent.v1.DeleteSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteSessionRequest =
+  agent.v1.DeleteSessionRequestKt.Dsl._create(agent.v1.Agent.DeleteSessionRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.DeleteSessionRequest`
  */
@@ -17,17 +17,17 @@ public object DeleteSessionRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.DeleteSessionRequest.Builder
+    private val _builder: agent.v1.Agent.DeleteSessionRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.DeleteSessionRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.DeleteSessionRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.DeleteSessionRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.DeleteSessionRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -47,6 +47,7 @@ public object DeleteSessionRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.DeleteSessionRequest.copy(block: `com.agent.v1`.DeleteSessionRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.DeleteSessionRequest =
-  `com.agent.v1`.DeleteSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.DeleteSessionRequest.copy(block: `agent.v1`.DeleteSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteSessionRequest =
+  `agent.v1`.DeleteSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

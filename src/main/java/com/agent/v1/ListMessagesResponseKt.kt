@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistMessagesResponse")
-public inline fun listMessagesResponse(block: com.agent.v1.ListMessagesResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListMessagesResponse =
-  com.agent.v1.ListMessagesResponseKt.Dsl._create(com.agent.v1.ListMessagesResponse.newBuilder()).apply { block() }._build()
+public inline fun listMessagesResponse(block: agent.v1.ListMessagesResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesResponse =
+  agent.v1.ListMessagesResponseKt.Dsl._create(agent.v1.Agent.ListMessagesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListMessagesResponse`
  */
@@ -17,17 +17,17 @@ public object ListMessagesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.ListMessagesResponse.Builder
+    private val _builder: agent.v1.Agent.ListMessagesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.ListMessagesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ListMessagesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.ListMessagesResponse = _builder.build()
+    internal fun _build(): agent.v1.Agent.ListMessagesResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -55,7 +55,7 @@ public object ListMessagesResponseKt {
     /**
      * `repeated .agent.v1.Message messages = 2 [json_name = "messages"];`
      */
-     public val messages: com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>
+     public val messages: com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.messagesList
@@ -66,7 +66,7 @@ public object ListMessagesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addMessages")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>.add(value: com.agent.v1.Message) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.add(value: agent.v1.Agent.Message) {
       _builder.addMessages(value)
     }
     /**
@@ -76,7 +76,7 @@ public object ListMessagesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignMessages")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>.plusAssign(value: com.agent.v1.Message) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.plusAssign(value: agent.v1.Agent.Message) {
       add(value)
     }
     /**
@@ -85,7 +85,7 @@ public object ListMessagesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllMessages")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.Message>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.Message>) {
       _builder.addAllMessages(values)
     }
     /**
@@ -95,7 +95,7 @@ public object ListMessagesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllMessages")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.Message>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.Message>) {
       addAll(values)
     }
     /**
@@ -105,7 +105,7 @@ public object ListMessagesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setMessages")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>.set(index: kotlin.Int, value: com.agent.v1.Message) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.set(index: kotlin.Int, value: agent.v1.Agent.Message) {
       _builder.setMessages(index, value)
     }
     /**
@@ -113,11 +113,12 @@ public object ListMessagesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearMessages")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Message, MessagesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.clear() {
       _builder.clearMessages()
     }
   }
 }
-public inline fun com.agent.v1.ListMessagesResponse.copy(block: `com.agent.v1`.ListMessagesResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListMessagesResponse =
-  `com.agent.v1`.ListMessagesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.ListMessagesResponse.copy(block: `agent.v1`.ListMessagesResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesResponse =
+  `agent.v1`.ListMessagesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

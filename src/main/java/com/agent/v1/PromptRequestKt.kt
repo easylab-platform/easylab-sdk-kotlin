@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializepromptRequest")
-public inline fun promptRequest(block: com.agent.v1.PromptRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.PromptRequest =
-  com.agent.v1.PromptRequestKt.Dsl._create(com.agent.v1.PromptRequest.newBuilder()).apply { block() }._build()
+public inline fun promptRequest(block: agent.v1.PromptRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PromptRequest =
+  agent.v1.PromptRequestKt.Dsl._create(agent.v1.Agent.PromptRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.PromptRequest`
  */
@@ -17,17 +17,17 @@ public object PromptRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.PromptRequest.Builder
+    private val _builder: agent.v1.Agent.PromptRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.PromptRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.PromptRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.PromptRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.PromptRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -72,7 +72,7 @@ public object PromptRequestKt {
     /**
      * `repeated .agent.v1.FileRef attachments = 3 [json_name = "attachments"];`
      */
-     public val attachments: com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>
+     public val attachments: com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.attachmentsList
@@ -83,7 +83,7 @@ public object PromptRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAttachments")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>.add(value: com.agent.v1.FileRef) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>.add(value: agent.v1.Agent.FileRef) {
       _builder.addAttachments(value)
     }
     /**
@@ -93,7 +93,7 @@ public object PromptRequestKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAttachments")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>.plusAssign(value: com.agent.v1.FileRef) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>.plusAssign(value: agent.v1.Agent.FileRef) {
       add(value)
     }
     /**
@@ -102,7 +102,7 @@ public object PromptRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllAttachments")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.FileRef>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.FileRef>) {
       _builder.addAllAttachments(values)
     }
     /**
@@ -112,7 +112,7 @@ public object PromptRequestKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllAttachments")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.FileRef>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.FileRef>) {
       addAll(values)
     }
     /**
@@ -122,7 +122,7 @@ public object PromptRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setAttachments")
-    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>.set(index: kotlin.Int, value: com.agent.v1.FileRef) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.FileRef) {
       _builder.setAttachments(index, value)
     }
     /**
@@ -130,11 +130,12 @@ public object PromptRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearAttachments")
-    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.FileRef, AttachmentsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.FileRef, AttachmentsProxy>.clear() {
       _builder.clearAttachments()
     }
   }
 }
-public inline fun com.agent.v1.PromptRequest.copy(block: `com.agent.v1`.PromptRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.PromptRequest =
-  `com.agent.v1`.PromptRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.PromptRequest.copy(block: `agent.v1`.PromptRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PromptRequest =
+  `agent.v1`.PromptRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

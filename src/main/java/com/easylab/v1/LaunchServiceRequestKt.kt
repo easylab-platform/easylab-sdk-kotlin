@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelaunchServiceRequest")
-public inline fun launchServiceRequest(block: com.easylab.v1.LaunchServiceRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.LaunchServiceRequest =
-  com.easylab.v1.LaunchServiceRequestKt.Dsl._create(com.easylab.v1.LaunchServiceRequest.newBuilder()).apply { block() }._build()
+public inline fun launchServiceRequest(block: easylab.v1.LaunchServiceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.LaunchServiceRequest =
+  easylab.v1.LaunchServiceRequestKt.Dsl._create(easylab.v1.Easylab.LaunchServiceRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.LaunchServiceRequest`
  */
@@ -17,17 +17,17 @@ public object LaunchServiceRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.LaunchServiceRequest.Builder
+    private val _builder: easylab.v1.Easylab.LaunchServiceRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.LaunchServiceRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.LaunchServiceRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.LaunchServiceRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.LaunchServiceRequest = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -114,7 +114,7 @@ public object LaunchServiceRequestKt {
     /**
      * `repeated .easylab.v1.PortSpec ports = 5 [json_name = "ports"];`
      */
-     public val ports: com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>
+     public val ports: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.portsList
@@ -125,7 +125,7 @@ public object LaunchServiceRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addPorts")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>.add(value: com.easylab.v1.PortSpec) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>.add(value: easylab.v1.Easylab.PortSpec) {
       _builder.addPorts(value)
     }
     /**
@@ -135,7 +135,7 @@ public object LaunchServiceRequestKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignPorts")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>.plusAssign(value: com.easylab.v1.PortSpec) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>.plusAssign(value: easylab.v1.Easylab.PortSpec) {
       add(value)
     }
     /**
@@ -144,7 +144,7 @@ public object LaunchServiceRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllPorts")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.PortSpec>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.PortSpec>) {
       _builder.addAllPorts(values)
     }
     /**
@@ -154,7 +154,7 @@ public object LaunchServiceRequestKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllPorts")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.PortSpec>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.PortSpec>) {
       addAll(values)
     }
     /**
@@ -164,7 +164,7 @@ public object LaunchServiceRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setPorts")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>.set(index: kotlin.Int, value: com.easylab.v1.PortSpec) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.PortSpec) {
       _builder.setPorts(index, value)
     }
     /**
@@ -172,7 +172,7 @@ public object LaunchServiceRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearPorts")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PortSpec, PortsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PortSpec, PortsProxy>.clear() {
       _builder.clearPorts()
     }
 
@@ -452,6 +452,7 @@ public object LaunchServiceRequestKt {
     }
   }
 }
-public inline fun com.easylab.v1.LaunchServiceRequest.copy(block: `com.easylab.v1`.LaunchServiceRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.LaunchServiceRequest =
-  `com.easylab.v1`.LaunchServiceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.LaunchServiceRequest.copy(block: `easylab.v1`.LaunchServiceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.LaunchServiceRequest =
+  `easylab.v1`.LaunchServiceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package com.easylab.v1
+package easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
@@ -11,15 +11,15 @@ import com.connectrpc.ResponseMessage
  *  RegistryService covers the package registry surface.
  */
 public interface RegistryServiceClientInterface {
-  public suspend fun listPackageTypes(request: ListPackageTypesRequest, headers: Headers = emptyMap()): ResponseMessage<ListPackageTypesResponse>
+  public suspend fun listPackageTypes(request: Easylab.ListPackageTypesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListPackageTypesResponse>
 
-  public suspend fun listPackages(request: ListPackagesRequest, headers: Headers = emptyMap()): ResponseMessage<ListPackagesResponse>
+  public suspend fun listPackages(request: Easylab.ListPackagesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListPackagesResponse>
 
-  public suspend fun packageVersions(request: PackageVersionsRequest, headers: Headers = emptyMap()): ResponseMessage<PackageVersionsResponse>
+  public suspend fun packageVersions(request: Easylab.PackageVersionsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.PackageVersionsResponse>
 
-  public suspend fun deletePackage(request: DeletePackageRequest, headers: Headers = emptyMap()): ResponseMessage<DeletePackageResponse>
+  public suspend fun deletePackage(request: Easylab.DeletePackageRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeletePackageResponse>
 
-  public suspend fun deletePackageVersion(request: DeletePackageVersionRequest, headers: Headers = emptyMap()): ResponseMessage<DeletePackageVersionResponse>
+  public suspend fun deletePackageVersion(request: Easylab.DeletePackageVersionRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeletePackageVersionResponse>
 
-  public suspend fun listPublishSpecs(request: ListPublishSpecsRequest, headers: Headers = emptyMap()): ResponseMessage<ListPublishSpecsResponse>
+  public suspend fun listPublishSpecs(request: Easylab.ListPublishSpecsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListPublishSpecsResponse>
 }

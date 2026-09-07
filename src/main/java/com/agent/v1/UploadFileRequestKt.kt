@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializeuploadFileRequest")
-public inline fun uploadFileRequest(block: com.agent.v1.UploadFileRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UploadFileRequest =
-  com.agent.v1.UploadFileRequestKt.Dsl._create(com.agent.v1.UploadFileRequest.newBuilder()).apply { block() }._build()
+public inline fun uploadFileRequest(block: agent.v1.UploadFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UploadFileRequest =
+  agent.v1.UploadFileRequestKt.Dsl._create(agent.v1.Agent.UploadFileRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UploadFileRequest`
  */
@@ -17,22 +17,22 @@ public object UploadFileRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.UploadFileRequest.Builder
+    private val _builder: agent.v1.Agent.UploadFileRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.UploadFileRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.UploadFileRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.UploadFileRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.UploadFileRequest = _builder.build()
 
     /**
      * `.agent.v1.FileRef file = 1 [json_name = "file"];`
      */
-    public var file: com.agent.v1.FileRef
+    public var file: agent.v1.Agent.FileRef
       @kotlin.jvm.JvmName("getFile")
         get() = _builder.file
       @kotlin.jvm.JvmName("setFile")
@@ -53,7 +53,7 @@ public object UploadFileRequestKt {
       return _builder.hasFile()
     }
 
-    public val UploadFileRequestKt.Dsl.fileOrNull: com.agent.v1.FileRef?
+    public val UploadFileRequestKt.Dsl.fileOrNull: agent.v1.Agent.FileRef?
       get() = _builder.fileOrNull
 
     /**
@@ -74,9 +74,10 @@ public object UploadFileRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.UploadFileRequest.copy(block: `com.agent.v1`.UploadFileRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UploadFileRequest =
-  `com.agent.v1`.UploadFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.UploadFileRequest.copy(block: `agent.v1`.UploadFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UploadFileRequest =
+  `agent.v1`.UploadFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.agent.v1.UploadFileRequestOrBuilder.fileOrNull: com.agent.v1.FileRef?
+public val agent.v1.Agent.UploadFileRequestOrBuilder.fileOrNull: agent.v1.Agent.FileRef?
   get() = if (hasFile()) getFile() else null
 

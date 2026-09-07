@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializesetExtensionConfigRequest")
-public inline fun setExtensionConfigRequest(block: com.agent.v1.SetExtensionConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetExtensionConfigRequest =
-  com.agent.v1.SetExtensionConfigRequestKt.Dsl._create(com.agent.v1.SetExtensionConfigRequest.newBuilder()).apply { block() }._build()
+public inline fun setExtensionConfigRequest(block: agent.v1.SetExtensionConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetExtensionConfigRequest =
+  agent.v1.SetExtensionConfigRequestKt.Dsl._create(agent.v1.Agent.SetExtensionConfigRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.SetExtensionConfigRequest`
  */
@@ -17,17 +17,17 @@ public object SetExtensionConfigRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.SetExtensionConfigRequest.Builder
+    private val _builder: agent.v1.Agent.SetExtensionConfigRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.SetExtensionConfigRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.SetExtensionConfigRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.SetExtensionConfigRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.SetExtensionConfigRequest = _builder.build()
 
     /**
      * `string ext_id = 1 [json_name = "extId"];`
@@ -91,9 +91,10 @@ public object SetExtensionConfigRequestKt {
       get() = _builder.valueOrNull
   }
 }
-public inline fun com.agent.v1.SetExtensionConfigRequest.copy(block: `com.agent.v1`.SetExtensionConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetExtensionConfigRequest =
-  `com.agent.v1`.SetExtensionConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.SetExtensionConfigRequest.copy(block: `agent.v1`.SetExtensionConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetExtensionConfigRequest =
+  `agent.v1`.SetExtensionConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.agent.v1.SetExtensionConfigRequestOrBuilder.valueOrNull: com.google.protobuf.Value?
+public val agent.v1.Agent.SetExtensionConfigRequestOrBuilder.valueOrNull: com.google.protobuf.Value?
   get() = if (hasValue()) getValue() else null
 

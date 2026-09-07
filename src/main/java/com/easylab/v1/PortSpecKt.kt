@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeportSpec")
-public inline fun portSpec(block: com.easylab.v1.PortSpecKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PortSpec =
-  com.easylab.v1.PortSpecKt.Dsl._create(com.easylab.v1.PortSpec.newBuilder()).apply { block() }._build()
+public inline fun portSpec(block: easylab.v1.PortSpecKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PortSpec =
+  easylab.v1.PortSpecKt.Dsl._create(easylab.v1.Easylab.PortSpec.newBuilder()).apply { block() }._build()
 /**
  * ```
  * PortSpec maps a container port to a published service port.
@@ -21,17 +21,17 @@ public object PortSpecKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.PortSpec.Builder
+    private val _builder: easylab.v1.Easylab.PortSpec.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.PortSpec.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.PortSpec.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.PortSpec = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.PortSpec = _builder.build()
 
     /**
      * `int32 container = 1 [json_name = "container"];`
@@ -68,6 +68,7 @@ public object PortSpecKt {
     }
   }
 }
-public inline fun com.easylab.v1.PortSpec.copy(block: `com.easylab.v1`.PortSpecKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PortSpec =
-  `com.easylab.v1`.PortSpecKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.PortSpec.copy(block: `easylab.v1`.PortSpecKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PortSpec =
+  `easylab.v1`.PortSpecKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

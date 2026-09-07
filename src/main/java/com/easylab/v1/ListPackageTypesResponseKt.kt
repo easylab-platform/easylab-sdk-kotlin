@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistPackageTypesResponse")
-public inline fun listPackageTypesResponse(block: com.easylab.v1.ListPackageTypesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListPackageTypesResponse =
-  com.easylab.v1.ListPackageTypesResponseKt.Dsl._create(com.easylab.v1.ListPackageTypesResponse.newBuilder()).apply { block() }._build()
+public inline fun listPackageTypesResponse(block: easylab.v1.ListPackageTypesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPackageTypesResponse =
+  easylab.v1.ListPackageTypesResponseKt.Dsl._create(easylab.v1.Easylab.ListPackageTypesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListPackageTypesResponse`
  */
@@ -17,17 +17,17 @@ public object ListPackageTypesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.ListPackageTypesResponse.Builder
+    private val _builder: easylab.v1.Easylab.ListPackageTypesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.ListPackageTypesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.ListPackageTypesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.ListPackageTypesResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.ListPackageTypesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListPackageTypesResponseKt {
     /**
      * `repeated .easylab.v1.PackageTypeEntry packages = 1 [json_name = "packages"];`
      */
-     public val packages: com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>
+     public val packages: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.packagesList
@@ -49,7 +49,7 @@ public object ListPackageTypesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addPackages")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>.add(value: com.easylab.v1.PackageTypeEntry) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>.add(value: easylab.v1.Easylab.PackageTypeEntry) {
       _builder.addPackages(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListPackageTypesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignPackages")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>.plusAssign(value: com.easylab.v1.PackageTypeEntry) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>.plusAssign(value: easylab.v1.Easylab.PackageTypeEntry) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListPackageTypesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllPackages")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.PackageTypeEntry>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.PackageTypeEntry>) {
       _builder.addAllPackages(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListPackageTypesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllPackages")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.PackageTypeEntry>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.PackageTypeEntry>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListPackageTypesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setPackages")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>.set(index: kotlin.Int, value: com.easylab.v1.PackageTypeEntry) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.PackageTypeEntry) {
       _builder.setPackages(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListPackageTypesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearPackages")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.PackageTypeEntry, PackagesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageTypeEntry, PackagesProxy>.clear() {
       _builder.clearPackages()
     }
   }
 }
-public inline fun com.easylab.v1.ListPackageTypesResponse.copy(block: `com.easylab.v1`.ListPackageTypesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListPackageTypesResponse =
-  `com.easylab.v1`.ListPackageTypesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.ListPackageTypesResponse.copy(block: `easylab.v1`.ListPackageTypesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPackageTypesResponse =
+  `easylab.v1`.ListPackageTypesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

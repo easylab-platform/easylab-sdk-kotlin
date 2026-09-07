@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package com.easylab.v1
+package easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -16,301 +16,301 @@ import com.connectrpc.StreamType
 public class LabServiceClient(
   private val client: ProtocolClientInterface,
 ) : LabServiceClientInterface {
-  override suspend fun health(request: HealthRequest, headers: Headers): ResponseMessage<HealthResponse> = client.unary(
+  override suspend fun health(request: Easylab.HealthRequest, headers: Headers): ResponseMessage<Easylab.HealthResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Health",
-      com.easylab.v1.HealthRequest::class,
-      com.easylab.v1.HealthResponse::class,
+      easylab.v1.Easylab.HealthRequest::class,
+      easylab.v1.Easylab.HealthResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun status(request: StatusRequest, headers: Headers): ResponseMessage<StatusResponse> = client.unary(
+  override suspend fun status(request: Easylab.StatusRequest, headers: Headers): ResponseMessage<Easylab.StatusResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Status",
-      com.easylab.v1.StatusRequest::class,
-      com.easylab.v1.StatusResponse::class,
+      easylab.v1.Easylab.StatusRequest::class,
+      easylab.v1.Easylab.StatusResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listRepos(request: ListReposRequest, headers: Headers): ResponseMessage<ListReposResponse> = client.unary(
+  override suspend fun listRepos(request: Easylab.ListReposRequest, headers: Headers): ResponseMessage<Easylab.ListReposResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/ListRepos",
-      com.easylab.v1.ListReposRequest::class,
-      com.easylab.v1.ListReposResponse::class,
+      easylab.v1.Easylab.ListReposRequest::class,
+      easylab.v1.Easylab.ListReposResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun createRepo(request: CreateRepoRequest, headers: Headers): ResponseMessage<CreateRepoResponse> = client.unary(
+  override suspend fun createRepo(request: Easylab.CreateRepoRequest, headers: Headers): ResponseMessage<Easylab.CreateRepoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/CreateRepo",
-      com.easylab.v1.CreateRepoRequest::class,
-      com.easylab.v1.CreateRepoResponse::class,
+      easylab.v1.Easylab.CreateRepoRequest::class,
+      easylab.v1.Easylab.CreateRepoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteRepo(request: DeleteRepoRequest, headers: Headers): ResponseMessage<DeleteRepoResponse> = client.unary(
+  override suspend fun deleteRepo(request: Easylab.DeleteRepoRequest, headers: Headers): ResponseMessage<Easylab.DeleteRepoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/DeleteRepo",
-      com.easylab.v1.DeleteRepoRequest::class,
-      com.easylab.v1.DeleteRepoResponse::class,
+      easylab.v1.Easylab.DeleteRepoRequest::class,
+      easylab.v1.Easylab.DeleteRepoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun ensureRepo(request: EnsureRepoRequest, headers: Headers): ResponseMessage<EnsureRepoResponse> = client.unary(
+  override suspend fun ensureRepo(request: Easylab.EnsureRepoRequest, headers: Headers): ResponseMessage<Easylab.EnsureRepoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/EnsureRepo",
-      com.easylab.v1.EnsureRepoRequest::class,
-      com.easylab.v1.EnsureRepoResponse::class,
+      easylab.v1.Easylab.EnsureRepoRequest::class,
+      easylab.v1.Easylab.EnsureRepoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun ensureOrg(request: EnsureOrgRequest, headers: Headers): ResponseMessage<EnsureOrgResponse> = client.unary(
+  override suspend fun ensureOrg(request: Easylab.EnsureOrgRequest, headers: Headers): ResponseMessage<Easylab.EnsureOrgResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/EnsureOrg",
-      com.easylab.v1.EnsureOrgRequest::class,
-      com.easylab.v1.EnsureOrgResponse::class,
+      easylab.v1.Easylab.EnsureOrgRequest::class,
+      easylab.v1.Easylab.EnsureOrgResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun forkRepo(request: ForkRepoRequest, headers: Headers): ResponseMessage<ForkRepoResponse> = client.unary(
+  override suspend fun forkRepo(request: Easylab.ForkRepoRequest, headers: Headers): ResponseMessage<Easylab.ForkRepoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/ForkRepo",
-      com.easylab.v1.ForkRepoRequest::class,
-      com.easylab.v1.ForkRepoResponse::class,
+      easylab.v1.Easylab.ForkRepoRequest::class,
+      easylab.v1.Easylab.ForkRepoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun cloneRepo(request: CloneRepoRequest, headers: Headers): ResponseMessage<CloneRepoResponse> = client.unary(
+  override suspend fun cloneRepo(request: Easylab.CloneRepoRequest, headers: Headers): ResponseMessage<Easylab.CloneRepoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/CloneRepo",
-      com.easylab.v1.CloneRepoRequest::class,
-      com.easylab.v1.CloneRepoResponse::class,
+      easylab.v1.Easylab.CloneRepoRequest::class,
+      easylab.v1.Easylab.CloneRepoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun tree(request: TreeRequest, headers: Headers): ResponseMessage<TreeResponse> = client.unary(
+  override suspend fun tree(request: Easylab.TreeRequest, headers: Headers): ResponseMessage<Easylab.TreeResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Tree",
-      com.easylab.v1.TreeRequest::class,
-      com.easylab.v1.TreeResponse::class,
+      easylab.v1.Easylab.TreeRequest::class,
+      easylab.v1.Easylab.TreeResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun readBlob(request: ReadBlobRequest, headers: Headers): ResponseMessage<ReadBlobResponse> = client.unary(
+  override suspend fun readBlob(request: Easylab.ReadBlobRequest, headers: Headers): ResponseMessage<Easylab.ReadBlobResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/ReadBlob",
-      com.easylab.v1.ReadBlobRequest::class,
-      com.easylab.v1.ReadBlobResponse::class,
+      easylab.v1.Easylab.ReadBlobRequest::class,
+      easylab.v1.Easylab.ReadBlobResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun writeBlob(request: WriteBlobRequest, headers: Headers): ResponseMessage<WriteBlobResponse> = client.unary(
+  override suspend fun writeBlob(request: Easylab.WriteBlobRequest, headers: Headers): ResponseMessage<Easylab.WriteBlobResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/WriteBlob",
-      com.easylab.v1.WriteBlobRequest::class,
-      com.easylab.v1.WriteBlobResponse::class,
+      easylab.v1.Easylab.WriteBlobRequest::class,
+      easylab.v1.Easylab.WriteBlobResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun log(request: LogRequest, headers: Headers): ResponseMessage<LogResponse> = client.unary(
+  override suspend fun log(request: Easylab.LogRequest, headers: Headers): ResponseMessage<Easylab.LogResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Log",
-      com.easylab.v1.LogRequest::class,
-      com.easylab.v1.LogResponse::class,
+      easylab.v1.Easylab.LogRequest::class,
+      easylab.v1.Easylab.LogResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun tags(request: TagsRequest, headers: Headers): ResponseMessage<TagsResponse> = client.unary(
+  override suspend fun tags(request: Easylab.TagsRequest, headers: Headers): ResponseMessage<Easylab.TagsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Tags",
-      com.easylab.v1.TagsRequest::class,
-      com.easylab.v1.TagsResponse::class,
+      easylab.v1.Easylab.TagsRequest::class,
+      easylab.v1.Easylab.TagsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun branches(request: BranchesRequest, headers: Headers): ResponseMessage<BranchesResponse> = client.unary(
+  override suspend fun branches(request: Easylab.BranchesRequest, headers: Headers): ResponseMessage<Easylab.BranchesResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Branches",
-      com.easylab.v1.BranchesRequest::class,
-      com.easylab.v1.BranchesResponse::class,
+      easylab.v1.Easylab.BranchesRequest::class,
+      easylab.v1.Easylab.BranchesResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun revisions(request: RevisionsRequest, headers: Headers): ResponseMessage<RevisionsResponse> = client.unary(
+  override suspend fun revisions(request: Easylab.RevisionsRequest, headers: Headers): ResponseMessage<Easylab.RevisionsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Revisions",
-      com.easylab.v1.RevisionsRequest::class,
-      com.easylab.v1.RevisionsResponse::class,
+      easylab.v1.Easylab.RevisionsRequest::class,
+      easylab.v1.Easylab.RevisionsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun diff(request: DiffRequest, headers: Headers): ResponseMessage<DiffResponse> = client.unary(
+  override suspend fun diff(request: Easylab.DiffRequest, headers: Headers): ResponseMessage<Easylab.DiffResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Diff",
-      com.easylab.v1.DiffRequest::class,
-      com.easylab.v1.DiffResponse::class,
+      easylab.v1.Easylab.DiffRequest::class,
+      easylab.v1.Easylab.DiffResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun blame(request: BlameRequest, headers: Headers): ResponseMessage<BlameResponse> = client.unary(
+  override suspend fun blame(request: Easylab.BlameRequest, headers: Headers): ResponseMessage<Easylab.BlameResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Blame",
-      com.easylab.v1.BlameRequest::class,
-      com.easylab.v1.BlameResponse::class,
+      easylab.v1.Easylab.BlameRequest::class,
+      easylab.v1.Easylab.BlameResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteBranch(request: DeleteBranchRequest, headers: Headers): ResponseMessage<DeleteBranchResponse> = client.unary(
+  override suspend fun deleteBranch(request: Easylab.DeleteBranchRequest, headers: Headers): ResponseMessage<Easylab.DeleteBranchResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/DeleteBranch",
-      com.easylab.v1.DeleteBranchRequest::class,
-      com.easylab.v1.DeleteBranchResponse::class,
+      easylab.v1.Easylab.DeleteBranchRequest::class,
+      easylab.v1.Easylab.DeleteBranchResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun createBranch(request: CreateBranchRequest, headers: Headers): ResponseMessage<CreateBranchResponse> = client.unary(
+  override suspend fun createBranch(request: Easylab.CreateBranchRequest, headers: Headers): ResponseMessage<Easylab.CreateBranchResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/CreateBranch",
-      com.easylab.v1.CreateBranchRequest::class,
-      com.easylab.v1.CreateBranchResponse::class,
+      easylab.v1.Easylab.CreateBranchRequest::class,
+      easylab.v1.Easylab.CreateBranchResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileHistory(request: FileHistoryRequest, headers: Headers): ResponseMessage<FileHistoryResponse> = client.unary(
+  override suspend fun fileHistory(request: Easylab.FileHistoryRequest, headers: Headers): ResponseMessage<Easylab.FileHistoryResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/FileHistory",
-      com.easylab.v1.FileHistoryRequest::class,
-      com.easylab.v1.FileHistoryResponse::class,
+      easylab.v1.Easylab.FileHistoryRequest::class,
+      easylab.v1.Easylab.FileHistoryResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun search(request: SearchRequest, headers: Headers): ResponseMessage<SearchResponse> = client.unary(
+  override suspend fun search(request: Easylab.SearchRequest, headers: Headers): ResponseMessage<Easylab.SearchResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Search",
-      com.easylab.v1.SearchRequest::class,
-      com.easylab.v1.SearchResponse::class,
+      easylab.v1.Easylab.SearchRequest::class,
+      easylab.v1.Easylab.SearchResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun graph(request: GraphRequest, headers: Headers): ResponseMessage<GraphResponse> = client.unary(
+  override suspend fun graph(request: Easylab.GraphRequest, headers: Headers): ResponseMessage<Easylab.GraphResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Graph",
-      com.easylab.v1.GraphRequest::class,
-      com.easylab.v1.GraphResponse::class,
+      easylab.v1.Easylab.GraphRequest::class,
+      easylab.v1.Easylab.GraphResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun compare(request: CompareRequest, headers: Headers): ResponseMessage<CompareResponse> = client.unary(
+  override suspend fun compare(request: Easylab.CompareRequest, headers: Headers): ResponseMessage<Easylab.CompareResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Compare",
-      com.easylab.v1.CompareRequest::class,
-      com.easylab.v1.CompareResponse::class,
+      easylab.v1.Easylab.CompareRequest::class,
+      easylab.v1.Easylab.CompareResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun rebase(request: RebaseRequest, headers: Headers): ResponseMessage<RebaseResponse> = client.unary(
+  override suspend fun rebase(request: Easylab.RebaseRequest, headers: Headers): ResponseMessage<Easylab.RebaseResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.LabService/Rebase",
-      com.easylab.v1.RebaseRequest::class,
-      com.easylab.v1.RebaseResponse::class,
+      easylab.v1.Easylab.RebaseRequest::class,
+      easylab.v1.Easylab.RebaseResponse::class,
       StreamType.UNARY,
     ),
   )

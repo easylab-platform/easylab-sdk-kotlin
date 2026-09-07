@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistNamespacesResponse")
-public inline fun listNamespacesResponse(block: com.easylab.v1.ListNamespacesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListNamespacesResponse =
-  com.easylab.v1.ListNamespacesResponseKt.Dsl._create(com.easylab.v1.ListNamespacesResponse.newBuilder()).apply { block() }._build()
+public inline fun listNamespacesResponse(block: easylab.v1.ListNamespacesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListNamespacesResponse =
+  easylab.v1.ListNamespacesResponseKt.Dsl._create(easylab.v1.Easylab.ListNamespacesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListNamespacesResponse`
  */
@@ -17,17 +17,17 @@ public object ListNamespacesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.ListNamespacesResponse.Builder
+    private val _builder: easylab.v1.Easylab.ListNamespacesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.ListNamespacesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.ListNamespacesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.ListNamespacesResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.ListNamespacesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListNamespacesResponseKt {
     /**
      * `repeated .easylab.v1.NamespaceInfo namespaces = 1 [json_name = "namespaces"];`
      */
-     public val namespaces: com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>
+     public val namespaces: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.namespacesList
@@ -49,7 +49,7 @@ public object ListNamespacesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addNamespaces")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>.add(value: com.easylab.v1.NamespaceInfo) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>.add(value: easylab.v1.Easylab.NamespaceInfo) {
       _builder.addNamespaces(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListNamespacesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignNamespaces")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>.plusAssign(value: com.easylab.v1.NamespaceInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>.plusAssign(value: easylab.v1.Easylab.NamespaceInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListNamespacesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllNamespaces")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.NamespaceInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.NamespaceInfo>) {
       _builder.addAllNamespaces(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListNamespacesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllNamespaces")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.NamespaceInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.NamespaceInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListNamespacesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setNamespaces")
-    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>.set(index: kotlin.Int, value: com.easylab.v1.NamespaceInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.NamespaceInfo) {
       _builder.setNamespaces(index, value)
     }
     /**
@@ -96,11 +96,12 @@ public object ListNamespacesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearNamespaces")
-    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.NamespaceInfo, NamespacesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.NamespaceInfo, NamespacesProxy>.clear() {
       _builder.clearNamespaces()
     }
   }
 }
-public inline fun com.easylab.v1.ListNamespacesResponse.copy(block: `com.easylab.v1`.ListNamespacesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListNamespacesResponse =
-  `com.easylab.v1`.ListNamespacesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.ListNamespacesResponse.copy(block: `easylab.v1`.ListNamespacesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListNamespacesResponse =
+  `easylab.v1`.ListNamespacesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

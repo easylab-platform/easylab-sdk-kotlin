@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.agent.v1;
+package agent.v1;
 
 @kotlin.jvm.JvmName("-initializetestProviderRequest")
-public inline fun testProviderRequest(block: com.agent.v1.TestProviderRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.TestProviderRequest =
-  com.agent.v1.TestProviderRequestKt.Dsl._create(com.agent.v1.TestProviderRequest.newBuilder()).apply { block() }._build()
+public inline fun testProviderRequest(block: agent.v1.TestProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.TestProviderRequest =
+  agent.v1.TestProviderRequestKt.Dsl._create(agent.v1.Agent.TestProviderRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.TestProviderRequest`
  */
@@ -17,17 +17,17 @@ public object TestProviderRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.agent.v1.TestProviderRequest.Builder
+    private val _builder: agent.v1.Agent.TestProviderRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.agent.v1.TestProviderRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.TestProviderRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.agent.v1.TestProviderRequest = _builder.build()
+    internal fun _build(): agent.v1.Agent.TestProviderRequest = _builder.build()
 
     /**
      * `string provider_id = 1 [json_name = "providerId"];`
@@ -115,6 +115,7 @@ public object TestProviderRequestKt {
     }
   }
 }
-public inline fun com.agent.v1.TestProviderRequest.copy(block: `com.agent.v1`.TestProviderRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.TestProviderRequest =
-  `com.agent.v1`.TestProviderRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun agent.v1.Agent.TestProviderRequest.copy(block: `agent.v1`.TestProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.TestProviderRequest =
+  `agent.v1`.TestProviderRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

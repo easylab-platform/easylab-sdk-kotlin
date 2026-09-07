@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeensureOrgResponse")
-public inline fun ensureOrgResponse(block: com.easylab.v1.EnsureOrgResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureOrgResponse =
-  com.easylab.v1.EnsureOrgResponseKt.Dsl._create(com.easylab.v1.EnsureOrgResponse.newBuilder()).apply { block() }._build()
+public inline fun ensureOrgResponse(block: easylab.v1.EnsureOrgResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureOrgResponse =
+  easylab.v1.EnsureOrgResponseKt.Dsl._create(easylab.v1.Easylab.EnsureOrgResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.EnsureOrgResponse`
  */
@@ -17,17 +17,17 @@ public object EnsureOrgResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.EnsureOrgResponse.Builder
+    private val _builder: easylab.v1.Easylab.EnsureOrgResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.EnsureOrgResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.EnsureOrgResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.EnsureOrgResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.EnsureOrgResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,7 @@ public object EnsureOrgResponseKt {
     }
   }
 }
-public inline fun com.easylab.v1.EnsureOrgResponse.copy(block: `com.easylab.v1`.EnsureOrgResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureOrgResponse =
-  `com.easylab.v1`.EnsureOrgResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.EnsureOrgResponse.copy(block: `easylab.v1`.EnsureOrgResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureOrgResponse =
+  `easylab.v1`.EnsureOrgResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

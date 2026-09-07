@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.easylab.v1;
+package easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetTaskResponse")
-public inline fun getTaskResponse(block: com.easylab.v1.GetTaskResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetTaskResponse =
-  com.easylab.v1.GetTaskResponseKt.Dsl._create(com.easylab.v1.GetTaskResponse.newBuilder()).apply { block() }._build()
+public inline fun getTaskResponse(block: easylab.v1.GetTaskResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskResponse =
+  easylab.v1.GetTaskResponseKt.Dsl._create(easylab.v1.Easylab.GetTaskResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetTaskResponse`
  */
@@ -17,22 +17,22 @@ public object GetTaskResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.easylab.v1.GetTaskResponse.Builder
+    private val _builder: easylab.v1.Easylab.GetTaskResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: com.easylab.v1.GetTaskResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.GetTaskResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): com.easylab.v1.GetTaskResponse = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.GetTaskResponse = _builder.build()
 
     /**
      * `.easylab.v1.TaskEntry task = 1 [json_name = "task"];`
      */
-    public var task: com.easylab.v1.TaskEntry
+    public var task: easylab.v1.Easylab.TaskEntry
       @kotlin.jvm.JvmName("getTask")
         get() = _builder.task
       @kotlin.jvm.JvmName("setTask")
@@ -53,13 +53,14 @@ public object GetTaskResponseKt {
       return _builder.hasTask()
     }
 
-    public val GetTaskResponseKt.Dsl.taskOrNull: com.easylab.v1.TaskEntry?
+    public val GetTaskResponseKt.Dsl.taskOrNull: easylab.v1.Easylab.TaskEntry?
       get() = _builder.taskOrNull
   }
 }
-public inline fun com.easylab.v1.GetTaskResponse.copy(block: `com.easylab.v1`.GetTaskResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetTaskResponse =
-  `com.easylab.v1`.GetTaskResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmSynthetic
+public inline fun easylab.v1.Easylab.GetTaskResponse.copy(block: `easylab.v1`.GetTaskResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskResponse =
+  `easylab.v1`.GetTaskResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.easylab.v1.GetTaskResponseOrBuilder.taskOrNull: com.easylab.v1.TaskEntry?
+public val easylab.v1.Easylab.GetTaskResponseOrBuilder.taskOrNull: easylab.v1.Easylab.TaskEntry?
   get() = if (hasTask()) getTask() else null
 
