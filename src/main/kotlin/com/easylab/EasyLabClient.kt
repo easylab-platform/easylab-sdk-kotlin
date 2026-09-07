@@ -10,8 +10,8 @@
 //   val repos = client.lab.listRepos(ListReposRequest()) // suspend
 package com.easylab
 
-import com.connectrpc.ProtocolClient
 import com.connectrpc.ProtocolClientConfig
+import com.connectrpc.impl.ProtocolClient
 import com.connectrpc.extensions.GoogleJavaLiteProtobufStrategy
 import com.connectrpc.http.clone
 import com.connectrpc.Interceptor
