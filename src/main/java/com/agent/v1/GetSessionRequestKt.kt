@@ -47,7 +47,6 @@ public object GetSessionRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetSessionRequest.copy(block: `agent.v1`.GetSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetSessionRequest =
   `agent.v1`.GetSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

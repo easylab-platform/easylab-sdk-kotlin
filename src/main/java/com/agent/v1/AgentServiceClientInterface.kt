@@ -86,9 +86,5 @@ public interface AgentServiceClientInterface {
 
   public suspend fun getFileMeta(request: Agent.GetFileMetaRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetFileMetaResponse>
 
-  public suspend fun listWorksheets(request: Agent.ListWorksheetsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ListWorksheetsResponse>
-
-  public suspend fun decideWorksheet(request: Agent.DecideWorksheetRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DecideWorksheetResponse>
-
   public suspend fun getAgentConfig(request: Agent.GetAgentConfigRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.GetAgentConfigResponse>
 }

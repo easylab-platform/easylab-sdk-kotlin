@@ -135,7 +135,6 @@ public object PromptRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.PromptRequest.copy(block: `agent.v1`.PromptRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PromptRequest =
   `agent.v1`.PromptRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

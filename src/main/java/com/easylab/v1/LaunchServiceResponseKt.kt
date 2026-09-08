@@ -98,7 +98,6 @@ public object LaunchServiceResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.LaunchServiceResponse.copy(block: `easylab.v1`.LaunchServiceResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.LaunchServiceResponse =
   `easylab.v1`.LaunchServiceResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

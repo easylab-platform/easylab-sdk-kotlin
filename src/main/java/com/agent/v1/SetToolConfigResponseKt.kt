@@ -47,7 +47,6 @@ public object SetToolConfigResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.SetToolConfigResponse.copy(block: `agent.v1`.SetToolConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetToolConfigResponse =
   `agent.v1`.SetToolConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

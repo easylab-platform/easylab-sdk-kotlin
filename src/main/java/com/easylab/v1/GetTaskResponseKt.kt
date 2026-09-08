@@ -57,7 +57,6 @@ public object GetTaskResponseKt {
       get() = _builder.taskOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.GetTaskResponse.copy(block: `easylab.v1`.GetTaskResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskResponse =
   `easylab.v1`.GetTaskResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

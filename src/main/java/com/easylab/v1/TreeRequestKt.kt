@@ -98,7 +98,6 @@ public object TreeRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.TreeRequest.copy(block: `easylab.v1`.TreeRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TreeRequest =
   `easylab.v1`.TreeRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

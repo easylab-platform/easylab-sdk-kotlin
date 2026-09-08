@@ -91,7 +91,6 @@ public object SetExtensionConfigRequestKt {
       get() = _builder.valueOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.SetExtensionConfigRequest.copy(block: `agent.v1`.SetExtensionConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetExtensionConfigRequest =
   `agent.v1`.SetExtensionConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

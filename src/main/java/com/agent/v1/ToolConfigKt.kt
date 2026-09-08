@@ -95,7 +95,6 @@ public object ToolConfigKt {
        }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ToolConfig.copy(block: `agent.v1`.ToolConfigKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolConfig =
   `agent.v1`.ToolConfigKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

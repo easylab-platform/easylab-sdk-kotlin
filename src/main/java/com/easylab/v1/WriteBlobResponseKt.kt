@@ -64,7 +64,6 @@ public object WriteBlobResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.WriteBlobResponse.copy(block: `easylab.v1`.WriteBlobResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.WriteBlobResponse =
   `easylab.v1`.WriteBlobResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

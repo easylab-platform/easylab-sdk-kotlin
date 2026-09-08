@@ -47,7 +47,6 @@ public object RegisterProviderResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.RegisterProviderResponse.copy(block: `agent.v1`.RegisterProviderResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.RegisterProviderResponse =
   `agent.v1`.RegisterProviderResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

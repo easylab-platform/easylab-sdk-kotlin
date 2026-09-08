@@ -47,7 +47,6 @@ public object CompactRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.CompactRequest.copy(block: `agent.v1`.CompactRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CompactRequest =
   `agent.v1`.CompactRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

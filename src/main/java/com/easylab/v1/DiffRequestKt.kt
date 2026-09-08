@@ -132,7 +132,6 @@ public object DiffRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DiffRequest.copy(block: `easylab.v1`.DiffRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffRequest =
   `easylab.v1`.DiffRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

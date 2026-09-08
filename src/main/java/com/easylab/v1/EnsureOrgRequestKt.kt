@@ -47,7 +47,6 @@ public object EnsureOrgRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.EnsureOrgRequest.copy(block: `easylab.v1`.EnsureOrgRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureOrgRequest =
   `easylab.v1`.EnsureOrgRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

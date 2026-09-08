@@ -64,7 +64,6 @@ public object DeleteRepoResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DeleteRepoResponse.copy(block: `easylab.v1`.DeleteRepoResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteRepoResponse =
   `easylab.v1`.DeleteRepoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -101,7 +101,6 @@ public object DiffResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DiffResponse.copy(block: `easylab.v1`.DiffResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffResponse =
   `easylab.v1`.DiffResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

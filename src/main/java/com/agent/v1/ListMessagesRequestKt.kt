@@ -81,7 +81,6 @@ public object ListMessagesRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ListMessagesRequest.copy(block: `agent.v1`.ListMessagesRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesRequest =
   `agent.v1`.ListMessagesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

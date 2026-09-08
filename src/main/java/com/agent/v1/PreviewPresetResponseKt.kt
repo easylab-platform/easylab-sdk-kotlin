@@ -64,7 +64,6 @@ public object PreviewPresetResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.PreviewPresetResponse.copy(block: `agent.v1`.PreviewPresetResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PreviewPresetResponse =
   `agent.v1`.PreviewPresetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

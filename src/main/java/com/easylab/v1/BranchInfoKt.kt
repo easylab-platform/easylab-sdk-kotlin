@@ -64,7 +64,6 @@ public object BranchInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.BranchInfo.copy(block: `easylab.v1`.BranchInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BranchInfo =
   `easylab.v1`.BranchInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

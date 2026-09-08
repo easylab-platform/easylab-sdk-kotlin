@@ -52,7 +52,6 @@ public object WatchSessionRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.WatchSessionRequest.copy(block: `agent.v1`.WatchSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionRequest =
   `agent.v1`.WatchSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

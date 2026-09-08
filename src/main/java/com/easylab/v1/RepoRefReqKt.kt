@@ -64,7 +64,6 @@ public object RepoRefReqKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.RepoRefReq.copy(block: `easylab.v1`.RepoRefReqKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RepoRefReq =
   `easylab.v1`.RepoRefReqKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

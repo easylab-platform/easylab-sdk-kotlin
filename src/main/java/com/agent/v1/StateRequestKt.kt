@@ -47,7 +47,6 @@ public object StateRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.StateRequest.copy(block: `agent.v1`.StateRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.StateRequest =
   `agent.v1`.StateRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -47,7 +47,6 @@ public object GetServiceRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.GetServiceRequest.copy(block: `easylab.v1`.GetServiceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetServiceRequest =
   `easylab.v1`.GetServiceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

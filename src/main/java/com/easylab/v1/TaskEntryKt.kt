@@ -132,7 +132,6 @@ public object TaskEntryKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.TaskEntry.copy(block: `easylab.v1`.TaskEntryKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TaskEntry =
   `easylab.v1`.TaskEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

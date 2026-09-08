@@ -315,7 +315,6 @@ public object ServiceInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ServiceInfo.copy(block: `easylab.v1`.ServiceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServiceInfo =
   `easylab.v1`.ServiceInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

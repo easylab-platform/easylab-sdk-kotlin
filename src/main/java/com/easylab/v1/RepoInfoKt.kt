@@ -159,7 +159,6 @@ public object RepoInfoKt {
        }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.RepoInfo.copy(block: `easylab.v1`.RepoInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RepoInfo =
   `easylab.v1`.RepoInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

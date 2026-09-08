@@ -64,7 +64,6 @@ public object CreateSessionResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.CreateSessionResponse.copy(block: `agent.v1`.CreateSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CreateSessionResponse =
   `agent.v1`.CreateSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

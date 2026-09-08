@@ -47,7 +47,6 @@ public object GetTaskRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.GetTaskRequest.copy(block: `easylab.v1`.GetTaskRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskRequest =
   `easylab.v1`.GetTaskRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

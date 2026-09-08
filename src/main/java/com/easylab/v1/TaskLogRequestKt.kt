@@ -47,7 +47,6 @@ public object TaskLogRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.TaskLogRequest.copy(block: `easylab.v1`.TaskLogRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TaskLogRequest =
   `easylab.v1`.TaskLogRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -64,7 +64,6 @@ public object HealthResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.HealthResponse.copy(block: `agent.v1`.HealthResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.HealthResponse =
   `agent.v1`.HealthResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

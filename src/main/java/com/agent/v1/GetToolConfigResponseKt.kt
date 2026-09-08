@@ -57,7 +57,6 @@ public object GetToolConfigResponseKt {
       get() = _builder.configOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetToolConfigResponse.copy(block: `agent.v1`.GetToolConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetToolConfigResponse =
   `agent.v1`.GetToolConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

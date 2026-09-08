@@ -119,7 +119,6 @@ public object PartKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.Part.copy(block: `agent.v1`.PartKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Part =
   `agent.v1`.PartKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

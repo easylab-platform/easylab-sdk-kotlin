@@ -98,7 +98,6 @@ public object ForkRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ForkRequest.copy(block: `agent.v1`.ForkRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ForkRequest =
   `agent.v1`.ForkRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

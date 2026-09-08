@@ -98,7 +98,6 @@ public object ListServicesRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListServicesRequest.copy(block: `easylab.v1`.ListServicesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListServicesRequest =
   `easylab.v1`.ListServicesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

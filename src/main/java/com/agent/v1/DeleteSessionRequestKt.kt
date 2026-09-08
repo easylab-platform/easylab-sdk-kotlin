@@ -47,7 +47,6 @@ public object DeleteSessionRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.DeleteSessionRequest.copy(block: `agent.v1`.DeleteSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteSessionRequest =
   `agent.v1`.DeleteSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

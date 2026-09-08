@@ -101,7 +101,6 @@ public object FileHistoryResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.FileHistoryResponse.copy(block: `easylab.v1`.FileHistoryResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileHistoryResponse =
   `easylab.v1`.FileHistoryResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

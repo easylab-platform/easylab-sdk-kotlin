@@ -68,7 +68,6 @@ public object PortSpecKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.PortSpec.copy(block: `easylab.v1`.PortSpecKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PortSpec =
   `easylab.v1`.PortSpecKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

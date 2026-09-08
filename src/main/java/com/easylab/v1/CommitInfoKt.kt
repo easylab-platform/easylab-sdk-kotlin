@@ -115,7 +115,6 @@ public object CommitInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.CommitInfo.copy(block: `easylab.v1`.CommitInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CommitInfo =
   `easylab.v1`.CommitInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

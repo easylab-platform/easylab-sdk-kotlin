@@ -64,7 +64,6 @@ public object CreateBranchResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.CreateBranchResponse.copy(block: `easylab.v1`.CreateBranchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateBranchResponse =
   `easylab.v1`.CreateBranchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

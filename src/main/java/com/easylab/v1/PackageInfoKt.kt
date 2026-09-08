@@ -135,7 +135,6 @@ public object PackageInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.PackageInfo.copy(block: `easylab.v1`.PackageInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageInfo =
   `easylab.v1`.PackageInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

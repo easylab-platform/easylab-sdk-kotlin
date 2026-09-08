@@ -57,7 +57,6 @@ public object ForkResponseKt {
       get() = _builder.sessionOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ForkResponse.copy(block: `agent.v1`.ForkResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ForkResponse =
   `agent.v1`.ForkResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

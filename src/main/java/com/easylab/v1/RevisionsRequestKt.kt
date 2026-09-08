@@ -98,7 +98,6 @@ public object RevisionsRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.RevisionsRequest.copy(block: `easylab.v1`.RevisionsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionsRequest =
   `easylab.v1`.RevisionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

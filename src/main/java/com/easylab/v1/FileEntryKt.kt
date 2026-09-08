@@ -106,7 +106,6 @@ public object FileEntryKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.FileEntry.copy(block: `easylab.v1`.FileEntryKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileEntry =
   `easylab.v1`.FileEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

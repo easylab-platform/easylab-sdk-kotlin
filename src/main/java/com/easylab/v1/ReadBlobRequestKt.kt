@@ -98,7 +98,6 @@ public object ReadBlobRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ReadBlobRequest.copy(block: `easylab.v1`.ReadBlobRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReadBlobRequest =
   `easylab.v1`.ReadBlobRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

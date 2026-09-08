@@ -47,7 +47,6 @@ public object ListToolsRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ListToolsRequest.copy(block: `agent.v1`.ListToolsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListToolsRequest =
   `agent.v1`.ListToolsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

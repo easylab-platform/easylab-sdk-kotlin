@@ -98,7 +98,6 @@ public object CompareRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.CompareRequest.copy(block: `easylab.v1`.CompareRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CompareRequest =
   `easylab.v1`.CompareRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -98,7 +98,6 @@ public object SearchRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SearchRequest.copy(block: `easylab.v1`.SearchRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SearchRequest =
   `easylab.v1`.SearchRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

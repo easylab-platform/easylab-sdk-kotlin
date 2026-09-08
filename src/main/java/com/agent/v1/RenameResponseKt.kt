@@ -57,7 +57,6 @@ public object RenameResponseKt {
       get() = _builder.sessionOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.RenameResponse.copy(block: `agent.v1`.RenameResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.RenameResponse =
   `agent.v1`.RenameResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

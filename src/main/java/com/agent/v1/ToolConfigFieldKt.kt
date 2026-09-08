@@ -199,7 +199,6 @@ public object ToolConfigFieldKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ToolConfigField.copy(block: `agent.v1`.ToolConfigFieldKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolConfigField =
   `agent.v1`.ToolConfigFieldKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

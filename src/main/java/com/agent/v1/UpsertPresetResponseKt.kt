@@ -47,7 +47,6 @@ public object UpsertPresetResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.UpsertPresetResponse.copy(block: `agent.v1`.UpsertPresetResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpsertPresetResponse =
   `agent.v1`.UpsertPresetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

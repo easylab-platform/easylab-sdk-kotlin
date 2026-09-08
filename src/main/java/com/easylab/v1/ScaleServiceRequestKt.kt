@@ -64,7 +64,6 @@ public object ScaleServiceRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ScaleServiceRequest.copy(block: `easylab.v1`.ScaleServiceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ScaleServiceRequest =
   `easylab.v1`.ScaleServiceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

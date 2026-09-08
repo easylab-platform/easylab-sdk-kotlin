@@ -30,7 +30,6 @@ public object GetToolConfigRequestKt {
     internal fun _build(): agent.v1.Agent.GetToolConfigRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetToolConfigRequest.copy(block: `agent.v1`.GetToolConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetToolConfigRequest =
   `agent.v1`.GetToolConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

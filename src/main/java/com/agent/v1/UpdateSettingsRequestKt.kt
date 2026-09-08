@@ -132,7 +132,6 @@ public object UpdateSettingsRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.UpdateSettingsRequest.copy(block: `agent.v1`.UpdateSettingsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpdateSettingsRequest =
   `agent.v1`.UpdateSettingsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

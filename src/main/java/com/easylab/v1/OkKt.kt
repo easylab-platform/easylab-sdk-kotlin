@@ -64,7 +64,6 @@ public object OkKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.Ok.copy(block: `easylab.v1`.OkKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Ok =
   `easylab.v1`.OkKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

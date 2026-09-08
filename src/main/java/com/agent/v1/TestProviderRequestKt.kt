@@ -115,7 +115,6 @@ public object TestProviderRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.TestProviderRequest.copy(block: `agent.v1`.TestProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.TestProviderRequest =
   `agent.v1`.TestProviderRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

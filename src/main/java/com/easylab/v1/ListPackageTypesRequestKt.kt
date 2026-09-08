@@ -30,7 +30,6 @@ public object ListPackageTypesRequestKt {
     internal fun _build(): easylab.v1.Easylab.ListPackageTypesRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListPackageTypesRequest.copy(block: `easylab.v1`.ListPackageTypesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPackageTypesRequest =
   `easylab.v1`.ListPackageTypesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

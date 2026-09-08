@@ -64,7 +64,6 @@ public object CreateRepoResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.CreateRepoResponse.copy(block: `easylab.v1`.CreateRepoResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateRepoResponse =
   `easylab.v1`.CreateRepoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

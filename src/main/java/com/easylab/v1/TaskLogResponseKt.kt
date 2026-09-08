@@ -72,7 +72,6 @@ public object TaskLogResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.TaskLogResponse.copy(block: `easylab.v1`.TaskLogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TaskLogResponse =
   `easylab.v1`.TaskLogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

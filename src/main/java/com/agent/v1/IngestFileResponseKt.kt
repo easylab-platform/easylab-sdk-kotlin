@@ -64,7 +64,6 @@ public object IngestFileResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.IngestFileResponse.copy(block: `agent.v1`.IngestFileResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.IngestFileResponse =
   `agent.v1`.IngestFileResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

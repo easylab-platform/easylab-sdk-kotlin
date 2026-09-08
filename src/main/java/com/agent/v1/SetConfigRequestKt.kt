@@ -64,7 +64,6 @@ public object SetConfigRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.SetConfigRequest.copy(block: `agent.v1`.SetConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetConfigRequest =
   `agent.v1`.SetConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

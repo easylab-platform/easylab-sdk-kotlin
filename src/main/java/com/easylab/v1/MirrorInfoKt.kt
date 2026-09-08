@@ -81,7 +81,6 @@ public object MirrorInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.MirrorInfo.copy(block: `easylab.v1`.MirrorInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.MirrorInfo =
   `easylab.v1`.MirrorInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

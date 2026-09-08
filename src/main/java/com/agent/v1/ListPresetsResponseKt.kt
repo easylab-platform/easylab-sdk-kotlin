@@ -101,7 +101,6 @@ public object ListPresetsResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ListPresetsResponse.copy(block: `agent.v1`.ListPresetsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListPresetsResponse =
   `agent.v1`.ListPresetsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

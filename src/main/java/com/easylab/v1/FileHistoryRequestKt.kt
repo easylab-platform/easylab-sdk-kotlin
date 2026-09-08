@@ -98,7 +98,6 @@ public object FileHistoryRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.FileHistoryRequest.copy(block: `easylab.v1`.FileHistoryRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileHistoryRequest =
   `easylab.v1`.FileHistoryRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -57,7 +57,6 @@ public object SetToolConfigRequestKt {
       get() = _builder.configOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.SetToolConfigRequest.copy(block: `agent.v1`.SetToolConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetToolConfigRequest =
   `agent.v1`.SetToolConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

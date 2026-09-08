@@ -101,7 +101,6 @@ public object TagsResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.TagsResponse.copy(block: `easylab.v1`.TagsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TagsResponse =
   `easylab.v1`.TagsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

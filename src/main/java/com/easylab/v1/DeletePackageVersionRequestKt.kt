@@ -81,7 +81,6 @@ public object DeletePackageVersionRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DeletePackageVersionRequest.copy(block: `easylab.v1`.DeletePackageVersionRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeletePackageVersionRequest =
   `easylab.v1`.DeletePackageVersionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

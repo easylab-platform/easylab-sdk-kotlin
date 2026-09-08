@@ -64,7 +64,6 @@ public object UndoRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.UndoRequest.copy(block: `agent.v1`.UndoRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UndoRequest =
   `agent.v1`.UndoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

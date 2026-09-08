@@ -30,7 +30,6 @@ public object ListReposRequestKt {
     internal fun _build(): easylab.v1.Easylab.ListReposRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListReposRequest.copy(block: `easylab.v1`.ListReposRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReposRequest =
   `easylab.v1`.ListReposRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

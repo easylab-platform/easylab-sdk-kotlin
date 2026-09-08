@@ -64,7 +64,6 @@ public object TagInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.TagInfo.copy(block: `easylab.v1`.TagInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TagInfo =
   `easylab.v1`.TagInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -81,7 +81,6 @@ public object SandboxWriteRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SandboxWriteRequest.copy(block: `easylab.v1`.SandboxWriteRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxWriteRequest =
   `easylab.v1`.SandboxWriteRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

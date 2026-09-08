@@ -64,7 +64,6 @@ public object GetConfigResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetConfigResponse.copy(block: `agent.v1`.GetConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetConfigResponse =
   `agent.v1`.GetConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

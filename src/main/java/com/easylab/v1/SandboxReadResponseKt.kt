@@ -64,7 +64,6 @@ public object SandboxReadResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SandboxReadResponse.copy(block: `easylab.v1`.SandboxReadResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxReadResponse =
   `easylab.v1`.SandboxReadResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -98,7 +98,6 @@ public object CloneRepoRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.CloneRepoRequest.copy(block: `easylab.v1`.CloneRepoRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CloneRepoRequest =
   `easylab.v1`.CloneRepoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

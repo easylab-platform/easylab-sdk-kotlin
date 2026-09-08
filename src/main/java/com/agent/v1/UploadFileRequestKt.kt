@@ -74,7 +74,6 @@ public object UploadFileRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.UploadFileRequest.copy(block: `agent.v1`.UploadFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UploadFileRequest =
   `agent.v1`.UploadFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

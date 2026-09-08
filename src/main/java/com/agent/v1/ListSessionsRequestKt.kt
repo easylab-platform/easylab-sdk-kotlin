@@ -30,7 +30,6 @@ public object ListSessionsRequestKt {
     internal fun _build(): agent.v1.Agent.ListSessionsRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ListSessionsRequest.copy(block: `agent.v1`.ListSessionsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListSessionsRequest =
   `agent.v1`.ListSessionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

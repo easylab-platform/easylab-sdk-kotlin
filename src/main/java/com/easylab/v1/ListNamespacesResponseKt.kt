@@ -101,7 +101,6 @@ public object ListNamespacesResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListNamespacesResponse.copy(block: `easylab.v1`.ListNamespacesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListNamespacesResponse =
   `easylab.v1`.ListNamespacesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -47,7 +47,6 @@ public object DeleteServiceRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DeleteServiceRequest.copy(block: `easylab.v1`.DeleteServiceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteServiceRequest =
   `easylab.v1`.DeleteServiceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

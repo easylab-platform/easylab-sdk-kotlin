@@ -81,7 +81,6 @@ public object PackageTypeEntryKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.PackageTypeEntry.copy(block: `easylab.v1`.PackageTypeEntryKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageTypeEntry =
   `easylab.v1`.PackageTypeEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

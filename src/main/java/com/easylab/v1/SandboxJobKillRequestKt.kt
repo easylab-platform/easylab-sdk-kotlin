@@ -64,7 +64,6 @@ public object SandboxJobKillRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SandboxJobKillRequest.copy(block: `easylab.v1`.SandboxJobKillRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxJobKillRequest =
   `easylab.v1`.SandboxJobKillRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

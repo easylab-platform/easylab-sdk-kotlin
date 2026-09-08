@@ -100,7 +100,6 @@ public object BlameResponseKt {
       _builder.clearLines()
     }}
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.BlameResponse.copy(block: `easylab.v1`.BlameResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BlameResponse =
   `easylab.v1`.BlameResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

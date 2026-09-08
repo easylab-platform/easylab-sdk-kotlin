@@ -149,7 +149,6 @@ public object WriteBlobRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.WriteBlobRequest.copy(block: `easylab.v1`.WriteBlobRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.WriteBlobRequest =
   `easylab.v1`.WriteBlobRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

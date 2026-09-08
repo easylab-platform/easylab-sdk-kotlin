@@ -30,7 +30,6 @@ public object OpsStatusRequestKt {
     internal fun _build(): easylab.v1.Easylab.OpsStatusRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.OpsStatusRequest.copy(block: `easylab.v1`.OpsStatusRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OpsStatusRequest =
   `easylab.v1`.OpsStatusRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

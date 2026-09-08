@@ -101,7 +101,6 @@ public object ListPublishSpecsResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListPublishSpecsResponse.copy(block: `easylab.v1`.ListPublishSpecsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPublishSpecsResponse =
   `easylab.v1`.ListPublishSpecsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

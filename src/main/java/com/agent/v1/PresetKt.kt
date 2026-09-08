@@ -189,7 +189,6 @@ public object PresetKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.Preset.copy(block: `agent.v1`.PresetKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Preset =
   `agent.v1`.PresetKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

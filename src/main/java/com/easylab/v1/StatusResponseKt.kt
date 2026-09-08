@@ -98,7 +98,6 @@ public object StatusResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.StatusResponse.copy(block: `easylab.v1`.StatusResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.StatusResponse =
   `easylab.v1`.StatusResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

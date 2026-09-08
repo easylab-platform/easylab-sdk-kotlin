@@ -132,7 +132,6 @@ public object ListPackagesRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListPackagesRequest.copy(block: `easylab.v1`.ListPackagesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPackagesRequest =
   `easylab.v1`.ListPackagesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

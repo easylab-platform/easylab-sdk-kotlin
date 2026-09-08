@@ -100,7 +100,6 @@ public object SearchResponseKt {
       _builder.clearMatches()
     }}
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SearchResponse.copy(block: `easylab.v1`.SearchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SearchResponse =
   `easylab.v1`.SearchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

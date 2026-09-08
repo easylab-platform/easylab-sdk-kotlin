@@ -57,7 +57,6 @@ public object RegisterProviderRequestKt {
       get() = _builder.providerOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.RegisterProviderRequest.copy(block: `agent.v1`.RegisterProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.RegisterProviderRequest =
   `agent.v1`.RegisterProviderRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

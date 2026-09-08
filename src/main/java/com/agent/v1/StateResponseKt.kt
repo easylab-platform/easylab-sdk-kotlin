@@ -57,7 +57,6 @@ public object StateResponseKt {
       get() = _builder.stateOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.StateResponse.copy(block: `agent.v1`.StateResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.StateResponse =
   `agent.v1`.StateResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

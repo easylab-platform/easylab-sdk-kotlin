@@ -30,7 +30,6 @@ public object ListPresetsRequestKt {
     internal fun _build(): agent.v1.Agent.ListPresetsRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ListPresetsRequest.copy(block: `agent.v1`.ListPresetsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListPresetsRequest =
   `agent.v1`.ListPresetsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

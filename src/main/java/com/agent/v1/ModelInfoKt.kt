@@ -64,7 +64,6 @@ public object ModelInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ModelInfo.copy(block: `agent.v1`.ModelInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelInfo =
   `agent.v1`.ModelInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

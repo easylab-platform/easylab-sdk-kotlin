@@ -57,7 +57,6 @@ public object GetAgentConfigResponseKt {
       get() = _builder.configOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetAgentConfigResponse.copy(block: `agent.v1`.GetAgentConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetAgentConfigResponse =
   `agent.v1`.GetAgentConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

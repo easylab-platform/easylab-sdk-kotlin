@@ -102,7 +102,6 @@ public object FileRefKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.FileRef.copy(block: `agent.v1`.FileRefKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.FileRef =
   `agent.v1`.FileRefKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

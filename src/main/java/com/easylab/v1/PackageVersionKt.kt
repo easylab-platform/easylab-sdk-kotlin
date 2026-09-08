@@ -152,7 +152,6 @@ public object PackageVersionKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.PackageVersion.copy(block: `easylab.v1`.PackageVersionKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageVersion =
   `easylab.v1`.PackageVersionKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

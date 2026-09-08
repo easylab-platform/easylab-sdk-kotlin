@@ -64,7 +64,6 @@ public object ForkRepoResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ForkRepoResponse.copy(block: `easylab.v1`.ForkRepoResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ForkRepoResponse =
   `easylab.v1`.ForkRepoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

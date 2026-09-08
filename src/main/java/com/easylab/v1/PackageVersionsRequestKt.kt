@@ -64,7 +64,6 @@ public object PackageVersionsRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.PackageVersionsRequest.copy(block: `easylab.v1`.PackageVersionsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageVersionsRequest =
   `easylab.v1`.PackageVersionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

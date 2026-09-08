@@ -81,7 +81,6 @@ public object RevisionFileKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.RevisionFile.copy(block: `easylab.v1`.RevisionFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionFile =
   `easylab.v1`.RevisionFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

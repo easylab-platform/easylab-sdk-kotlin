@@ -229,7 +229,6 @@ public object CatalogProviderKt {
        }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.CatalogProvider.copy(block: `agent.v1`.CatalogProviderKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CatalogProvider =
   `agent.v1`.CatalogProviderKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -151,7 +151,6 @@ public object RebaseRequestKt {
       _builder.clearNewParents()
     }}
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.RebaseRequest.copy(block: `easylab.v1`.RebaseRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RebaseRequest =
   `easylab.v1`.RebaseRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

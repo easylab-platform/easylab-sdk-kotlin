@@ -187,7 +187,6 @@ public object MailboxEntryKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.MailboxEntry.copy(block: `agent.v1`.MailboxEntryKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxEntry =
   `agent.v1`.MailboxEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

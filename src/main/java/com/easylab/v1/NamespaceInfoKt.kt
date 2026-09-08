@@ -47,7 +47,6 @@ public object NamespaceInfoKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.NamespaceInfo.copy(block: `easylab.v1`.NamespaceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.NamespaceInfo =
   `easylab.v1`.NamespaceInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

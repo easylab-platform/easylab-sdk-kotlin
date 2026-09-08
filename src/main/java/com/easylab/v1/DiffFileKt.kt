@@ -98,7 +98,6 @@ public object DiffFileKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DiffFile.copy(block: `easylab.v1`.DiffFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DiffFile =
   `easylab.v1`.DiffFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

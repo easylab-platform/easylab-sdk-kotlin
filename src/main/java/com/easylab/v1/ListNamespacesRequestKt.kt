@@ -30,7 +30,6 @@ public object ListNamespacesRequestKt {
     internal fun _build(): easylab.v1.Easylab.ListNamespacesRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListNamespacesRequest.copy(block: `easylab.v1`.ListNamespacesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListNamespacesRequest =
   `easylab.v1`.ListNamespacesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

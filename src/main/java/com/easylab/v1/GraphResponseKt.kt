@@ -101,7 +101,6 @@ public object GraphResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.GraphResponse.copy(block: `easylab.v1`.GraphResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GraphResponse =
   `easylab.v1`.GraphResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

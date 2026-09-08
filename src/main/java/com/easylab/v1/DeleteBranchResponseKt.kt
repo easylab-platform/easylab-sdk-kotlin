@@ -64,7 +64,6 @@ public object DeleteBranchResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.DeleteBranchResponse.copy(block: `easylab.v1`.DeleteBranchResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteBranchResponse =
   `easylab.v1`.DeleteBranchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

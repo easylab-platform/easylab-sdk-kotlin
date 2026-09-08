@@ -47,7 +47,6 @@ public object DeleteSessionResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.DeleteSessionResponse.copy(block: `agent.v1`.DeleteSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteSessionResponse =
   `agent.v1`.DeleteSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -64,7 +64,6 @@ public object EnsureRepoRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.EnsureRepoRequest.copy(block: `easylab.v1`.EnsureRepoRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureRepoRequest =
   `easylab.v1`.EnsureRepoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

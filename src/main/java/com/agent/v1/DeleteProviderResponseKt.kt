@@ -47,7 +47,6 @@ public object DeleteProviderResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.DeleteProviderResponse.copy(block: `agent.v1`.DeleteProviderResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteProviderResponse =
   `agent.v1`.DeleteProviderResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

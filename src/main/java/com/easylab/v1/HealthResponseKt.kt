@@ -64,7 +64,6 @@ public object HealthResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.HealthResponse.copy(block: `easylab.v1`.HealthResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.HealthResponse =
   `easylab.v1`.HealthResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -47,7 +47,6 @@ public object CompactResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.CompactResponse.copy(block: `agent.v1`.CompactResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CompactResponse =
   `agent.v1`.CompactResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

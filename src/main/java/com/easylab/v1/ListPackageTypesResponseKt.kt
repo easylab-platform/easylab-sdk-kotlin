@@ -101,7 +101,6 @@ public object ListPackageTypesResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListPackageTypesResponse.copy(block: `easylab.v1`.ListPackageTypesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPackageTypesResponse =
   `easylab.v1`.ListPackageTypesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

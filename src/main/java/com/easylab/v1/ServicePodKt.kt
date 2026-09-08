@@ -149,7 +149,6 @@ public object ServicePodKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ServicePod.copy(block: `easylab.v1`.ServicePodKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServicePod =
   `easylab.v1`.ServicePodKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

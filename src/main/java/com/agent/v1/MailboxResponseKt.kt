@@ -118,7 +118,6 @@ public object MailboxResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.MailboxResponse.copy(block: `agent.v1`.MailboxResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxResponse =
   `agent.v1`.MailboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

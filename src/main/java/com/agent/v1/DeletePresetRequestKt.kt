@@ -47,7 +47,6 @@ public object DeletePresetRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.DeletePresetRequest.copy(block: `agent.v1`.DeletePresetRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeletePresetRequest =
   `agent.v1`.DeletePresetRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

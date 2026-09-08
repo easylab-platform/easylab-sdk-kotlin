@@ -57,7 +57,6 @@ public object SetModelResponseKt {
       get() = _builder.sessionOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.SetModelResponse.copy(block: `agent.v1`.SetModelResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelResponse =
   `agent.v1`.SetModelResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

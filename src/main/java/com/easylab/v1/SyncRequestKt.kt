@@ -165,7 +165,6 @@ public object SyncRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SyncRequest.copy(block: `easylab.v1`.SyncRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncRequest =
   `easylab.v1`.SyncRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

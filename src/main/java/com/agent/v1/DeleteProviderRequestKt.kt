@@ -47,7 +47,6 @@ public object DeleteProviderRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.DeleteProviderRequest.copy(block: `agent.v1`.DeleteProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DeleteProviderRequest =
   `agent.v1`.DeleteProviderRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

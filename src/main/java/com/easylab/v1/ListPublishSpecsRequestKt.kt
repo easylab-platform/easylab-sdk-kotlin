@@ -30,7 +30,6 @@ public object ListPublishSpecsRequestKt {
     internal fun _build(): easylab.v1.Easylab.ListPublishSpecsRequest = _builder.build()
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.ListPublishSpecsRequest.copy(block: `easylab.v1`.ListPublishSpecsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPublishSpecsRequest =
   `easylab.v1`.ListPublishSpecsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

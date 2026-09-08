@@ -149,7 +149,6 @@ public object BuildRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.BuildRequest.copy(block: `easylab.v1`.BuildRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BuildRequest =
   `easylab.v1`.BuildRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

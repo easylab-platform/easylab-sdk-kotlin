@@ -101,7 +101,6 @@ public object ListToolsResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ListToolsResponse.copy(block: `agent.v1`.ListToolsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListToolsResponse =
   `agent.v1`.ListToolsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

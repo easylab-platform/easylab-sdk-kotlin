@@ -64,7 +64,6 @@ public object InterruptResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.InterruptResponse.copy(block: `agent.v1`.InterruptResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.InterruptResponse =
   `agent.v1`.InterruptResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

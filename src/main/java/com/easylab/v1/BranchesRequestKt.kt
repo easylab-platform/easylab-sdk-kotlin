@@ -64,7 +64,6 @@ public object BranchesRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.BranchesRequest.copy(block: `easylab.v1`.BranchesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BranchesRequest =
   `easylab.v1`.BranchesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

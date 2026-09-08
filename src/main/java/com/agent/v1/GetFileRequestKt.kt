@@ -47,7 +47,6 @@ public object GetFileRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetFileRequest.copy(block: `agent.v1`.GetFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileRequest =
   `agent.v1`.GetFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

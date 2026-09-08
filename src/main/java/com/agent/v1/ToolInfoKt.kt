@@ -253,7 +253,6 @@ public object ToolInfoKt {
       _builder.clearRequiredConfig()
     }}
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.ToolInfo.copy(block: `agent.v1`.ToolInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolInfo =
   `agent.v1`.ToolInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

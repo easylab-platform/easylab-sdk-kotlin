@@ -91,7 +91,6 @@ public object WatchSessionResponseKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.WatchSessionResponse.copy(block: `agent.v1`.WatchSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionResponse =
   `agent.v1`.WatchSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

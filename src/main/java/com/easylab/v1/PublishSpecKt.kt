@@ -187,7 +187,6 @@ public object PublishSpecKt {
       _builder.clearRequired()
     }}
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.PublishSpec.copy(block: `easylab.v1`.PublishSpecKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PublishSpec =
   `easylab.v1`.PublishSpecKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -47,7 +47,6 @@ public object GetFileMetaRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetFileMetaRequest.copy(block: `agent.v1`.GetFileMetaRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileMetaRequest =
   `agent.v1`.GetFileMetaRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

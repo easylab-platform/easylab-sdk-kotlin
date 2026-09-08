@@ -64,7 +64,6 @@ public object SetModelRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.SetModelRequest.copy(block: `agent.v1`.SetModelRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelRequest =
   `agent.v1`.SetModelRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

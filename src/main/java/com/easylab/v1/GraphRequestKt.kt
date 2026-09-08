@@ -81,7 +81,6 @@ public object GraphRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.GraphRequest.copy(block: `easylab.v1`.GraphRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GraphRequest =
   `easylab.v1`.GraphRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

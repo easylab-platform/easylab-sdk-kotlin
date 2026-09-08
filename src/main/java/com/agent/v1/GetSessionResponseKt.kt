@@ -57,7 +57,6 @@ public object GetSessionResponseKt {
       get() = _builder.sessionOrNull
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun agent.v1.Agent.GetSessionResponse.copy(block: `agent.v1`.GetSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetSessionResponse =
   `agent.v1`.GetSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

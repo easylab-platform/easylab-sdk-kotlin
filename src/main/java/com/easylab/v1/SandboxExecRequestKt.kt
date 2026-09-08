@@ -98,7 +98,6 @@ public object SandboxExecRequestKt {
     }
   }
 }
-@kotlin.jvm.JvmSynthetic
 public inline fun easylab.v1.Easylab.SandboxExecRequest.copy(block: `easylab.v1`.SandboxExecRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxExecRequest =
   `easylab.v1`.SandboxExecRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
