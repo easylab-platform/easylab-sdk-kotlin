@@ -11,6 +11,12 @@ package agent.v1;
 public inline fun listModelsRequest(block: agent.v1.ListModelsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListModelsRequest =
   agent.v1.ListModelsRequestKt.Dsl._create(agent.v1.Agent.ListModelsRequest.newBuilder()).apply { block() }._build()
 /**
+ * ```
+ * ListModels returns the models of ONE provider. provider_id is required: the
+ * server rejects an empty value (InvalidArgument) so a global flat model list
+ * — which would surface duplicate ids across providers — is never produced.
+ * ```
+ *
  * Protobuf type `agent.v1.ListModelsRequest`
  */
 public object ListModelsRequestKt {
@@ -28,6 +34,23 @@ public object ListModelsRequestKt {
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
     internal fun _build(): agent.v1.Agent.ListModelsRequest = _builder.build()
+
+    /**
+     * `string provider_id = 1 [json_name = "providerId"];`
+     */
+    public var providerId: kotlin.String
+      @kotlin.jvm.JvmName("getProviderId")
+        get() = _builder.providerId
+      @kotlin.jvm.JvmName("setProviderId")
+        set(value) {
+        _builder.providerId = value
+      }
+    /**
+     * `string provider_id = 1 [json_name = "providerId"];`
+     */
+    public fun clearProviderId() {
+      _builder.clearProviderId()
+    }
   }
 }
 public inline fun agent.v1.Agent.ListModelsRequest.copy(block: `agent.v1`.ListModelsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListModelsRequest =

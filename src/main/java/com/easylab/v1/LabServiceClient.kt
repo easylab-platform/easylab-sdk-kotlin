@@ -315,4 +315,112 @@ public class LabServiceClient(
     ),
   )
 
+
+  /**
+   *  ---- Lab additions (REST removals) ----
+   */
+  override suspend fun deleteOrg(request: Easylab.DeleteOrgRequest, headers: Headers): ResponseMessage<Easylab.DeleteOrgResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/DeleteOrg",
+      easylab.v1.Easylab.DeleteOrgRequest::class,
+      easylab.v1.Easylab.DeleteOrgResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  /**
+   *  Releases (backed by the generic artifact registry; format "generic").
+   */
+  override suspend fun listReleases(request: Easylab.ListReleasesRequest, headers: Headers): ResponseMessage<Easylab.ListReleasesResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/ListReleases",
+      easylab.v1.Easylab.ListReleasesRequest::class,
+      easylab.v1.Easylab.ListReleasesResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun downloadReleaseAsset(request: Easylab.DownloadReleaseAssetRequest, headers: Headers): ResponseMessage<Easylab.DownloadReleaseAssetResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/DownloadReleaseAsset",
+      easylab.v1.Easylab.DownloadReleaseAssetRequest::class,
+      easylab.v1.Easylab.DownloadReleaseAssetResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  /**
+   *  Source archive tarball for a rev/tag.
+   */
+  override suspend fun archive(request: Easylab.ArchiveRequest, headers: Headers): ResponseMessage<Easylab.ArchiveResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/Archive",
+      easylab.v1.Easylab.ArchiveRequest::class,
+      easylab.v1.Easylab.ArchiveResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  /**
+   *  Mirror (persistent push/pull mirrors on a repo).
+   */
+  override suspend fun getMirror(request: Easylab.GetMirrorRequest, headers: Headers): ResponseMessage<Easylab.GetMirrorResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/GetMirror",
+      easylab.v1.Easylab.GetMirrorRequest::class,
+      easylab.v1.Easylab.GetMirrorResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun setMirror(request: Easylab.SetMirrorRequest, headers: Headers): ResponseMessage<Easylab.SetMirrorResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/SetMirror",
+      easylab.v1.Easylab.SetMirrorRequest::class,
+      easylab.v1.Easylab.SetMirrorResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun deleteMirror(request: Easylab.DeleteMirrorRequest, headers: Headers): ResponseMessage<Easylab.DeleteMirrorResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/DeleteMirror",
+      easylab.v1.Easylab.DeleteMirrorRequest::class,
+      easylab.v1.Easylab.DeleteMirrorResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun syncMirror(request: Easylab.SyncMirrorRequest, headers: Headers): ResponseMessage<Easylab.SyncMirrorResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/SyncMirror",
+      easylab.v1.Easylab.SyncMirrorRequest::class,
+      easylab.v1.Easylab.SyncMirrorResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
 }

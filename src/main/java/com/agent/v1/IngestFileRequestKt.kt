@@ -30,6 +30,10 @@ public object IngestFileRequestKt {
     internal fun _build(): agent.v1.Agent.IngestFileRequest = _builder.build()
 
     /**
+     * ```
+     * optional; empty => server mints one
+     * ```
+     *
      * `string code = 1 [json_name = "code"];`
      */
     public var code: kotlin.String
@@ -40,6 +44,10 @@ public object IngestFileRequestKt {
         _builder.code = value
       }
     /**
+     * ```
+     * optional; empty => server mints one
+     * ```
+     *
      * `string code = 1 [json_name = "code"];`
      */
     public fun clearCode() {
@@ -47,9 +55,9 @@ public object IngestFileRequestKt {
     }
 
     /**
-     * `string data = 2 [json_name = "data"];`
+     * `bytes data = 2 [json_name = "data"];`
      */
-    public var data: kotlin.String
+    public var data: com.google.protobuf.ByteString
       @kotlin.jvm.JvmName("getData")
         get() = _builder.data
       @kotlin.jvm.JvmName("setData")
@@ -57,7 +65,7 @@ public object IngestFileRequestKt {
         _builder.data = value
       }
     /**
-     * `string data = 2 [json_name = "data"];`
+     * `bytes data = 2 [json_name = "data"];`
      */
     public fun clearData() {
       _builder.clearData()

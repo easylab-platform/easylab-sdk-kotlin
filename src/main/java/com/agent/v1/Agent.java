@@ -27336,8 +27336,26 @@ com.google.protobuf.Value defaultValue) {
   public interface ListModelsRequestOrBuilder extends
       // @@protoc_insertion_point(interface_extends:agent.v1.ListModelsRequest)
       com.google.protobuf.MessageLiteOrBuilder {
+
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The providerId.
+     */
+    java.lang.String getProviderId();
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The bytes for providerId.
+     */
+    com.google.protobuf.ByteString
+        getProviderIdBytes();
   }
   /**
+   * <pre>
+   * ListModels returns the models of ONE provider. provider_id is required: the
+   * server rejects an empty value (InvalidArgument) so a global flat model list
+   * — which would surface duplicate ids across providers — is never produced.
+   * </pre>
+   *
    * Protobuf type {@code agent.v1.ListModelsRequest}
    */
   public  static final class ListModelsRequest extends
@@ -27346,7 +27364,55 @@ com.google.protobuf.Value defaultValue) {
       // @@protoc_insertion_point(message_implements:agent.v1.ListModelsRequest)
       ListModelsRequestOrBuilder {
     private ListModelsRequest() {
+      providerId_ = "";
     }
+    public static final int PROVIDER_ID_FIELD_NUMBER = 1;
+    private java.lang.String providerId_;
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The providerId.
+     */
+    @java.lang.Override
+    public java.lang.String getProviderId() {
+      return providerId_;
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The bytes for providerId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getProviderIdBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(providerId_);
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @param value The providerId to set.
+     */
+    private void setProviderId(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      providerId_ = value;
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     */
+    private void clearProviderId() {
+
+      providerId_ = getDefaultInstance().getProviderId();
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @param value The bytes for providerId to set.
+     */
+    private void setProviderIdBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      providerId_ = value.toStringUtf8();
+
+    }
+
     public static agent.v1.Agent.ListModelsRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -27431,6 +27497,12 @@ com.google.protobuf.Value defaultValue) {
     }
 
     /**
+     * <pre>
+     * ListModels returns the models of ONE provider. provider_id is required: the
+     * server rejects an empty value (InvalidArgument) so a global flat model list
+     * — which would surface duplicate ids across providers — is never produced.
+     * </pre>
+     *
      * Protobuf type {@code agent.v1.ListModelsRequest}
      */
     public static final class Builder extends
@@ -27443,6 +27515,55 @@ com.google.protobuf.Value defaultValue) {
         super(DEFAULT_INSTANCE);
       }
 
+
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @return The providerId.
+       */
+      @java.lang.Override
+      public java.lang.String getProviderId() {
+        return instance.getProviderId();
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @return The bytes for providerId.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getProviderIdBytes() {
+        return instance.getProviderIdBytes();
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @param value The providerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProviderId(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setProviderId(value);
+        return this;
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProviderId() {
+        copyOnWrite();
+        instance.clearProviderId();
+        return this;
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @param value The bytes for providerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProviderIdBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setProviderIdBytes(value);
+        return this;
+      }
 
       // @@protoc_insertion_point(builder_scope:agent.v1.ListModelsRequest)
     }
@@ -27459,9 +27580,11 @@ com.google.protobuf.Value defaultValue) {
           return new Builder();
         }
         case BUILD_MESSAGE_INFO: {
-            java.lang.Object[] objects = null;
+            java.lang.Object[] objects = new java.lang.Object[] {
+              "providerId_",
+            };
             java.lang.String info =
-                "\u0000\u0000";
+                "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -28321,8 +28444,26 @@ com.google.protobuf.Value defaultValue) {
   public interface ListPresetsRequestOrBuilder extends
       // @@protoc_insertion_point(interface_extends:agent.v1.ListPresetsRequest)
       com.google.protobuf.MessageLiteOrBuilder {
+
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     * @return The locale.
+     */
+    java.lang.String getLocale();
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     * @return The bytes for locale.
+     */
+    com.google.protobuf.ByteString
+        getLocaleBytes();
   }
   /**
+   * <pre>
+   * ListPresets lists presets. When locale is set (e.g. "zh"), each preset's
+   * system_prompt is resolved from its i18n map for that locale, falling back
+   * to the default prompt.
+   * </pre>
+   *
    * Protobuf type {@code agent.v1.ListPresetsRequest}
    */
   public  static final class ListPresetsRequest extends
@@ -28331,7 +28472,55 @@ com.google.protobuf.Value defaultValue) {
       // @@protoc_insertion_point(message_implements:agent.v1.ListPresetsRequest)
       ListPresetsRequestOrBuilder {
     private ListPresetsRequest() {
+      locale_ = "";
     }
+    public static final int LOCALE_FIELD_NUMBER = 1;
+    private java.lang.String locale_;
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     * @return The locale.
+     */
+    @java.lang.Override
+    public java.lang.String getLocale() {
+      return locale_;
+    }
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     * @return The bytes for locale.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getLocaleBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(locale_);
+    }
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     * @param value The locale to set.
+     */
+    private void setLocale(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      locale_ = value;
+    }
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     */
+    private void clearLocale() {
+
+      locale_ = getDefaultInstance().getLocale();
+    }
+    /**
+     * <code>string locale = 1 [json_name = "locale"];</code>
+     * @param value The bytes for locale to set.
+     */
+    private void setLocaleBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      locale_ = value.toStringUtf8();
+
+    }
+
     public static agent.v1.Agent.ListPresetsRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -28416,6 +28605,12 @@ com.google.protobuf.Value defaultValue) {
     }
 
     /**
+     * <pre>
+     * ListPresets lists presets. When locale is set (e.g. "zh"), each preset's
+     * system_prompt is resolved from its i18n map for that locale, falling back
+     * to the default prompt.
+     * </pre>
+     *
      * Protobuf type {@code agent.v1.ListPresetsRequest}
      */
     public static final class Builder extends
@@ -28428,6 +28623,55 @@ com.google.protobuf.Value defaultValue) {
         super(DEFAULT_INSTANCE);
       }
 
+
+      /**
+       * <code>string locale = 1 [json_name = "locale"];</code>
+       * @return The locale.
+       */
+      @java.lang.Override
+      public java.lang.String getLocale() {
+        return instance.getLocale();
+      }
+      /**
+       * <code>string locale = 1 [json_name = "locale"];</code>
+       * @return The bytes for locale.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getLocaleBytes() {
+        return instance.getLocaleBytes();
+      }
+      /**
+       * <code>string locale = 1 [json_name = "locale"];</code>
+       * @param value The locale to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLocale(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setLocale(value);
+        return this;
+      }
+      /**
+       * <code>string locale = 1 [json_name = "locale"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLocale() {
+        copyOnWrite();
+        instance.clearLocale();
+        return this;
+      }
+      /**
+       * <code>string locale = 1 [json_name = "locale"];</code>
+       * @param value The bytes for locale to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLocaleBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setLocaleBytes(value);
+        return this;
+      }
 
       // @@protoc_insertion_point(builder_scope:agent.v1.ListPresetsRequest)
     }
@@ -28444,9 +28688,11 @@ com.google.protobuf.Value defaultValue) {
           return new Builder();
         }
         case BUILD_MESSAGE_INFO: {
-            java.lang.Object[] objects = null;
+            java.lang.Object[] objects = new java.lang.Object[] {
+              "locale_",
+            };
             java.lang.String info =
-                "\u0000\u0000";
+                "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -35247,11 +35493,19 @@ com.google.protobuf.Value defaultValue) {
       com.google.protobuf.MessageLiteOrBuilder {
 
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      * @return The code.
      */
     java.lang.String getCode();
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      * @return The bytes for code.
      */
@@ -35259,16 +35513,10 @@ com.google.protobuf.Value defaultValue) {
         getCodeBytes();
 
     /**
-     * <code>string data = 2 [json_name = "data"];</code>
+     * <code>bytes data = 2 [json_name = "data"];</code>
      * @return The data.
      */
-    java.lang.String getData();
-    /**
-     * <code>string data = 2 [json_name = "data"];</code>
-     * @return The bytes for data.
-     */
-    com.google.protobuf.ByteString
-        getDataBytes();
+    com.google.protobuf.ByteString getData();
 
     /**
      * <code>string name = 3 [json_name = "name"];</code>
@@ -35304,13 +35552,17 @@ com.google.protobuf.Value defaultValue) {
       IngestFileRequestOrBuilder {
     private IngestFileRequest() {
       code_ = "";
-      data_ = "";
+      data_ = com.google.protobuf.ByteString.EMPTY;
       name_ = "";
       mime_ = "";
     }
     public static final int CODE_FIELD_NUMBER = 1;
     private java.lang.String code_;
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      * @return The code.
      */
@@ -35319,6 +35571,10 @@ com.google.protobuf.Value defaultValue) {
       return code_;
     }
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      * @return The bytes for code.
      */
@@ -35328,6 +35584,10 @@ com.google.protobuf.Value defaultValue) {
       return com.google.protobuf.ByteString.copyFromUtf8(code_);
     }
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      * @param value The code to set.
      */
@@ -35338,6 +35598,10 @@ com.google.protobuf.Value defaultValue) {
       code_ = value;
     }
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      */
     private void clearCode() {
@@ -35345,6 +35609,10 @@ com.google.protobuf.Value defaultValue) {
       code_ = getDefaultInstance().getCode();
     }
     /**
+     * <pre>
+     * optional; empty =&gt; server mints one
+     * </pre>
+     *
      * <code>string code = 1 [json_name = "code"];</code>
      * @param value The bytes for code to set.
      */
@@ -35356,50 +35624,30 @@ com.google.protobuf.Value defaultValue) {
     }
 
     public static final int DATA_FIELD_NUMBER = 2;
-    private java.lang.String data_;
+    private com.google.protobuf.ByteString data_;
     /**
-     * <code>string data = 2 [json_name = "data"];</code>
+     * <code>bytes data = 2 [json_name = "data"];</code>
      * @return The data.
      */
     @java.lang.Override
-    public java.lang.String getData() {
+    public com.google.protobuf.ByteString getData() {
       return data_;
     }
     /**
-     * <code>string data = 2 [json_name = "data"];</code>
-     * @return The bytes for data.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDataBytes() {
-      return com.google.protobuf.ByteString.copyFromUtf8(data_);
-    }
-    /**
-     * <code>string data = 2 [json_name = "data"];</code>
+     * <code>bytes data = 2 [json_name = "data"];</code>
      * @param value The data to set.
      */
-    private void setData(
-        java.lang.String value) {
+    private void setData(com.google.protobuf.ByteString value) {
       java.util.Objects.requireNonNull(value);
-
+  
       data_ = value;
     }
     /**
-     * <code>string data = 2 [json_name = "data"];</code>
+     * <code>bytes data = 2 [json_name = "data"];</code>
      */
     private void clearData() {
 
       data_ = getDefaultInstance().getData();
-    }
-    /**
-     * <code>string data = 2 [json_name = "data"];</code>
-     * @param value The bytes for data to set.
-     */
-    private void setDataBytes(
-        com.google.protobuf.ByteString value) {
-      checkByteStringIsUtf8(value);
-      data_ = value.toStringUtf8();
-
     }
 
     public static final int NAME_FIELD_NUMBER = 3;
@@ -35594,6 +35842,10 @@ com.google.protobuf.Value defaultValue) {
 
 
       /**
+       * <pre>
+       * optional; empty =&gt; server mints one
+       * </pre>
+       *
        * <code>string code = 1 [json_name = "code"];</code>
        * @return The code.
        */
@@ -35602,6 +35854,10 @@ com.google.protobuf.Value defaultValue) {
         return instance.getCode();
       }
       /**
+       * <pre>
+       * optional; empty =&gt; server mints one
+       * </pre>
+       *
        * <code>string code = 1 [json_name = "code"];</code>
        * @return The bytes for code.
        */
@@ -35611,6 +35867,10 @@ com.google.protobuf.Value defaultValue) {
         return instance.getCodeBytes();
       }
       /**
+       * <pre>
+       * optional; empty =&gt; server mints one
+       * </pre>
+       *
        * <code>string code = 1 [json_name = "code"];</code>
        * @param value The code to set.
        * @return This builder for chaining.
@@ -35622,6 +35882,10 @@ com.google.protobuf.Value defaultValue) {
         return this;
       }
       /**
+       * <pre>
+       * optional; empty =&gt; server mints one
+       * </pre>
+       *
        * <code>string code = 1 [json_name = "code"];</code>
        * @return This builder for chaining.
        */
@@ -35631,6 +35895,10 @@ com.google.protobuf.Value defaultValue) {
         return this;
       }
       /**
+       * <pre>
+       * optional; empty =&gt; server mints one
+       * </pre>
+       *
        * <code>string code = 1 [json_name = "code"];</code>
        * @param value The bytes for code to set.
        * @return This builder for chaining.
@@ -35643,51 +35911,30 @@ com.google.protobuf.Value defaultValue) {
       }
 
       /**
-       * <code>string data = 2 [json_name = "data"];</code>
+       * <code>bytes data = 2 [json_name = "data"];</code>
        * @return The data.
        */
       @java.lang.Override
-      public java.lang.String getData() {
+      public com.google.protobuf.ByteString getData() {
         return instance.getData();
       }
       /**
-       * <code>string data = 2 [json_name = "data"];</code>
-       * @return The bytes for data.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getDataBytes() {
-        return instance.getDataBytes();
-      }
-      /**
-       * <code>string data = 2 [json_name = "data"];</code>
+       * <code>bytes data = 2 [json_name = "data"];</code>
        * @param value The data to set.
        * @return This builder for chaining.
        */
-      public Builder setData(
-          java.lang.String value) {
+      public Builder setData(com.google.protobuf.ByteString value) {
         copyOnWrite();
         instance.setData(value);
         return this;
       }
       /**
-       * <code>string data = 2 [json_name = "data"];</code>
+       * <code>bytes data = 2 [json_name = "data"];</code>
        * @return This builder for chaining.
        */
       public Builder clearData() {
         copyOnWrite();
         instance.clearData();
-        return this;
-      }
-      /**
-       * <code>string data = 2 [json_name = "data"];</code>
-       * @param value The bytes for data to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataBytes(
-          com.google.protobuf.ByteString value) {
-        copyOnWrite();
-        instance.setDataBytes(value);
         return this;
       }
 
@@ -35811,7 +36058,7 @@ com.google.protobuf.Value defaultValue) {
               "mime_",
             };
             java.lang.String info =
-                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u0208\u0002\n" +
                 "\u0003\u0208\u0004\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
@@ -36522,16 +36769,10 @@ com.google.protobuf.Value defaultValue) {
       com.google.protobuf.MessageLiteOrBuilder {
 
     /**
-     * <code>string data = 1 [json_name = "data"];</code>
+     * <code>bytes data = 1 [json_name = "data"];</code>
      * @return The data.
      */
-    java.lang.String getData();
-    /**
-     * <code>string data = 1 [json_name = "data"];</code>
-     * @return The bytes for data.
-     */
-    com.google.protobuf.ByteString
-        getDataBytes();
+    com.google.protobuf.ByteString getData();
 
     /**
      * <code>string name = 2 [json_name = "name"];</code>
@@ -36566,55 +36807,35 @@ com.google.protobuf.Value defaultValue) {
       // @@protoc_insertion_point(message_implements:agent.v1.GetFileResponse)
       GetFileResponseOrBuilder {
     private GetFileResponse() {
-      data_ = "";
+      data_ = com.google.protobuf.ByteString.EMPTY;
       name_ = "";
       mime_ = "";
     }
     public static final int DATA_FIELD_NUMBER = 1;
-    private java.lang.String data_;
+    private com.google.protobuf.ByteString data_;
     /**
-     * <code>string data = 1 [json_name = "data"];</code>
+     * <code>bytes data = 1 [json_name = "data"];</code>
      * @return The data.
      */
     @java.lang.Override
-    public java.lang.String getData() {
+    public com.google.protobuf.ByteString getData() {
       return data_;
     }
     /**
-     * <code>string data = 1 [json_name = "data"];</code>
-     * @return The bytes for data.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDataBytes() {
-      return com.google.protobuf.ByteString.copyFromUtf8(data_);
-    }
-    /**
-     * <code>string data = 1 [json_name = "data"];</code>
+     * <code>bytes data = 1 [json_name = "data"];</code>
      * @param value The data to set.
      */
-    private void setData(
-        java.lang.String value) {
+    private void setData(com.google.protobuf.ByteString value) {
       java.util.Objects.requireNonNull(value);
-
+  
       data_ = value;
     }
     /**
-     * <code>string data = 1 [json_name = "data"];</code>
+     * <code>bytes data = 1 [json_name = "data"];</code>
      */
     private void clearData() {
 
       data_ = getDefaultInstance().getData();
-    }
-    /**
-     * <code>string data = 1 [json_name = "data"];</code>
-     * @param value The bytes for data to set.
-     */
-    private void setDataBytes(
-        com.google.protobuf.ByteString value) {
-      checkByteStringIsUtf8(value);
-      data_ = value.toStringUtf8();
-
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
@@ -36809,51 +37030,30 @@ com.google.protobuf.Value defaultValue) {
 
 
       /**
-       * <code>string data = 1 [json_name = "data"];</code>
+       * <code>bytes data = 1 [json_name = "data"];</code>
        * @return The data.
        */
       @java.lang.Override
-      public java.lang.String getData() {
+      public com.google.protobuf.ByteString getData() {
         return instance.getData();
       }
       /**
-       * <code>string data = 1 [json_name = "data"];</code>
-       * @return The bytes for data.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getDataBytes() {
-        return instance.getDataBytes();
-      }
-      /**
-       * <code>string data = 1 [json_name = "data"];</code>
+       * <code>bytes data = 1 [json_name = "data"];</code>
        * @param value The data to set.
        * @return This builder for chaining.
        */
-      public Builder setData(
-          java.lang.String value) {
+      public Builder setData(com.google.protobuf.ByteString value) {
         copyOnWrite();
         instance.setData(value);
         return this;
       }
       /**
-       * <code>string data = 1 [json_name = "data"];</code>
+       * <code>bytes data = 1 [json_name = "data"];</code>
        * @return This builder for chaining.
        */
       public Builder clearData() {
         copyOnWrite();
         instance.clearData();
-        return this;
-      }
-      /**
-       * <code>string data = 1 [json_name = "data"];</code>
-       * @param value The bytes for data to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataBytes(
-          com.google.protobuf.ByteString value) {
-        copyOnWrite();
-        instance.setDataBytes(value);
         return this;
       }
 
@@ -36976,7 +37176,7 @@ com.google.protobuf.Value defaultValue) {
               "mime_",
             };
             java.lang.String info =
-                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\n\u0002\u0208" +
                 "\u0003\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }

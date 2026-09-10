@@ -87,4 +87,16 @@ public class RegistryServiceClient(
     ),
   )
 
+
+  override suspend fun oCICatalog(request: Easylab.OCICatalogRequest, headers: Headers): ResponseMessage<Easylab.OCICatalogResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.RegistryService/OCICatalog",
+      easylab.v1.Easylab.OCICatalogRequest::class,
+      easylab.v1.Easylab.OCICatalogResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
 }

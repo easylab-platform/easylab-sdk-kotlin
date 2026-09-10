@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.easylab"
-version = "0.1.0"
+version = "0.2.0"
 
 repositories {
     mavenCentral()
@@ -40,7 +40,7 @@ publishing {
             from(components["java"])
             groupId = "com.easylab"
             artifactId = "easylab-sdk"
-            version = "0.1.0"
+            version = "0.2.0"
         }
     }
 }

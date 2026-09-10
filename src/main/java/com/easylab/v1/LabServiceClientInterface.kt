@@ -60,4 +60,32 @@ public interface LabServiceClientInterface {
   public suspend fun compare(request: Easylab.CompareRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CompareResponse>
 
   public suspend fun rebase(request: Easylab.RebaseRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RebaseResponse>
+
+  /**
+   *  ---- Lab additions (REST removals) ----
+   */
+  public suspend fun deleteOrg(request: Easylab.DeleteOrgRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteOrgResponse>
+
+  /**
+   *  Releases (backed by the generic artifact registry; format "generic").
+   */
+  public suspend fun listReleases(request: Easylab.ListReleasesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListReleasesResponse>
+
+  public suspend fun downloadReleaseAsset(request: Easylab.DownloadReleaseAssetRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DownloadReleaseAssetResponse>
+
+  /**
+   *  Source archive tarball for a rev/tag.
+   */
+  public suspend fun archive(request: Easylab.ArchiveRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ArchiveResponse>
+
+  /**
+   *  Mirror (persistent push/pull mirrors on a repo).
+   */
+  public suspend fun getMirror(request: Easylab.GetMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetMirrorResponse>
+
+  public suspend fun setMirror(request: Easylab.SetMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SetMirrorResponse>
+
+  public suspend fun deleteMirror(request: Easylab.DeleteMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteMirrorResponse>
+
+  public suspend fun syncMirror(request: Easylab.SyncMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SyncMirrorResponse>
 }

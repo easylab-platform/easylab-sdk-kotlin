@@ -11,6 +11,12 @@ package agent.v1;
 public inline fun listPresetsRequest(block: agent.v1.ListPresetsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListPresetsRequest =
   agent.v1.ListPresetsRequestKt.Dsl._create(agent.v1.Agent.ListPresetsRequest.newBuilder()).apply { block() }._build()
 /**
+ * ```
+ * ListPresets lists presets. When locale is set (e.g. "zh"), each preset's
+ * system_prompt is resolved from its i18n map for that locale, falling back
+ * to the default prompt.
+ * ```
+ *
  * Protobuf type `agent.v1.ListPresetsRequest`
  */
 public object ListPresetsRequestKt {
@@ -28,6 +34,23 @@ public object ListPresetsRequestKt {
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
     internal fun _build(): agent.v1.Agent.ListPresetsRequest = _builder.build()
+
+    /**
+     * `string locale = 1 [json_name = "locale"];`
+     */
+    public var locale: kotlin.String
+      @kotlin.jvm.JvmName("getLocale")
+        get() = _builder.locale
+      @kotlin.jvm.JvmName("setLocale")
+        set(value) {
+        _builder.locale = value
+      }
+    /**
+     * `string locale = 1 [json_name = "locale"];`
+     */
+    public fun clearLocale() {
+      _builder.clearLocale()
+    }
   }
 }
 public inline fun agent.v1.Agent.ListPresetsRequest.copy(block: `agent.v1`.ListPresetsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListPresetsRequest =

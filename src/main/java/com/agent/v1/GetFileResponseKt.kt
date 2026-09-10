@@ -30,9 +30,9 @@ public object GetFileResponseKt {
     internal fun _build(): agent.v1.Agent.GetFileResponse = _builder.build()
 
     /**
-     * `string data = 1 [json_name = "data"];`
+     * `bytes data = 1 [json_name = "data"];`
      */
-    public var data: kotlin.String
+    public var data: com.google.protobuf.ByteString
       @kotlin.jvm.JvmName("getData")
         get() = _builder.data
       @kotlin.jvm.JvmName("setData")
@@ -40,7 +40,7 @@ public object GetFileResponseKt {
         _builder.data = value
       }
     /**
-     * `string data = 1 [json_name = "data"];`
+     * `bytes data = 1 [json_name = "data"];`
      */
     public fun clearData() {
       _builder.clearData()

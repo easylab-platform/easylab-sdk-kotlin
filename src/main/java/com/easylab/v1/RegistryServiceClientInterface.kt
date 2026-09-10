@@ -22,4 +22,6 @@ public interface RegistryServiceClientInterface {
   public suspend fun deletePackageVersion(request: Easylab.DeletePackageVersionRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeletePackageVersionResponse>
 
   public suspend fun listPublishSpecs(request: Easylab.ListPublishSpecsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListPublishSpecsResponse>
+
+  public suspend fun oCICatalog(request: Easylab.OCICatalogRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.OCICatalogResponse>
 }

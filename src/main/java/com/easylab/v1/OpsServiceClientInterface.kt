@@ -38,8 +38,6 @@ public interface OpsServiceClientInterface {
 
   public suspend fun getTask(request: Easylab.GetTaskRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetTaskResponse>
 
-  public suspend fun build(request: Easylab.BuildRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.BuildResponse>
-
   public suspend fun taskLog(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Easylab.TaskLogRequest, Easylab.TaskLogResponse>
 
   public suspend fun sync(request: Easylab.SyncRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SyncResponse>

@@ -173,18 +173,6 @@ public class OpsServiceClient(
   )
 
 
-  override suspend fun build(request: Easylab.BuildRequest, headers: Headers): ResponseMessage<Easylab.BuildResponse> = client.unary(
-    request,
-    headers,
-    MethodSpec(
-    "easylab.v1.OpsService/Build",
-      easylab.v1.Easylab.BuildRequest::class,
-      easylab.v1.Easylab.BuildResponse::class,
-      StreamType.UNARY,
-    ),
-  )
-
-
   override suspend fun taskLog(headers: Headers): ServerOnlyStreamInterface<Easylab.TaskLogRequest, Easylab.TaskLogResponse> = client.serverStream(
     headers,
     MethodSpec(
