@@ -70,6 +70,11 @@ public object ProviderModelKt {
     }
 
     /**
+     * ```
+     * Context window (tokens). REQUIRED (> 0) for text models (drives
+     * compaction budgets); ignored for generation models (image/video/speech).
+     * ```
+     *
      * `int64 context_limit = 3 [json_name = "contextLimit"];`
      */
     public var contextLimit: kotlin.Long
@@ -80,10 +85,46 @@ public object ProviderModelKt {
         _builder.contextLimit = value
       }
     /**
+     * ```
+     * Context window (tokens). REQUIRED (> 0) for text models (drives
+     * compaction budgets); ignored for generation models (image/video/speech).
+     * ```
+     *
      * `int64 context_limit = 3 [json_name = "contextLimit"];`
      */
     public fun clearContextLimit() {
       _builder.clearContextLimit()
+    }
+
+    /**
+     * ```
+     * What the model generates: "text" (default, chat/vision), "image",
+     * "video", or "speech". Text models feed sessions; generation models are
+     * resolved by tools (image-generate / image-edit / video-generate /
+     * tts-generate) via the same provider registry.
+     * ```
+     *
+     * `string capability = 4 [json_name = "capability"];`
+     */
+    public var capability: kotlin.String
+      @kotlin.jvm.JvmName("getCapability")
+        get() = _builder.capability
+      @kotlin.jvm.JvmName("setCapability")
+        set(value) {
+        _builder.capability = value
+      }
+    /**
+     * ```
+     * What the model generates: "text" (default, chat/vision), "image",
+     * "video", or "speech". Text models feed sessions; generation models are
+     * resolved by tools (image-generate / image-edit / video-generate /
+     * tts-generate) via the same provider registry.
+     * ```
+     *
+     * `string capability = 4 [json_name = "capability"];`
+     */
+    public fun clearCapability() {
+      _builder.clearCapability()
     }
   }
 }
