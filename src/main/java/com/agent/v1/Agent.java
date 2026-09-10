@@ -28600,6 +28600,28 @@ com.google.protobuf.Value defaultValue) {
      */
     com.google.protobuf.ByteString
         getVariantBytes();
+
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     * @return The capability.
+     */
+    java.lang.String getCapability();
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     * @return The bytes for capability.
+     */
+    com.google.protobuf.ByteString
+        getCapabilityBytes();
   }
   /**
    * Protobuf type {@code agent.v1.TestProviderRequest}
@@ -28616,6 +28638,7 @@ com.google.protobuf.Value defaultValue) {
       apiKey_ = "";
       model_ = "";
       variant_ = "";
+      capability_ = "";
     }
     public static final int PROVIDER_ID_FIELD_NUMBER = 1;
     private java.lang.String providerId_;
@@ -28916,6 +28939,78 @@ com.google.protobuf.Value defaultValue) {
         com.google.protobuf.ByteString value) {
       checkByteStringIsUtf8(value);
       variant_ = value.toStringUtf8();
+
+    }
+
+    public static final int CAPABILITY_FIELD_NUMBER = 7;
+    private java.lang.String capability_;
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     * @return The capability.
+     */
+    @java.lang.Override
+    public java.lang.String getCapability() {
+      return capability_;
+    }
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     * @return The bytes for capability.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getCapabilityBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(capability_);
+    }
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     * @param value The capability to set.
+     */
+    private void setCapability(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      capability_ = value;
+    }
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     */
+    private void clearCapability() {
+
+      capability_ = getDefaultInstance().getCapability();
+    }
+    /**
+     * <pre>
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * </pre>
+     *
+     * <code>string capability = 7 [json_name = "capability"];</code>
+     * @param value The bytes for capability to set.
+     */
+    private void setCapabilityBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      capability_ = value.toStringUtf8();
 
     }
 
@@ -29330,6 +29425,80 @@ com.google.protobuf.Value defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * What the model under test generates: "text" (default). Only text models
+       * are testable today; image/video/speech are rejected with a clear message.
+       * </pre>
+       *
+       * <code>string capability = 7 [json_name = "capability"];</code>
+       * @return The capability.
+       */
+      @java.lang.Override
+      public java.lang.String getCapability() {
+        return instance.getCapability();
+      }
+      /**
+       * <pre>
+       * What the model under test generates: "text" (default). Only text models
+       * are testable today; image/video/speech are rejected with a clear message.
+       * </pre>
+       *
+       * <code>string capability = 7 [json_name = "capability"];</code>
+       * @return The bytes for capability.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getCapabilityBytes() {
+        return instance.getCapabilityBytes();
+      }
+      /**
+       * <pre>
+       * What the model under test generates: "text" (default). Only text models
+       * are testable today; image/video/speech are rejected with a clear message.
+       * </pre>
+       *
+       * <code>string capability = 7 [json_name = "capability"];</code>
+       * @param value The capability to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCapability(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setCapability(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * What the model under test generates: "text" (default). Only text models
+       * are testable today; image/video/speech are rejected with a clear message.
+       * </pre>
+       *
+       * <code>string capability = 7 [json_name = "capability"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCapability() {
+        copyOnWrite();
+        instance.clearCapability();
+        return this;
+      }
+      /**
+       * <pre>
+       * What the model under test generates: "text" (default). Only text models
+       * are testable today; image/video/speech are rejected with a clear message.
+       * </pre>
+       *
+       * <code>string capability = 7 [json_name = "capability"];</code>
+       * @param value The bytes for capability to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCapabilityBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setCapabilityBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.TestProviderRequest)
     }
     @java.lang.Override
@@ -29352,10 +29521,11 @@ com.google.protobuf.Value defaultValue) {
               "apiKey_",
               "model_",
               "variant_",
+              "capability_",
             };
             java.lang.String info =
-                "\u0000\u0006\u0000\u0000\u0001\u0006\u0006\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0208\u0004\u0208\u0005\u0208\u0006\u0208";
+                "\u0000\u0007\u0000\u0000\u0001\u0007\u0007\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208\u0004\u0208\u0005\u0208\u0006\u0208\u0007\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {

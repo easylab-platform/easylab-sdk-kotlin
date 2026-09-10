@@ -138,6 +138,33 @@ public object TestProviderRequestKt {
     public fun clearVariant() {
       _builder.clearVariant()
     }
+
+    /**
+     * ```
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * ```
+     *
+     * `string capability = 7 [json_name = "capability"];`
+     */
+    public var capability: kotlin.String
+      @kotlin.jvm.JvmName("getCapability")
+        get() = _builder.capability
+      @kotlin.jvm.JvmName("setCapability")
+        set(value) {
+        _builder.capability = value
+      }
+    /**
+     * ```
+     * What the model under test generates: "text" (default). Only text models
+     * are testable today; image/video/speech are rejected with a clear message.
+     * ```
+     *
+     * `string capability = 7 [json_name = "capability"];`
+     */
+    public fun clearCapability() {
+      _builder.clearCapability()
+    }
   }
 }
 public inline fun agent.v1.Agent.TestProviderRequest.copy(block: `agent.v1`.TestProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.TestProviderRequest =
