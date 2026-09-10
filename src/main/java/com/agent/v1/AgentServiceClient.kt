@@ -111,6 +111,17 @@ public class AgentServiceClient(
   )
 
 
+  override suspend fun watchSessions(headers: Headers): ServerOnlyStreamInterface<Agent.WatchSessionsRequest, Agent.WatchSessionsResponse> = client.serverStream(
+    headers,
+    MethodSpec(
+    "agent.v1.AgentService/WatchSessions",
+      agent.v1.Agent.WatchSessionsRequest::class,
+      agent.v1.Agent.WatchSessionsResponse::class,
+      StreamType.SERVER,
+    ),
+  )
+
+
   override suspend fun fork(request: Agent.ForkRequest, headers: Headers): ResponseMessage<Agent.ForkResponse> = client.unary(
     request,
     headers,

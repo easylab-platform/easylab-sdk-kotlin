@@ -47,6 +47,10 @@ public object CreateSessionRequestKt {
     }
 
     /**
+     * ```
+     * Canonical model reference "provider_id/model_id".
+     * ```
+     *
      * `string model = 2 [json_name = "model"];`
      */
     public var model: kotlin.String
@@ -57,6 +61,10 @@ public object CreateSessionRequestKt {
         _builder.model = value
       }
     /**
+     * ```
+     * Canonical model reference "provider_id/model_id".
+     * ```
+     *
      * `string model = 2 [json_name = "model"];`
      */
     public fun clearModel() {
@@ -129,6 +137,31 @@ public object CreateSessionRequestKt {
      */
     public fun clearBranch() {
       _builder.clearBranch()
+    }
+
+    /**
+     * ```
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * ```
+     *
+     * `string variant = 7 [json_name = "variant"];`
+     */
+    public var variant: kotlin.String
+      @kotlin.jvm.JvmName("getVariant")
+        get() = _builder.variant
+      @kotlin.jvm.JvmName("setVariant")
+        set(value) {
+        _builder.variant = value
+      }
+    /**
+     * ```
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * ```
+     *
+     * `string variant = 7 [json_name = "variant"];`
+     */
+    public fun clearVariant() {
+      _builder.clearVariant()
     }
   }
 }

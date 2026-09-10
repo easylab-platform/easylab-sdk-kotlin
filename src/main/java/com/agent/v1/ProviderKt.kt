@@ -169,69 +169,70 @@ public object ProviderKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     public class ModelsProxy private constructor() : com.google.protobuf.kotlin.DslProxy()
     /**
-     * `repeated string models = 6 [json_name = "models"];`
-     * @return A list containing the models.
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      */
-    public val models: com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>
-    @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
-      get() = com.google.protobuf.kotlin.DslList(
+     public val models: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>
+      @kotlin.jvm.JvmSynthetic
+  get() = com.google.protobuf.kotlin.DslList(
         _builder.modelsList
       )
     /**
-     * `repeated string models = 6 [json_name = "models"];`
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      * @param value The models to add.
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addModels")
-    public fun com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>.add(value: kotlin.String) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.add(value: agent.v1.Agent.ProviderModel) {
       _builder.addModels(value)
     }
     /**
-     * `repeated string models = 6 [json_name = "models"];`
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      * @param value The models to add.
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignModels")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>.plusAssign(value: kotlin.String) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.plusAssign(value: agent.v1.Agent.ProviderModel) {
       add(value)
     }
     /**
-     * `repeated string models = 6 [json_name = "models"];`
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      * @param values The models to add.
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllModels")
-    public fun com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>.addAll(values: kotlin.collections.Iterable<kotlin.String>) {
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ProviderModel>) {
       _builder.addAllModels(values)
     }
     /**
-     * `repeated string models = 6 [json_name = "models"];`
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      * @param values The models to add.
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllModels")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>.plusAssign(values: kotlin.collections.Iterable<kotlin.String>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ProviderModel>) {
       addAll(values)
     }
     /**
-     * `repeated string models = 6 [json_name = "models"];`
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      * @param index The index to set the value at.
      * @param value The models to set.
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setModels")
-    public operator fun com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>.set(index: kotlin.Int, value: kotlin.String) {
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ProviderModel) {
       _builder.setModels(index, value)
-    }/**
-     * `repeated string models = 6 [json_name = "models"];`
+    }
+    /**
+     * `repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];`
      */
     @kotlin.jvm.JvmSynthetic
-@kotlin.jvm.JvmName("setModels")
-    public fun com.google.protobuf.kotlin.DslList<kotlin.String, ModelsProxy>.clear() {
+@kotlin.jvm.JvmName("clearModels")
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.clear() {
       _builder.clearModels()
     }
+
     /**
      * `string updated_at = 7 [json_name = "updatedAt"];`
      */

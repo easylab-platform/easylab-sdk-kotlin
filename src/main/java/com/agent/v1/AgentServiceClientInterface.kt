@@ -28,6 +28,8 @@ public interface AgentServiceClientInterface {
 
   public suspend fun watchSession(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Agent.WatchSessionRequest, Agent.WatchSessionResponse>
 
+  public suspend fun watchSessions(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Agent.WatchSessionsRequest, Agent.WatchSessionsResponse>
+
   public suspend fun fork(request: Agent.ForkRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.ForkResponse>
 
   public suspend fun rename(request: Agent.RenameRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.RenameResponse>

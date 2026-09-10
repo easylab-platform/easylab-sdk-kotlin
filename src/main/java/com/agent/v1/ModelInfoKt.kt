@@ -62,6 +62,137 @@ public object ModelInfoKt {
     public fun clearName() {
       _builder.clearName()
     }
+
+    /**
+     * An uninstantiable, behaviorless type to represent the field in
+     * generics.
+     */
+    @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
+    public class VariantsProxy private constructor() : com.google.protobuf.kotlin.DslProxy()
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     */
+     public val variants: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>
+      @kotlin.jvm.JvmSynthetic
+  get() = com.google.protobuf.kotlin.DslList(
+        _builder.variantsList
+      )
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     * @param value The variants to add.
+     */
+    @kotlin.jvm.JvmSynthetic
+@kotlin.jvm.JvmName("addVariants")
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.add(value: agent.v1.Agent.ModelVariant) {
+      _builder.addVariants(value)
+    }
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     * @param value The variants to add.
+     */
+    @kotlin.jvm.JvmSynthetic
+@kotlin.jvm.JvmName("plusAssignVariants")
+    @Suppress("NOTHING_TO_INLINE")
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.plusAssign(value: agent.v1.Agent.ModelVariant) {
+      add(value)
+    }
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     * @param values The variants to add.
+     */
+    @kotlin.jvm.JvmSynthetic
+@kotlin.jvm.JvmName("addAllVariants")
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ModelVariant>) {
+      _builder.addAllVariants(values)
+    }
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     * @param values The variants to add.
+     */
+    @kotlin.jvm.JvmSynthetic
+@kotlin.jvm.JvmName("plusAssignAllVariants")
+    @Suppress("NOTHING_TO_INLINE")
+    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ModelVariant>) {
+      addAll(values)
+    }
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     * @param index The index to set the value at.
+     * @param value The variants to set.
+     */
+    @kotlin.jvm.JvmSynthetic
+@kotlin.jvm.JvmName("setVariants")
+    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ModelVariant) {
+      _builder.setVariants(index, value)
+    }
+    /**
+     * ```
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * ```
+     *
+     * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
+     */
+    @kotlin.jvm.JvmSynthetic
+@kotlin.jvm.JvmName("clearVariants")
+    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.clear() {
+      _builder.clearVariants()
+    }
+
+    /**
+     * ```
+     * Context window (tokens) configured for this provider model.
+     * ```
+     *
+     * `int64 context_limit = 4 [json_name = "contextLimit"];`
+     */
+    public var contextLimit: kotlin.Long
+      @kotlin.jvm.JvmName("getContextLimit")
+        get() = _builder.contextLimit
+      @kotlin.jvm.JvmName("setContextLimit")
+        set(value) {
+        _builder.contextLimit = value
+      }
+    /**
+     * ```
+     * Context window (tokens) configured for this provider model.
+     * ```
+     *
+     * `int64 context_limit = 4 [json_name = "contextLimit"];`
+     */
+    public fun clearContextLimit() {
+      _builder.clearContextLimit()
+    }
   }
 }
 public inline fun agent.v1.Agent.ModelInfo.copy(block: `agent.v1`.ModelInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelInfo =

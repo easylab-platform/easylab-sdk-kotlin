@@ -7,33 +7,32 @@
 @file:Suppress("DEPRECATION")
 package agent.v1;
 
-@kotlin.jvm.JvmName("-initializeproviderModel")
-public inline fun providerModel(block: agent.v1.ProviderModelKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ProviderModel =
-  agent.v1.ProviderModelKt.Dsl._create(agent.v1.Agent.ProviderModel.newBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmName("-initializemodelVariant")
+public inline fun modelVariant(block: agent.v1.ModelVariantKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelVariant =
+  agent.v1.ModelVariantKt.Dsl._create(agent.v1.Agent.ModelVariant.newBuilder()).apply { block() }._build()
 /**
  * ```
- * Provider model entry. `context_limit` (the model's context window in
- * tokens) is REQUIRED and user-supplied: it drives compaction budgets, and it
- * is never inferred from an external catalog.
+ * A selectable reasoning variant for a model (e.g. low/medium/high/max, or a
+ * fast mode). `id` is passed back on CreateSession/SetModel/UpdateSettings.
  * ```
  *
- * Protobuf type `agent.v1.ProviderModel`
+ * Protobuf type `agent.v1.ModelVariant`
  */
-public object ProviderModelKt {
+public object ModelVariantKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ProviderModel.Builder
+    private val _builder: agent.v1.Agent.ModelVariant.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ProviderModel.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: agent.v1.Agent.ModelVariant.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ProviderModel = _builder.build()
+    internal fun _build(): agent.v1.Agent.ModelVariant = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -70,23 +69,23 @@ public object ProviderModelKt {
     }
 
     /**
-     * `int64 context_limit = 3 [json_name = "contextLimit"];`
+     * `string description = 3 [json_name = "description"];`
      */
-    public var contextLimit: kotlin.Long
-      @kotlin.jvm.JvmName("getContextLimit")
-        get() = _builder.contextLimit
-      @kotlin.jvm.JvmName("setContextLimit")
+    public var description: kotlin.String
+      @kotlin.jvm.JvmName("getDescription")
+        get() = _builder.description
+      @kotlin.jvm.JvmName("setDescription")
         set(value) {
-        _builder.contextLimit = value
+        _builder.description = value
       }
     /**
-     * `int64 context_limit = 3 [json_name = "contextLimit"];`
+     * `string description = 3 [json_name = "description"];`
      */
-    public fun clearContextLimit() {
-      _builder.clearContextLimit()
+    public fun clearDescription() {
+      _builder.clearDescription()
     }
   }
 }
-public inline fun agent.v1.Agent.ProviderModel.copy(block: `agent.v1`.ProviderModelKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ProviderModel =
-  `agent.v1`.ProviderModelKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun agent.v1.Agent.ModelVariant.copy(block: `agent.v1`.ModelVariantKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelVariant =
+  `agent.v1`.ModelVariantKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -62,6 +62,23 @@ public object SetModelRequestKt {
     public fun clearModel() {
       _builder.clearModel()
     }
+
+    /**
+     * `string variant = 3 [json_name = "variant"];`
+     */
+    public var variant: kotlin.String
+      @kotlin.jvm.JvmName("getVariant")
+        get() = _builder.variant
+      @kotlin.jvm.JvmName("setVariant")
+        set(value) {
+        _builder.variant = value
+      }
+    /**
+     * `string variant = 3 [json_name = "variant"];`
+     */
+    public fun clearVariant() {
+      _builder.clearVariant()
+    }
   }
 }
 public inline fun agent.v1.Agent.SetModelRequest.copy(block: `agent.v1`.SetModelRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelRequest =

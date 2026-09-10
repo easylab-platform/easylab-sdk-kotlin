@@ -113,6 +113,31 @@ public object TestProviderRequestKt {
     public fun clearModel() {
       _builder.clearModel()
     }
+
+    /**
+     * ```
+     * Optional reasoning variant id to exercise in the test generation.
+     * ```
+     *
+     * `string variant = 6 [json_name = "variant"];`
+     */
+    public var variant: kotlin.String
+      @kotlin.jvm.JvmName("getVariant")
+        get() = _builder.variant
+      @kotlin.jvm.JvmName("setVariant")
+        set(value) {
+        _builder.variant = value
+      }
+    /**
+     * ```
+     * Optional reasoning variant id to exercise in the test generation.
+     * ```
+     *
+     * `string variant = 6 [json_name = "variant"];`
+     */
+    public fun clearVariant() {
+      _builder.clearVariant()
+    }
   }
 }
 public inline fun agent.v1.Agent.TestProviderRequest.copy(block: `agent.v1`.TestProviderRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.TestProviderRequest =

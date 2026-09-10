@@ -81,7 +81,12 @@ public object UpdateSettingsRequestKt {
     }
 
     /**
-     * `int32 max_turns = 4 [json_name = "maxTurns"];`
+     * ```
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be > 0 (0 is rejected).
+     * ```
+     *
+     * `optional int32 max_turns = 4 [json_name = "maxTurns"];`
      */
     public var maxTurns: kotlin.Int
       @kotlin.jvm.JvmName("getMaxTurns")
@@ -91,10 +96,27 @@ public object UpdateSettingsRequestKt {
         _builder.maxTurns = value
       }
     /**
-     * `int32 max_turns = 4 [json_name = "maxTurns"];`
+     * ```
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be > 0 (0 is rejected).
+     * ```
+     *
+     * `optional int32 max_turns = 4 [json_name = "maxTurns"];`
      */
     public fun clearMaxTurns() {
       _builder.clearMaxTurns()
+    }
+    /**
+     * ```
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be > 0 (0 is rejected).
+     * ```
+     *
+     * `optional int32 max_turns = 4 [json_name = "maxTurns"];`
+     * @return Whether the maxTurns field is set.
+     */
+    public fun hasMaxTurns(): kotlin.Boolean {
+      return _builder.hasMaxTurns()
     }
 
     /**
@@ -129,6 +151,31 @@ public object UpdateSettingsRequestKt {
      */
     public fun clearLocale() {
       _builder.clearLocale()
+    }
+
+    /**
+     * ```
+     * Selected reasoning variant id (empty clears it).
+     * ```
+     *
+     * `string variant = 7 [json_name = "variant"];`
+     */
+    public var variant: kotlin.String
+      @kotlin.jvm.JvmName("getVariant")
+        get() = _builder.variant
+      @kotlin.jvm.JvmName("setVariant")
+        set(value) {
+        _builder.variant = value
+      }
+    /**
+     * ```
+     * Selected reasoning variant id (empty clears it).
+     * ```
+     *
+     * `string variant = 7 [json_name = "variant"];`
+     */
+    public fun clearVariant() {
+      _builder.clearVariant()
     }
   }
 }

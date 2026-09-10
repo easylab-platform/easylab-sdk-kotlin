@@ -28,11 +28,21 @@ public final class Agent {
         getNameBytes();
 
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The model.
      */
     java.lang.String getModel();
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The bytes for model.
      */
@@ -232,6 +242,41 @@ public final class Agent {
      */
     com.google.protobuf.ByteString
         getLastMessagePreviewBytes();
+
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    java.lang.String getVariant();
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    com.google.protobuf.ByteString
+        getVariantBytes();
+
+    /**
+     * <pre>
+     * Monotonic per-session message counter, bumped for every appended message
+     * (user/assistant/event/compaction). Clients derive the unread count as the
+     * number of messages with seq greater than their locally-persisted read
+     * watermark (read state is client-local; the agent never stores it).
+     * </pre>
+     *
+     * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+     * @return The messageSeq.
+     */
+    int getMessageSeq();
   }
   /**
    * <pre>
@@ -260,6 +305,7 @@ public final class Agent {
       branch_ = "";
       lastMessageAt_ = "";
       lastMessagePreview_ = "";
+      variant_ = "";
     }
     public static final int NAME_FIELD_NUMBER = 1;
     private java.lang.String name_;
@@ -311,6 +357,11 @@ public final class Agent {
     public static final int MODEL_FIELD_NUMBER = 2;
     private java.lang.String model_;
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The model.
      */
@@ -319,6 +370,11 @@ public final class Agent {
       return model_;
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The bytes for model.
      */
@@ -328,6 +384,11 @@ public final class Agent {
       return com.google.protobuf.ByteString.copyFromUtf8(model_);
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @param value The model to set.
      */
@@ -338,6 +399,11 @@ public final class Agent {
       model_ = value;
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      */
     private void clearModel() {
@@ -345,6 +411,11 @@ public final class Agent {
       model_ = getDefaultInstance().getModel();
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @param value The bytes for model to set.
      */
@@ -1121,6 +1192,125 @@ public final class Agent {
 
     }
 
+    public static final int VARIANT_FIELD_NUMBER = 22;
+    private java.lang.String variant_;
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    @java.lang.Override
+    public java.lang.String getVariant() {
+      return variant_;
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getVariantBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(variant_);
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     * @param value The variant to set.
+     */
+    private void setVariant(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      variant_ = value;
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     */
+    private void clearVariant() {
+
+      variant_ = getDefaultInstance().getVariant();
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * </pre>
+     *
+     * <code>string variant = 22 [json_name = "variant"];</code>
+     * @param value The bytes for variant to set.
+     */
+    private void setVariantBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      variant_ = value.toStringUtf8();
+
+    }
+
+    public static final int MESSAGE_SEQ_FIELD_NUMBER = 23;
+    private int messageSeq_;
+    /**
+     * <pre>
+     * Monotonic per-session message counter, bumped for every appended message
+     * (user/assistant/event/compaction). Clients derive the unread count as the
+     * number of messages with seq greater than their locally-persisted read
+     * watermark (read state is client-local; the agent never stores it).
+     * </pre>
+     *
+     * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+     * @return The messageSeq.
+     */
+    @java.lang.Override
+    public int getMessageSeq() {
+      return messageSeq_;
+    }
+    /**
+     * <pre>
+     * Monotonic per-session message counter, bumped for every appended message
+     * (user/assistant/event/compaction). Clients derive the unread count as the
+     * number of messages with seq greater than their locally-persisted read
+     * watermark (read state is client-local; the agent never stores it).
+     * </pre>
+     *
+     * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+     * @param value The messageSeq to set.
+     */
+    private void setMessageSeq(int value) {
+      
+      messageSeq_ = value;
+    }
+    /**
+     * <pre>
+     * Monotonic per-session message counter, bumped for every appended message
+     * (user/assistant/event/compaction). Clients derive the unread count as the
+     * number of messages with seq greater than their locally-persisted read
+     * watermark (read state is client-local; the agent never stores it).
+     * </pre>
+     *
+     * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+     */
+    private void clearMessageSeq() {
+
+      messageSeq_ = 0;
+    }
+
     public static agent.v1.Agent.Session parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1272,6 +1462,11 @@ public final class Agent {
       }
 
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id". A bare model id is
+       * never resolved by flat lookup: the provider must be named explicitly.
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @return The model.
        */
@@ -1280,6 +1475,11 @@ public final class Agent {
         return instance.getModel();
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id". A bare model id is
+       * never resolved by flat lookup: the provider must be named explicitly.
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @return The bytes for model.
        */
@@ -1289,6 +1489,11 @@ public final class Agent {
         return instance.getModelBytes();
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id". A bare model id is
+       * never resolved by flat lookup: the provider must be named explicitly.
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @param value The model to set.
        * @return This builder for chaining.
@@ -1300,6 +1505,11 @@ public final class Agent {
         return this;
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id". A bare model id is
+       * never resolved by flat lookup: the provider must be named explicitly.
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @return This builder for chaining.
        */
@@ -1309,6 +1519,11 @@ public final class Agent {
         return this;
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id". A bare model id is
+       * never resolved by flat lookup: the provider must be named explicitly.
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @param value The bytes for model to set.
        * @return This builder for chaining.
@@ -2124,6 +2339,129 @@ public final class Agent {
         return this;
       }
 
+      /**
+       * <pre>
+       * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+       * Empty means "no variant" (provider defaults; no providerOptions sent).
+       * </pre>
+       *
+       * <code>string variant = 22 [json_name = "variant"];</code>
+       * @return The variant.
+       */
+      @java.lang.Override
+      public java.lang.String getVariant() {
+        return instance.getVariant();
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+       * Empty means "no variant" (provider defaults; no providerOptions sent).
+       * </pre>
+       *
+       * <code>string variant = 22 [json_name = "variant"];</code>
+       * @return The bytes for variant.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getVariantBytes() {
+        return instance.getVariantBytes();
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+       * Empty means "no variant" (provider defaults; no providerOptions sent).
+       * </pre>
+       *
+       * <code>string variant = 22 [json_name = "variant"];</code>
+       * @param value The variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariant(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setVariant(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+       * Empty means "no variant" (provider defaults; no providerOptions sent).
+       * </pre>
+       *
+       * <code>string variant = 22 [json_name = "variant"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVariant() {
+        copyOnWrite();
+        instance.clearVariant();
+        return this;
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+       * Empty means "no variant" (provider defaults; no providerOptions sent).
+       * </pre>
+       *
+       * <code>string variant = 22 [json_name = "variant"];</code>
+       * @param value The bytes for variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariantBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setVariantBytes(value);
+        return this;
+      }
+
+      /**
+       * <pre>
+       * Monotonic per-session message counter, bumped for every appended message
+       * (user/assistant/event/compaction). Clients derive the unread count as the
+       * number of messages with seq greater than their locally-persisted read
+       * watermark (read state is client-local; the agent never stores it).
+       * </pre>
+       *
+       * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+       * @return The messageSeq.
+       */
+      @java.lang.Override
+      public int getMessageSeq() {
+        return instance.getMessageSeq();
+      }
+      /**
+       * <pre>
+       * Monotonic per-session message counter, bumped for every appended message
+       * (user/assistant/event/compaction). Clients derive the unread count as the
+       * number of messages with seq greater than their locally-persisted read
+       * watermark (read state is client-local; the agent never stores it).
+       * </pre>
+       *
+       * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+       * @param value The messageSeq to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessageSeq(int value) {
+        copyOnWrite();
+        instance.setMessageSeq(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Monotonic per-session message counter, bumped for every appended message
+       * (user/assistant/event/compaction). Clients derive the unread count as the
+       * number of messages with seq greater than their locally-persisted read
+       * watermark (read state is client-local; the agent never stores it).
+       * </pre>
+       *
+       * <code>int32 message_seq = 23 [json_name = "messageSeq"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMessageSeq() {
+        copyOnWrite();
+        instance.clearMessageSeq();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.Session)
     }
     @java.lang.Override
@@ -2161,12 +2499,14 @@ public final class Agent {
               "unreadCount_",
               "lastMessageAt_",
               "lastMessagePreview_",
+              "variant_",
+              "messageSeq_",
             };
             java.lang.String info =
-                "\u0000\u0015\u0000\u0000\u0001\u0015\u0015\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0000\u0017\u0000\u0000\u0001\u0017\u0017\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
                 "\u0003\u0208\u0004\u0208\u0005\u0004\u0006\u0208\u0007\u0004\b\u0004\t\u0004\n\u0004" +
                 "\u000b\u0004\f\u0208\r\u0208\u000e\u0208\u000f\u0208\u0010\u0208\u0011\u0208\u0012" +
-                "\u0208\u0013\u0004\u0014\u0208\u0015\u0208";
+                "\u0208\u0013\u0004\u0014\u0208\u0015\u0208\u0016\u0208\u0017\u0004";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -5841,29 +6181,18 @@ java.lang.String defaultValue);
         java.lang.String key);
 
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @return A list containing the models.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
-    java.util.List<java.lang.String>
+    java.util.List<agent.v1.Agent.ProviderModel> 
         getModelsList();
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @return The count of models.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+     */
+    agent.v1.Agent.ProviderModel getModels(int index);
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     int getModelsCount();
-    /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param index The index of the element to return.
-     * @return The models at the given index.
-     */
-    java.lang.String getModels(int index);
-    /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param index The index of the element to return.
-     * @return The models at the given index.
-     */
-    com.google.protobuf.ByteString
-        getModelsBytes(int index);
 
     /**
      * <code>string updated_at = 7 [json_name = "updatedAt"];</code>
@@ -6183,96 +6512,97 @@ java.lang.String defaultValue) {
     }
 
     public static final int MODELS_FIELD_NUMBER = 6;
-    private com.google.protobuf.Internal.ProtobufList<java.lang.String> models_;
+    private com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.ProviderModel> models_;
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @return A list containing the models.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     @java.lang.Override
-    public java.util.List<java.lang.String> getModelsList() {
+    public java.util.List<agent.v1.Agent.ProviderModel> getModelsList() {
       return models_;
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @return The count of models.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+     */
+    public java.util.List<? extends agent.v1.Agent.ProviderModelOrBuilder> 
+        getModelsOrBuilderList() {
+      return models_;
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     @java.lang.Override
     public int getModelsCount() {
       return models_.size();
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param index The index of the element to return.
-     * @return The models at the given index.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     @java.lang.Override
-    public java.lang.String getModels(int index) {
+    public agent.v1.Agent.ProviderModel getModels(int index) {
       return models_.get(index);
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the models at the given index.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getModelsBytes(int index) {
-      return com.google.protobuf.ByteString.copyFromUtf8(
-          models_.get(index));
+    public agent.v1.Agent.ProviderModelOrBuilder getModelsOrBuilder(
+        int index) {
+      return models_.get(index);
     }
     private void ensureModelsIsMutable() {
-      com.google.protobuf.Internal.ProtobufList<java.lang.String> tmp =
-          models_;  if (!tmp.isModifiable()) {
+      com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.ProviderModel> tmp = models_;
+      if (!tmp.isModifiable()) {
         models_ =
             com.google.protobuf.GeneratedMessageLite.mutableCopy(tmp);
        }
     }
+
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param index The index to set the value at.
-     * @param value The models to set.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     private void setModels(
-        int index, java.lang.String value) {
+        int index, agent.v1.Agent.ProviderModel value) {
       java.util.Objects.requireNonNull(value);
       ensureModelsIsMutable();
       models_.set(index, value);
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param value The models to add.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
-    private void addModels(
-        java.lang.String value) {
+    private void addModels(agent.v1.Agent.ProviderModel value) {
       java.util.Objects.requireNonNull(value);
       ensureModelsIsMutable();
       models_.add(value);
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param values The models to add.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+     */
+    private void addModels(
+        int index, agent.v1.Agent.ProviderModel value) {
+      java.util.Objects.requireNonNull(value);
+      ensureModelsIsMutable();
+      models_.add(index, value);
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     private void addAllModels(
-        java.lang.Iterable<java.lang.String> values) {
+        java.lang.Iterable<? extends agent.v1.Agent.ProviderModel> values) {
       ensureModelsIsMutable();
       com.google.protobuf.AbstractMessageLite.addAll(
           values, models_);
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
     private void clearModels() {
       models_ = emptyProtobufList();
     }
     /**
-     * <code>repeated string models = 6 [json_name = "models"];</code>
-     * @param value The bytes of the models to add.
+     * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
      */
-    private void addModelsBytes(
-        com.google.protobuf.ByteString value) {
-      checkByteStringIsUtf8(value);
+    private void removeModels(int index) {
       ensureModelsIsMutable();
-      models_.add(value.toStringUtf8());
+      models_.remove(index);
     }
 
     public static final int UPDATED_AT_FIELD_NUMBER = 7;
@@ -6720,79 +7050,92 @@ java.lang.String defaultValue) {
       }
 
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @return A list containing the models.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
       @java.lang.Override
-      public java.util.List<java.lang.String>
-          getModelsList() {
+      public java.util.List<agent.v1.Agent.ProviderModel> getModelsList() {
         return java.util.Collections.unmodifiableList(
             instance.getModelsList());
       }
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @return The count of models.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
       @java.lang.Override
       public int getModelsCount() {
         return instance.getModelsCount();
-      }
-      /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @param index The index of the element to return.
-       * @return The models at the given index.
+      }/**
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
       @java.lang.Override
-      public java.lang.String getModels(int index) {
+      public agent.v1.Agent.ProviderModel getModels(int index) {
         return instance.getModels(index);
       }
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @param index The index of the value to return.
-       * @return The bytes of the models at the given index.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getModelsBytes(int index) {
-        return instance.getModelsBytes(index);
-      }
-      /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @param index The index to set the value at.
-       * @param value The models to set.
-       * @return This builder for chaining.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
       public Builder setModels(
-          int index, java.lang.String value) {
+          int index, agent.v1.Agent.ProviderModel value) {
         copyOnWrite();
         instance.setModels(index, value);
         return this;
       }
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @param value The models to add.
-       * @return This builder for chaining.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
-      public Builder addModels(
-          java.lang.String value) {
+      public Builder setModels(
+          int index, agent.v1.Agent.ProviderModel.Builder builderForValue) {
+        copyOnWrite();
+        instance.setModels(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+       */
+      public Builder addModels(agent.v1.Agent.ProviderModel value) {
         copyOnWrite();
         instance.addModels(value);
         return this;
       }
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @param values The models to add.
-       * @return This builder for chaining.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+       */
+      public Builder addModels(
+          int index, agent.v1.Agent.ProviderModel value) {
+        copyOnWrite();
+        instance.addModels(index, value);
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+       */
+      public Builder addModels(
+          agent.v1.Agent.ProviderModel.Builder builderForValue) {
+        copyOnWrite();
+        instance.addModels(builderForValue.build());
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
+       */
+      public Builder addModels(
+          int index, agent.v1.Agent.ProviderModel.Builder builderForValue) {
+        copyOnWrite();
+        instance.addModels(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
       public Builder addAllModels(
-          java.lang.Iterable<java.lang.String> values) {
+          java.lang.Iterable<? extends agent.v1.Agent.ProviderModel> values) {
         copyOnWrite();
         instance.addAllModels(values);
         return this;
       }
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @return This builder for chaining.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
       public Builder clearModels() {
         copyOnWrite();
@@ -6800,14 +7143,11 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
-       * <code>repeated string models = 6 [json_name = "models"];</code>
-       * @param value The bytes of the models to add.
-       * @return This builder for chaining.
+       * <code>repeated .agent.v1.ProviderModel models = 6 [json_name = "models"];</code>
        */
-      public Builder addModelsBytes(
-          com.google.protobuf.ByteString value) {
+      public Builder removeModels(int index) {
         copyOnWrite();
-        instance.addModelsBytes(value);
+        instance.removeModels(index);
         return this;
       }
 
@@ -6883,11 +7223,12 @@ java.lang.String defaultValue) {
               "headers_",
               HeadersDefaultEntryHolder.defaultEntry,
               "models_",
+              agent.v1.Agent.ProviderModel.class,
               "updatedAt_",
             };
             java.lang.String info =
                 "\u0000\u0007\u0000\u0000\u0001\u0007\u0007\u0001\u0001\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0208\u0004\u0208\u00052\u0006\u021a\u0007\u0208";
+                "\u0003\u0208\u0004\u0208\u00052\u0006\u001b\u0007\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -6969,10 +7310,18 @@ java.lang.String defaultValue) {
      */
     com.google.protobuf.ByteString
         getNameBytes();
+
+    /**
+     * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+     * @return The contextLimit.
+     */
+    long getContextLimit();
   }
   /**
    * <pre>
-   * Provider model entry.
+   * Provider model entry. `context_limit` (the model's context window in
+   * tokens) is REQUIRED and user-supplied: it drives compaction budgets, and it
+   * is never inferred from an external catalog.
    * </pre>
    *
    * Protobuf type {@code agent.v1.ProviderModel}
@@ -7080,6 +7429,32 @@ java.lang.String defaultValue) {
 
     }
 
+    public static final int CONTEXT_LIMIT_FIELD_NUMBER = 3;
+    private long contextLimit_;
+    /**
+     * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+     * @return The contextLimit.
+     */
+    @java.lang.Override
+    public long getContextLimit() {
+      return contextLimit_;
+    }
+    /**
+     * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+     * @param value The contextLimit to set.
+     */
+    private void setContextLimit(long value) {
+      
+      contextLimit_ = value;
+    }
+    /**
+     * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+     */
+    private void clearContextLimit() {
+
+      contextLimit_ = 0L;
+    }
+
     public static agent.v1.Agent.ProviderModel parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -7165,7 +7540,9 @@ java.lang.String defaultValue) {
 
     /**
      * <pre>
-     * Provider model entry.
+     * Provider model entry. `context_limit` (the model's context window in
+     * tokens) is REQUIRED and user-supplied: it drives compaction budgets, and it
+     * is never inferred from an external catalog.
      * </pre>
      *
      * Protobuf type {@code agent.v1.ProviderModel}
@@ -7279,6 +7656,34 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+       * @return The contextLimit.
+       */
+      @java.lang.Override
+      public long getContextLimit() {
+        return instance.getContextLimit();
+      }
+      /**
+       * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+       * @param value The contextLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContextLimit(long value) {
+        copyOnWrite();
+        instance.setContextLimit(value);
+        return this;
+      }
+      /**
+       * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContextLimit() {
+        copyOnWrite();
+        instance.clearContextLimit();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.ProviderModel)
     }
     @java.lang.Override
@@ -7297,10 +7702,11 @@ java.lang.String defaultValue) {
             java.lang.Object[] objects = new java.lang.Object[] {
               "id_",
               "name_",
+              "contextLimit_",
             };
             java.lang.String info =
-                "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "";
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0002";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -11304,6 +11710,1099 @@ java.lang.String defaultValue) {
     }
   }
 
+  public interface WatchSessionsRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:agent.v1.WatchSessionsRequest)
+      com.google.protobuf.MessageLiteOrBuilder {
+  }
+  /**
+   * <pre>
+   * WatchSessions streams the session list in real time: an initial full
+   * snapshot, then per-session upserts (message-fact changes, settings changes)
+   * and removals (deletes). Replaces list polling.
+   * </pre>
+   *
+   * Protobuf type {@code agent.v1.WatchSessionsRequest}
+   */
+  public  static final class WatchSessionsRequest extends
+      com.google.protobuf.GeneratedMessageLite<
+          WatchSessionsRequest, WatchSessionsRequest.Builder> implements
+      // @@protoc_insertion_point(message_implements:agent.v1.WatchSessionsRequest)
+      WatchSessionsRequestOrBuilder {
+    private WatchSessionsRequest() {
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static agent.v1.Agent.WatchSessionsRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static agent.v1.Agent.WatchSessionsRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.WatchSessionsRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return (Builder) DEFAULT_INSTANCE.createBuilder();
+    }
+    public static Builder newBuilder(agent.v1.Agent.WatchSessionsRequest prototype) {
+      return DEFAULT_INSTANCE.createBuilder(prototype);
+    }
+
+    /**
+     * <pre>
+     * WatchSessions streams the session list in real time: an initial full
+     * snapshot, then per-session upserts (message-fact changes, settings changes)
+     * and removals (deletes). Replaces list polling.
+     * </pre>
+     *
+     * Protobuf type {@code agent.v1.WatchSessionsRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageLite.Builder<
+          agent.v1.Agent.WatchSessionsRequest, Builder> implements
+        // @@protoc_insertion_point(builder_implements:agent.v1.WatchSessionsRequest)
+        agent.v1.Agent.WatchSessionsRequestOrBuilder {
+      // Construct using agent.v1.Agent.WatchSessionsRequest.newBuilder()
+      private Builder() {
+        super(DEFAULT_INSTANCE);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:agent.v1.WatchSessionsRequest)
+    }
+    @java.lang.Override
+    @java.lang.SuppressWarnings({"ThrowNull"})
+    protected final java.lang.Object dynamicMethod(
+        com.google.protobuf.GeneratedMessageLite.MethodToInvoke method,
+        java.lang.Object arg0, java.lang.Object arg1) {
+      switch (method) {
+        case NEW_MUTABLE_INSTANCE: {
+          return new agent.v1.Agent.WatchSessionsRequest();
+        }
+        case NEW_BUILDER: {
+          return new Builder();
+        }
+        case BUILD_MESSAGE_INFO: {
+            java.lang.Object[] objects = null;
+            java.lang.String info =
+                "\u0000\u0000";
+            return newMessageInfo(DEFAULT_INSTANCE, info, objects);
+        }
+        case GET_DEFAULT_INSTANCE: {
+          return DEFAULT_INSTANCE;
+        }
+        case GET_PARSER: {
+          com.google.protobuf.Parser<agent.v1.Agent.WatchSessionsRequest> parser = PARSER;
+          if (parser == null) {
+            synchronized (agent.v1.Agent.WatchSessionsRequest.class) {
+              parser = PARSER;
+              if (parser == null) {
+                parser =
+                    new DefaultInstanceBasedParser<agent.v1.Agent.WatchSessionsRequest>(
+                        DEFAULT_INSTANCE);
+                PARSER = parser;
+              }
+            }
+          }
+          return parser;
+        }
+        case GET_MEMOIZED_IS_INITIALIZED: {
+          return (byte) 1;
+        }
+        // SET_MEMOIZED_IS_INITIALIZED is never called for this message.
+        // So it can do anything. Combine with default case for smaller codegen.
+        case SET_MEMOIZED_IS_INITIALIZED:
+      }
+      // Should never happen. Generates tight code to throw an exception.
+      throw null;
+    }
+
+
+    // @@protoc_insertion_point(class_scope:agent.v1.WatchSessionsRequest)
+    private static final agent.v1.Agent.WatchSessionsRequest DEFAULT_INSTANCE;
+    static {
+      WatchSessionsRequest defaultInstance = new WatchSessionsRequest();
+      // New instances are implicitly immutable so no need to make
+      // immutable.
+      DEFAULT_INSTANCE = defaultInstance;
+      com.google.protobuf.GeneratedMessageLite.registerDefaultInstance(
+        WatchSessionsRequest.class, defaultInstance);
+    }
+
+    public static agent.v1.Agent.WatchSessionsRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static volatile com.google.protobuf.Parser<WatchSessionsRequest> PARSER;
+
+    public static com.google.protobuf.Parser<WatchSessionsRequest> parser() {
+      return DEFAULT_INSTANCE.getParserForType();
+    }
+  }
+
+  public interface WatchSessionsResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:agent.v1.WatchSessionsResponse)
+      com.google.protobuf.MessageLiteOrBuilder {
+
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    java.util.List<agent.v1.Agent.Session> 
+        getUpsertsList();
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    agent.v1.Agent.Session getUpserts(int index);
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    int getUpsertsCount();
+
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @return A list containing the removed.
+     */
+    java.util.List<java.lang.String>
+        getRemovedList();
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @return The count of removed.
+     */
+    int getRemovedCount();
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param index The index of the element to return.
+     * @return The removed at the given index.
+     */
+    java.lang.String getRemoved(int index);
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param index The index of the element to return.
+     * @return The removed at the given index.
+     */
+    com.google.protobuf.ByteString
+        getRemovedBytes(int index);
+
+    /**
+     * <pre>
+     * True for the initial full snapshot: the client replaces its whole list
+     * with `upserts` (dropping anything not present) instead of merging.
+     * </pre>
+     *
+     * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+     * @return The snapshot.
+     */
+    boolean getSnapshot();
+  }
+  /**
+   * Protobuf type {@code agent.v1.WatchSessionsResponse}
+   */
+  public  static final class WatchSessionsResponse extends
+      com.google.protobuf.GeneratedMessageLite<
+          WatchSessionsResponse, WatchSessionsResponse.Builder> implements
+      // @@protoc_insertion_point(message_implements:agent.v1.WatchSessionsResponse)
+      WatchSessionsResponseOrBuilder {
+    private WatchSessionsResponse() {
+      upserts_ = emptyProtobufList();
+      removed_ = emptyProtobufList();
+    }
+    public static final int UPSERTS_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.Session> upserts_;
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    @java.lang.Override
+    public java.util.List<agent.v1.Agent.Session> getUpsertsList() {
+      return upserts_;
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    public java.util.List<? extends agent.v1.Agent.SessionOrBuilder> 
+        getUpsertsOrBuilderList() {
+      return upserts_;
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    @java.lang.Override
+    public int getUpsertsCount() {
+      return upserts_.size();
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    @java.lang.Override
+    public agent.v1.Agent.Session getUpserts(int index) {
+      return upserts_.get(index);
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    public agent.v1.Agent.SessionOrBuilder getUpsertsOrBuilder(
+        int index) {
+      return upserts_.get(index);
+    }
+    private void ensureUpsertsIsMutable() {
+      com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.Session> tmp = upserts_;
+      if (!tmp.isModifiable()) {
+        upserts_ =
+            com.google.protobuf.GeneratedMessageLite.mutableCopy(tmp);
+       }
+    }
+
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    private void setUpserts(
+        int index, agent.v1.Agent.Session value) {
+      java.util.Objects.requireNonNull(value);
+      ensureUpsertsIsMutable();
+      upserts_.set(index, value);
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    private void addUpserts(agent.v1.Agent.Session value) {
+      java.util.Objects.requireNonNull(value);
+      ensureUpsertsIsMutable();
+      upserts_.add(value);
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    private void addUpserts(
+        int index, agent.v1.Agent.Session value) {
+      java.util.Objects.requireNonNull(value);
+      ensureUpsertsIsMutable();
+      upserts_.add(index, value);
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    private void addAllUpserts(
+        java.lang.Iterable<? extends agent.v1.Agent.Session> values) {
+      ensureUpsertsIsMutable();
+      com.google.protobuf.AbstractMessageLite.addAll(
+          values, upserts_);
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    private void clearUpserts() {
+      upserts_ = emptyProtobufList();
+    }
+    /**
+     * <pre>
+     * New/updated session snapshots (message facts + settings).
+     * </pre>
+     *
+     * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+     */
+    private void removeUpserts(int index) {
+      ensureUpsertsIsMutable();
+      upserts_.remove(index);
+    }
+
+    public static final int REMOVED_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.ProtobufList<java.lang.String> removed_;
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @return A list containing the removed.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.String> getRemovedList() {
+      return removed_;
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @return The count of removed.
+     */
+    @java.lang.Override
+    public int getRemovedCount() {
+      return removed_.size();
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param index The index of the element to return.
+     * @return The removed at the given index.
+     */
+    @java.lang.Override
+    public java.lang.String getRemoved(int index) {
+      return removed_.get(index);
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the removed at the given index.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getRemovedBytes(int index) {
+      return com.google.protobuf.ByteString.copyFromUtf8(
+          removed_.get(index));
+    }
+    private void ensureRemovedIsMutable() {
+      com.google.protobuf.Internal.ProtobufList<java.lang.String> tmp =
+          removed_;  if (!tmp.isModifiable()) {
+        removed_ =
+            com.google.protobuf.GeneratedMessageLite.mutableCopy(tmp);
+       }
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param index The index to set the value at.
+     * @param value The removed to set.
+     */
+    private void setRemoved(
+        int index, java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+      ensureRemovedIsMutable();
+      removed_.set(index, value);
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param value The removed to add.
+     */
+    private void addRemoved(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+      ensureRemovedIsMutable();
+      removed_.add(value);
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param values The removed to add.
+     */
+    private void addAllRemoved(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureRemovedIsMutable();
+      com.google.protobuf.AbstractMessageLite.addAll(
+          values, removed_);
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     */
+    private void clearRemoved() {
+      removed_ = emptyProtobufList();
+    }
+    /**
+     * <pre>
+     * Session names that were removed.
+     * </pre>
+     *
+     * <code>repeated string removed = 2 [json_name = "removed"];</code>
+     * @param value The bytes of the removed to add.
+     */
+    private void addRemovedBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      ensureRemovedIsMutable();
+      removed_.add(value.toStringUtf8());
+    }
+
+    public static final int SNAPSHOT_FIELD_NUMBER = 3;
+    private boolean snapshot_;
+    /**
+     * <pre>
+     * True for the initial full snapshot: the client replaces its whole list
+     * with `upserts` (dropping anything not present) instead of merging.
+     * </pre>
+     *
+     * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+     * @return The snapshot.
+     */
+    @java.lang.Override
+    public boolean getSnapshot() {
+      return snapshot_;
+    }
+    /**
+     * <pre>
+     * True for the initial full snapshot: the client replaces its whole list
+     * with `upserts` (dropping anything not present) instead of merging.
+     * </pre>
+     *
+     * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+     * @param value The snapshot to set.
+     */
+    private void setSnapshot(boolean value) {
+      
+      snapshot_ = value;
+    }
+    /**
+     * <pre>
+     * True for the initial full snapshot: the client replaces its whole list
+     * with `upserts` (dropping anything not present) instead of merging.
+     * </pre>
+     *
+     * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+     */
+    private void clearSnapshot() {
+
+      snapshot_ = false;
+    }
+
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static agent.v1.Agent.WatchSessionsResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static agent.v1.Agent.WatchSessionsResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.WatchSessionsResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return (Builder) DEFAULT_INSTANCE.createBuilder();
+    }
+    public static Builder newBuilder(agent.v1.Agent.WatchSessionsResponse prototype) {
+      return DEFAULT_INSTANCE.createBuilder(prototype);
+    }
+
+    /**
+     * Protobuf type {@code agent.v1.WatchSessionsResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageLite.Builder<
+          agent.v1.Agent.WatchSessionsResponse, Builder> implements
+        // @@protoc_insertion_point(builder_implements:agent.v1.WatchSessionsResponse)
+        agent.v1.Agent.WatchSessionsResponseOrBuilder {
+      // Construct using agent.v1.Agent.WatchSessionsResponse.newBuilder()
+      private Builder() {
+        super(DEFAULT_INSTANCE);
+      }
+
+
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      @java.lang.Override
+      public java.util.List<agent.v1.Agent.Session> getUpsertsList() {
+        return java.util.Collections.unmodifiableList(
+            instance.getUpsertsList());
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      @java.lang.Override
+      public int getUpsertsCount() {
+        return instance.getUpsertsCount();
+      }/**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      @java.lang.Override
+      public agent.v1.Agent.Session getUpserts(int index) {
+        return instance.getUpserts(index);
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder setUpserts(
+          int index, agent.v1.Agent.Session value) {
+        copyOnWrite();
+        instance.setUpserts(index, value);
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder setUpserts(
+          int index, agent.v1.Agent.Session.Builder builderForValue) {
+        copyOnWrite();
+        instance.setUpserts(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder addUpserts(agent.v1.Agent.Session value) {
+        copyOnWrite();
+        instance.addUpserts(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder addUpserts(
+          int index, agent.v1.Agent.Session value) {
+        copyOnWrite();
+        instance.addUpserts(index, value);
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder addUpserts(
+          agent.v1.Agent.Session.Builder builderForValue) {
+        copyOnWrite();
+        instance.addUpserts(builderForValue.build());
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder addUpserts(
+          int index, agent.v1.Agent.Session.Builder builderForValue) {
+        copyOnWrite();
+        instance.addUpserts(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder addAllUpserts(
+          java.lang.Iterable<? extends agent.v1.Agent.Session> values) {
+        copyOnWrite();
+        instance.addAllUpserts(values);
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder clearUpserts() {
+        copyOnWrite();
+        instance.clearUpserts();
+        return this;
+      }
+      /**
+       * <pre>
+       * New/updated session snapshots (message facts + settings).
+       * </pre>
+       *
+       * <code>repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];</code>
+       */
+      public Builder removeUpserts(int index) {
+        copyOnWrite();
+        instance.removeUpserts(index);
+        return this;
+      }
+
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @return A list containing the removed.
+       */
+      @java.lang.Override
+      public java.util.List<java.lang.String>
+          getRemovedList() {
+        return java.util.Collections.unmodifiableList(
+            instance.getRemovedList());
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @return The count of removed.
+       */
+      @java.lang.Override
+      public int getRemovedCount() {
+        return instance.getRemovedCount();
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @param index The index of the element to return.
+       * @return The removed at the given index.
+       */
+      @java.lang.Override
+      public java.lang.String getRemoved(int index) {
+        return instance.getRemoved(index);
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the removed at the given index.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getRemovedBytes(int index) {
+        return instance.getRemovedBytes(index);
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @param index The index to set the value at.
+       * @param value The removed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemoved(
+          int index, java.lang.String value) {
+        copyOnWrite();
+        instance.setRemoved(index, value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @param value The removed to add.
+       * @return This builder for chaining.
+       */
+      public Builder addRemoved(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.addRemoved(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @param values The removed to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllRemoved(
+          java.lang.Iterable<java.lang.String> values) {
+        copyOnWrite();
+        instance.addAllRemoved(values);
+        return this;
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemoved() {
+        copyOnWrite();
+        instance.clearRemoved();
+        return this;
+      }
+      /**
+       * <pre>
+       * Session names that were removed.
+       * </pre>
+       *
+       * <code>repeated string removed = 2 [json_name = "removed"];</code>
+       * @param value The bytes of the removed to add.
+       * @return This builder for chaining.
+       */
+      public Builder addRemovedBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.addRemovedBytes(value);
+        return this;
+      }
+
+      /**
+       * <pre>
+       * True for the initial full snapshot: the client replaces its whole list
+       * with `upserts` (dropping anything not present) instead of merging.
+       * </pre>
+       *
+       * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+       * @return The snapshot.
+       */
+      @java.lang.Override
+      public boolean getSnapshot() {
+        return instance.getSnapshot();
+      }
+      /**
+       * <pre>
+       * True for the initial full snapshot: the client replaces its whole list
+       * with `upserts` (dropping anything not present) instead of merging.
+       * </pre>
+       *
+       * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+       * @param value The snapshot to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSnapshot(boolean value) {
+        copyOnWrite();
+        instance.setSnapshot(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * True for the initial full snapshot: the client replaces its whole list
+       * with `upserts` (dropping anything not present) instead of merging.
+       * </pre>
+       *
+       * <code>bool snapshot = 3 [json_name = "snapshot"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSnapshot() {
+        copyOnWrite();
+        instance.clearSnapshot();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:agent.v1.WatchSessionsResponse)
+    }
+    @java.lang.Override
+    @java.lang.SuppressWarnings({"ThrowNull"})
+    protected final java.lang.Object dynamicMethod(
+        com.google.protobuf.GeneratedMessageLite.MethodToInvoke method,
+        java.lang.Object arg0, java.lang.Object arg1) {
+      switch (method) {
+        case NEW_MUTABLE_INSTANCE: {
+          return new agent.v1.Agent.WatchSessionsResponse();
+        }
+        case NEW_BUILDER: {
+          return new Builder();
+        }
+        case BUILD_MESSAGE_INFO: {
+            java.lang.Object[] objects = new java.lang.Object[] {
+              "upserts_",
+              agent.v1.Agent.Session.class,
+              "removed_",
+              "snapshot_",
+            };
+            java.lang.String info =
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0002\u0000\u0001\u001b\u0002\u021a" +
+                "\u0003\u0007";
+            return newMessageInfo(DEFAULT_INSTANCE, info, objects);
+        }
+        case GET_DEFAULT_INSTANCE: {
+          return DEFAULT_INSTANCE;
+        }
+        case GET_PARSER: {
+          com.google.protobuf.Parser<agent.v1.Agent.WatchSessionsResponse> parser = PARSER;
+          if (parser == null) {
+            synchronized (agent.v1.Agent.WatchSessionsResponse.class) {
+              parser = PARSER;
+              if (parser == null) {
+                parser =
+                    new DefaultInstanceBasedParser<agent.v1.Agent.WatchSessionsResponse>(
+                        DEFAULT_INSTANCE);
+                PARSER = parser;
+              }
+            }
+          }
+          return parser;
+        }
+        case GET_MEMOIZED_IS_INITIALIZED: {
+          return (byte) 1;
+        }
+        // SET_MEMOIZED_IS_INITIALIZED is never called for this message.
+        // So it can do anything. Combine with default case for smaller codegen.
+        case SET_MEMOIZED_IS_INITIALIZED:
+      }
+      // Should never happen. Generates tight code to throw an exception.
+      throw null;
+    }
+
+
+    // @@protoc_insertion_point(class_scope:agent.v1.WatchSessionsResponse)
+    private static final agent.v1.Agent.WatchSessionsResponse DEFAULT_INSTANCE;
+    static {
+      WatchSessionsResponse defaultInstance = new WatchSessionsResponse();
+      // New instances are implicitly immutable so no need to make
+      // immutable.
+      DEFAULT_INSTANCE = defaultInstance;
+      com.google.protobuf.GeneratedMessageLite.registerDefaultInstance(
+        WatchSessionsResponse.class, defaultInstance);
+    }
+
+    public static agent.v1.Agent.WatchSessionsResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static volatile com.google.protobuf.Parser<WatchSessionsResponse> PARSER;
+
+    public static com.google.protobuf.Parser<WatchSessionsResponse> parser() {
+      return DEFAULT_INSTANCE.getParserForType();
+    }
+  }
+
   public interface FileRefOrBuilder extends
       // @@protoc_insertion_point(interface_extends:agent.v1.FileRef)
       com.google.protobuf.MessageLiteOrBuilder {
@@ -12485,11 +13984,19 @@ java.lang.String defaultValue) {
         getNameBytes();
 
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The model.
      */
     java.lang.String getModel();
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The bytes for model.
      */
@@ -12543,6 +14050,26 @@ java.lang.String defaultValue) {
      */
     com.google.protobuf.ByteString
         getBranchBytes();
+
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    java.lang.String getVariant();
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    com.google.protobuf.ByteString
+        getVariantBytes();
   }
   /**
    * Protobuf type {@code agent.v1.CreateSessionRequest}
@@ -12559,6 +14086,7 @@ java.lang.String defaultValue) {
       org_ = "";
       repo_ = "";
       branch_ = "";
+      variant_ = "";
     }
     public static final int NAME_FIELD_NUMBER = 1;
     private java.lang.String name_;
@@ -12610,6 +14138,10 @@ java.lang.String defaultValue) {
     public static final int MODEL_FIELD_NUMBER = 2;
     private java.lang.String model_;
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The model.
      */
@@ -12618,6 +14150,10 @@ java.lang.String defaultValue) {
       return model_;
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @return The bytes for model.
      */
@@ -12627,6 +14163,10 @@ java.lang.String defaultValue) {
       return com.google.protobuf.ByteString.copyFromUtf8(model_);
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @param value The model to set.
      */
@@ -12637,6 +14177,10 @@ java.lang.String defaultValue) {
       model_ = value;
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      */
     private void clearModel() {
@@ -12644,6 +14188,10 @@ java.lang.String defaultValue) {
       model_ = getDefaultInstance().getModel();
     }
     /**
+     * <pre>
+     * Canonical model reference "provider_id/model_id".
+     * </pre>
+     *
      * <code>string model = 2 [json_name = "model"];</code>
      * @param value The bytes for model to set.
      */
@@ -12842,6 +14390,73 @@ java.lang.String defaultValue) {
 
     }
 
+    public static final int VARIANT_FIELD_NUMBER = 7;
+    private java.lang.String variant_;
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    @java.lang.Override
+    public java.lang.String getVariant() {
+      return variant_;
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getVariantBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(variant_);
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @param value The variant to set.
+     */
+    private void setVariant(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      variant_ = value;
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     */
+    private void clearVariant() {
+
+      variant_ = getDefaultInstance().getVariant();
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id (see ModelInfo.variants).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @param value The bytes for variant to set.
+     */
+    private void setVariantBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      variant_ = value.toStringUtf8();
+
+    }
+
     public static agent.v1.Agent.CreateSessionRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -12989,6 +14604,10 @@ java.lang.String defaultValue) {
       }
 
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id".
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @return The model.
        */
@@ -12997,6 +14616,10 @@ java.lang.String defaultValue) {
         return instance.getModel();
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id".
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @return The bytes for model.
        */
@@ -13006,6 +14629,10 @@ java.lang.String defaultValue) {
         return instance.getModelBytes();
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id".
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @param value The model to set.
        * @return This builder for chaining.
@@ -13017,6 +14644,10 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id".
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @return This builder for chaining.
        */
@@ -13026,6 +14657,10 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
+       * <pre>
+       * Canonical model reference "provider_id/model_id".
+       * </pre>
+       *
        * <code>string model = 2 [json_name = "model"];</code>
        * @param value The bytes for model to set.
        * @return This builder for chaining.
@@ -13233,6 +14868,75 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * Optional reasoning variant id (see ModelInfo.variants).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @return The variant.
+       */
+      @java.lang.Override
+      public java.lang.String getVariant() {
+        return instance.getVariant();
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id (see ModelInfo.variants).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @return The bytes for variant.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getVariantBytes() {
+        return instance.getVariantBytes();
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id (see ModelInfo.variants).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @param value The variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariant(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setVariant(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id (see ModelInfo.variants).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVariant() {
+        copyOnWrite();
+        instance.clearVariant();
+        return this;
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id (see ModelInfo.variants).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @param value The bytes for variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariantBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setVariantBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.CreateSessionRequest)
     }
     @java.lang.Override
@@ -13255,10 +14959,11 @@ java.lang.String defaultValue) {
               "org_",
               "repo_",
               "branch_",
+              "variant_",
             };
             java.lang.String info =
-                "\u0000\u0006\u0000\u0000\u0001\u0006\u0006\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0208\u0004\u0208\u0005\u0208\u0006\u0208";
+                "\u0000\u0007\u0000\u0000\u0001\u0007\u0007\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208\u0004\u0208\u0005\u0208\u0006\u0208\u0007\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -17978,6 +19683,18 @@ java.lang.String defaultValue) {
      */
     com.google.protobuf.ByteString
         getModelBytes();
+
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    java.lang.String getVariant();
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    com.google.protobuf.ByteString
+        getVariantBytes();
   }
   /**
    * Protobuf type {@code agent.v1.SetModelRequest}
@@ -17990,6 +19707,7 @@ java.lang.String defaultValue) {
     private SetModelRequest() {
       id_ = "";
       model_ = "";
+      variant_ = "";
     }
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
@@ -18082,6 +19800,53 @@ java.lang.String defaultValue) {
         com.google.protobuf.ByteString value) {
       checkByteStringIsUtf8(value);
       model_ = value.toStringUtf8();
+
+    }
+
+    public static final int VARIANT_FIELD_NUMBER = 3;
+    private java.lang.String variant_;
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    @java.lang.Override
+    public java.lang.String getVariant() {
+      return variant_;
+    }
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getVariantBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(variant_);
+    }
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     * @param value The variant to set.
+     */
+    private void setVariant(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      variant_ = value;
+    }
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     */
+    private void clearVariant() {
+
+      variant_ = getDefaultInstance().getVariant();
+    }
+    /**
+     * <code>string variant = 3 [json_name = "variant"];</code>
+     * @param value The bytes for variant to set.
+     */
+    private void setVariantBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      variant_ = value.toStringUtf8();
 
     }
 
@@ -18280,6 +20045,55 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <code>string variant = 3 [json_name = "variant"];</code>
+       * @return The variant.
+       */
+      @java.lang.Override
+      public java.lang.String getVariant() {
+        return instance.getVariant();
+      }
+      /**
+       * <code>string variant = 3 [json_name = "variant"];</code>
+       * @return The bytes for variant.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getVariantBytes() {
+        return instance.getVariantBytes();
+      }
+      /**
+       * <code>string variant = 3 [json_name = "variant"];</code>
+       * @param value The variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariant(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setVariant(value);
+        return this;
+      }
+      /**
+       * <code>string variant = 3 [json_name = "variant"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVariant() {
+        copyOnWrite();
+        instance.clearVariant();
+        return this;
+      }
+      /**
+       * <code>string variant = 3 [json_name = "variant"];</code>
+       * @param value The bytes for variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariantBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setVariantBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.SetModelRequest)
     }
     @java.lang.Override
@@ -18298,10 +20112,11 @@ java.lang.String defaultValue) {
             java.lang.Object[] objects = new java.lang.Object[] {
               "id_",
               "model_",
+              "variant_",
             };
             java.lang.String info =
-                "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "";
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -20725,7 +22540,22 @@ java.lang.String defaultValue) {
         getPresetBytes();
 
     /**
-     * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+     * <pre>
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be &gt; 0 (0 is rejected).
+     * </pre>
+     *
+     * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
+     * @return Whether the maxTurns field is set.
+     */
+    boolean hasMaxTurns();
+    /**
+     * <pre>
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be &gt; 0 (0 is rejected).
+     * </pre>
+     *
+     * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
      * @return The maxTurns.
      */
     int getMaxTurns();
@@ -20753,6 +22583,26 @@ java.lang.String defaultValue) {
      */
     com.google.protobuf.ByteString
         getLocaleBytes();
+
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    java.lang.String getVariant();
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    com.google.protobuf.ByteString
+        getVariantBytes();
   }
   /**
    * Protobuf type {@code agent.v1.UpdateSettingsRequest}
@@ -20768,7 +22618,9 @@ java.lang.String defaultValue) {
       preset_ = "";
       systemPrompt_ = "";
       locale_ = "";
+      variant_ = "";
     }
+    private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
     /**
@@ -20913,7 +22765,25 @@ java.lang.String defaultValue) {
     public static final int MAX_TURNS_FIELD_NUMBER = 4;
     private int maxTurns_;
     /**
-     * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+     * <pre>
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be &gt; 0 (0 is rejected).
+     * </pre>
+     *
+     * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
+     * @return Whether the maxTurns field is set.
+     */
+    @java.lang.Override
+    public boolean hasMaxTurns() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <pre>
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be &gt; 0 (0 is rejected).
+     * </pre>
+     *
+     * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
      * @return The maxTurns.
      */
     @java.lang.Override
@@ -20921,18 +22791,28 @@ java.lang.String defaultValue) {
       return maxTurns_;
     }
     /**
-     * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+     * <pre>
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be &gt; 0 (0 is rejected).
+     * </pre>
+     *
+     * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
      * @param value The maxTurns to set.
      */
     private void setMaxTurns(int value) {
-      
+      bitField0_ |= 0x00000001;
       maxTurns_ = value;
     }
     /**
-     * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+     * <pre>
+     * Optional: omitted means "inherit (preset / default)"; an explicit value
+     * must be &gt; 0 (0 is rejected).
+     * </pre>
+     *
+     * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
      */
     private void clearMaxTurns() {
-
+      bitField0_ = (bitField0_ & ~0x00000001);
       maxTurns_ = 0;
     }
 
@@ -21027,6 +22907,73 @@ java.lang.String defaultValue) {
         com.google.protobuf.ByteString value) {
       checkByteStringIsUtf8(value);
       locale_ = value.toStringUtf8();
+
+    }
+
+    public static final int VARIANT_FIELD_NUMBER = 7;
+    private java.lang.String variant_;
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    @java.lang.Override
+    public java.lang.String getVariant() {
+      return variant_;
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getVariantBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(variant_);
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @param value The variant to set.
+     */
+    private void setVariant(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      variant_ = value;
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     */
+    private void clearVariant() {
+
+      variant_ = getDefaultInstance().getVariant();
+    }
+    /**
+     * <pre>
+     * Selected reasoning variant id (empty clears it).
+     * </pre>
+     *
+     * <code>string variant = 7 [json_name = "variant"];</code>
+     * @param value The bytes for variant to set.
+     */
+    private void setVariantBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      variant_ = value.toStringUtf8();
 
     }
 
@@ -21275,7 +23222,25 @@ java.lang.String defaultValue) {
       }
 
       /**
-       * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+       * <pre>
+       * Optional: omitted means "inherit (preset / default)"; an explicit value
+       * must be &gt; 0 (0 is rejected).
+       * </pre>
+       *
+       * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
+       * @return Whether the maxTurns field is set.
+       */
+      @java.lang.Override
+      public boolean hasMaxTurns() {
+        return instance.hasMaxTurns();
+      }
+      /**
+       * <pre>
+       * Optional: omitted means "inherit (preset / default)"; an explicit value
+       * must be &gt; 0 (0 is rejected).
+       * </pre>
+       *
+       * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
        * @return The maxTurns.
        */
       @java.lang.Override
@@ -21283,7 +23248,12 @@ java.lang.String defaultValue) {
         return instance.getMaxTurns();
       }
       /**
-       * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+       * <pre>
+       * Optional: omitted means "inherit (preset / default)"; an explicit value
+       * must be &gt; 0 (0 is rejected).
+       * </pre>
+       *
+       * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
        * @param value The maxTurns to set.
        * @return This builder for chaining.
        */
@@ -21293,7 +23263,12 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
-       * <code>int32 max_turns = 4 [json_name = "maxTurns"];</code>
+       * <pre>
+       * Optional: omitted means "inherit (preset / default)"; an explicit value
+       * must be &gt; 0 (0 is rejected).
+       * </pre>
+       *
+       * <code>optional int32 max_turns = 4 [json_name = "maxTurns"];</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxTurns() {
@@ -21400,6 +23375,75 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * Selected reasoning variant id (empty clears it).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @return The variant.
+       */
+      @java.lang.Override
+      public java.lang.String getVariant() {
+        return instance.getVariant();
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (empty clears it).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @return The bytes for variant.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getVariantBytes() {
+        return instance.getVariantBytes();
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (empty clears it).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @param value The variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariant(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setVariant(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (empty clears it).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVariant() {
+        copyOnWrite();
+        instance.clearVariant();
+        return this;
+      }
+      /**
+       * <pre>
+       * Selected reasoning variant id (empty clears it).
+       * </pre>
+       *
+       * <code>string variant = 7 [json_name = "variant"];</code>
+       * @param value The bytes for variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariantBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setVariantBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.UpdateSettingsRequest)
     }
     @java.lang.Override
@@ -21416,16 +23460,18 @@ java.lang.String defaultValue) {
         }
         case BUILD_MESSAGE_INFO: {
             java.lang.Object[] objects = new java.lang.Object[] {
+              "bitField0_",
               "id_",
               "model_",
               "preset_",
               "maxTurns_",
               "systemPrompt_",
               "locale_",
+              "variant_",
             };
             java.lang.String info =
-                "\u0000\u0006\u0000\u0000\u0001\u0006\u0006\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0208\u0004\u0004\u0005\u0208\u0006\u0208";
+                "\u0000\u0007\u0000\u0001\u0001\u0007\u0007\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208\u0004\u1004\u0000\u0005\u0208\u0006\u0208\u0007\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -26305,6 +28351,26 @@ com.google.protobuf.Value defaultValue) {
      */
     com.google.protobuf.ByteString
         getModelBytes();
+
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    java.lang.String getVariant();
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    com.google.protobuf.ByteString
+        getVariantBytes();
   }
   /**
    * Protobuf type {@code agent.v1.TestProviderRequest}
@@ -26320,6 +28386,7 @@ com.google.protobuf.Value defaultValue) {
       baseUrl_ = "";
       apiKey_ = "";
       model_ = "";
+      variant_ = "";
     }
     public static final int PROVIDER_ID_FIELD_NUMBER = 1;
     private java.lang.String providerId_;
@@ -26553,6 +28620,73 @@ com.google.protobuf.Value defaultValue) {
         com.google.protobuf.ByteString value) {
       checkByteStringIsUtf8(value);
       model_ = value.toStringUtf8();
+
+    }
+
+    public static final int VARIANT_FIELD_NUMBER = 6;
+    private java.lang.String variant_;
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     * @return The variant.
+     */
+    @java.lang.Override
+    public java.lang.String getVariant() {
+      return variant_;
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     * @return The bytes for variant.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getVariantBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(variant_);
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     * @param value The variant to set.
+     */
+    private void setVariant(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      variant_ = value;
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     */
+    private void clearVariant() {
+
+      variant_ = getDefaultInstance().getVariant();
+    }
+    /**
+     * <pre>
+     * Optional reasoning variant id to exercise in the test generation.
+     * </pre>
+     *
+     * <code>string variant = 6 [json_name = "variant"];</code>
+     * @param value The bytes for variant to set.
+     */
+    private void setVariantBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      variant_ = value.toStringUtf8();
 
     }
 
@@ -26898,6 +29032,75 @@ com.google.protobuf.Value defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * Optional reasoning variant id to exercise in the test generation.
+       * </pre>
+       *
+       * <code>string variant = 6 [json_name = "variant"];</code>
+       * @return The variant.
+       */
+      @java.lang.Override
+      public java.lang.String getVariant() {
+        return instance.getVariant();
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id to exercise in the test generation.
+       * </pre>
+       *
+       * <code>string variant = 6 [json_name = "variant"];</code>
+       * @return The bytes for variant.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getVariantBytes() {
+        return instance.getVariantBytes();
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id to exercise in the test generation.
+       * </pre>
+       *
+       * <code>string variant = 6 [json_name = "variant"];</code>
+       * @param value The variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariant(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setVariant(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id to exercise in the test generation.
+       * </pre>
+       *
+       * <code>string variant = 6 [json_name = "variant"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVariant() {
+        copyOnWrite();
+        instance.clearVariant();
+        return this;
+      }
+      /**
+       * <pre>
+       * Optional reasoning variant id to exercise in the test generation.
+       * </pre>
+       *
+       * <code>string variant = 6 [json_name = "variant"];</code>
+       * @param value The bytes for variant to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVariantBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setVariantBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.TestProviderRequest)
     }
     @java.lang.Override
@@ -26919,10 +29122,11 @@ com.google.protobuf.Value defaultValue) {
               "baseUrl_",
               "apiKey_",
               "model_",
+              "variant_",
             };
             java.lang.String info =
-                "\u0000\u0005\u0000\u0000\u0001\u0005\u0005\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0208\u0004\u0208\u0005\u0208";
+                "\u0000\u0006\u0000\u0000\u0001\u0006\u0006\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208\u0004\u0208\u0005\u0208\u0006\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -28063,6 +30267,45 @@ com.google.protobuf.Value defaultValue) {
      */
     com.google.protobuf.ByteString
         getNameBytes();
+
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    java.util.List<agent.v1.Agent.ModelVariant> 
+        getVariantsList();
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    agent.v1.Agent.ModelVariant getVariants(int index);
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    int getVariantsCount();
+
+    /**
+     * <pre>
+     * Context window (tokens) configured for this provider model.
+     * </pre>
+     *
+     * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+     * @return The contextLimit.
+     */
+    long getContextLimit();
   }
   /**
    * Protobuf type {@code agent.v1.ModelInfo}
@@ -28075,6 +30318,7 @@ com.google.protobuf.Value defaultValue) {
     private ModelInfo() {
       id_ = "";
       name_ = "";
+      variants_ = emptyProtobufList();
     }
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
@@ -28168,6 +30412,193 @@ com.google.protobuf.Value defaultValue) {
       checkByteStringIsUtf8(value);
       name_ = value.toStringUtf8();
 
+    }
+
+    public static final int VARIANTS_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.ModelVariant> variants_;
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    @java.lang.Override
+    public java.util.List<agent.v1.Agent.ModelVariant> getVariantsList() {
+      return variants_;
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    public java.util.List<? extends agent.v1.Agent.ModelVariantOrBuilder> 
+        getVariantsOrBuilderList() {
+      return variants_;
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    @java.lang.Override
+    public int getVariantsCount() {
+      return variants_.size();
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    @java.lang.Override
+    public agent.v1.Agent.ModelVariant getVariants(int index) {
+      return variants_.get(index);
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    public agent.v1.Agent.ModelVariantOrBuilder getVariantsOrBuilder(
+        int index) {
+      return variants_.get(index);
+    }
+    private void ensureVariantsIsMutable() {
+      com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.ModelVariant> tmp = variants_;
+      if (!tmp.isModifiable()) {
+        variants_ =
+            com.google.protobuf.GeneratedMessageLite.mutableCopy(tmp);
+       }
+    }
+
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    private void setVariants(
+        int index, agent.v1.Agent.ModelVariant value) {
+      java.util.Objects.requireNonNull(value);
+      ensureVariantsIsMutable();
+      variants_.set(index, value);
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    private void addVariants(agent.v1.Agent.ModelVariant value) {
+      java.util.Objects.requireNonNull(value);
+      ensureVariantsIsMutable();
+      variants_.add(value);
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    private void addVariants(
+        int index, agent.v1.Agent.ModelVariant value) {
+      java.util.Objects.requireNonNull(value);
+      ensureVariantsIsMutable();
+      variants_.add(index, value);
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    private void addAllVariants(
+        java.lang.Iterable<? extends agent.v1.Agent.ModelVariant> values) {
+      ensureVariantsIsMutable();
+      com.google.protobuf.AbstractMessageLite.addAll(
+          values, variants_);
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    private void clearVariants() {
+      variants_ = emptyProtobufList();
+    }
+    /**
+     * <pre>
+     * Reasoning variants offered by this model (from the models.dev catalog).
+     * Empty when the model has no reasoning options or is not in the catalog.
+     * </pre>
+     *
+     * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+     */
+    private void removeVariants(int index) {
+      ensureVariantsIsMutable();
+      variants_.remove(index);
+    }
+
+    public static final int CONTEXT_LIMIT_FIELD_NUMBER = 4;
+    private long contextLimit_;
+    /**
+     * <pre>
+     * Context window (tokens) configured for this provider model.
+     * </pre>
+     *
+     * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+     * @return The contextLimit.
+     */
+    @java.lang.Override
+    public long getContextLimit() {
+      return contextLimit_;
+    }
+    /**
+     * <pre>
+     * Context window (tokens) configured for this provider model.
+     * </pre>
+     *
+     * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+     * @param value The contextLimit to set.
+     */
+    private void setContextLimit(long value) {
+      
+      contextLimit_ = value;
+    }
+    /**
+     * <pre>
+     * Context window (tokens) configured for this provider model.
+     * </pre>
+     *
+     * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+     */
+    private void clearContextLimit() {
+
+      contextLimit_ = 0L;
     }
 
     public static agent.v1.Agent.ModelInfo parseFrom(
@@ -28365,6 +30796,208 @@ com.google.protobuf.Value defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      @java.lang.Override
+      public java.util.List<agent.v1.Agent.ModelVariant> getVariantsList() {
+        return java.util.Collections.unmodifiableList(
+            instance.getVariantsList());
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      @java.lang.Override
+      public int getVariantsCount() {
+        return instance.getVariantsCount();
+      }/**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      @java.lang.Override
+      public agent.v1.Agent.ModelVariant getVariants(int index) {
+        return instance.getVariants(index);
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder setVariants(
+          int index, agent.v1.Agent.ModelVariant value) {
+        copyOnWrite();
+        instance.setVariants(index, value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder setVariants(
+          int index, agent.v1.Agent.ModelVariant.Builder builderForValue) {
+        copyOnWrite();
+        instance.setVariants(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder addVariants(agent.v1.Agent.ModelVariant value) {
+        copyOnWrite();
+        instance.addVariants(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder addVariants(
+          int index, agent.v1.Agent.ModelVariant value) {
+        copyOnWrite();
+        instance.addVariants(index, value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder addVariants(
+          agent.v1.Agent.ModelVariant.Builder builderForValue) {
+        copyOnWrite();
+        instance.addVariants(builderForValue.build());
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder addVariants(
+          int index, agent.v1.Agent.ModelVariant.Builder builderForValue) {
+        copyOnWrite();
+        instance.addVariants(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder addAllVariants(
+          java.lang.Iterable<? extends agent.v1.Agent.ModelVariant> values) {
+        copyOnWrite();
+        instance.addAllVariants(values);
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder clearVariants() {
+        copyOnWrite();
+        instance.clearVariants();
+        return this;
+      }
+      /**
+       * <pre>
+       * Reasoning variants offered by this model (from the models.dev catalog).
+       * Empty when the model has no reasoning options or is not in the catalog.
+       * </pre>
+       *
+       * <code>repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];</code>
+       */
+      public Builder removeVariants(int index) {
+        copyOnWrite();
+        instance.removeVariants(index);
+        return this;
+      }
+
+      /**
+       * <pre>
+       * Context window (tokens) configured for this provider model.
+       * </pre>
+       *
+       * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+       * @return The contextLimit.
+       */
+      @java.lang.Override
+      public long getContextLimit() {
+        return instance.getContextLimit();
+      }
+      /**
+       * <pre>
+       * Context window (tokens) configured for this provider model.
+       * </pre>
+       *
+       * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+       * @param value The contextLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContextLimit(long value) {
+        copyOnWrite();
+        instance.setContextLimit(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Context window (tokens) configured for this provider model.
+       * </pre>
+       *
+       * <code>int64 context_limit = 4 [json_name = "contextLimit"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContextLimit() {
+        copyOnWrite();
+        instance.clearContextLimit();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.ModelInfo)
     }
     @java.lang.Override
@@ -28383,10 +31016,13 @@ com.google.protobuf.Value defaultValue) {
             java.lang.Object[] objects = new java.lang.Object[] {
               "id_",
               "name_",
+              "variants_",
+              agent.v1.Agent.ModelVariant.class,
+              "contextLimit_",
             };
             java.lang.String info =
-                "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "";
+                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0001\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u001b\u0004\u0002";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -28437,6 +31073,531 @@ com.google.protobuf.Value defaultValue) {
     private static volatile com.google.protobuf.Parser<ModelInfo> PARSER;
 
     public static com.google.protobuf.Parser<ModelInfo> parser() {
+      return DEFAULT_INSTANCE.getParserForType();
+    }
+  }
+
+  public interface ModelVariantOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:agent.v1.ModelVariant)
+      com.google.protobuf.MessageLiteOrBuilder {
+
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     * @return The id.
+     */
+    java.lang.String getId();
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     * @return The bytes for id.
+     */
+    com.google.protobuf.ByteString
+        getIdBytes();
+
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     * @return The description.
+     */
+    java.lang.String getDescription();
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     * @return The bytes for description.
+     */
+    com.google.protobuf.ByteString
+        getDescriptionBytes();
+  }
+  /**
+   * <pre>
+   * A selectable reasoning variant for a model (e.g. low/medium/high/max, or a
+   * fast mode). `id` is passed back on CreateSession/SetModel/UpdateSettings.
+   * </pre>
+   *
+   * Protobuf type {@code agent.v1.ModelVariant}
+   */
+  public  static final class ModelVariant extends
+      com.google.protobuf.GeneratedMessageLite<
+          ModelVariant, ModelVariant.Builder> implements
+      // @@protoc_insertion_point(message_implements:agent.v1.ModelVariant)
+      ModelVariantOrBuilder {
+    private ModelVariant() {
+      id_ = "";
+      name_ = "";
+      description_ = "";
+    }
+    public static final int ID_FIELD_NUMBER = 1;
+    private java.lang.String id_;
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public java.lang.String getId() {
+      return id_;
+    }
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     * @return The bytes for id.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getIdBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(id_);
+    }
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     * @param value The id to set.
+     */
+    private void setId(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      id_ = value;
+    }
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     */
+    private void clearId() {
+
+      id_ = getDefaultInstance().getId();
+    }
+    /**
+     * <code>string id = 1 [json_name = "id"];</code>
+     * @param value The bytes for id to set.
+     */
+    private void setIdBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      id_ = value.toStringUtf8();
+
+    }
+
+    public static final int NAME_FIELD_NUMBER = 2;
+    private java.lang.String name_;
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     * @return The name.
+     */
+    @java.lang.Override
+    public java.lang.String getName() {
+      return name_;
+    }
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     * @return The bytes for name.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(name_);
+    }
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     * @param value The name to set.
+     */
+    private void setName(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      name_ = value;
+    }
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     */
+    private void clearName() {
+
+      name_ = getDefaultInstance().getName();
+    }
+    /**
+     * <code>string name = 2 [json_name = "name"];</code>
+     * @param value The bytes for name to set.
+     */
+    private void setNameBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      name_ = value.toStringUtf8();
+
+    }
+
+    public static final int DESCRIPTION_FIELD_NUMBER = 3;
+    private java.lang.String description_;
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     * @return The description.
+     */
+    @java.lang.Override
+    public java.lang.String getDescription() {
+      return description_;
+    }
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     * @return The bytes for description.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDescriptionBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(description_);
+    }
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     * @param value The description to set.
+     */
+    private void setDescription(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      description_ = value;
+    }
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     */
+    private void clearDescription() {
+
+      description_ = getDefaultInstance().getDescription();
+    }
+    /**
+     * <code>string description = 3 [json_name = "description"];</code>
+     * @param value The bytes for description to set.
+     */
+    private void setDescriptionBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      description_ = value.toStringUtf8();
+
+    }
+
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static agent.v1.Agent.ModelVariant parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static agent.v1.Agent.ModelVariant parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.ModelVariant parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return (Builder) DEFAULT_INSTANCE.createBuilder();
+    }
+    public static Builder newBuilder(agent.v1.Agent.ModelVariant prototype) {
+      return DEFAULT_INSTANCE.createBuilder(prototype);
+    }
+
+    /**
+     * <pre>
+     * A selectable reasoning variant for a model (e.g. low/medium/high/max, or a
+     * fast mode). `id` is passed back on CreateSession/SetModel/UpdateSettings.
+     * </pre>
+     *
+     * Protobuf type {@code agent.v1.ModelVariant}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageLite.Builder<
+          agent.v1.Agent.ModelVariant, Builder> implements
+        // @@protoc_insertion_point(builder_implements:agent.v1.ModelVariant)
+        agent.v1.Agent.ModelVariantOrBuilder {
+      // Construct using agent.v1.Agent.ModelVariant.newBuilder()
+      private Builder() {
+        super(DEFAULT_INSTANCE);
+      }
+
+
+      /**
+       * <code>string id = 1 [json_name = "id"];</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public java.lang.String getId() {
+        return instance.getId();
+      }
+      /**
+       * <code>string id = 1 [json_name = "id"];</code>
+       * @return The bytes for id.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getIdBytes() {
+        return instance.getIdBytes();
+      }
+      /**
+       * <code>string id = 1 [json_name = "id"];</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setId(value);
+        return this;
+      }
+      /**
+       * <code>string id = 1 [json_name = "id"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        copyOnWrite();
+        instance.clearId();
+        return this;
+      }
+      /**
+       * <code>string id = 1 [json_name = "id"];</code>
+       * @param value The bytes for id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIdBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setIdBytes(value);
+        return this;
+      }
+
+      /**
+       * <code>string name = 2 [json_name = "name"];</code>
+       * @return The name.
+       */
+      @java.lang.Override
+      public java.lang.String getName() {
+        return instance.getName();
+      }
+      /**
+       * <code>string name = 2 [json_name = "name"];</code>
+       * @return The bytes for name.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        return instance.getNameBytes();
+      }
+      /**
+       * <code>string name = 2 [json_name = "name"];</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setName(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setName(value);
+        return this;
+      }
+      /**
+       * <code>string name = 2 [json_name = "name"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearName() {
+        copyOnWrite();
+        instance.clearName();
+        return this;
+      }
+      /**
+       * <code>string name = 2 [json_name = "name"];</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setNameBytes(value);
+        return this;
+      }
+
+      /**
+       * <code>string description = 3 [json_name = "description"];</code>
+       * @return The description.
+       */
+      @java.lang.Override
+      public java.lang.String getDescription() {
+        return instance.getDescription();
+      }
+      /**
+       * <code>string description = 3 [json_name = "description"];</code>
+       * @return The bytes for description.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getDescriptionBytes() {
+        return instance.getDescriptionBytes();
+      }
+      /**
+       * <code>string description = 3 [json_name = "description"];</code>
+       * @param value The description to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDescription(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setDescription(value);
+        return this;
+      }
+      /**
+       * <code>string description = 3 [json_name = "description"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDescription() {
+        copyOnWrite();
+        instance.clearDescription();
+        return this;
+      }
+      /**
+       * <code>string description = 3 [json_name = "description"];</code>
+       * @param value The bytes for description to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDescriptionBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setDescriptionBytes(value);
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:agent.v1.ModelVariant)
+    }
+    @java.lang.Override
+    @java.lang.SuppressWarnings({"ThrowNull"})
+    protected final java.lang.Object dynamicMethod(
+        com.google.protobuf.GeneratedMessageLite.MethodToInvoke method,
+        java.lang.Object arg0, java.lang.Object arg1) {
+      switch (method) {
+        case NEW_MUTABLE_INSTANCE: {
+          return new agent.v1.Agent.ModelVariant();
+        }
+        case NEW_BUILDER: {
+          return new Builder();
+        }
+        case BUILD_MESSAGE_INFO: {
+            java.lang.Object[] objects = new java.lang.Object[] {
+              "id_",
+              "name_",
+              "description_",
+            };
+            java.lang.String info =
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208";
+            return newMessageInfo(DEFAULT_INSTANCE, info, objects);
+        }
+        case GET_DEFAULT_INSTANCE: {
+          return DEFAULT_INSTANCE;
+        }
+        case GET_PARSER: {
+          com.google.protobuf.Parser<agent.v1.Agent.ModelVariant> parser = PARSER;
+          if (parser == null) {
+            synchronized (agent.v1.Agent.ModelVariant.class) {
+              parser = PARSER;
+              if (parser == null) {
+                parser =
+                    new DefaultInstanceBasedParser<agent.v1.Agent.ModelVariant>(
+                        DEFAULT_INSTANCE);
+                PARSER = parser;
+              }
+            }
+          }
+          return parser;
+        }
+        case GET_MEMOIZED_IS_INITIALIZED: {
+          return (byte) 1;
+        }
+        // SET_MEMOIZED_IS_INITIALIZED is never called for this message.
+        // So it can do anything. Combine with default case for smaller codegen.
+        case SET_MEMOIZED_IS_INITIALIZED:
+      }
+      // Should never happen. Generates tight code to throw an exception.
+      throw null;
+    }
+
+
+    // @@protoc_insertion_point(class_scope:agent.v1.ModelVariant)
+    private static final agent.v1.Agent.ModelVariant DEFAULT_INSTANCE;
+    static {
+      ModelVariant defaultInstance = new ModelVariant();
+      // New instances are implicitly immutable so no need to make
+      // immutable.
+      DEFAULT_INSTANCE = defaultInstance;
+      com.google.protobuf.GeneratedMessageLite.registerDefaultInstance(
+        ModelVariant.class, defaultInstance);
+    }
+
+    public static agent.v1.Agent.ModelVariant getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static volatile com.google.protobuf.Parser<ModelVariant> PARSER;
+
+    public static com.google.protobuf.Parser<ModelVariant> parser() {
       return DEFAULT_INSTANCE.getParserForType();
     }
   }

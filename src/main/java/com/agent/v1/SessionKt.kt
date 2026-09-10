@@ -51,6 +51,11 @@ public object SessionKt {
     }
 
     /**
+     * ```
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * ```
+     *
      * `string model = 2 [json_name = "model"];`
      */
     public var model: kotlin.String
@@ -61,6 +66,11 @@ public object SessionKt {
         _builder.model = value
       }
     /**
+     * ```
+     * Canonical model reference "provider_id/model_id". A bare model id is
+     * never resolved by flat lookup: the provider must be named explicitly.
+     * ```
+     *
      * `string model = 2 [json_name = "model"];`
      */
     public fun clearModel() {
@@ -396,6 +406,64 @@ public object SessionKt {
      */
     public fun clearLastMessagePreview() {
       _builder.clearLastMessagePreview()
+    }
+
+    /**
+     * ```
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * ```
+     *
+     * `string variant = 22 [json_name = "variant"];`
+     */
+    public var variant: kotlin.String
+      @kotlin.jvm.JvmName("getVariant")
+        get() = _builder.variant
+      @kotlin.jvm.JvmName("setVariant")
+        set(value) {
+        _builder.variant = value
+      }
+    /**
+     * ```
+     * Selected reasoning variant id (e.g. "low"/"medium"/"high"/"max"/"fast").
+     * Empty means "no variant" (provider defaults; no providerOptions sent).
+     * ```
+     *
+     * `string variant = 22 [json_name = "variant"];`
+     */
+    public fun clearVariant() {
+      _builder.clearVariant()
+    }
+
+    /**
+     * ```
+     * Monotonic per-session message counter, bumped for every appended message
+     * (user/assistant/event/compaction). Clients derive the unread count as the
+     * number of messages with seq greater than their locally-persisted read
+     * watermark (read state is client-local; the agent never stores it).
+     * ```
+     *
+     * `int32 message_seq = 23 [json_name = "messageSeq"];`
+     */
+    public var messageSeq: kotlin.Int
+      @kotlin.jvm.JvmName("getMessageSeq")
+        get() = _builder.messageSeq
+      @kotlin.jvm.JvmName("setMessageSeq")
+        set(value) {
+        _builder.messageSeq = value
+      }
+    /**
+     * ```
+     * Monotonic per-session message counter, bumped for every appended message
+     * (user/assistant/event/compaction). Clients derive the unread count as the
+     * number of messages with seq greater than their locally-persisted read
+     * watermark (read state is client-local; the agent never stores it).
+     * ```
+     *
+     * `int32 message_seq = 23 [json_name = "messageSeq"];`
+     */
+    public fun clearMessageSeq() {
+      _builder.clearMessageSeq()
     }
   }
 }
