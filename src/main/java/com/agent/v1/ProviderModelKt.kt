@@ -12,9 +12,13 @@ public inline fun providerModel(block: agent.v1.ProviderModelKt.Dsl.() -> kotlin
   agent.v1.ProviderModelKt.Dsl._create(agent.v1.Agent.ProviderModel.newBuilder()).apply { block() }._build()
 /**
  * ```
- * Provider model entry. `context_limit` (the model's context window in
- * tokens) is REQUIRED and user-supplied: it drives compaction budgets, and it
- * is never inferred from an external catalog.
+ * Provider model entry. Text providers (api_type != vercel-compatible-gateway)
+ * carry only text models: `context_limit` (> 0) is REQUIRED and drives
+ * compaction budgets. The single `vercel-compatible-gateway` provider is a
+ * SUPERSET — it may carry text models (context_limit > 0) AND multimodal
+ * models used by tools (image/video/speech/transcription, context_limit 0);
+ * which capability a multimodal model serves is implied by the tool's config
+ * knob (image_model / video_model / tts_model / asr_model), not stored here.
  * ```
  *
  * Protobuf type `agent.v1.ProviderModel`
@@ -70,11 +74,6 @@ public object ProviderModelKt {
     }
 
     /**
-     * ```
-     * Context window (tokens). REQUIRED (> 0) for text models (drives
-     * compaction budgets); ignored for generation models (image/video/speech).
-     * ```
-     *
      * `int64 context_limit = 3 [json_name = "contextLimit"];`
      */
     public var contextLimit: kotlin.Long
@@ -85,46 +84,10 @@ public object ProviderModelKt {
         _builder.contextLimit = value
       }
     /**
-     * ```
-     * Context window (tokens). REQUIRED (> 0) for text models (drives
-     * compaction budgets); ignored for generation models (image/video/speech).
-     * ```
-     *
      * `int64 context_limit = 3 [json_name = "contextLimit"];`
      */
     public fun clearContextLimit() {
       _builder.clearContextLimit()
-    }
-
-    /**
-     * ```
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * ```
-     *
-     * `string capability = 4 [json_name = "capability"];`
-     */
-    public var capability: kotlin.String
-      @kotlin.jvm.JvmName("getCapability")
-        get() = _builder.capability
-      @kotlin.jvm.JvmName("setCapability")
-        set(value) {
-        _builder.capability = value
-      }
-    /**
-     * ```
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * ```
-     *
-     * `string capability = 4 [json_name = "capability"];`
-     */
-    public fun clearCapability() {
-      _builder.clearCapability()
     }
   }
 }

@@ -7312,47 +7312,20 @@ java.lang.String defaultValue) {
         getNameBytes();
 
     /**
-     * <pre>
-     * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-     * compaction budgets); ignored for generation models (image/video/speech).
-     * </pre>
-     *
      * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
      * @return The contextLimit.
      */
     long getContextLimit();
-
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     * @return The capability.
-     */
-    java.lang.String getCapability();
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     * @return The bytes for capability.
-     */
-    com.google.protobuf.ByteString
-        getCapabilityBytes();
   }
   /**
    * <pre>
-   * Provider model entry. `context_limit` (the model's context window in
-   * tokens) is REQUIRED and user-supplied: it drives compaction budgets, and it
-   * is never inferred from an external catalog.
+   * Provider model entry. Text providers (api_type != vercel-compatible-gateway)
+   * carry only text models: `context_limit` (&gt; 0) is REQUIRED and drives
+   * compaction budgets. The single `vercel-compatible-gateway` provider is a
+   * SUPERSET — it may carry text models (context_limit &gt; 0) AND multimodal
+   * models used by tools (image/video/speech/transcription, context_limit 0);
+   * which capability a multimodal model serves is implied by the tool's config
+   * knob (image_model / video_model / tts_model / asr_model), not stored here.
    * </pre>
    *
    * Protobuf type {@code agent.v1.ProviderModel}
@@ -7365,7 +7338,6 @@ java.lang.String defaultValue) {
     private ProviderModel() {
       id_ = "";
       name_ = "";
-      capability_ = "";
     }
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
@@ -7464,11 +7436,6 @@ java.lang.String defaultValue) {
     public static final int CONTEXT_LIMIT_FIELD_NUMBER = 3;
     private long contextLimit_;
     /**
-     * <pre>
-     * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-     * compaction budgets); ignored for generation models (image/video/speech).
-     * </pre>
-     *
      * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
      * @return The contextLimit.
      */
@@ -7477,11 +7444,6 @@ java.lang.String defaultValue) {
       return contextLimit_;
     }
     /**
-     * <pre>
-     * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-     * compaction budgets); ignored for generation models (image/video/speech).
-     * </pre>
-     *
      * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
      * @param value The contextLimit to set.
      */
@@ -7490,98 +7452,11 @@ java.lang.String defaultValue) {
       contextLimit_ = value;
     }
     /**
-     * <pre>
-     * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-     * compaction budgets); ignored for generation models (image/video/speech).
-     * </pre>
-     *
      * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
      */
     private void clearContextLimit() {
 
       contextLimit_ = 0L;
-    }
-
-    public static final int CAPABILITY_FIELD_NUMBER = 4;
-    private java.lang.String capability_;
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     * @return The capability.
-     */
-    @java.lang.Override
-    public java.lang.String getCapability() {
-      return capability_;
-    }
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     * @return The bytes for capability.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getCapabilityBytes() {
-      return com.google.protobuf.ByteString.copyFromUtf8(capability_);
-    }
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     * @param value The capability to set.
-     */
-    private void setCapability(
-        java.lang.String value) {
-      java.util.Objects.requireNonNull(value);
-
-      capability_ = value;
-    }
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     */
-    private void clearCapability() {
-
-      capability_ = getDefaultInstance().getCapability();
-    }
-    /**
-     * <pre>
-     * What the model generates: "text" (default, chat/vision), "image",
-     * "video", or "speech". Text models feed sessions; generation models are
-     * resolved by tools (image-generate / image-edit / video-generate /
-     * tts-generate) via the same provider registry.
-     * </pre>
-     *
-     * <code>string capability = 4 [json_name = "capability"];</code>
-     * @param value The bytes for capability to set.
-     */
-    private void setCapabilityBytes(
-        com.google.protobuf.ByteString value) {
-      checkByteStringIsUtf8(value);
-      capability_ = value.toStringUtf8();
-
     }
 
     public static agent.v1.Agent.ProviderModel parseFrom(
@@ -7669,9 +7544,13 @@ java.lang.String defaultValue) {
 
     /**
      * <pre>
-     * Provider model entry. `context_limit` (the model's context window in
-     * tokens) is REQUIRED and user-supplied: it drives compaction budgets, and it
-     * is never inferred from an external catalog.
+     * Provider model entry. Text providers (api_type != vercel-compatible-gateway)
+     * carry only text models: `context_limit` (&gt; 0) is REQUIRED and drives
+     * compaction budgets. The single `vercel-compatible-gateway` provider is a
+     * SUPERSET — it may carry text models (context_limit &gt; 0) AND multimodal
+     * models used by tools (image/video/speech/transcription, context_limit 0);
+     * which capability a multimodal model serves is implied by the tool's config
+     * knob (image_model / video_model / tts_model / asr_model), not stored here.
      * </pre>
      *
      * Protobuf type {@code agent.v1.ProviderModel}
@@ -7786,11 +7665,6 @@ java.lang.String defaultValue) {
       }
 
       /**
-       * <pre>
-       * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-       * compaction budgets); ignored for generation models (image/video/speech).
-       * </pre>
-       *
        * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
        * @return The contextLimit.
        */
@@ -7799,11 +7673,6 @@ java.lang.String defaultValue) {
         return instance.getContextLimit();
       }
       /**
-       * <pre>
-       * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-       * compaction budgets); ignored for generation models (image/video/speech).
-       * </pre>
-       *
        * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
        * @param value The contextLimit to set.
        * @return This builder for chaining.
@@ -7814,101 +7683,12 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
-       * <pre>
-       * Context window (tokens). REQUIRED (&gt; 0) for text models (drives
-       * compaction budgets); ignored for generation models (image/video/speech).
-       * </pre>
-       *
        * <code>int64 context_limit = 3 [json_name = "contextLimit"];</code>
        * @return This builder for chaining.
        */
       public Builder clearContextLimit() {
         copyOnWrite();
         instance.clearContextLimit();
-        return this;
-      }
-
-      /**
-       * <pre>
-       * What the model generates: "text" (default, chat/vision), "image",
-       * "video", or "speech". Text models feed sessions; generation models are
-       * resolved by tools (image-generate / image-edit / video-generate /
-       * tts-generate) via the same provider registry.
-       * </pre>
-       *
-       * <code>string capability = 4 [json_name = "capability"];</code>
-       * @return The capability.
-       */
-      @java.lang.Override
-      public java.lang.String getCapability() {
-        return instance.getCapability();
-      }
-      /**
-       * <pre>
-       * What the model generates: "text" (default, chat/vision), "image",
-       * "video", or "speech". Text models feed sessions; generation models are
-       * resolved by tools (image-generate / image-edit / video-generate /
-       * tts-generate) via the same provider registry.
-       * </pre>
-       *
-       * <code>string capability = 4 [json_name = "capability"];</code>
-       * @return The bytes for capability.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getCapabilityBytes() {
-        return instance.getCapabilityBytes();
-      }
-      /**
-       * <pre>
-       * What the model generates: "text" (default, chat/vision), "image",
-       * "video", or "speech". Text models feed sessions; generation models are
-       * resolved by tools (image-generate / image-edit / video-generate /
-       * tts-generate) via the same provider registry.
-       * </pre>
-       *
-       * <code>string capability = 4 [json_name = "capability"];</code>
-       * @param value The capability to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCapability(
-          java.lang.String value) {
-        copyOnWrite();
-        instance.setCapability(value);
-        return this;
-      }
-      /**
-       * <pre>
-       * What the model generates: "text" (default, chat/vision), "image",
-       * "video", or "speech". Text models feed sessions; generation models are
-       * resolved by tools (image-generate / image-edit / video-generate /
-       * tts-generate) via the same provider registry.
-       * </pre>
-       *
-       * <code>string capability = 4 [json_name = "capability"];</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCapability() {
-        copyOnWrite();
-        instance.clearCapability();
-        return this;
-      }
-      /**
-       * <pre>
-       * What the model generates: "text" (default, chat/vision), "image",
-       * "video", or "speech". Text models feed sessions; generation models are
-       * resolved by tools (image-generate / image-edit / video-generate /
-       * tts-generate) via the same provider registry.
-       * </pre>
-       *
-       * <code>string capability = 4 [json_name = "capability"];</code>
-       * @param value The bytes for capability to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCapabilityBytes(
-          com.google.protobuf.ByteString value) {
-        copyOnWrite();
-        instance.setCapabilityBytes(value);
         return this;
       }
 
@@ -7931,11 +7711,10 @@ java.lang.String defaultValue) {
               "id_",
               "name_",
               "contextLimit_",
-              "capability_",
             };
             java.lang.String info =
-                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0002\u0004\u0208";
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0002";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
