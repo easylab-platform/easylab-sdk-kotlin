@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializefileReadRequest")
-public inline fun fileReadRequest(block: easylab.v1.FileReadRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileReadRequest =
-  easylab.v1.FileReadRequestKt.Dsl._create(easylab.v1.Easylab.FileReadRequest.newBuilder()).apply { block() }._build()
+public inline fun fileReadRequest(block: com.easylab.v1.FileReadRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileReadRequest =
+  com.easylab.v1.FileReadRequestKt.Dsl._create(com.easylab.v1.FileReadRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.FileReadRequest`
  */
@@ -17,17 +17,17 @@ public object FileReadRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.FileReadRequest.Builder
+    private val _builder: com.easylab.v1.FileReadRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.FileReadRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.FileReadRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.FileReadRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.FileReadRequest = _builder.build()
 
     /**
      * `string sandbox = 1 [json_name = "sandbox"];`
@@ -49,7 +49,7 @@ public object FileReadRequestKt {
     /**
      * `.worker.v1.FileReadRequest req = 2 [json_name = "req"];`
      */
-    public var req: worker.v1.Worker.FileReadRequest
+    public var req: com.worker.v1.FileReadRequest
       @kotlin.jvm.JvmName("getReq")
         get() = _builder.req
       @kotlin.jvm.JvmName("setReq")
@@ -70,13 +70,13 @@ public object FileReadRequestKt {
       return _builder.hasReq()
     }
 
-    public val FileReadRequestKt.Dsl.reqOrNull: worker.v1.Worker.FileReadRequest?
+    public val FileReadRequestKt.Dsl.reqOrNull: com.worker.v1.FileReadRequest?
       get() = _builder.reqOrNull
   }
 }
-public inline fun easylab.v1.Easylab.FileReadRequest.copy(block: `easylab.v1`.FileReadRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileReadRequest =
-  `easylab.v1`.FileReadRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.FileReadRequest.copy(block: `com.easylab.v1`.FileReadRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileReadRequest =
+  `com.easylab.v1`.FileReadRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.FileReadRequestOrBuilder.reqOrNull: worker.v1.Worker.FileReadRequest?
+public val com.easylab.v1.FileReadRequestOrBuilder.reqOrNull: com.worker.v1.FileReadRequest?
   get() = if (hasReq()) getReq() else null
 

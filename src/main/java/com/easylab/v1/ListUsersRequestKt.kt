@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistUsersRequest")
-public inline fun listUsersRequest(block: easylab.v1.ListUsersRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListUsersRequest =
-  easylab.v1.ListUsersRequestKt.Dsl._create(easylab.v1.Easylab.ListUsersRequest.newBuilder()).apply { block() }._build()
+public inline fun listUsersRequest(block: com.easylab.v1.ListUsersRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListUsersRequest =
+  com.easylab.v1.ListUsersRequestKt.Dsl._create(com.easylab.v1.ListUsersRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListUsersRequest`
  */
@@ -17,19 +17,19 @@ public object ListUsersRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListUsersRequest.Builder
+    private val _builder: com.easylab.v1.ListUsersRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListUsersRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListUsersRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListUsersRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ListUsersRequest = _builder.build()
   }
 }
-public inline fun easylab.v1.Easylab.ListUsersRequest.copy(block: `easylab.v1`.ListUsersRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListUsersRequest =
-  `easylab.v1`.ListUsersRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListUsersRequest.copy(block: `com.easylab.v1`.ListUsersRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListUsersRequest =
+  `com.easylab.v1`.ListUsersRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

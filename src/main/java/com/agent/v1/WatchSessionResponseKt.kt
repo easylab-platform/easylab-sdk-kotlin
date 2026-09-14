@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializewatchSessionResponse")
-public inline fun watchSessionResponse(block: agent.v1.WatchSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionResponse =
-  agent.v1.WatchSessionResponseKt.Dsl._create(agent.v1.Agent.WatchSessionResponse.newBuilder()).apply { block() }._build()
+public inline fun watchSessionResponse(block: com.agent.v1.WatchSessionResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.WatchSessionResponse =
+  com.agent.v1.WatchSessionResponseKt.Dsl._create(com.agent.v1.WatchSessionResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.WatchSessionResponse`
  */
@@ -17,17 +17,17 @@ public object WatchSessionResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.WatchSessionResponse.Builder
+    private val _builder: com.agent.v1.WatchSessionResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.WatchSessionResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.WatchSessionResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.WatchSessionResponse = _builder.build()
+    internal fun _build(): com.agent.v1.WatchSessionResponse = _builder.build()
 
     /**
      * `string event = 1 [json_name = "event"];`
@@ -91,9 +91,9 @@ public object WatchSessionResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.WatchSessionResponse.copy(block: `agent.v1`.WatchSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionResponse =
-  `agent.v1`.WatchSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.WatchSessionResponse.copy(block: `com.agent.v1`.WatchSessionResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.WatchSessionResponse =
+  `com.agent.v1`.WatchSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.WatchSessionResponseOrBuilder.paramsOrNull: com.google.protobuf.Struct?
+public val com.agent.v1.WatchSessionResponseOrBuilder.paramsOrNull: com.google.protobuf.Struct?
   get() = if (hasParams()) getParams() else null
 

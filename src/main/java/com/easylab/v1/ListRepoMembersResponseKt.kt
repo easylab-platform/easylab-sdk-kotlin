@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistRepoMembersResponse")
-public inline fun listRepoMembersResponse(block: easylab.v1.ListRepoMembersResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListRepoMembersResponse =
-  easylab.v1.ListRepoMembersResponseKt.Dsl._create(easylab.v1.Easylab.ListRepoMembersResponse.newBuilder()).apply { block() }._build()
+public inline fun listRepoMembersResponse(block: com.easylab.v1.ListRepoMembersResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListRepoMembersResponse =
+  com.easylab.v1.ListRepoMembersResponseKt.Dsl._create(com.easylab.v1.ListRepoMembersResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListRepoMembersResponse`
  */
@@ -17,17 +17,17 @@ public object ListRepoMembersResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListRepoMembersResponse.Builder
+    private val _builder: com.easylab.v1.ListRepoMembersResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListRepoMembersResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListRepoMembersResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListRepoMembersResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListRepoMembersResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListRepoMembersResponseKt {
     /**
      * `repeated .easylab.v1.RepoMember members = 1 [json_name = "members"];`
      */
-     public val members: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>
+     public val members: com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.membersList
@@ -49,7 +49,7 @@ public object ListRepoMembersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addMembers")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>.add(value: easylab.v1.Easylab.RepoMember) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>.add(value: com.easylab.v1.RepoMember) {
       _builder.addMembers(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListRepoMembersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignMembers")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>.plusAssign(value: easylab.v1.Easylab.RepoMember) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>.plusAssign(value: com.easylab.v1.RepoMember) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListRepoMembersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllMembers")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.RepoMember>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.RepoMember>) {
       _builder.addAllMembers(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListRepoMembersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllMembers")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.RepoMember>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.RepoMember>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListRepoMembersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setMembers")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.RepoMember) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>.set(index: kotlin.Int, value: com.easylab.v1.RepoMember) {
       _builder.setMembers(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListRepoMembersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearMembers")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoMember, MembersProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoMember, MembersProxy>.clear() {
       _builder.clearMembers()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListRepoMembersResponse.copy(block: `easylab.v1`.ListRepoMembersResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListRepoMembersResponse =
-  `easylab.v1`.ListRepoMembersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListRepoMembersResponse.copy(block: `com.easylab.v1`.ListRepoMembersResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListRepoMembersResponse =
+  `com.easylab.v1`.ListRepoMembersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

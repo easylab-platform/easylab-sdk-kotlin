@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesetMirrorResponse")
-public inline fun setMirrorResponse(block: easylab.v1.SetMirrorResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SetMirrorResponse =
-  easylab.v1.SetMirrorResponseKt.Dsl._create(easylab.v1.Easylab.SetMirrorResponse.newBuilder()).apply { block() }._build()
+public inline fun setMirrorResponse(block: com.easylab.v1.SetMirrorResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SetMirrorResponse =
+  com.easylab.v1.SetMirrorResponseKt.Dsl._create(com.easylab.v1.SetMirrorResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SetMirrorResponse`
  */
@@ -17,17 +17,17 @@ public object SetMirrorResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SetMirrorResponse.Builder
+    private val _builder: com.easylab.v1.SetMirrorResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SetMirrorResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SetMirrorResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SetMirrorResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.SetMirrorResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object SetMirrorResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SetMirrorResponse.copy(block: `easylab.v1`.SetMirrorResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SetMirrorResponse =
-  `easylab.v1`.SetMirrorResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SetMirrorResponse.copy(block: `com.easylab.v1`.SetMirrorResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SetMirrorResponse =
+  `com.easylab.v1`.SetMirrorResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializetoolConfig")
-public inline fun toolConfig(block: agent.v1.ToolConfigKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolConfig =
-  agent.v1.ToolConfigKt.Dsl._create(agent.v1.Agent.ToolConfig.newBuilder()).apply { block() }._build()
+public inline fun toolConfig(block: com.agent.v1.ToolConfigKt.Dsl.() -> kotlin.Unit): com.agent.v1.ToolConfig =
+  com.agent.v1.ToolConfigKt.Dsl._create(com.agent.v1.ToolConfig.newBuilder()).apply { block() }._build()
 /**
  * ```
  * A tool's configured value.
@@ -21,17 +21,17 @@ public object ToolConfigKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ToolConfig.Builder
+    private val _builder: com.agent.v1.ToolConfig.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ToolConfig.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ToolConfig.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ToolConfig = _builder.build()
+    internal fun _build(): com.agent.v1.ToolConfig = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -95,6 +95,6 @@ public object ToolConfigKt {
        }
   }
 }
-public inline fun agent.v1.Agent.ToolConfig.copy(block: `agent.v1`.ToolConfigKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolConfig =
-  `agent.v1`.ToolConfigKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ToolConfig.copy(block: `com.agent.v1`.ToolConfigKt.Dsl.() -> kotlin.Unit): com.agent.v1.ToolConfig =
+  `com.agent.v1`.ToolConfigKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

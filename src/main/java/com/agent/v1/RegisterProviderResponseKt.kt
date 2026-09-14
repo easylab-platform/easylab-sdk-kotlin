@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeregisterProviderResponse")
-public inline fun registerProviderResponse(block: agent.v1.RegisterProviderResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.RegisterProviderResponse =
-  agent.v1.RegisterProviderResponseKt.Dsl._create(agent.v1.Agent.RegisterProviderResponse.newBuilder()).apply { block() }._build()
+public inline fun registerProviderResponse(block: com.agent.v1.RegisterProviderResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.RegisterProviderResponse =
+  com.agent.v1.RegisterProviderResponseKt.Dsl._create(com.agent.v1.RegisterProviderResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.RegisterProviderResponse`
  */
@@ -17,17 +17,17 @@ public object RegisterProviderResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.RegisterProviderResponse.Builder
+    private val _builder: com.agent.v1.RegisterProviderResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.RegisterProviderResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.RegisterProviderResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.RegisterProviderResponse = _builder.build()
+    internal fun _build(): com.agent.v1.RegisterProviderResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object RegisterProviderResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.RegisterProviderResponse.copy(block: `agent.v1`.RegisterProviderResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.RegisterProviderResponse =
-  `agent.v1`.RegisterProviderResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.RegisterProviderResponse.copy(block: `com.agent.v1`.RegisterProviderResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.RegisterProviderResponse =
+  `com.agent.v1`.RegisterProviderResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

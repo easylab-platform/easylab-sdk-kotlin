@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializefileListResponse")
-public inline fun fileListResponse(block: worker.v1.FileListResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileListResponse =
-  worker.v1.FileListResponseKt.Dsl._create(worker.v1.Worker.FileListResponse.newBuilder()).apply { block() }._build()
+public inline fun fileListResponse(block: com.worker.v1.FileListResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileListResponse =
+  com.worker.v1.FileListResponseKt.Dsl._create(com.worker.v1.FileListResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.FileListResponse`
  */
@@ -17,17 +17,17 @@ public object FileListResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.FileListResponse.Builder
+    private val _builder: com.worker.v1.FileListResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.FileListResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.FileListResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.FileListResponse = _builder.build()
+    internal fun _build(): com.worker.v1.FileListResponse = _builder.build()
 
     /**
      * `bool is_dir = 1 [json_name = "isDir"];`
@@ -55,7 +55,7 @@ public object FileListResponseKt {
     /**
      * `repeated .worker.v1.FileEntry files = 2 [json_name = "files"];`
      */
-     public val files: com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>
+     public val files: com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.filesList
@@ -66,7 +66,7 @@ public object FileListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addFiles")
-    public fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>.add(value: worker.v1.Worker.FileEntry) {
+    public fun com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>.add(value: com.worker.v1.FileEntry) {
       _builder.addFiles(value)
     }
     /**
@@ -76,7 +76,7 @@ public object FileListResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignFiles")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>.plusAssign(value: worker.v1.Worker.FileEntry) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>.plusAssign(value: com.worker.v1.FileEntry) {
       add(value)
     }
     /**
@@ -85,7 +85,7 @@ public object FileListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllFiles")
-    public fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>.addAll(values: kotlin.collections.Iterable<worker.v1.Worker.FileEntry>) {
+    public fun com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>.addAll(values: kotlin.collections.Iterable<com.worker.v1.FileEntry>) {
       _builder.addAllFiles(values)
     }
     /**
@@ -95,7 +95,7 @@ public object FileListResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllFiles")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>.plusAssign(values: kotlin.collections.Iterable<worker.v1.Worker.FileEntry>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>.plusAssign(values: kotlin.collections.Iterable<com.worker.v1.FileEntry>) {
       addAll(values)
     }
     /**
@@ -105,7 +105,7 @@ public object FileListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setFiles")
-    public operator fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>.set(index: kotlin.Int, value: worker.v1.Worker.FileEntry) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>.set(index: kotlin.Int, value: com.worker.v1.FileEntry) {
       _builder.setFiles(index, value)
     }
     /**
@@ -113,11 +113,11 @@ public object FileListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearFiles")
-    public fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.FileEntry, FilesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.worker.v1.FileEntry, FilesProxy>.clear() {
       _builder.clearFiles()
     }
   }
 }
-public inline fun worker.v1.Worker.FileListResponse.copy(block: `worker.v1`.FileListResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileListResponse =
-  `worker.v1`.FileListResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.FileListResponse.copy(block: `com.worker.v1`.FileListResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileListResponse =
+  `com.worker.v1`.FileListResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

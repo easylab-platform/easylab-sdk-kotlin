@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistReleasesResponse")
-public inline fun listReleasesResponse(block: easylab.v1.ListReleasesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReleasesResponse =
-  easylab.v1.ListReleasesResponseKt.Dsl._create(easylab.v1.Easylab.ListReleasesResponse.newBuilder()).apply { block() }._build()
+public inline fun listReleasesResponse(block: com.easylab.v1.ListReleasesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListReleasesResponse =
+  com.easylab.v1.ListReleasesResponseKt.Dsl._create(com.easylab.v1.ListReleasesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListReleasesResponse`
  */
@@ -17,17 +17,17 @@ public object ListReleasesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListReleasesResponse.Builder
+    private val _builder: com.easylab.v1.ListReleasesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListReleasesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListReleasesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListReleasesResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListReleasesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListReleasesResponseKt {
     /**
      * `repeated .easylab.v1.ReleaseView releases = 1 [json_name = "releases"];`
      */
-     public val releases: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>
+     public val releases: com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.releasesList
@@ -49,7 +49,7 @@ public object ListReleasesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addReleases")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>.add(value: easylab.v1.Easylab.ReleaseView) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>.add(value: com.easylab.v1.ReleaseView) {
       _builder.addReleases(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListReleasesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignReleases")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>.plusAssign(value: easylab.v1.Easylab.ReleaseView) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>.plusAssign(value: com.easylab.v1.ReleaseView) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListReleasesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllReleases")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.ReleaseView>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.ReleaseView>) {
       _builder.addAllReleases(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListReleasesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllReleases")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.ReleaseView>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.ReleaseView>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListReleasesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setReleases")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.ReleaseView) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>.set(index: kotlin.Int, value: com.easylab.v1.ReleaseView) {
       _builder.setReleases(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListReleasesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearReleases")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseView, ReleasesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseView, ReleasesProxy>.clear() {
       _builder.clearReleases()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListReleasesResponse.copy(block: `easylab.v1`.ListReleasesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReleasesResponse =
-  `easylab.v1`.ListReleasesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListReleasesResponse.copy(block: `com.easylab.v1`.ListReleasesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListReleasesResponse =
+  `com.easylab.v1`.ListReleasesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

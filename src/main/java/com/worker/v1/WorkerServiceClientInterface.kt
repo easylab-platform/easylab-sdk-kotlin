@@ -2,32 +2,34 @@
 //
 // Source: worker/v1/worker.proto
 //
-package worker.v1
+package com.worker.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
 import com.connectrpc.ServerOnlyStreamInterface
 
 public interface WorkerServiceClientInterface {
-  public suspend fun info(request: Worker.InfoRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.InfoResponse>
+  public suspend fun info(request: InfoRequest, headers: Headers = emptyMap()): ResponseMessage<InfoResponse>
 
-  public suspend fun execute(request: Worker.ExecuteRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.ExecuteResponse>
+  public suspend fun execute(request: ExecuteRequest, headers: Headers = emptyMap()): ResponseMessage<ExecuteResponse>
 
-  public suspend fun listJobs(request: Worker.ListJobsRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.ListJobsResponse>
+  public suspend fun listJobs(request: ListJobsRequest, headers: Headers = emptyMap()): ResponseMessage<ListJobsResponse>
 
-  public suspend fun watchJob(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Worker.WatchJobRequest, Worker.WatchJobResponse>
+  public suspend fun watchJob(headers: Headers = emptyMap()): ServerOnlyStreamInterface<WatchJobRequest, WatchJobResponse>
 
-  public suspend fun jobOutput(request: Worker.JobOutputRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobOutputResponse>
+  public suspend fun jobOutput(request: JobOutputRequest, headers: Headers = emptyMap()): ResponseMessage<JobOutputResponse>
 
-  public suspend fun jobWait(request: Worker.JobWaitRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobWaitResponse>
+  public suspend fun jobWait(request: JobWaitRequest, headers: Headers = emptyMap()): ResponseMessage<JobWaitResponse>
 
-  public suspend fun jobStdin(request: Worker.JobStdinRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobStdinResponse>
+  public suspend fun jobStdin(request: JobStdinRequest, headers: Headers = emptyMap()): ResponseMessage<JobStdinResponse>
 
-  public suspend fun jobKill(request: Worker.JobKillRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobKillResponse>
+  public suspend fun jobKill(request: JobKillRequest, headers: Headers = emptyMap()): ResponseMessage<JobKillResponse>
 
-  public suspend fun fileRead(request: Worker.FileReadRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileReadResponse>
+  public suspend fun fileRead(request: FileReadRequest, headers: Headers = emptyMap()): ResponseMessage<FileReadResponse>
 
-  public suspend fun fileWrite(request: Worker.FileWriteRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileWriteResponse>
+  public suspend fun fileWrite(request: FileWriteRequest, headers: Headers = emptyMap()): ResponseMessage<FileWriteResponse>
 
-  public suspend fun fileList(request: Worker.FileListRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileListResponse>
+  public suspend fun fileList(request: FileListRequest, headers: Headers = emptyMap()): ResponseMessage<FileListResponse>
+
+  public suspend fun syncFolder(request: SyncFolderRequest, headers: Headers = emptyMap()): ResponseMessage<SyncFolderResponse>
 }

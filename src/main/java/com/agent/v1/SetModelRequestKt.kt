@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializesetModelRequest")
-public inline fun setModelRequest(block: agent.v1.SetModelRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelRequest =
-  agent.v1.SetModelRequestKt.Dsl._create(agent.v1.Agent.SetModelRequest.newBuilder()).apply { block() }._build()
+public inline fun setModelRequest(block: com.agent.v1.SetModelRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetModelRequest =
+  com.agent.v1.SetModelRequestKt.Dsl._create(com.agent.v1.SetModelRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.SetModelRequest`
  */
@@ -17,17 +17,17 @@ public object SetModelRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.SetModelRequest.Builder
+    private val _builder: com.agent.v1.SetModelRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.SetModelRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.SetModelRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.SetModelRequest = _builder.build()
+    internal fun _build(): com.agent.v1.SetModelRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -81,6 +81,6 @@ public object SetModelRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.SetModelRequest.copy(block: `agent.v1`.SetModelRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelRequest =
-  `agent.v1`.SetModelRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.SetModelRequest.copy(block: `com.agent.v1`.SetModelRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetModelRequest =
+  `com.agent.v1`.SetModelRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

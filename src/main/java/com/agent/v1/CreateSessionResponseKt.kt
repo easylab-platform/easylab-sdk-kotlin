@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializecreateSessionResponse")
-public inline fun createSessionResponse(block: agent.v1.CreateSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CreateSessionResponse =
-  agent.v1.CreateSessionResponseKt.Dsl._create(agent.v1.Agent.CreateSessionResponse.newBuilder()).apply { block() }._build()
+public inline fun createSessionResponse(block: com.agent.v1.CreateSessionResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.CreateSessionResponse =
+  com.agent.v1.CreateSessionResponseKt.Dsl._create(com.agent.v1.CreateSessionResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.CreateSessionResponse`
  */
@@ -17,17 +17,17 @@ public object CreateSessionResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.CreateSessionResponse.Builder
+    private val _builder: com.agent.v1.CreateSessionResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.CreateSessionResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.CreateSessionResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.CreateSessionResponse = _builder.build()
+    internal fun _build(): com.agent.v1.CreateSessionResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object CreateSessionResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.CreateSessionResponse.copy(block: `agent.v1`.CreateSessionResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CreateSessionResponse =
-  `agent.v1`.CreateSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.CreateSessionResponse.copy(block: `com.agent.v1`.CreateSessionResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.CreateSessionResponse =
+  `com.agent.v1`.CreateSessionResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

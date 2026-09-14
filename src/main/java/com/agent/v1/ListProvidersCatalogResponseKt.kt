@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistProvidersCatalogResponse")
-public inline fun listProvidersCatalogResponse(block: agent.v1.ListProvidersCatalogResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListProvidersCatalogResponse =
-  agent.v1.ListProvidersCatalogResponseKt.Dsl._create(agent.v1.Agent.ListProvidersCatalogResponse.newBuilder()).apply { block() }._build()
+public inline fun listProvidersCatalogResponse(block: com.agent.v1.ListProvidersCatalogResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListProvidersCatalogResponse =
+  com.agent.v1.ListProvidersCatalogResponseKt.Dsl._create(com.agent.v1.ListProvidersCatalogResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListProvidersCatalogResponse`
  */
@@ -17,17 +17,17 @@ public object ListProvidersCatalogResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ListProvidersCatalogResponse.Builder
+    private val _builder: com.agent.v1.ListProvidersCatalogResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ListProvidersCatalogResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ListProvidersCatalogResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ListProvidersCatalogResponse = _builder.build()
+    internal fun _build(): com.agent.v1.ListProvidersCatalogResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListProvidersCatalogResponseKt {
     /**
      * `map<string, .agent.v1.CatalogProvider> providers = 1 [json_name = "providers"];`
      */
-     public val providers: com.google.protobuf.kotlin.DslMap<kotlin.String, agent.v1.Agent.CatalogProvider, ProvidersProxy>
+     public val providers: com.google.protobuf.kotlin.DslMap<kotlin.String, com.agent.v1.CatalogProvider, ProvidersProxy>
       @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("getProvidersMap")
       get() = com.google.protobuf.kotlin.DslMap(
@@ -48,8 +48,8 @@ public object ListProvidersCatalogResponseKt {
      * `map<string, .agent.v1.CatalogProvider> providers = 1 [json_name = "providers"];`
      */
     @kotlin.jvm.JvmName("putProviders")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, agent.v1.Agent.CatalogProvider, ProvidersProxy>
-      .put(key: kotlin.String, value: agent.v1.Agent.CatalogProvider) {
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, com.agent.v1.CatalogProvider, ProvidersProxy>
+      .put(key: kotlin.String, value: com.agent.v1.CatalogProvider) {
          _builder.putProviders(key, value)
        }
     /**
@@ -58,8 +58,8 @@ public object ListProvidersCatalogResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setProviders")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslMap<kotlin.String, agent.v1.Agent.CatalogProvider, ProvidersProxy>
-      .set(key: kotlin.String, value: agent.v1.Agent.CatalogProvider) {
+    public inline operator fun com.google.protobuf.kotlin.DslMap<kotlin.String, com.agent.v1.CatalogProvider, ProvidersProxy>
+      .set(key: kotlin.String, value: com.agent.v1.CatalogProvider) {
          put(key, value)
        }
     /**
@@ -67,7 +67,7 @@ public object ListProvidersCatalogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("removeProviders")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, agent.v1.Agent.CatalogProvider, ProvidersProxy>
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, com.agent.v1.CatalogProvider, ProvidersProxy>
       .remove(key: kotlin.String) {
          _builder.removeProviders(key)
        }
@@ -76,8 +76,8 @@ public object ListProvidersCatalogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("putAllProviders")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, agent.v1.Agent.CatalogProvider, ProvidersProxy>
-      .putAll(map: kotlin.collections.Map<kotlin.String, agent.v1.Agent.CatalogProvider>) {
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, com.agent.v1.CatalogProvider, ProvidersProxy>
+      .putAll(map: kotlin.collections.Map<kotlin.String, com.agent.v1.CatalogProvider>) {
          _builder.putAllProviders(map)
        }
     /**
@@ -85,12 +85,12 @@ public object ListProvidersCatalogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearProviders")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, agent.v1.Agent.CatalogProvider, ProvidersProxy>
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, com.agent.v1.CatalogProvider, ProvidersProxy>
       .clear() {
          _builder.clearProviders()
        }
   }
 }
-public inline fun agent.v1.Agent.ListProvidersCatalogResponse.copy(block: `agent.v1`.ListProvidersCatalogResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListProvidersCatalogResponse =
-  `agent.v1`.ListProvidersCatalogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ListProvidersCatalogResponse.copy(block: `com.agent.v1`.ListProvidersCatalogResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListProvidersCatalogResponse =
+  `com.agent.v1`.ListProvidersCatalogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

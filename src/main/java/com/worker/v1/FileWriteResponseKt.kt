@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializefileWriteResponse")
-public inline fun fileWriteResponse(block: worker.v1.FileWriteResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileWriteResponse =
-  worker.v1.FileWriteResponseKt.Dsl._create(worker.v1.Worker.FileWriteResponse.newBuilder()).apply { block() }._build()
+public inline fun fileWriteResponse(block: com.worker.v1.FileWriteResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileWriteResponse =
+  com.worker.v1.FileWriteResponseKt.Dsl._create(com.worker.v1.FileWriteResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.FileWriteResponse`
  */
@@ -17,17 +17,17 @@ public object FileWriteResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.FileWriteResponse.Builder
+    private val _builder: com.worker.v1.FileWriteResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.FileWriteResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.FileWriteResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.FileWriteResponse = _builder.build()
+    internal fun _build(): com.worker.v1.FileWriteResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object FileWriteResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.FileWriteResponse.copy(block: `worker.v1`.FileWriteResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileWriteResponse =
-  `worker.v1`.FileWriteResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.FileWriteResponse.copy(block: `com.worker.v1`.FileWriteResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileWriteResponse =
+  `com.worker.v1`.FileWriteResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

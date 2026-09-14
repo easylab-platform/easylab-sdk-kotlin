@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesearchRequest")
-public inline fun searchRequest(block: easylab.v1.SearchRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SearchRequest =
-  easylab.v1.SearchRequestKt.Dsl._create(easylab.v1.Easylab.SearchRequest.newBuilder()).apply { block() }._build()
+public inline fun searchRequest(block: com.easylab.v1.SearchRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SearchRequest =
+  com.easylab.v1.SearchRequestKt.Dsl._create(com.easylab.v1.SearchRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SearchRequest`
  */
@@ -17,17 +17,17 @@ public object SearchRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SearchRequest.Builder
+    private val _builder: com.easylab.v1.SearchRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SearchRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SearchRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SearchRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.SearchRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,6 @@ public object SearchRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SearchRequest.copy(block: `easylab.v1`.SearchRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SearchRequest =
-  `easylab.v1`.SearchRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SearchRequest.copy(block: `com.easylab.v1`.SearchRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SearchRequest =
+  `com.easylab.v1`.SearchRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

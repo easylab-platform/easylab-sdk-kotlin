@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecancelRunResponse")
-public inline fun cancelRunResponse(block: easylab.v1.CancelRunResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CancelRunResponse =
-  easylab.v1.CancelRunResponseKt.Dsl._create(easylab.v1.Easylab.CancelRunResponse.newBuilder()).apply { block() }._build()
+public inline fun cancelRunResponse(block: com.easylab.v1.CancelRunResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CancelRunResponse =
+  com.easylab.v1.CancelRunResponseKt.Dsl._create(com.easylab.v1.CancelRunResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CancelRunResponse`
  */
@@ -17,17 +17,17 @@ public object CancelRunResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CancelRunResponse.Builder
+    private val _builder: com.easylab.v1.CancelRunResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CancelRunResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CancelRunResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CancelRunResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.CancelRunResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object CancelRunResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.CancelRunResponse.copy(block: `easylab.v1`.CancelRunResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CancelRunResponse =
-  `easylab.v1`.CancelRunResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CancelRunResponse.copy(block: `com.easylab.v1`.CancelRunResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CancelRunResponse =
+  `com.easylab.v1`.CancelRunResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeinterruptResponse")
-public inline fun interruptResponse(block: agent.v1.InterruptResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.InterruptResponse =
-  agent.v1.InterruptResponseKt.Dsl._create(agent.v1.Agent.InterruptResponse.newBuilder()).apply { block() }._build()
+public inline fun interruptResponse(block: com.agent.v1.InterruptResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.InterruptResponse =
+  com.agent.v1.InterruptResponseKt.Dsl._create(com.agent.v1.InterruptResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.InterruptResponse`
  */
@@ -17,17 +17,17 @@ public object InterruptResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.InterruptResponse.Builder
+    private val _builder: com.agent.v1.InterruptResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.InterruptResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.InterruptResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.InterruptResponse = _builder.build()
+    internal fun _build(): com.agent.v1.InterruptResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object InterruptResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.InterruptResponse.copy(block: `agent.v1`.InterruptResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.InterruptResponse =
-  `agent.v1`.InterruptResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.InterruptResponse.copy(block: `com.agent.v1`.InterruptResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.InterruptResponse =
+  `com.agent.v1`.InterruptResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

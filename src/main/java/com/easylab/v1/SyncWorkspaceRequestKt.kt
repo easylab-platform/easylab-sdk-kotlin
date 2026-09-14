@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesyncWorkspaceRequest")
-public inline fun syncWorkspaceRequest(block: easylab.v1.SyncWorkspaceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncWorkspaceRequest =
-  easylab.v1.SyncWorkspaceRequestKt.Dsl._create(easylab.v1.Easylab.SyncWorkspaceRequest.newBuilder()).apply { block() }._build()
+public inline fun syncWorkspaceRequest(block: com.easylab.v1.SyncWorkspaceRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SyncWorkspaceRequest =
+  com.easylab.v1.SyncWorkspaceRequestKt.Dsl._create(com.easylab.v1.SyncWorkspaceRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SyncWorkspaceRequest`
  */
@@ -17,17 +17,17 @@ public object SyncWorkspaceRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SyncWorkspaceRequest.Builder
+    private val _builder: com.easylab.v1.SyncWorkspaceRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SyncWorkspaceRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SyncWorkspaceRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SyncWorkspaceRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.SyncWorkspaceRequest = _builder.build()
 
     /**
      * `string sandbox = 1 [json_name = "sandbox"];`
@@ -123,6 +123,6 @@ public object SyncWorkspaceRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SyncWorkspaceRequest.copy(block: `easylab.v1`.SyncWorkspaceRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncWorkspaceRequest =
-  `easylab.v1`.SyncWorkspaceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SyncWorkspaceRequest.copy(block: `com.easylab.v1`.SyncWorkspaceRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SyncWorkspaceRequest =
+  `com.easylab.v1`.SyncWorkspaceRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

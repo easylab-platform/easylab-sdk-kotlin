@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistPublishSpecsRequest")
-public inline fun listPublishSpecsRequest(block: easylab.v1.ListPublishSpecsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPublishSpecsRequest =
-  easylab.v1.ListPublishSpecsRequestKt.Dsl._create(easylab.v1.Easylab.ListPublishSpecsRequest.newBuilder()).apply { block() }._build()
+public inline fun listPublishSpecsRequest(block: com.easylab.v1.ListPublishSpecsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListPublishSpecsRequest =
+  com.easylab.v1.ListPublishSpecsRequestKt.Dsl._create(com.easylab.v1.ListPublishSpecsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListPublishSpecsRequest`
  */
@@ -17,19 +17,19 @@ public object ListPublishSpecsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListPublishSpecsRequest.Builder
+    private val _builder: com.easylab.v1.ListPublishSpecsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListPublishSpecsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListPublishSpecsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListPublishSpecsRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ListPublishSpecsRequest = _builder.build()
   }
 }
-public inline fun easylab.v1.Easylab.ListPublishSpecsRequest.copy(block: `easylab.v1`.ListPublishSpecsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListPublishSpecsRequest =
-  `easylab.v1`.ListPublishSpecsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListPublishSpecsRequest.copy(block: `com.easylab.v1`.ListPublishSpecsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListPublishSpecsRequest =
+  `com.easylab.v1`.ListPublishSpecsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializereleaseAssetView")
-public inline fun releaseAssetView(block: easylab.v1.ReleaseAssetViewKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReleaseAssetView =
-  easylab.v1.ReleaseAssetViewKt.Dsl._create(easylab.v1.Easylab.ReleaseAssetView.newBuilder()).apply { block() }._build()
+public inline fun releaseAssetView(block: com.easylab.v1.ReleaseAssetViewKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ReleaseAssetView =
+  com.easylab.v1.ReleaseAssetViewKt.Dsl._create(com.easylab.v1.ReleaseAssetView.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ReleaseAssetView`
  */
@@ -17,17 +17,17 @@ public object ReleaseAssetViewKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ReleaseAssetView.Builder
+    private val _builder: com.easylab.v1.ReleaseAssetView.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ReleaseAssetView.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ReleaseAssetView.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ReleaseAssetView = _builder.build()
+    internal fun _build(): com.easylab.v1.ReleaseAssetView = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -98,6 +98,6 @@ public object ReleaseAssetViewKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ReleaseAssetView.copy(block: `easylab.v1`.ReleaseAssetViewKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReleaseAssetView =
-  `easylab.v1`.ReleaseAssetViewKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ReleaseAssetView.copy(block: `com.easylab.v1`.ReleaseAssetViewKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ReleaseAssetView =
+  `com.easylab.v1`.ReleaseAssetViewKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
@@ -13,19 +13,19 @@ import com.connectrpc.ResponseMessage
  *  require an authenticated caller.
  */
 public interface UserServiceClientInterface {
-  public suspend fun createUser(request: Easylab.CreateUserRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateUserResponse>
+  public suspend fun createUser(request: CreateUserRequest, headers: Headers = emptyMap()): ResponseMessage<CreateUserResponse>
 
-  public suspend fun getUser(request: Easylab.GetUserRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetUserResponse>
+  public suspend fun getUser(request: GetUserRequest, headers: Headers = emptyMap()): ResponseMessage<GetUserResponse>
 
-  public suspend fun listUsers(request: Easylab.ListUsersRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListUsersResponse>
+  public suspend fun listUsers(request: ListUsersRequest, headers: Headers = emptyMap()): ResponseMessage<ListUsersResponse>
 
-  public suspend fun updateUser(request: Easylab.UpdateUserRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.UpdateUserResponse>
+  public suspend fun updateUser(request: UpdateUserRequest, headers: Headers = emptyMap()): ResponseMessage<UpdateUserResponse>
 
-  public suspend fun deleteUser(request: Easylab.DeleteUserRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteUserResponse>
+  public suspend fun deleteUser(request: DeleteUserRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteUserResponse>
 
-  public suspend fun listUserTokens(request: Easylab.ListUserTokensRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListUserTokensResponse>
+  public suspend fun listUserTokens(request: ListUserTokensRequest, headers: Headers = emptyMap()): ResponseMessage<ListUserTokensResponse>
 
-  public suspend fun createUserToken(request: Easylab.CreateUserTokenRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateUserTokenResponse>
+  public suspend fun createUserToken(request: CreateUserTokenRequest, headers: Headers = emptyMap()): ResponseMessage<CreateUserTokenResponse>
 
-  public suspend fun deleteUserToken(request: Easylab.DeleteUserTokenRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteUserTokenResponse>
+  public suspend fun deleteUserToken(request: DeleteUserTokenRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteUserTokenResponse>
 }

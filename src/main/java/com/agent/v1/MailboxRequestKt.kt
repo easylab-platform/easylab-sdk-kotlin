@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializemailboxRequest")
-public inline fun mailboxRequest(block: agent.v1.MailboxRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxRequest =
-  agent.v1.MailboxRequestKt.Dsl._create(agent.v1.Agent.MailboxRequest.newBuilder()).apply { block() }._build()
+public inline fun mailboxRequest(block: com.agent.v1.MailboxRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.MailboxRequest =
+  com.agent.v1.MailboxRequestKt.Dsl._create(com.agent.v1.MailboxRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.MailboxRequest`
  */
@@ -17,17 +17,17 @@ public object MailboxRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.MailboxRequest.Builder
+    private val _builder: com.agent.v1.MailboxRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.MailboxRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.MailboxRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.MailboxRequest = _builder.build()
+    internal fun _build(): com.agent.v1.MailboxRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -47,6 +47,6 @@ public object MailboxRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.MailboxRequest.copy(block: `agent.v1`.MailboxRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.MailboxRequest =
-  `agent.v1`.MailboxRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.MailboxRequest.copy(block: `com.agent.v1`.MailboxRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.MailboxRequest =
+  `com.agent.v1`.MailboxRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

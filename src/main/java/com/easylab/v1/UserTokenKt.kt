@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeuserToken")
-public inline fun userToken(block: easylab.v1.UserTokenKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.UserToken =
-  easylab.v1.UserTokenKt.Dsl._create(easylab.v1.Easylab.UserToken.newBuilder()).apply { block() }._build()
+public inline fun userToken(block: com.easylab.v1.UserTokenKt.Dsl.() -> kotlin.Unit): com.easylab.v1.UserToken =
+  com.easylab.v1.UserTokenKt.Dsl._create(com.easylab.v1.UserToken.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.UserToken`
  */
@@ -17,17 +17,17 @@ public object UserTokenKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.UserToken.Builder
+    private val _builder: com.easylab.v1.UserToken.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.UserToken.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.UserToken.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.UserToken = _builder.build()
+    internal fun _build(): com.easylab.v1.UserToken = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -81,6 +81,6 @@ public object UserTokenKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.UserToken.copy(block: `easylab.v1`.UserTokenKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.UserToken =
-  `easylab.v1`.UserTokenKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.UserToken.copy(block: `com.easylab.v1`.UserTokenKt.Dsl.() -> kotlin.Unit): com.easylab.v1.UserToken =
+  `com.easylab.v1`.UserTokenKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

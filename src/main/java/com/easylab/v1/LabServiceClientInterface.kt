@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
@@ -11,135 +11,135 @@ import com.connectrpc.ResponseMessage
  *  LabService covers the revision-native repo + filesystem surface.
  */
 public interface LabServiceClientInterface {
-  public suspend fun health(request: Easylab.HealthRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.HealthResponse>
+  public suspend fun health(request: HealthRequest, headers: Headers = emptyMap()): ResponseMessage<HealthResponse>
 
-  public suspend fun status(request: Easylab.StatusRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.StatusResponse>
+  public suspend fun status(request: StatusRequest, headers: Headers = emptyMap()): ResponseMessage<StatusResponse>
 
-  public suspend fun listRepos(request: Easylab.ListReposRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListReposResponse>
+  public suspend fun listRepos(request: ListReposRequest, headers: Headers = emptyMap()): ResponseMessage<ListReposResponse>
 
-  public suspend fun createRepo(request: Easylab.CreateRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateRepoResponse>
+  public suspend fun createRepo(request: CreateRepoRequest, headers: Headers = emptyMap()): ResponseMessage<CreateRepoResponse>
 
-  public suspend fun deleteRepo(request: Easylab.DeleteRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteRepoResponse>
+  public suspend fun deleteRepo(request: DeleteRepoRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteRepoResponse>
 
-  public suspend fun ensureRepo(request: Easylab.EnsureRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.EnsureRepoResponse>
+  public suspend fun ensureRepo(request: EnsureRepoRequest, headers: Headers = emptyMap()): ResponseMessage<EnsureRepoResponse>
 
-  public suspend fun ensureOrg(request: Easylab.EnsureOrgRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.EnsureOrgResponse>
+  public suspend fun ensureOrg(request: EnsureOrgRequest, headers: Headers = emptyMap()): ResponseMessage<EnsureOrgResponse>
 
-  public suspend fun forkRepo(request: Easylab.ForkRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ForkRepoResponse>
+  public suspend fun forkRepo(request: ForkRepoRequest, headers: Headers = emptyMap()): ResponseMessage<ForkRepoResponse>
 
-  public suspend fun cloneRepo(request: Easylab.CloneRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CloneRepoResponse>
+  public suspend fun cloneRepo(request: CloneRepoRequest, headers: Headers = emptyMap()): ResponseMessage<CloneRepoResponse>
 
-  public suspend fun tree(request: Easylab.TreeRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.TreeResponse>
+  public suspend fun tree(request: TreeRequest, headers: Headers = emptyMap()): ResponseMessage<TreeResponse>
 
-  public suspend fun readBlob(request: Easylab.ReadBlobRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ReadBlobResponse>
+  public suspend fun readBlob(request: ReadBlobRequest, headers: Headers = emptyMap()): ResponseMessage<ReadBlobResponse>
 
-  public suspend fun writeBlob(request: Easylab.WriteBlobRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.WriteBlobResponse>
+  public suspend fun writeBlob(request: WriteBlobRequest, headers: Headers = emptyMap()): ResponseMessage<WriteBlobResponse>
 
-  public suspend fun log(request: Easylab.LogRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.LogResponse>
+  public suspend fun log(request: LogRequest, headers: Headers = emptyMap()): ResponseMessage<LogResponse>
 
-  public suspend fun tags(request: Easylab.TagsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.TagsResponse>
+  public suspend fun tags(request: TagsRequest, headers: Headers = emptyMap()): ResponseMessage<TagsResponse>
 
-  public suspend fun branches(request: Easylab.BranchesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.BranchesResponse>
+  public suspend fun branches(request: BranchesRequest, headers: Headers = emptyMap()): ResponseMessage<BranchesResponse>
 
-  public suspend fun revisions(request: Easylab.RevisionsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RevisionsResponse>
+  public suspend fun revisions(request: RevisionsRequest, headers: Headers = emptyMap()): ResponseMessage<RevisionsResponse>
 
-  public suspend fun diff(request: Easylab.DiffRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DiffResponse>
+  public suspend fun diff(request: DiffRequest, headers: Headers = emptyMap()): ResponseMessage<DiffResponse>
 
-  public suspend fun blame(request: Easylab.BlameRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.BlameResponse>
+  public suspend fun blame(request: BlameRequest, headers: Headers = emptyMap()): ResponseMessage<BlameResponse>
 
-  public suspend fun deleteBranch(request: Easylab.DeleteBranchRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteBranchResponse>
+  public suspend fun deleteBranch(request: DeleteBranchRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteBranchResponse>
 
-  public suspend fun createBranch(request: Easylab.CreateBranchRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateBranchResponse>
+  public suspend fun createBranch(request: CreateBranchRequest, headers: Headers = emptyMap()): ResponseMessage<CreateBranchResponse>
 
-  public suspend fun fileHistory(request: Easylab.FileHistoryRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.FileHistoryResponse>
+  public suspend fun fileHistory(request: FileHistoryRequest, headers: Headers = emptyMap()): ResponseMessage<FileHistoryResponse>
 
-  public suspend fun search(request: Easylab.SearchRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SearchResponse>
+  public suspend fun search(request: SearchRequest, headers: Headers = emptyMap()): ResponseMessage<SearchResponse>
 
-  public suspend fun graph(request: Easylab.GraphRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GraphResponse>
+  public suspend fun graph(request: GraphRequest, headers: Headers = emptyMap()): ResponseMessage<GraphResponse>
 
-  public suspend fun compare(request: Easylab.CompareRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CompareResponse>
+  public suspend fun compare(request: CompareRequest, headers: Headers = emptyMap()): ResponseMessage<CompareResponse>
 
-  public suspend fun rebase(request: Easylab.RebaseRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RebaseResponse>
+  public suspend fun rebase(request: RebaseRequest, headers: Headers = emptyMap()): ResponseMessage<RebaseResponse>
 
   /**
    *  ---- Lab additions (REST removals) ----
    */
-  public suspend fun deleteOrg(request: Easylab.DeleteOrgRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteOrgResponse>
+  public suspend fun deleteOrg(request: DeleteOrgRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteOrgResponse>
 
   /**
    *  Releases (backed by the generic artifact registry; format "generic").
    */
-  public suspend fun listReleases(request: Easylab.ListReleasesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListReleasesResponse>
+  public suspend fun listReleases(request: ListReleasesRequest, headers: Headers = emptyMap()): ResponseMessage<ListReleasesResponse>
 
-  public suspend fun downloadReleaseAsset(request: Easylab.DownloadReleaseAssetRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DownloadReleaseAssetResponse>
+  public suspend fun downloadReleaseAsset(request: DownloadReleaseAssetRequest, headers: Headers = emptyMap()): ResponseMessage<DownloadReleaseAssetResponse>
 
   /**
    *  Source archive tarball for a rev/tag.
    */
-  public suspend fun archive(request: Easylab.ArchiveRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ArchiveResponse>
+  public suspend fun archive(request: ArchiveRequest, headers: Headers = emptyMap()): ResponseMessage<ArchiveResponse>
 
   /**
    *  Mirror (persistent push/pull mirrors on a repo).
    */
-  public suspend fun getMirror(request: Easylab.GetMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetMirrorResponse>
+  public suspend fun getMirror(request: GetMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<GetMirrorResponse>
 
-  public suspend fun setMirror(request: Easylab.SetMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SetMirrorResponse>
+  public suspend fun setMirror(request: SetMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<SetMirrorResponse>
 
-  public suspend fun deleteMirror(request: Easylab.DeleteMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteMirrorResponse>
+  public suspend fun deleteMirror(request: DeleteMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteMirrorResponse>
 
-  public suspend fun syncMirror(request: Easylab.SyncMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SyncMirrorResponse>
+  public suspend fun syncMirror(request: SyncMirrorRequest, headers: Headers = emptyMap()): ResponseMessage<SyncMirrorResponse>
 
   /**
    *  ---- repo metadata / refs / members (REST removal) ----
    */
-  public suspend fun updateRepo(request: Easylab.UpdateRepoRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.UpdateRepoResponse>
+  public suspend fun updateRepo(request: UpdateRepoRequest, headers: Headers = emptyMap()): ResponseMessage<UpdateRepoResponse>
 
-  public suspend fun setTag(request: Easylab.SetTagRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SetTagResponse>
+  public suspend fun setTag(request: SetTagRequest, headers: Headers = emptyMap()): ResponseMessage<SetTagResponse>
 
-  public suspend fun deleteTag(request: Easylab.DeleteTagRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteTagResponse>
+  public suspend fun deleteTag(request: DeleteTagRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteTagResponse>
 
-  public suspend fun writeFiles(request: Easylab.WriteFilesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.WriteFilesResponse>
+  public suspend fun writeFiles(request: WriteFilesRequest, headers: Headers = emptyMap()): ResponseMessage<WriteFilesResponse>
 
-  public suspend fun drop(request: Easylab.DropRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DropResponse>
+  public suspend fun drop(request: DropRequest, headers: Headers = emptyMap()): ResponseMessage<DropResponse>
 
-  public suspend fun revert(request: Easylab.RevertRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RevertResponse>
+  public suspend fun revert(request: RevertRequest, headers: Headers = emptyMap()): ResponseMessage<RevertResponse>
 
-  public suspend fun resolve(request: Easylab.ResolveRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ResolveResponse>
+  public suspend fun resolve(request: ResolveRequest, headers: Headers = emptyMap()): ResponseMessage<ResolveResponse>
 
-  public suspend fun squash(request: Easylab.SquashRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SquashResponse>
+  public suspend fun squash(request: SquashRequest, headers: Headers = emptyMap()): ResponseMessage<SquashResponse>
 
-  public suspend fun rebaseMany(request: Easylab.RebaseManyRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RebaseManyResponse>
+  public suspend fun rebaseMany(request: RebaseManyRequest, headers: Headers = emptyMap()): ResponseMessage<RebaseManyResponse>
 
-  public suspend fun createRelease(request: Easylab.CreateReleaseRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateReleaseResponse>
+  public suspend fun createRelease(request: CreateReleaseRequest, headers: Headers = emptyMap()): ResponseMessage<CreateReleaseResponse>
 
-  public suspend fun deleteRelease(request: Easylab.DeleteReleaseRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteReleaseResponse>
+  public suspend fun deleteRelease(request: DeleteReleaseRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteReleaseResponse>
 
-  public suspend fun uploadReleaseAsset(request: Easylab.UploadReleaseAssetRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.UploadReleaseAssetResponse>
+  public suspend fun uploadReleaseAsset(request: UploadReleaseAssetRequest, headers: Headers = emptyMap()): ResponseMessage<UploadReleaseAssetResponse>
 
-  public suspend fun listRepoMembers(request: Easylab.ListRepoMembersRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListRepoMembersResponse>
+  public suspend fun listRepoMembers(request: ListRepoMembersRequest, headers: Headers = emptyMap()): ResponseMessage<ListRepoMembersResponse>
 
-  public suspend fun setRepoMember(request: Easylab.SetRepoMemberRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SetRepoMemberResponse>
+  public suspend fun setRepoMember(request: SetRepoMemberRequest, headers: Headers = emptyMap()): ResponseMessage<SetRepoMemberResponse>
 
-  public suspend fun removeRepoMember(request: Easylab.RemoveRepoMemberRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RemoveRepoMemberResponse>
+  public suspend fun removeRepoMember(request: RemoveRepoMemberRequest, headers: Headers = emptyMap()): ResponseMessage<RemoveRepoMemberResponse>
 
   /**
    *  ---- merge requests (fork→upstream change requests) ----
    */
-  public suspend fun listMergeRequests(request: Easylab.ListMergeRequestsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListMergeRequestsResponse>
+  public suspend fun listMergeRequests(request: ListMergeRequestsRequest, headers: Headers = emptyMap()): ResponseMessage<ListMergeRequestsResponse>
 
-  public suspend fun getMergeRequest(request: Easylab.GetMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetMergeRequestResponse>
+  public suspend fun getMergeRequest(request: GetMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<GetMergeRequestResponse>
 
-  public suspend fun createMergeRequest(request: Easylab.CreateMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateMergeRequestResponse>
+  public suspend fun createMergeRequest(request: CreateMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<CreateMergeRequestResponse>
 
-  public suspend fun updateMergeRequest(request: Easylab.UpdateMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.UpdateMergeRequestResponse>
+  public suspend fun updateMergeRequest(request: UpdateMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<UpdateMergeRequestResponse>
 
-  public suspend fun mergeMergeRequest(request: Easylab.MergeMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.MergeMergeRequestResponse>
+  public suspend fun mergeMergeRequest(request: MergeMergeRequestRequest, headers: Headers = emptyMap()): ResponseMessage<MergeMergeRequestResponse>
 
-  public suspend fun listReviews(request: Easylab.ListReviewsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListReviewsResponse>
+  public suspend fun listReviews(request: ListReviewsRequest, headers: Headers = emptyMap()): ResponseMessage<ListReviewsResponse>
 
-  public suspend fun addReview(request: Easylab.AddReviewRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.AddReviewResponse>
+  public suspend fun addReview(request: AddReviewRequest, headers: Headers = emptyMap()): ResponseMessage<AddReviewResponse>
 
-  public suspend fun listComments(request: Easylab.ListCommentsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListCommentsResponse>
+  public suspend fun listComments(request: ListCommentsRequest, headers: Headers = emptyMap()): ResponseMessage<ListCommentsResponse>
 
-  public suspend fun addComment(request: Easylab.AddCommentRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.AddCommentResponse>
+  public suspend fun addComment(request: AddCommentRequest, headers: Headers = emptyMap()): ResponseMessage<AddCommentResponse>
 }

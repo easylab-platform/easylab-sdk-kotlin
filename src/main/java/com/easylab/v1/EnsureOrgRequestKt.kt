@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeensureOrgRequest")
-public inline fun ensureOrgRequest(block: easylab.v1.EnsureOrgRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureOrgRequest =
-  easylab.v1.EnsureOrgRequestKt.Dsl._create(easylab.v1.Easylab.EnsureOrgRequest.newBuilder()).apply { block() }._build()
+public inline fun ensureOrgRequest(block: com.easylab.v1.EnsureOrgRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureOrgRequest =
+  com.easylab.v1.EnsureOrgRequestKt.Dsl._create(com.easylab.v1.EnsureOrgRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.EnsureOrgRequest`
  */
@@ -17,17 +17,17 @@ public object EnsureOrgRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.EnsureOrgRequest.Builder
+    private val _builder: com.easylab.v1.EnsureOrgRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.EnsureOrgRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.EnsureOrgRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.EnsureOrgRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.EnsureOrgRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -47,6 +47,6 @@ public object EnsureOrgRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.EnsureOrgRequest.copy(block: `easylab.v1`.EnsureOrgRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureOrgRequest =
-  `easylab.v1`.EnsureOrgRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.EnsureOrgRequest.copy(block: `com.easylab.v1`.EnsureOrgRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureOrgRequest =
+  `com.easylab.v1`.EnsureOrgRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

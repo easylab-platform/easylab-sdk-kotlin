@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateUserRequest")
-public inline fun createUserRequest(block: easylab.v1.CreateUserRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateUserRequest =
-  easylab.v1.CreateUserRequestKt.Dsl._create(easylab.v1.Easylab.CreateUserRequest.newBuilder()).apply { block() }._build()
+public inline fun createUserRequest(block: com.easylab.v1.CreateUserRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateUserRequest =
+  com.easylab.v1.CreateUserRequestKt.Dsl._create(com.easylab.v1.CreateUserRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CreateUserRequest`
  */
@@ -17,17 +17,17 @@ public object CreateUserRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CreateUserRequest.Builder
+    private val _builder: com.easylab.v1.CreateUserRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CreateUserRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CreateUserRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CreateUserRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.CreateUserRequest = _builder.build()
 
     /**
      * `string username = 1 [json_name = "username"];`
@@ -91,6 +91,6 @@ public object CreateUserRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.CreateUserRequest.copy(block: `easylab.v1`.CreateUserRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateUserRequest =
-  `easylab.v1`.CreateUserRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CreateUserRequest.copy(block: `com.easylab.v1`.CreateUserRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateUserRequest =
+  `com.easylab.v1`.CreateUserRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializelistJobsRequest")
-public inline fun listJobsRequest(block: worker.v1.ListJobsRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ListJobsRequest =
-  worker.v1.ListJobsRequestKt.Dsl._create(worker.v1.Worker.ListJobsRequest.newBuilder()).apply { block() }._build()
+public inline fun listJobsRequest(block: com.worker.v1.ListJobsRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.ListJobsRequest =
+  com.worker.v1.ListJobsRequestKt.Dsl._create(com.worker.v1.ListJobsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.ListJobsRequest`
  */
@@ -17,19 +17,19 @@ public object ListJobsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.ListJobsRequest.Builder
+    private val _builder: com.worker.v1.ListJobsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.ListJobsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.ListJobsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.ListJobsRequest = _builder.build()
+    internal fun _build(): com.worker.v1.ListJobsRequest = _builder.build()
   }
 }
-public inline fun worker.v1.Worker.ListJobsRequest.copy(block: `worker.v1`.ListJobsRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ListJobsRequest =
-  `worker.v1`.ListJobsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.ListJobsRequest.copy(block: `com.worker.v1`.ListJobsRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.ListJobsRequest =
+  `com.worker.v1`.ListJobsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

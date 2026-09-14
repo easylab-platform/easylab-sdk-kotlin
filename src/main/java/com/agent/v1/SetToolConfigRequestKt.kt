@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializesetToolConfigRequest")
-public inline fun setToolConfigRequest(block: agent.v1.SetToolConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetToolConfigRequest =
-  agent.v1.SetToolConfigRequestKt.Dsl._create(agent.v1.Agent.SetToolConfigRequest.newBuilder()).apply { block() }._build()
+public inline fun setToolConfigRequest(block: com.agent.v1.SetToolConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetToolConfigRequest =
+  com.agent.v1.SetToolConfigRequestKt.Dsl._create(com.agent.v1.SetToolConfigRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.SetToolConfigRequest`
  */
@@ -17,17 +17,17 @@ public object SetToolConfigRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.SetToolConfigRequest.Builder
+    private val _builder: com.agent.v1.SetToolConfigRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.SetToolConfigRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.SetToolConfigRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.SetToolConfigRequest = _builder.build()
+    internal fun _build(): com.agent.v1.SetToolConfigRequest = _builder.build()
 
     /**
      * `.google.protobuf.Struct config = 1 [json_name = "config"];`
@@ -57,9 +57,9 @@ public object SetToolConfigRequestKt {
       get() = _builder.configOrNull
   }
 }
-public inline fun agent.v1.Agent.SetToolConfigRequest.copy(block: `agent.v1`.SetToolConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetToolConfigRequest =
-  `agent.v1`.SetToolConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.SetToolConfigRequest.copy(block: `com.agent.v1`.SetToolConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetToolConfigRequest =
+  `com.agent.v1`.SetToolConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.SetToolConfigRequestOrBuilder.configOrNull: com.google.protobuf.Struct?
+public val com.agent.v1.SetToolConfigRequestOrBuilder.configOrNull: com.google.protobuf.Struct?
   get() = if (hasConfig()) getConfig() else null
 

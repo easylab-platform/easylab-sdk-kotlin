@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetWorkflowResponse")
-public inline fun getWorkflowResponse(block: easylab.v1.GetWorkflowResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetWorkflowResponse =
-  easylab.v1.GetWorkflowResponseKt.Dsl._create(easylab.v1.Easylab.GetWorkflowResponse.newBuilder()).apply { block() }._build()
+public inline fun getWorkflowResponse(block: com.easylab.v1.GetWorkflowResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetWorkflowResponse =
+  com.easylab.v1.GetWorkflowResponseKt.Dsl._create(com.easylab.v1.GetWorkflowResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetWorkflowResponse`
  */
@@ -17,22 +17,22 @@ public object GetWorkflowResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetWorkflowResponse.Builder
+    private val _builder: com.easylab.v1.GetWorkflowResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetWorkflowResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GetWorkflowResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetWorkflowResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.GetWorkflowResponse = _builder.build()
 
     /**
      * `.easylab.v1.Workflow workflow = 1 [json_name = "workflow"];`
      */
-    public var workflow: easylab.v1.Easylab.Workflow
+    public var workflow: com.easylab.v1.Workflow
       @kotlin.jvm.JvmName("getWorkflow")
         get() = _builder.workflow
       @kotlin.jvm.JvmName("setWorkflow")
@@ -53,13 +53,13 @@ public object GetWorkflowResponseKt {
       return _builder.hasWorkflow()
     }
 
-    public val GetWorkflowResponseKt.Dsl.workflowOrNull: easylab.v1.Easylab.Workflow?
+    public val GetWorkflowResponseKt.Dsl.workflowOrNull: com.easylab.v1.Workflow?
       get() = _builder.workflowOrNull
   }
 }
-public inline fun easylab.v1.Easylab.GetWorkflowResponse.copy(block: `easylab.v1`.GetWorkflowResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetWorkflowResponse =
-  `easylab.v1`.GetWorkflowResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GetWorkflowResponse.copy(block: `com.easylab.v1`.GetWorkflowResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetWorkflowResponse =
+  `com.easylab.v1`.GetWorkflowResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.GetWorkflowResponseOrBuilder.workflowOrNull: easylab.v1.Easylab.Workflow?
+public val com.easylab.v1.GetWorkflowResponseOrBuilder.workflowOrNull: com.easylab.v1.Workflow?
   get() = if (hasWorkflow()) getWorkflow() else null
 

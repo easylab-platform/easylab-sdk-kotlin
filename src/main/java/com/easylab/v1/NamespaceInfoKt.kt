@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializenamespaceInfo")
-public inline fun namespaceInfo(block: easylab.v1.NamespaceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.NamespaceInfo =
-  easylab.v1.NamespaceInfoKt.Dsl._create(easylab.v1.Easylab.NamespaceInfo.newBuilder()).apply { block() }._build()
+public inline fun namespaceInfo(block: com.easylab.v1.NamespaceInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.NamespaceInfo =
+  com.easylab.v1.NamespaceInfoKt.Dsl._create(com.easylab.v1.NamespaceInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.NamespaceInfo`
  */
@@ -17,17 +17,17 @@ public object NamespaceInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.NamespaceInfo.Builder
+    private val _builder: com.easylab.v1.NamespaceInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.NamespaceInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.NamespaceInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.NamespaceInfo = _builder.build()
+    internal fun _build(): com.easylab.v1.NamespaceInfo = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -47,6 +47,6 @@ public object NamespaceInfoKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.NamespaceInfo.copy(block: `easylab.v1`.NamespaceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.NamespaceInfo =
-  `easylab.v1`.NamespaceInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.NamespaceInfo.copy(block: `com.easylab.v1`.NamespaceInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.NamespaceInfo =
+  `com.easylab.v1`.NamespaceInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

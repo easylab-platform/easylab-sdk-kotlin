@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetreeResponse")
-public inline fun treeResponse(block: easylab.v1.TreeResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TreeResponse =
-  easylab.v1.TreeResponseKt.Dsl._create(easylab.v1.Easylab.TreeResponse.newBuilder()).apply { block() }._build()
+public inline fun treeResponse(block: com.easylab.v1.TreeResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TreeResponse =
+  com.easylab.v1.TreeResponseKt.Dsl._create(com.easylab.v1.TreeResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.TreeResponse`
  */
@@ -17,17 +17,17 @@ public object TreeResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.TreeResponse.Builder
+    private val _builder: com.easylab.v1.TreeResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.TreeResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.TreeResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.TreeResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.TreeResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object TreeResponseKt {
     /**
      * `repeated .easylab.v1.FileEntry entries = 1 [json_name = "entries"];`
      */
-     public val entries: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>
+     public val entries: com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.entriesList
@@ -49,7 +49,7 @@ public object TreeResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addEntries")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>.add(value: easylab.v1.Easylab.FileEntry) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>.add(value: com.easylab.v1.FileEntry) {
       _builder.addEntries(value)
     }
     /**
@@ -59,7 +59,7 @@ public object TreeResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignEntries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>.plusAssign(value: easylab.v1.Easylab.FileEntry) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>.plusAssign(value: com.easylab.v1.FileEntry) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object TreeResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllEntries")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.FileEntry>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.FileEntry>) {
       _builder.addAllEntries(values)
     }
     /**
@@ -78,7 +78,7 @@ public object TreeResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllEntries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.FileEntry>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.FileEntry>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object TreeResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setEntries")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.FileEntry) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>.set(index: kotlin.Int, value: com.easylab.v1.FileEntry) {
       _builder.setEntries(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object TreeResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearEntries")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileEntry, EntriesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileEntry, EntriesProxy>.clear() {
       _builder.clearEntries()
     }
   }
 }
-public inline fun easylab.v1.Easylab.TreeResponse.copy(block: `easylab.v1`.TreeResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TreeResponse =
-  `easylab.v1`.TreeResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.TreeResponse.copy(block: `com.easylab.v1`.TreeResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TreeResponse =
+  `com.easylab.v1`.TreeResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

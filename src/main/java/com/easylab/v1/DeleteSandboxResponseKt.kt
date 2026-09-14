@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteSandboxResponse")
-public inline fun deleteSandboxResponse(block: easylab.v1.DeleteSandboxResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteSandboxResponse =
-  easylab.v1.DeleteSandboxResponseKt.Dsl._create(easylab.v1.Easylab.DeleteSandboxResponse.newBuilder()).apply { block() }._build()
+public inline fun deleteSandboxResponse(block: com.easylab.v1.DeleteSandboxResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteSandboxResponse =
+  com.easylab.v1.DeleteSandboxResponseKt.Dsl._create(com.easylab.v1.DeleteSandboxResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeleteSandboxResponse`
  */
@@ -17,17 +17,17 @@ public object DeleteSandboxResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DeleteSandboxResponse.Builder
+    private val _builder: com.easylab.v1.DeleteSandboxResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DeleteSandboxResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DeleteSandboxResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DeleteSandboxResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.DeleteSandboxResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object DeleteSandboxResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DeleteSandboxResponse.copy(block: `easylab.v1`.DeleteSandboxResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteSandboxResponse =
-  `easylab.v1`.DeleteSandboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DeleteSandboxResponse.copy(block: `com.easylab.v1`.DeleteSandboxResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteSandboxResponse =
+  `com.easylab.v1`.DeleteSandboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

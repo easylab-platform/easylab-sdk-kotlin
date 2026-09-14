@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializewatchJobResponse")
-public inline fun watchJobResponse(block: worker.v1.WatchJobResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.WatchJobResponse =
-  worker.v1.WatchJobResponseKt.Dsl._create(worker.v1.Worker.WatchJobResponse.newBuilder()).apply { block() }._build()
+public inline fun watchJobResponse(block: com.worker.v1.WatchJobResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.WatchJobResponse =
+  com.worker.v1.WatchJobResponseKt.Dsl._create(com.worker.v1.WatchJobResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.WatchJobResponse`
  */
@@ -17,17 +17,17 @@ public object WatchJobResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.WatchJobResponse.Builder
+    private val _builder: com.worker.v1.WatchJobResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.WatchJobResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.WatchJobResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.WatchJobResponse = _builder.build()
+    internal fun _build(): com.worker.v1.WatchJobResponse = _builder.build()
 
     /**
      * ```
@@ -72,7 +72,7 @@ public object WatchJobResponseKt {
      *
      * `.worker.v1.WatchJobResponse.Done done = 2 [json_name = "done"];`
      */
-    public var done: worker.v1.Worker.WatchJobResponse.Done
+    public var done: com.worker.v1.WatchJobResponse.Done
       @kotlin.jvm.JvmName("getDone")
         get() = _builder.done
       @kotlin.jvm.JvmName("setDone")
@@ -100,7 +100,7 @@ public object WatchJobResponseKt {
     public fun hasDone(): kotlin.Boolean {
       return _builder.hasDone()
     }
-    public val eventCase: worker.v1.Worker.WatchJobResponse.EventCase
+    public val eventCase: com.worker.v1.WatchJobResponse.EventCase
     @kotlin.jvm.JvmName("getEventCase")
       get() = _builder.eventCase
 
@@ -109,8 +109,8 @@ public object WatchJobResponseKt {
     }
   }
   @kotlin.jvm.JvmName("-initializedone")
-  public inline fun done(block: worker.v1.WatchJobResponseKt.DoneKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.WatchJobResponse.Done =
-    worker.v1.WatchJobResponseKt.DoneKt.Dsl._create(worker.v1.Worker.WatchJobResponse.Done.newBuilder()).apply { block() }._build()
+  public inline fun done(block: com.worker.v1.WatchJobResponseKt.DoneKt.Dsl.() -> kotlin.Unit): com.worker.v1.WatchJobResponse.Done =
+    com.worker.v1.WatchJobResponseKt.DoneKt.Dsl._create(com.worker.v1.WatchJobResponse.Done.newBuilder()).apply { block() }._build()
   /**
    * Protobuf type `worker.v1.WatchJobResponse.Done`
    */
@@ -118,17 +118,17 @@ public object WatchJobResponseKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     @com.google.protobuf.kotlin.ProtoDslMarker
     public class Dsl private constructor(
-      private val _builder: worker.v1.Worker.WatchJobResponse.Done.Builder
+      private val _builder: com.worker.v1.WatchJobResponse.Done.Builder
     ) {
       public companion object {
         @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-        internal fun _create(builder: worker.v1.Worker.WatchJobResponse.Done.Builder): Dsl = Dsl(builder)
+        internal fun _create(builder: com.worker.v1.WatchJobResponse.Done.Builder): Dsl = Dsl(builder)
       }
 
       @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-      internal fun _build(): worker.v1.Worker.WatchJobResponse.Done = _builder.build()
+      internal fun _build(): com.worker.v1.WatchJobResponse.Done = _builder.build()
 
       /**
        * `int32 exit_code = 1 [json_name = "exitCode"];`
@@ -199,12 +199,12 @@ public object WatchJobResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.WatchJobResponse.copy(block: `worker.v1`.WatchJobResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.WatchJobResponse =
-  `worker.v1`.WatchJobResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.WatchJobResponse.copy(block: `com.worker.v1`.WatchJobResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.WatchJobResponse =
+  `com.worker.v1`.WatchJobResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public inline fun worker.v1.Worker.WatchJobResponse.Done.copy(block: `worker.v1`.WatchJobResponseKt.DoneKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.WatchJobResponse.Done =
-  `worker.v1`.WatchJobResponseKt.DoneKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.WatchJobResponse.Done.copy(block: `com.worker.v1`.WatchJobResponseKt.DoneKt.Dsl.() -> kotlin.Unit): com.worker.v1.WatchJobResponse.Done =
+  `com.worker.v1`.WatchJobResponseKt.DoneKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val worker.v1.Worker.WatchJobResponseOrBuilder.doneOrNull: worker.v1.Worker.WatchJobResponse.Done?
+public val com.worker.v1.WatchJobResponseOrBuilder.doneOrNull: com.worker.v1.WatchJobResponse.Done?
   get() = if (hasDone()) getDone() else null
 

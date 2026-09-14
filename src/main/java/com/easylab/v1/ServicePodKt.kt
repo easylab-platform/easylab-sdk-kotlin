@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeservicePod")
-public inline fun servicePod(block: easylab.v1.ServicePodKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServicePod =
-  easylab.v1.ServicePodKt.Dsl._create(easylab.v1.Easylab.ServicePod.newBuilder()).apply { block() }._build()
+public inline fun servicePod(block: com.easylab.v1.ServicePodKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ServicePod =
+  com.easylab.v1.ServicePodKt.Dsl._create(com.easylab.v1.ServicePod.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ServicePod`
  */
@@ -17,17 +17,17 @@ public object ServicePodKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ServicePod.Builder
+    private val _builder: com.easylab.v1.ServicePod.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ServicePod.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ServicePod.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ServicePod = _builder.build()
+    internal fun _build(): com.easylab.v1.ServicePod = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -149,6 +149,6 @@ public object ServicePodKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ServicePod.copy(block: `easylab.v1`.ServicePodKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServicePod =
-  `easylab.v1`.ServicePodKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ServicePod.copy(block: `com.easylab.v1`.ServicePodKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ServicePod =
+  `com.easylab.v1`.ServicePodKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

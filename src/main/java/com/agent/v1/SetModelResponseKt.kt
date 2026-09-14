@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializesetModelResponse")
-public inline fun setModelResponse(block: agent.v1.SetModelResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelResponse =
-  agent.v1.SetModelResponseKt.Dsl._create(agent.v1.Agent.SetModelResponse.newBuilder()).apply { block() }._build()
+public inline fun setModelResponse(block: com.agent.v1.SetModelResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetModelResponse =
+  com.agent.v1.SetModelResponseKt.Dsl._create(com.agent.v1.SetModelResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.SetModelResponse`
  */
@@ -17,22 +17,22 @@ public object SetModelResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.SetModelResponse.Builder
+    private val _builder: com.agent.v1.SetModelResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.SetModelResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.SetModelResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.SetModelResponse = _builder.build()
+    internal fun _build(): com.agent.v1.SetModelResponse = _builder.build()
 
     /**
      * `.agent.v1.Session session = 1 [json_name = "session"];`
      */
-    public var session: agent.v1.Agent.Session
+    public var session: com.agent.v1.Session
       @kotlin.jvm.JvmName("getSession")
         get() = _builder.session
       @kotlin.jvm.JvmName("setSession")
@@ -53,13 +53,13 @@ public object SetModelResponseKt {
       return _builder.hasSession()
     }
 
-    public val SetModelResponseKt.Dsl.sessionOrNull: agent.v1.Agent.Session?
+    public val SetModelResponseKt.Dsl.sessionOrNull: com.agent.v1.Session?
       get() = _builder.sessionOrNull
   }
 }
-public inline fun agent.v1.Agent.SetModelResponse.copy(block: `agent.v1`.SetModelResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetModelResponse =
-  `agent.v1`.SetModelResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.SetModelResponse.copy(block: `com.agent.v1`.SetModelResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetModelResponse =
+  `com.agent.v1`.SetModelResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.SetModelResponseOrBuilder.sessionOrNull: agent.v1.Agent.Session?
+public val com.agent.v1.SetModelResponseOrBuilder.sessionOrNull: com.agent.v1.Session?
   get() = if (hasSession()) getSession() else null
 

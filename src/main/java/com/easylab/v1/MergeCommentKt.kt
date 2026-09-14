@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializemergeComment")
-public inline fun mergeComment(block: easylab.v1.MergeCommentKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.MergeComment =
-  easylab.v1.MergeCommentKt.Dsl._create(easylab.v1.Easylab.MergeComment.newBuilder()).apply { block() }._build()
+public inline fun mergeComment(block: com.easylab.v1.MergeCommentKt.Dsl.() -> kotlin.Unit): com.easylab.v1.MergeComment =
+  com.easylab.v1.MergeCommentKt.Dsl._create(com.easylab.v1.MergeComment.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.MergeComment`
  */
@@ -17,17 +17,17 @@ public object MergeCommentKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.MergeComment.Builder
+    private val _builder: com.easylab.v1.MergeComment.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.MergeComment.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.MergeComment.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.MergeComment = _builder.build()
+    internal fun _build(): com.easylab.v1.MergeComment = _builder.build()
 
     /**
      * `string author = 1 [json_name = "author"];`
@@ -98,6 +98,6 @@ public object MergeCommentKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.MergeComment.copy(block: `easylab.v1`.MergeCommentKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.MergeComment =
-  `easylab.v1`.MergeCommentKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.MergeComment.copy(block: `com.easylab.v1`.MergeCommentKt.Dsl.() -> kotlin.Unit): com.easylab.v1.MergeComment =
+  `com.easylab.v1`.MergeCommentKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

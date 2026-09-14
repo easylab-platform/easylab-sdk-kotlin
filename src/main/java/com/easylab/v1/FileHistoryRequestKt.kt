@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializefileHistoryRequest")
-public inline fun fileHistoryRequest(block: easylab.v1.FileHistoryRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileHistoryRequest =
-  easylab.v1.FileHistoryRequestKt.Dsl._create(easylab.v1.Easylab.FileHistoryRequest.newBuilder()).apply { block() }._build()
+public inline fun fileHistoryRequest(block: com.easylab.v1.FileHistoryRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileHistoryRequest =
+  com.easylab.v1.FileHistoryRequestKt.Dsl._create(com.easylab.v1.FileHistoryRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.FileHistoryRequest`
  */
@@ -17,17 +17,17 @@ public object FileHistoryRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.FileHistoryRequest.Builder
+    private val _builder: com.easylab.v1.FileHistoryRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.FileHistoryRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.FileHistoryRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.FileHistoryRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.FileHistoryRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,6 @@ public object FileHistoryRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.FileHistoryRequest.copy(block: `easylab.v1`.FileHistoryRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileHistoryRequest =
-  `easylab.v1`.FileHistoryRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.FileHistoryRequest.copy(block: `com.easylab.v1`.FileHistoryRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileHistoryRequest =
+  `com.easylab.v1`.FileHistoryRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

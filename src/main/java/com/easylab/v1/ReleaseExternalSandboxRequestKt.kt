@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializereleaseExternalSandboxRequest")
-public inline fun releaseExternalSandboxRequest(block: easylab.v1.ReleaseExternalSandboxRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReleaseExternalSandboxRequest =
-  easylab.v1.ReleaseExternalSandboxRequestKt.Dsl._create(easylab.v1.Easylab.ReleaseExternalSandboxRequest.newBuilder()).apply { block() }._build()
+public inline fun releaseExternalSandboxRequest(block: com.easylab.v1.ReleaseExternalSandboxRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ReleaseExternalSandboxRequest =
+  com.easylab.v1.ReleaseExternalSandboxRequestKt.Dsl._create(com.easylab.v1.ReleaseExternalSandboxRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ReleaseExternalSandboxRequest`
  */
@@ -17,17 +17,17 @@ public object ReleaseExternalSandboxRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ReleaseExternalSandboxRequest.Builder
+    private val _builder: com.easylab.v1.ReleaseExternalSandboxRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ReleaseExternalSandboxRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ReleaseExternalSandboxRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ReleaseExternalSandboxRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ReleaseExternalSandboxRequest = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -47,6 +47,6 @@ public object ReleaseExternalSandboxRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ReleaseExternalSandboxRequest.copy(block: `easylab.v1`.ReleaseExternalSandboxRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReleaseExternalSandboxRequest =
-  `easylab.v1`.ReleaseExternalSandboxRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ReleaseExternalSandboxRequest.copy(block: `com.easylab.v1`.ReleaseExternalSandboxRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ReleaseExternalSandboxRequest =
+  `com.easylab.v1`.ReleaseExternalSandboxRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

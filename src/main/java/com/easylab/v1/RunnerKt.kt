@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerunner")
-public inline fun runner(block: easylab.v1.RunnerKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Runner =
-  easylab.v1.RunnerKt.Dsl._create(easylab.v1.Easylab.Runner.newBuilder()).apply { block() }._build()
+public inline fun runner(block: com.easylab.v1.RunnerKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Runner =
+  com.easylab.v1.RunnerKt.Dsl._create(com.easylab.v1.Runner.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.Runner`
  */
@@ -17,17 +17,17 @@ public object RunnerKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.Runner.Builder
+    private val _builder: com.easylab.v1.Runner.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.Runner.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.Runner.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.Runner = _builder.build()
+    internal fun _build(): com.easylab.v1.Runner = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -245,6 +245,6 @@ public object RunnerKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.Runner.copy(block: `easylab.v1`.RunnerKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Runner =
-  `easylab.v1`.RunnerKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.Runner.copy(block: `com.easylab.v1`.RunnerKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Runner =
+  `com.easylab.v1`.RunnerKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

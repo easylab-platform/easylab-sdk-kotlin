@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializecreateSessionRequest")
-public inline fun createSessionRequest(block: agent.v1.CreateSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CreateSessionRequest =
-  agent.v1.CreateSessionRequestKt.Dsl._create(agent.v1.Agent.CreateSessionRequest.newBuilder()).apply { block() }._build()
+public inline fun createSessionRequest(block: com.agent.v1.CreateSessionRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.CreateSessionRequest =
+  com.agent.v1.CreateSessionRequestKt.Dsl._create(com.agent.v1.CreateSessionRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.CreateSessionRequest`
  */
@@ -17,17 +17,17 @@ public object CreateSessionRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.CreateSessionRequest.Builder
+    private val _builder: com.agent.v1.CreateSessionRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.CreateSessionRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.CreateSessionRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.CreateSessionRequest = _builder.build()
+    internal fun _build(): com.agent.v1.CreateSessionRequest = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -163,8 +163,35 @@ public object CreateSessionRequestKt {
     public fun clearVariant() {
       _builder.clearVariant()
     }
+
+    /**
+     * ```
+     * Optional generic grouping key (empty = ungrouped). A subsession sets this
+     * to its parent session name.
+     * ```
+     *
+     * `string group = 8 [json_name = "group"];`
+     */
+    public var group: kotlin.String
+      @kotlin.jvm.JvmName("getGroup")
+        get() = _builder.group
+      @kotlin.jvm.JvmName("setGroup")
+        set(value) {
+        _builder.group = value
+      }
+    /**
+     * ```
+     * Optional generic grouping key (empty = ungrouped). A subsession sets this
+     * to its parent session name.
+     * ```
+     *
+     * `string group = 8 [json_name = "group"];`
+     */
+    public fun clearGroup() {
+      _builder.clearGroup()
+    }
   }
 }
-public inline fun agent.v1.Agent.CreateSessionRequest.copy(block: `agent.v1`.CreateSessionRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.CreateSessionRequest =
-  `agent.v1`.CreateSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.CreateSessionRequest.copy(block: `com.agent.v1`.CreateSessionRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.CreateSessionRequest =
+  `com.agent.v1`.CreateSessionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

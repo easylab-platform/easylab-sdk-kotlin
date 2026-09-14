@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetUserResponse")
-public inline fun getUserResponse(block: easylab.v1.GetUserResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetUserResponse =
-  easylab.v1.GetUserResponseKt.Dsl._create(easylab.v1.Easylab.GetUserResponse.newBuilder()).apply { block() }._build()
+public inline fun getUserResponse(block: com.easylab.v1.GetUserResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetUserResponse =
+  com.easylab.v1.GetUserResponseKt.Dsl._create(com.easylab.v1.GetUserResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetUserResponse`
  */
@@ -17,22 +17,22 @@ public object GetUserResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetUserResponse.Builder
+    private val _builder: com.easylab.v1.GetUserResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetUserResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GetUserResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetUserResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.GetUserResponse = _builder.build()
 
     /**
      * `.easylab.v1.User user = 1 [json_name = "user"];`
      */
-    public var user: easylab.v1.Easylab.User
+    public var user: com.easylab.v1.User
       @kotlin.jvm.JvmName("getUser")
         get() = _builder.user
       @kotlin.jvm.JvmName("setUser")
@@ -53,13 +53,13 @@ public object GetUserResponseKt {
       return _builder.hasUser()
     }
 
-    public val GetUserResponseKt.Dsl.userOrNull: easylab.v1.Easylab.User?
+    public val GetUserResponseKt.Dsl.userOrNull: com.easylab.v1.User?
       get() = _builder.userOrNull
   }
 }
-public inline fun easylab.v1.Easylab.GetUserResponse.copy(block: `easylab.v1`.GetUserResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetUserResponse =
-  `easylab.v1`.GetUserResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GetUserResponse.copy(block: `com.easylab.v1`.GetUserResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetUserResponse =
+  `com.easylab.v1`.GetUserResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.GetUserResponseOrBuilder.userOrNull: easylab.v1.Easylab.User?
+public val com.easylab.v1.GetUserResponseOrBuilder.userOrNull: com.easylab.v1.User?
   get() = if (hasUser()) getUser() else null
 

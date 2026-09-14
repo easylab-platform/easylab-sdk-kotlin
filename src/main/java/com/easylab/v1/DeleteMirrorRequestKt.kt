@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteMirrorRequest")
-public inline fun deleteMirrorRequest(block: easylab.v1.DeleteMirrorRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteMirrorRequest =
-  easylab.v1.DeleteMirrorRequestKt.Dsl._create(easylab.v1.Easylab.DeleteMirrorRequest.newBuilder()).apply { block() }._build()
+public inline fun deleteMirrorRequest(block: com.easylab.v1.DeleteMirrorRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteMirrorRequest =
+  com.easylab.v1.DeleteMirrorRequestKt.Dsl._create(com.easylab.v1.DeleteMirrorRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeleteMirrorRequest`
  */
@@ -17,17 +17,17 @@ public object DeleteMirrorRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DeleteMirrorRequest.Builder
+    private val _builder: com.easylab.v1.DeleteMirrorRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DeleteMirrorRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DeleteMirrorRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DeleteMirrorRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.DeleteMirrorRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -64,6 +64,6 @@ public object DeleteMirrorRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DeleteMirrorRequest.copy(block: `easylab.v1`.DeleteMirrorRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteMirrorRequest =
-  `easylab.v1`.DeleteMirrorRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DeleteMirrorRequest.copy(block: `com.easylab.v1`.DeleteMirrorRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteMirrorRequest =
+  `com.easylab.v1`.DeleteMirrorRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

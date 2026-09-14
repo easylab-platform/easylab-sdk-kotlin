@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializescaleServiceResponse")
-public inline fun scaleServiceResponse(block: easylab.v1.ScaleServiceResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ScaleServiceResponse =
-  easylab.v1.ScaleServiceResponseKt.Dsl._create(easylab.v1.Easylab.ScaleServiceResponse.newBuilder()).apply { block() }._build()
+public inline fun scaleServiceResponse(block: com.easylab.v1.ScaleServiceResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ScaleServiceResponse =
+  com.easylab.v1.ScaleServiceResponseKt.Dsl._create(com.easylab.v1.ScaleServiceResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ScaleServiceResponse`
  */
@@ -17,17 +17,17 @@ public object ScaleServiceResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ScaleServiceResponse.Builder
+    private val _builder: com.easylab.v1.ScaleServiceResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ScaleServiceResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ScaleServiceResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ScaleServiceResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ScaleServiceResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object ScaleServiceResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ScaleServiceResponse.copy(block: `easylab.v1`.ScaleServiceResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ScaleServiceResponse =
-  `easylab.v1`.ScaleServiceResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ScaleServiceResponse.copy(block: `com.easylab.v1`.ScaleServiceResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ScaleServiceResponse =
+  `com.easylab.v1`.ScaleServiceResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

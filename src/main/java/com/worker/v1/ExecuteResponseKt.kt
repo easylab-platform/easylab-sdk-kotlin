@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializeexecuteResponse")
-public inline fun executeResponse(block: worker.v1.ExecuteResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ExecuteResponse =
-  worker.v1.ExecuteResponseKt.Dsl._create(worker.v1.Worker.ExecuteResponse.newBuilder()).apply { block() }._build()
+public inline fun executeResponse(block: com.worker.v1.ExecuteResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.ExecuteResponse =
+  com.worker.v1.ExecuteResponseKt.Dsl._create(com.worker.v1.ExecuteResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.ExecuteResponse`
  */
@@ -17,17 +17,17 @@ public object ExecuteResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.ExecuteResponse.Builder
+    private val _builder: com.worker.v1.ExecuteResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.ExecuteResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.ExecuteResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.ExecuteResponse = _builder.build()
+    internal fun _build(): com.worker.v1.ExecuteResponse = _builder.build()
 
     /**
      * `string job_id = 1 [json_name = "jobId"];`
@@ -47,6 +47,6 @@ public object ExecuteResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.ExecuteResponse.copy(block: `worker.v1`.ExecuteResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ExecuteResponse =
-  `worker.v1`.ExecuteResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.ExecuteResponse.copy(block: `com.worker.v1`.ExecuteResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.ExecuteResponse =
+  `com.worker.v1`.ExecuteResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

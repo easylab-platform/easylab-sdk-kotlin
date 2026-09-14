@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteTagResponse")
-public inline fun deleteTagResponse(block: easylab.v1.DeleteTagResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteTagResponse =
-  easylab.v1.DeleteTagResponseKt.Dsl._create(easylab.v1.Easylab.DeleteTagResponse.newBuilder()).apply { block() }._build()
+public inline fun deleteTagResponse(block: com.easylab.v1.DeleteTagResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteTagResponse =
+  com.easylab.v1.DeleteTagResponseKt.Dsl._create(com.easylab.v1.DeleteTagResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeleteTagResponse`
  */
@@ -17,17 +17,17 @@ public object DeleteTagResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DeleteTagResponse.Builder
+    private val _builder: com.easylab.v1.DeleteTagResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DeleteTagResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DeleteTagResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DeleteTagResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.DeleteTagResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object DeleteTagResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DeleteTagResponse.copy(block: `easylab.v1`.DeleteTagResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteTagResponse =
-  `easylab.v1`.DeleteTagResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DeleteTagResponse.copy(block: `com.easylab.v1`.DeleteTagResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteTagResponse =
+  `com.easylab.v1`.DeleteTagResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

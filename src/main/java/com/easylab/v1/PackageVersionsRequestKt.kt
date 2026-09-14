@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializepackageVersionsRequest")
-public inline fun packageVersionsRequest(block: easylab.v1.PackageVersionsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageVersionsRequest =
-  easylab.v1.PackageVersionsRequestKt.Dsl._create(easylab.v1.Easylab.PackageVersionsRequest.newBuilder()).apply { block() }._build()
+public inline fun packageVersionsRequest(block: com.easylab.v1.PackageVersionsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageVersionsRequest =
+  com.easylab.v1.PackageVersionsRequestKt.Dsl._create(com.easylab.v1.PackageVersionsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.PackageVersionsRequest`
  */
@@ -17,17 +17,17 @@ public object PackageVersionsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.PackageVersionsRequest.Builder
+    private val _builder: com.easylab.v1.PackageVersionsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.PackageVersionsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.PackageVersionsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.PackageVersionsRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.PackageVersionsRequest = _builder.build()
 
     /**
      * `string type = 1 [json_name = "type"];`
@@ -64,6 +64,6 @@ public object PackageVersionsRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.PackageVersionsRequest.copy(block: `easylab.v1`.PackageVersionsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageVersionsRequest =
-  `easylab.v1`.PackageVersionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.PackageVersionsRequest.copy(block: `com.easylab.v1`.PackageVersionsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageVersionsRequest =
+  `com.easylab.v1`.PackageVersionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializejobWaitResponse")
-public inline fun jobWaitResponse(block: worker.v1.JobWaitResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobWaitResponse =
-  worker.v1.JobWaitResponseKt.Dsl._create(worker.v1.Worker.JobWaitResponse.newBuilder()).apply { block() }._build()
+public inline fun jobWaitResponse(block: com.worker.v1.JobWaitResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobWaitResponse =
+  com.worker.v1.JobWaitResponseKt.Dsl._create(com.worker.v1.JobWaitResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.JobWaitResponse`
  */
@@ -17,17 +17,17 @@ public object JobWaitResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.JobWaitResponse.Builder
+    private val _builder: com.worker.v1.JobWaitResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.JobWaitResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.JobWaitResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.JobWaitResponse = _builder.build()
+    internal fun _build(): com.worker.v1.JobWaitResponse = _builder.build()
 
     /**
      * `string state = 1 [json_name = "state"];`
@@ -64,6 +64,6 @@ public object JobWaitResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.JobWaitResponse.copy(block: `worker.v1`.JobWaitResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobWaitResponse =
-  `worker.v1`.JobWaitResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.JobWaitResponse.copy(block: `com.worker.v1`.JobWaitResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobWaitResponse =
+  `com.worker.v1`.JobWaitResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

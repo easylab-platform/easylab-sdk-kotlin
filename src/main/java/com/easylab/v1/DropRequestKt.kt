@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedropRequest")
-public inline fun dropRequest(block: easylab.v1.DropRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DropRequest =
-  easylab.v1.DropRequestKt.Dsl._create(easylab.v1.Easylab.DropRequest.newBuilder()).apply { block() }._build()
+public inline fun dropRequest(block: com.easylab.v1.DropRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DropRequest =
+  com.easylab.v1.DropRequestKt.Dsl._create(com.easylab.v1.DropRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Drop/Revert/Resolve/Squash/RebaseMany are the remaining history-edit ops.
@@ -21,17 +21,17 @@ public object DropRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DropRequest.Builder
+    private val _builder: com.easylab.v1.DropRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DropRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DropRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DropRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.DropRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -85,6 +85,6 @@ public object DropRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DropRequest.copy(block: `easylab.v1`.DropRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DropRequest =
-  `easylab.v1`.DropRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DropRequest.copy(block: `com.easylab.v1`.DropRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DropRequest =
+  `com.easylab.v1`.DropRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

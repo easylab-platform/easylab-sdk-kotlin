@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegraphRequest")
-public inline fun graphRequest(block: easylab.v1.GraphRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GraphRequest =
-  easylab.v1.GraphRequestKt.Dsl._create(easylab.v1.Easylab.GraphRequest.newBuilder()).apply { block() }._build()
+public inline fun graphRequest(block: com.easylab.v1.GraphRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GraphRequest =
+  com.easylab.v1.GraphRequestKt.Dsl._create(com.easylab.v1.GraphRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GraphRequest`
  */
@@ -17,17 +17,17 @@ public object GraphRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GraphRequest.Builder
+    private val _builder: com.easylab.v1.GraphRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GraphRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GraphRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GraphRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.GraphRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -81,6 +81,6 @@ public object GraphRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.GraphRequest.copy(block: `easylab.v1`.GraphRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GraphRequest =
-  `easylab.v1`.GraphRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GraphRequest.copy(block: `com.easylab.v1`.GraphRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GraphRequest =
+  `com.easylab.v1`.GraphRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

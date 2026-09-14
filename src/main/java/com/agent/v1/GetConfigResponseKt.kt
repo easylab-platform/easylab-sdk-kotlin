@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetConfigResponse")
-public inline fun getConfigResponse(block: agent.v1.GetConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetConfigResponse =
-  agent.v1.GetConfigResponseKt.Dsl._create(agent.v1.Agent.GetConfigResponse.newBuilder()).apply { block() }._build()
+public inline fun getConfigResponse(block: com.agent.v1.GetConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetConfigResponse =
+  com.agent.v1.GetConfigResponseKt.Dsl._create(com.agent.v1.GetConfigResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetConfigResponse`
  */
@@ -17,17 +17,17 @@ public object GetConfigResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.GetConfigResponse.Builder
+    private val _builder: com.agent.v1.GetConfigResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.GetConfigResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.GetConfigResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.GetConfigResponse = _builder.build()
+    internal fun _build(): com.agent.v1.GetConfigResponse = _builder.build()
 
     /**
      * `string key = 1 [json_name = "key"];`
@@ -64,6 +64,6 @@ public object GetConfigResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.GetConfigResponse.copy(block: `agent.v1`.GetConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetConfigResponse =
-  `agent.v1`.GetConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.GetConfigResponse.copy(block: `com.agent.v1`.GetConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetConfigResponse =
+  `com.agent.v1`.GetConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

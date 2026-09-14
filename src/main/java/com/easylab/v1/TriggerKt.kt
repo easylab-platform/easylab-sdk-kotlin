@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetrigger")
-public inline fun trigger(block: easylab.v1.TriggerKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Trigger =
-  easylab.v1.TriggerKt.Dsl._create(easylab.v1.Easylab.Trigger.newBuilder()).apply { block() }._build()
+public inline fun trigger(block: com.easylab.v1.TriggerKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Trigger =
+  com.easylab.v1.TriggerKt.Dsl._create(com.easylab.v1.Trigger.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.Trigger`
  */
@@ -17,17 +17,17 @@ public object TriggerKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.Trigger.Builder
+    private val _builder: com.easylab.v1.Trigger.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.Trigger.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.Trigger.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.Trigger = _builder.build()
+    internal fun _build(): com.easylab.v1.Trigger = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -100,6 +100,6 @@ public object TriggerKt {
       _builder.clearEvents()
     }}
 }
-public inline fun easylab.v1.Easylab.Trigger.copy(block: `easylab.v1`.TriggerKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Trigger =
-  `easylab.v1`.TriggerKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.Trigger.copy(block: `com.easylab.v1`.TriggerKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Trigger =
+  `com.easylab.v1`.TriggerKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

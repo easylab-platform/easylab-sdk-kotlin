@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializejobInstance")
-public inline fun jobInstance(block: easylab.v1.JobInstanceKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.JobInstance =
-  easylab.v1.JobInstanceKt.Dsl._create(easylab.v1.Easylab.JobInstance.newBuilder()).apply { block() }._build()
+public inline fun jobInstance(block: com.easylab.v1.JobInstanceKt.Dsl.() -> kotlin.Unit): com.easylab.v1.JobInstance =
+  com.easylab.v1.JobInstanceKt.Dsl._create(com.easylab.v1.JobInstance.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.JobInstance`
  */
@@ -17,17 +17,17 @@ public object JobInstanceKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.JobInstance.Builder
+    private val _builder: com.easylab.v1.JobInstance.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.JobInstance.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.JobInstance.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.JobInstance = _builder.build()
+    internal fun _build(): com.easylab.v1.JobInstance = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -106,6 +106,6 @@ public object JobInstanceKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.JobInstance.copy(block: `easylab.v1`.JobInstanceKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.JobInstance =
-  `easylab.v1`.JobInstanceKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.JobInstance.copy(block: `com.easylab.v1`.JobInstanceKt.Dsl.() -> kotlin.Unit): com.easylab.v1.JobInstance =
+  `com.easylab.v1`.JobInstanceKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

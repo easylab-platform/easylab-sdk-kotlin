@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistUserTokensResponse")
-public inline fun listUserTokensResponse(block: easylab.v1.ListUserTokensResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListUserTokensResponse =
-  easylab.v1.ListUserTokensResponseKt.Dsl._create(easylab.v1.Easylab.ListUserTokensResponse.newBuilder()).apply { block() }._build()
+public inline fun listUserTokensResponse(block: com.easylab.v1.ListUserTokensResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListUserTokensResponse =
+  com.easylab.v1.ListUserTokensResponseKt.Dsl._create(com.easylab.v1.ListUserTokensResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListUserTokensResponse`
  */
@@ -17,17 +17,17 @@ public object ListUserTokensResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListUserTokensResponse.Builder
+    private val _builder: com.easylab.v1.ListUserTokensResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListUserTokensResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListUserTokensResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListUserTokensResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListUserTokensResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListUserTokensResponseKt {
     /**
      * `repeated .easylab.v1.UserToken tokens = 1 [json_name = "tokens"];`
      */
-     public val tokens: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>
+     public val tokens: com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.tokensList
@@ -49,7 +49,7 @@ public object ListUserTokensResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addTokens")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>.add(value: easylab.v1.Easylab.UserToken) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>.add(value: com.easylab.v1.UserToken) {
       _builder.addTokens(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListUserTokensResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignTokens")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>.plusAssign(value: easylab.v1.Easylab.UserToken) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>.plusAssign(value: com.easylab.v1.UserToken) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListUserTokensResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllTokens")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.UserToken>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.UserToken>) {
       _builder.addAllTokens(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListUserTokensResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllTokens")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.UserToken>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.UserToken>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListUserTokensResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setTokens")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.UserToken) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>.set(index: kotlin.Int, value: com.easylab.v1.UserToken) {
       _builder.setTokens(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListUserTokensResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearTokens")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.UserToken, TokensProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.UserToken, TokensProxy>.clear() {
       _builder.clearTokens()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListUserTokensResponse.copy(block: `easylab.v1`.ListUserTokensResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListUserTokensResponse =
-  `easylab.v1`.ListUserTokensResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListUserTokensResponse.copy(block: `com.easylab.v1`.ListUserTokensResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListUserTokensResponse =
+  `com.easylab.v1`.ListUserTokensResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

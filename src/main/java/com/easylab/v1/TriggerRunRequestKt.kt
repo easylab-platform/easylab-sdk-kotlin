@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetriggerRunRequest")
-public inline fun triggerRunRequest(block: easylab.v1.TriggerRunRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TriggerRunRequest =
-  easylab.v1.TriggerRunRequestKt.Dsl._create(easylab.v1.Easylab.TriggerRunRequest.newBuilder()).apply { block() }._build()
+public inline fun triggerRunRequest(block: com.easylab.v1.TriggerRunRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TriggerRunRequest =
+  com.easylab.v1.TriggerRunRequestKt.Dsl._create(com.easylab.v1.TriggerRunRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.TriggerRunRequest`
  */
@@ -17,17 +17,17 @@ public object TriggerRunRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.TriggerRunRequest.Builder
+    private val _builder: com.easylab.v1.TriggerRunRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.TriggerRunRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.TriggerRunRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.TriggerRunRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.TriggerRunRequest = _builder.build()
 
     /**
      * `string workflow_id = 1 [json_name = "workflowId"];`
@@ -47,6 +47,6 @@ public object TriggerRunRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.TriggerRunRequest.copy(block: `easylab.v1`.TriggerRunRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TriggerRunRequest =
-  `easylab.v1`.TriggerRunRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.TriggerRunRequest.copy(block: `com.easylab.v1`.TriggerRunRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TriggerRunRequest =
+  `com.easylab.v1`.TriggerRunRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

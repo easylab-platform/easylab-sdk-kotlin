@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetConfigRequest")
-public inline fun getConfigRequest(block: agent.v1.GetConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetConfigRequest =
-  agent.v1.GetConfigRequestKt.Dsl._create(agent.v1.Agent.GetConfigRequest.newBuilder()).apply { block() }._build()
+public inline fun getConfigRequest(block: com.agent.v1.GetConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetConfigRequest =
+  com.agent.v1.GetConfigRequestKt.Dsl._create(com.agent.v1.GetConfigRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetConfigRequest`
  */
@@ -17,17 +17,17 @@ public object GetConfigRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.GetConfigRequest.Builder
+    private val _builder: com.agent.v1.GetConfigRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.GetConfigRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.GetConfigRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.GetConfigRequest = _builder.build()
+    internal fun _build(): com.agent.v1.GetConfigRequest = _builder.build()
 
     /**
      * `string key = 1 [json_name = "key"];`
@@ -47,6 +47,6 @@ public object GetConfigRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.GetConfigRequest.copy(block: `agent.v1`.GetConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetConfigRequest =
-  `agent.v1`.GetConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.GetConfigRequest.copy(block: `com.agent.v1`.GetConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetConfigRequest =
+  `com.agent.v1`.GetConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

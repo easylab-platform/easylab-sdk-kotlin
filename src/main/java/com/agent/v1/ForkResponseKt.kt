@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeforkResponse")
-public inline fun forkResponse(block: agent.v1.ForkResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ForkResponse =
-  agent.v1.ForkResponseKt.Dsl._create(agent.v1.Agent.ForkResponse.newBuilder()).apply { block() }._build()
+public inline fun forkResponse(block: com.agent.v1.ForkResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ForkResponse =
+  com.agent.v1.ForkResponseKt.Dsl._create(com.agent.v1.ForkResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ForkResponse`
  */
@@ -17,22 +17,22 @@ public object ForkResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ForkResponse.Builder
+    private val _builder: com.agent.v1.ForkResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ForkResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ForkResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ForkResponse = _builder.build()
+    internal fun _build(): com.agent.v1.ForkResponse = _builder.build()
 
     /**
      * `.agent.v1.Session session = 1 [json_name = "session"];`
      */
-    public var session: agent.v1.Agent.Session
+    public var session: com.agent.v1.Session
       @kotlin.jvm.JvmName("getSession")
         get() = _builder.session
       @kotlin.jvm.JvmName("setSession")
@@ -53,13 +53,13 @@ public object ForkResponseKt {
       return _builder.hasSession()
     }
 
-    public val ForkResponseKt.Dsl.sessionOrNull: agent.v1.Agent.Session?
+    public val ForkResponseKt.Dsl.sessionOrNull: com.agent.v1.Session?
       get() = _builder.sessionOrNull
   }
 }
-public inline fun agent.v1.Agent.ForkResponse.copy(block: `agent.v1`.ForkResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ForkResponse =
-  `agent.v1`.ForkResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ForkResponse.copy(block: `com.agent.v1`.ForkResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ForkResponse =
+  `com.agent.v1`.ForkResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.ForkResponseOrBuilder.sessionOrNull: agent.v1.Agent.Session?
+public val com.agent.v1.ForkResponseOrBuilder.sessionOrNull: com.agent.v1.Session?
   get() = if (hasSession()) getSession() else null
 

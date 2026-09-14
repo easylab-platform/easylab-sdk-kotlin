@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeblameRequest")
-public inline fun blameRequest(block: easylab.v1.BlameRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BlameRequest =
-  easylab.v1.BlameRequestKt.Dsl._create(easylab.v1.Easylab.BlameRequest.newBuilder()).apply { block() }._build()
+public inline fun blameRequest(block: com.easylab.v1.BlameRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BlameRequest =
+  com.easylab.v1.BlameRequestKt.Dsl._create(com.easylab.v1.BlameRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.BlameRequest`
  */
@@ -17,17 +17,17 @@ public object BlameRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.BlameRequest.Builder
+    private val _builder: com.easylab.v1.BlameRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.BlameRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.BlameRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.BlameRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.BlameRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,6 @@ public object BlameRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.BlameRequest.copy(block: `easylab.v1`.BlameRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BlameRequest =
-  `easylab.v1`.BlameRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.BlameRequest.copy(block: `com.easylab.v1`.BlameRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BlameRequest =
+  `com.easylab.v1`.BlameRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

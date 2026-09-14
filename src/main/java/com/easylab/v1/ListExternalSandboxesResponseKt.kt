@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistExternalSandboxesResponse")
-public inline fun listExternalSandboxesResponse(block: easylab.v1.ListExternalSandboxesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListExternalSandboxesResponse =
-  easylab.v1.ListExternalSandboxesResponseKt.Dsl._create(easylab.v1.Easylab.ListExternalSandboxesResponse.newBuilder()).apply { block() }._build()
+public inline fun listExternalSandboxesResponse(block: com.easylab.v1.ListExternalSandboxesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListExternalSandboxesResponse =
+  com.easylab.v1.ListExternalSandboxesResponseKt.Dsl._create(com.easylab.v1.ListExternalSandboxesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListExternalSandboxesResponse`
  */
@@ -17,17 +17,17 @@ public object ListExternalSandboxesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListExternalSandboxesResponse.Builder
+    private val _builder: com.easylab.v1.ListExternalSandboxesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListExternalSandboxesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListExternalSandboxesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListExternalSandboxesResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListExternalSandboxesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListExternalSandboxesResponseKt {
     /**
      * `repeated .easylab.v1.ExternalSandbox sandboxes = 1 [json_name = "sandboxes"];`
      */
-     public val sandboxes: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>
+     public val sandboxes: com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.sandboxesList
@@ -49,7 +49,7 @@ public object ListExternalSandboxesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addSandboxes")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>.add(value: easylab.v1.Easylab.ExternalSandbox) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>.add(value: com.easylab.v1.ExternalSandbox) {
       _builder.addSandboxes(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListExternalSandboxesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignSandboxes")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>.plusAssign(value: easylab.v1.Easylab.ExternalSandbox) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>.plusAssign(value: com.easylab.v1.ExternalSandbox) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListExternalSandboxesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllSandboxes")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.ExternalSandbox>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.ExternalSandbox>) {
       _builder.addAllSandboxes(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListExternalSandboxesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllSandboxes")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.ExternalSandbox>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.ExternalSandbox>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListExternalSandboxesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setSandboxes")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.ExternalSandbox) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>.set(index: kotlin.Int, value: com.easylab.v1.ExternalSandbox) {
       _builder.setSandboxes(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListExternalSandboxesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearSandboxes")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ExternalSandbox, SandboxesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ExternalSandbox, SandboxesProxy>.clear() {
       _builder.clearSandboxes()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListExternalSandboxesResponse.copy(block: `easylab.v1`.ListExternalSandboxesResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListExternalSandboxesResponse =
-  `easylab.v1`.ListExternalSandboxesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListExternalSandboxesResponse.copy(block: `com.easylab.v1`.ListExternalSandboxesResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListExternalSandboxesResponse =
+  `com.easylab.v1`.ListExternalSandboxesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

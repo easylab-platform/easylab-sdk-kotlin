@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetMirrorResponse")
-public inline fun getMirrorResponse(block: easylab.v1.GetMirrorResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetMirrorResponse =
-  easylab.v1.GetMirrorResponseKt.Dsl._create(easylab.v1.Easylab.GetMirrorResponse.newBuilder()).apply { block() }._build()
+public inline fun getMirrorResponse(block: com.easylab.v1.GetMirrorResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetMirrorResponse =
+  com.easylab.v1.GetMirrorResponseKt.Dsl._create(com.easylab.v1.GetMirrorResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetMirrorResponse`
  */
@@ -17,22 +17,22 @@ public object GetMirrorResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetMirrorResponse.Builder
+    private val _builder: com.easylab.v1.GetMirrorResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetMirrorResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GetMirrorResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetMirrorResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.GetMirrorResponse = _builder.build()
 
     /**
      * `.easylab.v1.MirrorCfg mirror = 1 [json_name = "mirror"];`
      */
-    public var mirror: easylab.v1.Easylab.MirrorCfg
+    public var mirror: com.easylab.v1.MirrorCfg
       @kotlin.jvm.JvmName("getMirror")
         get() = _builder.mirror
       @kotlin.jvm.JvmName("setMirror")
@@ -53,13 +53,13 @@ public object GetMirrorResponseKt {
       return _builder.hasMirror()
     }
 
-    public val GetMirrorResponseKt.Dsl.mirrorOrNull: easylab.v1.Easylab.MirrorCfg?
+    public val GetMirrorResponseKt.Dsl.mirrorOrNull: com.easylab.v1.MirrorCfg?
       get() = _builder.mirrorOrNull
   }
 }
-public inline fun easylab.v1.Easylab.GetMirrorResponse.copy(block: `easylab.v1`.GetMirrorResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetMirrorResponse =
-  `easylab.v1`.GetMirrorResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GetMirrorResponse.copy(block: `com.easylab.v1`.GetMirrorResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetMirrorResponse =
+  `com.easylab.v1`.GetMirrorResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.GetMirrorResponseOrBuilder.mirrorOrNull: easylab.v1.Easylab.MirrorCfg?
+public val com.easylab.v1.GetMirrorResponseOrBuilder.mirrorOrNull: com.easylab.v1.MirrorCfg?
   get() = if (hasMirror()) getMirror() else null
 

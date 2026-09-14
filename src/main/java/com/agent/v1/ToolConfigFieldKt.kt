@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializetoolConfigField")
-public inline fun toolConfigField(block: agent.v1.ToolConfigFieldKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolConfigField =
-  agent.v1.ToolConfigFieldKt.Dsl._create(agent.v1.Agent.ToolConfigField.newBuilder()).apply { block() }._build()
+public inline fun toolConfigField(block: com.agent.v1.ToolConfigFieldKt.Dsl.() -> kotlin.Unit): com.agent.v1.ToolConfigField =
+  com.agent.v1.ToolConfigFieldKt.Dsl._create(com.agent.v1.ToolConfigField.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Declared config knob for a tool/extension.
@@ -21,17 +21,17 @@ public object ToolConfigFieldKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ToolConfigField.Builder
+    private val _builder: com.agent.v1.ToolConfigField.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ToolConfigField.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ToolConfigField.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ToolConfigField = _builder.build()
+    internal fun _build(): com.agent.v1.ToolConfigField = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -199,9 +199,9 @@ public object ToolConfigFieldKt {
     }
   }
 }
-public inline fun agent.v1.Agent.ToolConfigField.copy(block: `agent.v1`.ToolConfigFieldKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ToolConfigField =
-  `agent.v1`.ToolConfigFieldKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ToolConfigField.copy(block: `com.agent.v1`.ToolConfigFieldKt.Dsl.() -> kotlin.Unit): com.agent.v1.ToolConfigField =
+  `com.agent.v1`.ToolConfigFieldKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.ToolConfigFieldOrBuilder.defaultOrNull: com.google.protobuf.Value?
+public val com.agent.v1.ToolConfigFieldOrBuilder.defaultOrNull: com.google.protobuf.Value?
   get() = if (hasDefault()) getDefault() else null
 

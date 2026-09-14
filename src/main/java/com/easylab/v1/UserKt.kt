@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeuser")
-public inline fun user(block: easylab.v1.UserKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.User =
-  easylab.v1.UserKt.Dsl._create(easylab.v1.Easylab.User.newBuilder()).apply { block() }._build()
+public inline fun user(block: com.easylab.v1.UserKt.Dsl.() -> kotlin.Unit): com.easylab.v1.User =
+  com.easylab.v1.UserKt.Dsl._create(com.easylab.v1.User.newBuilder()).apply { block() }._build()
 /**
  * ```
  * User is both the identity and the ownership boundary: a user owns
@@ -23,17 +23,17 @@ public object UserKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.User.Builder
+    private val _builder: com.easylab.v1.User.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.User.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.User.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.User = _builder.build()
+    internal fun _build(): com.easylab.v1.User = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -146,6 +146,6 @@ public object UserKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.User.copy(block: `easylab.v1`.UserKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.User =
-  `easylab.v1`.UserKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.User.copy(block: `com.easylab.v1`.UserKt.Dsl.() -> kotlin.Unit): com.easylab.v1.User =
+  `com.easylab.v1`.UserKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

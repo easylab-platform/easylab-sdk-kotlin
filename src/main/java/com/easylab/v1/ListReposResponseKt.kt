@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistReposResponse")
-public inline fun listReposResponse(block: easylab.v1.ListReposResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReposResponse =
-  easylab.v1.ListReposResponseKt.Dsl._create(easylab.v1.Easylab.ListReposResponse.newBuilder()).apply { block() }._build()
+public inline fun listReposResponse(block: com.easylab.v1.ListReposResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListReposResponse =
+  com.easylab.v1.ListReposResponseKt.Dsl._create(com.easylab.v1.ListReposResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListReposResponse`
  */
@@ -17,17 +17,17 @@ public object ListReposResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListReposResponse.Builder
+    private val _builder: com.easylab.v1.ListReposResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListReposResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListReposResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListReposResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListReposResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListReposResponseKt {
     /**
      * `repeated .easylab.v1.RepoInfo repos = 1 [json_name = "repos"];`
      */
-     public val repos: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>
+     public val repos: com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.reposList
@@ -49,7 +49,7 @@ public object ListReposResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addRepos")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>.add(value: easylab.v1.Easylab.RepoInfo) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>.add(value: com.easylab.v1.RepoInfo) {
       _builder.addRepos(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListReposResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignRepos")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>.plusAssign(value: easylab.v1.Easylab.RepoInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>.plusAssign(value: com.easylab.v1.RepoInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListReposResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllRepos")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.RepoInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.RepoInfo>) {
       _builder.addAllRepos(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListReposResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllRepos")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.RepoInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.RepoInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListReposResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setRepos")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.RepoInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>.set(index: kotlin.Int, value: com.easylab.v1.RepoInfo) {
       _builder.setRepos(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListReposResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearRepos")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RepoInfo, ReposProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RepoInfo, ReposProxy>.clear() {
       _builder.clearRepos()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListReposResponse.copy(block: `easylab.v1`.ListReposResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReposResponse =
-  `easylab.v1`.ListReposResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListReposResponse.copy(block: `com.easylab.v1`.ListReposResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListReposResponse =
+  `com.easylab.v1`.ListReposResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

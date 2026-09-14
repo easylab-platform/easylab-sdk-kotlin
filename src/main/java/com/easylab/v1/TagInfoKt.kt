@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetagInfo")
-public inline fun tagInfo(block: easylab.v1.TagInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TagInfo =
-  easylab.v1.TagInfoKt.Dsl._create(easylab.v1.Easylab.TagInfo.newBuilder()).apply { block() }._build()
+public inline fun tagInfo(block: com.easylab.v1.TagInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TagInfo =
+  com.easylab.v1.TagInfoKt.Dsl._create(com.easylab.v1.TagInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.TagInfo`
  */
@@ -17,17 +17,17 @@ public object TagInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.TagInfo.Builder
+    private val _builder: com.easylab.v1.TagInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.TagInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.TagInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.TagInfo = _builder.build()
+    internal fun _build(): com.easylab.v1.TagInfo = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -64,6 +64,6 @@ public object TagInfoKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.TagInfo.copy(block: `easylab.v1`.TagInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TagInfo =
-  `easylab.v1`.TagInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.TagInfo.copy(block: `com.easylab.v1`.TagInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TagInfo =
+  `com.easylab.v1`.TagInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

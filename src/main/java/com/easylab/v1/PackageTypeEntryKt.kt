@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializepackageTypeEntry")
-public inline fun packageTypeEntry(block: easylab.v1.PackageTypeEntryKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageTypeEntry =
-  easylab.v1.PackageTypeEntryKt.Dsl._create(easylab.v1.Easylab.PackageTypeEntry.newBuilder()).apply { block() }._build()
+public inline fun packageTypeEntry(block: com.easylab.v1.PackageTypeEntryKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageTypeEntry =
+  com.easylab.v1.PackageTypeEntryKt.Dsl._create(com.easylab.v1.PackageTypeEntry.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.PackageTypeEntry`
  */
@@ -17,17 +17,17 @@ public object PackageTypeEntryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.PackageTypeEntry.Builder
+    private val _builder: com.easylab.v1.PackageTypeEntry.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.PackageTypeEntry.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.PackageTypeEntry.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.PackageTypeEntry = _builder.build()
+    internal fun _build(): com.easylab.v1.PackageTypeEntry = _builder.build()
 
     /**
      * `string type = 1 [json_name = "type"];`
@@ -81,6 +81,6 @@ public object PackageTypeEntryKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.PackageTypeEntry.copy(block: `easylab.v1`.PackageTypeEntryKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageTypeEntry =
-  `easylab.v1`.PackageTypeEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.PackageTypeEntry.copy(block: `com.easylab.v1`.PackageTypeEntryKt.Dsl.() -> kotlin.Unit): com.easylab.v1.PackageTypeEntry =
+  `com.easylab.v1`.PackageTypeEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

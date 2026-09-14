@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesyncMirrorRequest")
-public inline fun syncMirrorRequest(block: easylab.v1.SyncMirrorRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncMirrorRequest =
-  easylab.v1.SyncMirrorRequestKt.Dsl._create(easylab.v1.Easylab.SyncMirrorRequest.newBuilder()).apply { block() }._build()
+public inline fun syncMirrorRequest(block: com.easylab.v1.SyncMirrorRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SyncMirrorRequest =
+  com.easylab.v1.SyncMirrorRequestKt.Dsl._create(com.easylab.v1.SyncMirrorRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SyncMirrorRequest`
  */
@@ -17,17 +17,17 @@ public object SyncMirrorRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SyncMirrorRequest.Builder
+    private val _builder: com.easylab.v1.SyncMirrorRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SyncMirrorRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SyncMirrorRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SyncMirrorRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.SyncMirrorRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -150,6 +150,6 @@ public object SyncMirrorRequestKt {
        }
   }
 }
-public inline fun easylab.v1.Easylab.SyncMirrorRequest.copy(block: `easylab.v1`.SyncMirrorRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncMirrorRequest =
-  `easylab.v1`.SyncMirrorRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SyncMirrorRequest.copy(block: `com.easylab.v1`.SyncMirrorRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SyncMirrorRequest =
+  `com.easylab.v1`.SyncMirrorRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

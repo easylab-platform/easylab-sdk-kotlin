@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializepromptResponse")
-public inline fun promptResponse(block: agent.v1.PromptResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PromptResponse =
-  agent.v1.PromptResponseKt.Dsl._create(agent.v1.Agent.PromptResponse.newBuilder()).apply { block() }._build()
+public inline fun promptResponse(block: com.agent.v1.PromptResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.PromptResponse =
+  com.agent.v1.PromptResponseKt.Dsl._create(com.agent.v1.PromptResponse.newBuilder()).apply { block() }._build()
 /**
  * ```
  * SSE-ish stream event emitted by Prompt streaming.
@@ -21,17 +21,17 @@ public object PromptResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.PromptResponse.Builder
+    private val _builder: com.agent.v1.PromptResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.PromptResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.PromptResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.PromptResponse = _builder.build()
+    internal fun _build(): com.agent.v1.PromptResponse = _builder.build()
 
     /**
      * ```
@@ -137,6 +137,6 @@ public object PromptResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.PromptResponse.copy(block: `agent.v1`.PromptResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.PromptResponse =
-  `agent.v1`.PromptResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.PromptResponse.copy(block: `com.agent.v1`.PromptResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.PromptResponse =
+  `com.agent.v1`.PromptResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

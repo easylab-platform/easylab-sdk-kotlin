@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateReleaseRequest")
-public inline fun createReleaseRequest(block: easylab.v1.CreateReleaseRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateReleaseRequest =
-  easylab.v1.CreateReleaseRequestKt.Dsl._create(easylab.v1.Easylab.CreateReleaseRequest.newBuilder()).apply { block() }._build()
+public inline fun createReleaseRequest(block: com.easylab.v1.CreateReleaseRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateReleaseRequest =
+  com.easylab.v1.CreateReleaseRequestKt.Dsl._create(com.easylab.v1.CreateReleaseRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Releases (write side; List/Download already exist).
@@ -21,17 +21,17 @@ public object CreateReleaseRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CreateReleaseRequest.Builder
+    private val _builder: com.easylab.v1.CreateReleaseRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CreateReleaseRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CreateReleaseRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CreateReleaseRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.CreateReleaseRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -170,6 +170,6 @@ public object CreateReleaseRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.CreateReleaseRequest.copy(block: `easylab.v1`.CreateReleaseRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateReleaseRequest =
-  `easylab.v1`.CreateReleaseRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CreateReleaseRequest.copy(block: `com.easylab.v1`.CreateReleaseRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateReleaseRequest =
+  `com.easylab.v1`.CreateReleaseRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

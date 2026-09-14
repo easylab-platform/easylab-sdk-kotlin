@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -18,97 +18,97 @@ import com.connectrpc.StreamType
 public class UserServiceClient(
   private val client: ProtocolClientInterface,
 ) : UserServiceClientInterface {
-  override suspend fun createUser(request: Easylab.CreateUserRequest, headers: Headers): ResponseMessage<Easylab.CreateUserResponse> = client.unary(
+  override suspend fun createUser(request: CreateUserRequest, headers: Headers): ResponseMessage<CreateUserResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/CreateUser",
-      easylab.v1.Easylab.CreateUserRequest::class,
-      easylab.v1.Easylab.CreateUserResponse::class,
+      com.easylab.v1.CreateUserRequest::class,
+      com.easylab.v1.CreateUserResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getUser(request: Easylab.GetUserRequest, headers: Headers): ResponseMessage<Easylab.GetUserResponse> = client.unary(
+  override suspend fun getUser(request: GetUserRequest, headers: Headers): ResponseMessage<GetUserResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/GetUser",
-      easylab.v1.Easylab.GetUserRequest::class,
-      easylab.v1.Easylab.GetUserResponse::class,
+      com.easylab.v1.GetUserRequest::class,
+      com.easylab.v1.GetUserResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listUsers(request: Easylab.ListUsersRequest, headers: Headers): ResponseMessage<Easylab.ListUsersResponse> = client.unary(
+  override suspend fun listUsers(request: ListUsersRequest, headers: Headers): ResponseMessage<ListUsersResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/ListUsers",
-      easylab.v1.Easylab.ListUsersRequest::class,
-      easylab.v1.Easylab.ListUsersResponse::class,
+      com.easylab.v1.ListUsersRequest::class,
+      com.easylab.v1.ListUsersResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun updateUser(request: Easylab.UpdateUserRequest, headers: Headers): ResponseMessage<Easylab.UpdateUserResponse> = client.unary(
+  override suspend fun updateUser(request: UpdateUserRequest, headers: Headers): ResponseMessage<UpdateUserResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/UpdateUser",
-      easylab.v1.Easylab.UpdateUserRequest::class,
-      easylab.v1.Easylab.UpdateUserResponse::class,
+      com.easylab.v1.UpdateUserRequest::class,
+      com.easylab.v1.UpdateUserResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteUser(request: Easylab.DeleteUserRequest, headers: Headers): ResponseMessage<Easylab.DeleteUserResponse> = client.unary(
+  override suspend fun deleteUser(request: DeleteUserRequest, headers: Headers): ResponseMessage<DeleteUserResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/DeleteUser",
-      easylab.v1.Easylab.DeleteUserRequest::class,
-      easylab.v1.Easylab.DeleteUserResponse::class,
+      com.easylab.v1.DeleteUserRequest::class,
+      com.easylab.v1.DeleteUserResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listUserTokens(request: Easylab.ListUserTokensRequest, headers: Headers): ResponseMessage<Easylab.ListUserTokensResponse> = client.unary(
+  override suspend fun listUserTokens(request: ListUserTokensRequest, headers: Headers): ResponseMessage<ListUserTokensResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/ListUserTokens",
-      easylab.v1.Easylab.ListUserTokensRequest::class,
-      easylab.v1.Easylab.ListUserTokensResponse::class,
+      com.easylab.v1.ListUserTokensRequest::class,
+      com.easylab.v1.ListUserTokensResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun createUserToken(request: Easylab.CreateUserTokenRequest, headers: Headers): ResponseMessage<Easylab.CreateUserTokenResponse> = client.unary(
+  override suspend fun createUserToken(request: CreateUserTokenRequest, headers: Headers): ResponseMessage<CreateUserTokenResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/CreateUserToken",
-      easylab.v1.Easylab.CreateUserTokenRequest::class,
-      easylab.v1.Easylab.CreateUserTokenResponse::class,
+      com.easylab.v1.CreateUserTokenRequest::class,
+      com.easylab.v1.CreateUserTokenResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteUserToken(request: Easylab.DeleteUserTokenRequest, headers: Headers): ResponseMessage<Easylab.DeleteUserTokenResponse> = client.unary(
+  override suspend fun deleteUserToken(request: DeleteUserTokenRequest, headers: Headers): ResponseMessage<DeleteUserTokenResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.UserService/DeleteUserToken",
-      easylab.v1.Easylab.DeleteUserTokenRequest::class,
-      easylab.v1.Easylab.DeleteUserTokenResponse::class,
+      com.easylab.v1.DeleteUserTokenRequest::class,
+      com.easylab.v1.DeleteUserTokenResponse::class,
       StreamType.UNARY,
     ),
   )

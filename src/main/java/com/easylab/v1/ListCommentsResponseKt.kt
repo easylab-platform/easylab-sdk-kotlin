@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistCommentsResponse")
-public inline fun listCommentsResponse(block: easylab.v1.ListCommentsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListCommentsResponse =
-  easylab.v1.ListCommentsResponseKt.Dsl._create(easylab.v1.Easylab.ListCommentsResponse.newBuilder()).apply { block() }._build()
+public inline fun listCommentsResponse(block: com.easylab.v1.ListCommentsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListCommentsResponse =
+  com.easylab.v1.ListCommentsResponseKt.Dsl._create(com.easylab.v1.ListCommentsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListCommentsResponse`
  */
@@ -17,17 +17,17 @@ public object ListCommentsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListCommentsResponse.Builder
+    private val _builder: com.easylab.v1.ListCommentsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListCommentsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListCommentsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListCommentsResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListCommentsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListCommentsResponseKt {
     /**
      * `repeated .easylab.v1.MergeComment comments = 1 [json_name = "comments"];`
      */
-     public val comments: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>
+     public val comments: com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.commentsList
@@ -49,7 +49,7 @@ public object ListCommentsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addComments")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>.add(value: easylab.v1.Easylab.MergeComment) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>.add(value: com.easylab.v1.MergeComment) {
       _builder.addComments(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListCommentsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignComments")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>.plusAssign(value: easylab.v1.Easylab.MergeComment) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>.plusAssign(value: com.easylab.v1.MergeComment) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListCommentsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllComments")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.MergeComment>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.MergeComment>) {
       _builder.addAllComments(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListCommentsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllComments")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.MergeComment>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.MergeComment>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListCommentsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setComments")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.MergeComment) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>.set(index: kotlin.Int, value: com.easylab.v1.MergeComment) {
       _builder.setComments(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListCommentsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearComments")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeComment, CommentsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeComment, CommentsProxy>.clear() {
       _builder.clearComments()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListCommentsResponse.copy(block: `easylab.v1`.ListCommentsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListCommentsResponse =
-  `easylab.v1`.ListCommentsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListCommentsResponse.copy(block: `com.easylab.v1`.ListCommentsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListCommentsResponse =
+  `com.easylab.v1`.ListCommentsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

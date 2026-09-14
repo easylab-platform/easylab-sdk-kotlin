@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializewatchJobRequest")
-public inline fun watchJobRequest(block: worker.v1.WatchJobRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.WatchJobRequest =
-  worker.v1.WatchJobRequestKt.Dsl._create(worker.v1.Worker.WatchJobRequest.newBuilder()).apply { block() }._build()
+public inline fun watchJobRequest(block: com.worker.v1.WatchJobRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.WatchJobRequest =
+  com.worker.v1.WatchJobRequestKt.Dsl._create(com.worker.v1.WatchJobRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * WatchJob is the Connect server-streaming replacement for the /ws/job SSE
@@ -23,17 +23,17 @@ public object WatchJobRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.WatchJobRequest.Builder
+    private val _builder: com.worker.v1.WatchJobRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.WatchJobRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.WatchJobRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.WatchJobRequest = _builder.build()
+    internal fun _build(): com.worker.v1.WatchJobRequest = _builder.build()
 
     /**
      * `string job_id = 1 [json_name = "jobId"];`
@@ -53,6 +53,6 @@ public object WatchJobRequestKt {
     }
   }
 }
-public inline fun worker.v1.Worker.WatchJobRequest.copy(block: `worker.v1`.WatchJobRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.WatchJobRequest =
-  `worker.v1`.WatchJobRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.WatchJobRequest.copy(block: `com.worker.v1`.WatchJobRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.WatchJobRequest =
+  `com.worker.v1`.WatchJobRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

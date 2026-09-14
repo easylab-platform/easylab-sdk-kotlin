@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -14,120 +14,120 @@ import com.connectrpc.StreamType
 public class WorkflowServiceClient(
   private val client: ProtocolClientInterface,
 ) : WorkflowServiceClientInterface {
-  override suspend fun createWorkflow(request: Easylab.CreateWorkflowRequest, headers: Headers): ResponseMessage<Easylab.CreateWorkflowResponse> = client.unary(
+  override suspend fun createWorkflow(request: CreateWorkflowRequest, headers: Headers): ResponseMessage<CreateWorkflowResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/CreateWorkflow",
-      easylab.v1.Easylab.CreateWorkflowRequest::class,
-      easylab.v1.Easylab.CreateWorkflowResponse::class,
+      com.easylab.v1.CreateWorkflowRequest::class,
+      com.easylab.v1.CreateWorkflowResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getWorkflow(request: Easylab.GetWorkflowRequest, headers: Headers): ResponseMessage<Easylab.GetWorkflowResponse> = client.unary(
+  override suspend fun getWorkflow(request: GetWorkflowRequest, headers: Headers): ResponseMessage<GetWorkflowResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/GetWorkflow",
-      easylab.v1.Easylab.GetWorkflowRequest::class,
-      easylab.v1.Easylab.GetWorkflowResponse::class,
+      com.easylab.v1.GetWorkflowRequest::class,
+      com.easylab.v1.GetWorkflowResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listWorkflows(request: Easylab.ListWorkflowsRequest, headers: Headers): ResponseMessage<Easylab.ListWorkflowsResponse> = client.unary(
+  override suspend fun listWorkflows(request: ListWorkflowsRequest, headers: Headers): ResponseMessage<ListWorkflowsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/ListWorkflows",
-      easylab.v1.Easylab.ListWorkflowsRequest::class,
-      easylab.v1.Easylab.ListWorkflowsResponse::class,
+      com.easylab.v1.ListWorkflowsRequest::class,
+      com.easylab.v1.ListWorkflowsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun triggerRun(request: Easylab.TriggerRunRequest, headers: Headers): ResponseMessage<Easylab.TriggerRunResponse> = client.unary(
+  override suspend fun triggerRun(request: TriggerRunRequest, headers: Headers): ResponseMessage<TriggerRunResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/TriggerRun",
-      easylab.v1.Easylab.TriggerRunRequest::class,
-      easylab.v1.Easylab.TriggerRunResponse::class,
+      com.easylab.v1.TriggerRunRequest::class,
+      com.easylab.v1.TriggerRunResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getRun(request: Easylab.GetRunRequest, headers: Headers): ResponseMessage<Easylab.GetRunResponse> = client.unary(
+  override suspend fun getRun(request: GetRunRequest, headers: Headers): ResponseMessage<GetRunResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/GetRun",
-      easylab.v1.Easylab.GetRunRequest::class,
-      easylab.v1.Easylab.GetRunResponse::class,
+      com.easylab.v1.GetRunRequest::class,
+      com.easylab.v1.GetRunResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listRuns(request: Easylab.ListRunsRequest, headers: Headers): ResponseMessage<Easylab.ListRunsResponse> = client.unary(
+  override suspend fun listRuns(request: ListRunsRequest, headers: Headers): ResponseMessage<ListRunsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/ListRuns",
-      easylab.v1.Easylab.ListRunsRequest::class,
-      easylab.v1.Easylab.ListRunsResponse::class,
+      com.easylab.v1.ListRunsRequest::class,
+      com.easylab.v1.ListRunsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun runJobLog(headers: Headers): ServerOnlyStreamInterface<Easylab.RunJobLogRequest, Easylab.RunJobLogResponse> = client.serverStream(
+  override suspend fun runJobLog(headers: Headers): ServerOnlyStreamInterface<RunJobLogRequest, RunJobLogResponse> = client.serverStream(
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/RunJobLog",
-      easylab.v1.Easylab.RunJobLogRequest::class,
-      easylab.v1.Easylab.RunJobLogResponse::class,
+      com.easylab.v1.RunJobLogRequest::class,
+      com.easylab.v1.RunJobLogResponse::class,
       StreamType.SERVER,
     ),
   )
 
 
-  override suspend fun cancelRun(request: Easylab.CancelRunRequest, headers: Headers): ResponseMessage<Easylab.CancelRunResponse> = client.unary(
+  override suspend fun cancelRun(request: CancelRunRequest, headers: Headers): ResponseMessage<CancelRunResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/CancelRun",
-      easylab.v1.Easylab.CancelRunRequest::class,
-      easylab.v1.Easylab.CancelRunResponse::class,
+      com.easylab.v1.CancelRunRequest::class,
+      com.easylab.v1.CancelRunResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun registerRunner(request: Easylab.RegisterRunnerRequest, headers: Headers): ResponseMessage<Easylab.RegisterRunnerResponse> = client.unary(
+  override suspend fun registerRunner(request: RegisterRunnerRequest, headers: Headers): ResponseMessage<RegisterRunnerResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/RegisterRunner",
-      easylab.v1.Easylab.RegisterRunnerRequest::class,
-      easylab.v1.Easylab.RegisterRunnerResponse::class,
+      com.easylab.v1.RegisterRunnerRequest::class,
+      com.easylab.v1.RegisterRunnerResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listRunners(request: Easylab.ListRunnersRequest, headers: Headers): ResponseMessage<Easylab.ListRunnersResponse> = client.unary(
+  override suspend fun listRunners(request: ListRunnersRequest, headers: Headers): ResponseMessage<ListRunnersResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/ListRunners",
-      easylab.v1.Easylab.ListRunnersRequest::class,
-      easylab.v1.Easylab.ListRunnersResponse::class,
+      com.easylab.v1.ListRunnersRequest::class,
+      com.easylab.v1.ListRunnersResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -138,13 +138,13 @@ public class WorkflowServiceClient(
    *  the named workflow (or all when name is empty). Asynchronous: returns the
    *  created runs (pending/running); poll GetRun / stream RunJobLog.
    */
-  override suspend fun runWorkflowFile(request: Easylab.RunWorkflowFileRequest, headers: Headers): ResponseMessage<Easylab.RunWorkflowFileResponse> = client.unary(
+  override suspend fun runWorkflowFile(request: RunWorkflowFileRequest, headers: Headers): ResponseMessage<RunWorkflowFileResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.WorkflowService/RunWorkflowFile",
-      easylab.v1.Easylab.RunWorkflowFileRequest::class,
-      easylab.v1.Easylab.RunWorkflowFileResponse::class,
+      com.easylab.v1.RunWorkflowFileRequest::class,
+      com.easylab.v1.RunWorkflowFileResponse::class,
       StreamType.UNARY,
     ),
   )

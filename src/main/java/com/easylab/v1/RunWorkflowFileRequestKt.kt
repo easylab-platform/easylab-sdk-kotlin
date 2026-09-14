@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerunWorkflowFileRequest")
-public inline fun runWorkflowFileRequest(block: easylab.v1.RunWorkflowFileRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RunWorkflowFileRequest =
-  easylab.v1.RunWorkflowFileRequestKt.Dsl._create(easylab.v1.Easylab.RunWorkflowFileRequest.newBuilder()).apply { block() }._build()
+public inline fun runWorkflowFileRequest(block: com.easylab.v1.RunWorkflowFileRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RunWorkflowFileRequest =
+  com.easylab.v1.RunWorkflowFileRequestKt.Dsl._create(com.easylab.v1.RunWorkflowFileRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RunWorkflowFileRequest`
  */
@@ -17,17 +17,17 @@ public object RunWorkflowFileRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RunWorkflowFileRequest.Builder
+    private val _builder: com.easylab.v1.RunWorkflowFileRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RunWorkflowFileRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RunWorkflowFileRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RunWorkflowFileRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.RunWorkflowFileRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -191,6 +191,6 @@ public object RunWorkflowFileRequestKt {
        }
   }
 }
-public inline fun easylab.v1.Easylab.RunWorkflowFileRequest.copy(block: `easylab.v1`.RunWorkflowFileRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RunWorkflowFileRequest =
-  `easylab.v1`.RunWorkflowFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RunWorkflowFileRequest.copy(block: `com.easylab.v1`.RunWorkflowFileRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RunWorkflowFileRequest =
+  `com.easylab.v1`.RunWorkflowFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

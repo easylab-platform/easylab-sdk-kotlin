@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializestep")
-public inline fun step(block: easylab.v1.StepKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Step =
-  easylab.v1.StepKt.Dsl._create(easylab.v1.Easylab.Step.newBuilder()).apply { block() }._build()
+public inline fun step(block: com.easylab.v1.StepKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Step =
+  com.easylab.v1.StepKt.Dsl._create(com.easylab.v1.Step.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.Step`
  */
@@ -17,17 +17,17 @@ public object StepKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.Step.Builder
+    private val _builder: com.easylab.v1.Step.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.Step.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.Step.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.Step = _builder.build()
+    internal fun _build(): com.easylab.v1.Step = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -142,6 +142,6 @@ public object StepKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.Step.copy(block: `easylab.v1`.StepKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Step =
-  `easylab.v1`.StepKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.Step.copy(block: `com.easylab.v1`.StepKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Step =
+  `com.easylab.v1`.StepKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeundoResponse")
-public inline fun undoResponse(block: agent.v1.UndoResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UndoResponse =
-  agent.v1.UndoResponseKt.Dsl._create(agent.v1.Agent.UndoResponse.newBuilder()).apply { block() }._build()
+public inline fun undoResponse(block: com.agent.v1.UndoResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.UndoResponse =
+  com.agent.v1.UndoResponseKt.Dsl._create(com.agent.v1.UndoResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UndoResponse`
  */
@@ -17,22 +17,22 @@ public object UndoResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.UndoResponse.Builder
+    private val _builder: com.agent.v1.UndoResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.UndoResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.UndoResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.UndoResponse = _builder.build()
+    internal fun _build(): com.agent.v1.UndoResponse = _builder.build()
 
     /**
      * `.agent.v1.Session session = 1 [json_name = "session"];`
      */
-    public var session: agent.v1.Agent.Session
+    public var session: com.agent.v1.Session
       @kotlin.jvm.JvmName("getSession")
         get() = _builder.session
       @kotlin.jvm.JvmName("setSession")
@@ -53,13 +53,13 @@ public object UndoResponseKt {
       return _builder.hasSession()
     }
 
-    public val UndoResponseKt.Dsl.sessionOrNull: agent.v1.Agent.Session?
+    public val UndoResponseKt.Dsl.sessionOrNull: com.agent.v1.Session?
       get() = _builder.sessionOrNull
   }
 }
-public inline fun agent.v1.Agent.UndoResponse.copy(block: `agent.v1`.UndoResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UndoResponse =
-  `agent.v1`.UndoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.UndoResponse.copy(block: `com.agent.v1`.UndoResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.UndoResponse =
+  `com.agent.v1`.UndoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.UndoResponseOrBuilder.sessionOrNull: agent.v1.Agent.Session?
+public val com.agent.v1.UndoResponseOrBuilder.sessionOrNull: com.agent.v1.Session?
   get() = if (hasSession()) getSession() else null
 

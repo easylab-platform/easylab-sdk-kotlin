@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeoCICatalogRequest")
-public inline fun oCICatalogRequest(block: easylab.v1.OCICatalogRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OCICatalogRequest =
-  easylab.v1.OCICatalogRequestKt.Dsl._create(easylab.v1.Easylab.OCICatalogRequest.newBuilder()).apply { block() }._build()
+public inline fun oCICatalogRequest(block: com.easylab.v1.OCICatalogRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.OCICatalogRequest =
+  com.easylab.v1.OCICatalogRequestKt.Dsl._create(com.easylab.v1.OCICatalogRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.OCICatalogRequest`
  */
@@ -17,19 +17,19 @@ public object OCICatalogRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.OCICatalogRequest.Builder
+    private val _builder: com.easylab.v1.OCICatalogRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.OCICatalogRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.OCICatalogRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.OCICatalogRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.OCICatalogRequest = _builder.build()
   }
 }
-public inline fun easylab.v1.Easylab.OCICatalogRequest.copy(block: `easylab.v1`.OCICatalogRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OCICatalogRequest =
-  `easylab.v1`.OCICatalogRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.OCICatalogRequest.copy(block: `com.easylab.v1`.OCICatalogRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.OCICatalogRequest =
+  `com.easylab.v1`.OCICatalogRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecommitInfo")
-public inline fun commitInfo(block: easylab.v1.CommitInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CommitInfo =
-  easylab.v1.CommitInfoKt.Dsl._create(easylab.v1.Easylab.CommitInfo.newBuilder()).apply { block() }._build()
+public inline fun commitInfo(block: com.easylab.v1.CommitInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CommitInfo =
+  com.easylab.v1.CommitInfoKt.Dsl._create(com.easylab.v1.CommitInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CommitInfo`
  */
@@ -17,17 +17,17 @@ public object CommitInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CommitInfo.Builder
+    private val _builder: com.easylab.v1.CommitInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CommitInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CommitInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CommitInfo = _builder.build()
+    internal fun _build(): com.easylab.v1.CommitInfo = _builder.build()
 
     /**
      * `string change_id = 1 [json_name = "changeId"];`
@@ -115,6 +115,6 @@ public object CommitInfoKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.CommitInfo.copy(block: `easylab.v1`.CommitInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CommitInfo =
-  `easylab.v1`.CommitInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CommitInfo.copy(block: `com.easylab.v1`.CommitInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CommitInfo =
+  `com.easylab.v1`.CommitInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

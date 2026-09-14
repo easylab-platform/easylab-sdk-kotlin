@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateUserTokenRequest")
-public inline fun createUserTokenRequest(block: easylab.v1.CreateUserTokenRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateUserTokenRequest =
-  easylab.v1.CreateUserTokenRequestKt.Dsl._create(easylab.v1.Easylab.CreateUserTokenRequest.newBuilder()).apply { block() }._build()
+public inline fun createUserTokenRequest(block: com.easylab.v1.CreateUserTokenRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateUserTokenRequest =
+  com.easylab.v1.CreateUserTokenRequestKt.Dsl._create(com.easylab.v1.CreateUserTokenRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CreateUserTokenRequest`
  */
@@ -17,17 +17,17 @@ public object CreateUserTokenRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CreateUserTokenRequest.Builder
+    private val _builder: com.easylab.v1.CreateUserTokenRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CreateUserTokenRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CreateUserTokenRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CreateUserTokenRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.CreateUserTokenRequest = _builder.build()
 
     /**
      * `string user_id = 1 [json_name = "userId"];`
@@ -72,6 +72,6 @@ public object CreateUserTokenRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.CreateUserTokenRequest.copy(block: `easylab.v1`.CreateUserTokenRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateUserTokenRequest =
-  `easylab.v1`.CreateUserTokenRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CreateUserTokenRequest.copy(block: `com.easylab.v1`.CreateUserTokenRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateUserTokenRequest =
+  `com.easylab.v1`.CreateUserTokenRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

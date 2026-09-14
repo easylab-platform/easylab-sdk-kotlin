@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializemodelInfo")
-public inline fun modelInfo(block: agent.v1.ModelInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelInfo =
-  agent.v1.ModelInfoKt.Dsl._create(agent.v1.Agent.ModelInfo.newBuilder()).apply { block() }._build()
+public inline fun modelInfo(block: com.agent.v1.ModelInfoKt.Dsl.() -> kotlin.Unit): com.agent.v1.ModelInfo =
+  com.agent.v1.ModelInfoKt.Dsl._create(com.agent.v1.ModelInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ModelInfo`
  */
@@ -17,17 +17,17 @@ public object ModelInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ModelInfo.Builder
+    private val _builder: com.agent.v1.ModelInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ModelInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ModelInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ModelInfo = _builder.build()
+    internal fun _build(): com.agent.v1.ModelInfo = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -77,7 +77,7 @@ public object ModelInfoKt {
      *
      * `repeated .agent.v1.ModelVariant variants = 3 [json_name = "variants"];`
      */
-     public val variants: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>
+     public val variants: com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.variantsList
@@ -93,7 +93,7 @@ public object ModelInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addVariants")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.add(value: agent.v1.Agent.ModelVariant) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>.add(value: com.agent.v1.ModelVariant) {
       _builder.addVariants(value)
     }
     /**
@@ -108,7 +108,7 @@ public object ModelInfoKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignVariants")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.plusAssign(value: agent.v1.Agent.ModelVariant) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>.plusAssign(value: com.agent.v1.ModelVariant) {
       add(value)
     }
     /**
@@ -122,7 +122,7 @@ public object ModelInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllVariants")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ModelVariant>) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.ModelVariant>) {
       _builder.addAllVariants(values)
     }
     /**
@@ -137,7 +137,7 @@ public object ModelInfoKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllVariants")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ModelVariant>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.ModelVariant>) {
       addAll(values)
     }
     /**
@@ -152,7 +152,7 @@ public object ModelInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setVariants")
-    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ModelVariant) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>.set(index: kotlin.Int, value: com.agent.v1.ModelVariant) {
       _builder.setVariants(index, value)
     }
     /**
@@ -165,7 +165,7 @@ public object ModelInfoKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearVariants")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelVariant, VariantsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelVariant, VariantsProxy>.clear() {
       _builder.clearVariants()
     }
 
@@ -195,6 +195,6 @@ public object ModelInfoKt {
     }
   }
 }
-public inline fun agent.v1.Agent.ModelInfo.copy(block: `agent.v1`.ModelInfoKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ModelInfo =
-  `agent.v1`.ModelInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ModelInfo.copy(block: `com.agent.v1`.ModelInfoKt.Dsl.() -> kotlin.Unit): com.agent.v1.ModelInfo =
+  `com.agent.v1`.ModelInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

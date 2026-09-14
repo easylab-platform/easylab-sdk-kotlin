@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesquashResponse")
-public inline fun squashResponse(block: easylab.v1.SquashResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SquashResponse =
-  easylab.v1.SquashResponseKt.Dsl._create(easylab.v1.Easylab.SquashResponse.newBuilder()).apply { block() }._build()
+public inline fun squashResponse(block: com.easylab.v1.SquashResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SquashResponse =
+  com.easylab.v1.SquashResponseKt.Dsl._create(com.easylab.v1.SquashResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SquashResponse`
  */
@@ -17,17 +17,17 @@ public object SquashResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SquashResponse.Builder
+    private val _builder: com.easylab.v1.SquashResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SquashResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SquashResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SquashResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.SquashResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -98,6 +98,6 @@ public object SquashResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SquashResponse.copy(block: `easylab.v1`.SquashResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SquashResponse =
-  `easylab.v1`.SquashResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SquashResponse.copy(block: `com.easylab.v1`.SquashResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SquashResponse =
+  `com.easylab.v1`.SquashResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistRunnersResponse")
-public inline fun listRunnersResponse(block: easylab.v1.ListRunnersResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListRunnersResponse =
-  easylab.v1.ListRunnersResponseKt.Dsl._create(easylab.v1.Easylab.ListRunnersResponse.newBuilder()).apply { block() }._build()
+public inline fun listRunnersResponse(block: com.easylab.v1.ListRunnersResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListRunnersResponse =
+  com.easylab.v1.ListRunnersResponseKt.Dsl._create(com.easylab.v1.ListRunnersResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListRunnersResponse`
  */
@@ -17,17 +17,17 @@ public object ListRunnersResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListRunnersResponse.Builder
+    private val _builder: com.easylab.v1.ListRunnersResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListRunnersResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListRunnersResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListRunnersResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListRunnersResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListRunnersResponseKt {
     /**
      * `repeated .easylab.v1.Runner runners = 1 [json_name = "runners"];`
      */
-     public val runners: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>
+     public val runners: com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.runnersList
@@ -49,7 +49,7 @@ public object ListRunnersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addRunners")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>.add(value: easylab.v1.Easylab.Runner) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>.add(value: com.easylab.v1.Runner) {
       _builder.addRunners(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListRunnersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignRunners")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>.plusAssign(value: easylab.v1.Easylab.Runner) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>.plusAssign(value: com.easylab.v1.Runner) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListRunnersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllRunners")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.Runner>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.Runner>) {
       _builder.addAllRunners(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListRunnersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllRunners")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.Runner>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.Runner>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListRunnersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setRunners")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.Runner) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>.set(index: kotlin.Int, value: com.easylab.v1.Runner) {
       _builder.setRunners(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListRunnersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearRunners")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Runner, RunnersProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Runner, RunnersProxy>.clear() {
       _builder.clearRunners()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListRunnersResponse.copy(block: `easylab.v1`.ListRunnersResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListRunnersResponse =
-  `easylab.v1`.ListRunnersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListRunnersResponse.copy(block: `com.easylab.v1`.ListRunnersResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListRunnersResponse =
+  `com.easylab.v1`.ListRunnersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializefileListRequest")
-public inline fun fileListRequest(block: easylab.v1.FileListRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileListRequest =
-  easylab.v1.FileListRequestKt.Dsl._create(easylab.v1.Easylab.FileListRequest.newBuilder()).apply { block() }._build()
+public inline fun fileListRequest(block: com.easylab.v1.FileListRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileListRequest =
+  com.easylab.v1.FileListRequestKt.Dsl._create(com.easylab.v1.FileListRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.FileListRequest`
  */
@@ -17,17 +17,17 @@ public object FileListRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.FileListRequest.Builder
+    private val _builder: com.easylab.v1.FileListRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.FileListRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.FileListRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.FileListRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.FileListRequest = _builder.build()
 
     /**
      * `string sandbox = 1 [json_name = "sandbox"];`
@@ -49,7 +49,7 @@ public object FileListRequestKt {
     /**
      * `.worker.v1.FileListRequest req = 2 [json_name = "req"];`
      */
-    public var req: worker.v1.Worker.FileListRequest
+    public var req: com.worker.v1.FileListRequest
       @kotlin.jvm.JvmName("getReq")
         get() = _builder.req
       @kotlin.jvm.JvmName("setReq")
@@ -70,13 +70,13 @@ public object FileListRequestKt {
       return _builder.hasReq()
     }
 
-    public val FileListRequestKt.Dsl.reqOrNull: worker.v1.Worker.FileListRequest?
+    public val FileListRequestKt.Dsl.reqOrNull: com.worker.v1.FileListRequest?
       get() = _builder.reqOrNull
   }
 }
-public inline fun easylab.v1.Easylab.FileListRequest.copy(block: `easylab.v1`.FileListRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileListRequest =
-  `easylab.v1`.FileListRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.FileListRequest.copy(block: `com.easylab.v1`.FileListRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileListRequest =
+  `com.easylab.v1`.FileListRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.FileListRequestOrBuilder.reqOrNull: worker.v1.Worker.FileListRequest?
+public val com.easylab.v1.FileListRequestOrBuilder.reqOrNull: com.worker.v1.FileListRequest?
   get() = if (hasReq()) getReq() else null
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializesession")
-public inline fun session(block: agent.v1.SessionKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Session =
-  agent.v1.SessionKt.Dsl._create(agent.v1.Agent.Session.newBuilder()).apply { block() }._build()
+public inline fun session(block: com.agent.v1.SessionKt.Dsl.() -> kotlin.Unit): com.agent.v1.Session =
+  com.agent.v1.SessionKt.Dsl._create(com.agent.v1.Session.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Session is a row in the agent session table.
@@ -21,17 +21,17 @@ public object SessionKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.Session.Builder
+    private val _builder: com.agent.v1.Session.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.Session.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.Session.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.Session = _builder.build()
+    internal fun _build(): com.agent.v1.Session = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -465,8 +465,39 @@ public object SessionKt {
     public fun clearMessageSeq() {
       _builder.clearMessageSeq()
     }
+
+    /**
+     * ```
+     * Generic grouping key for a session (free-form, tenant-scoped). Empty =
+     * ungrouped. A subsession records its parent's session name here, but the
+     * field is deliberately generic: any client may group sessions arbitrarily
+     * (project, workspace, task…). Not validated against an enum.
+     * ```
+     *
+     * `string group = 24 [json_name = "group"];`
+     */
+    public var group: kotlin.String
+      @kotlin.jvm.JvmName("getGroup")
+        get() = _builder.group
+      @kotlin.jvm.JvmName("setGroup")
+        set(value) {
+        _builder.group = value
+      }
+    /**
+     * ```
+     * Generic grouping key for a session (free-form, tenant-scoped). Empty =
+     * ungrouped. A subsession records its parent's session name here, but the
+     * field is deliberately generic: any client may group sessions arbitrarily
+     * (project, workspace, task…). Not validated against an enum.
+     * ```
+     *
+     * `string group = 24 [json_name = "group"];`
+     */
+    public fun clearGroup() {
+      _builder.clearGroup()
+    }
   }
 }
-public inline fun agent.v1.Agent.Session.copy(block: `agent.v1`.SessionKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Session =
-  `agent.v1`.SessionKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.Session.copy(block: `com.agent.v1`.SessionKt.Dsl.() -> kotlin.Unit): com.agent.v1.Session =
+  `com.agent.v1`.SessionKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

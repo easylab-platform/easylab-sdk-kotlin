@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistWorkflowsResponse")
-public inline fun listWorkflowsResponse(block: easylab.v1.ListWorkflowsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListWorkflowsResponse =
-  easylab.v1.ListWorkflowsResponseKt.Dsl._create(easylab.v1.Easylab.ListWorkflowsResponse.newBuilder()).apply { block() }._build()
+public inline fun listWorkflowsResponse(block: com.easylab.v1.ListWorkflowsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListWorkflowsResponse =
+  com.easylab.v1.ListWorkflowsResponseKt.Dsl._create(com.easylab.v1.ListWorkflowsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListWorkflowsResponse`
  */
@@ -17,17 +17,17 @@ public object ListWorkflowsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListWorkflowsResponse.Builder
+    private val _builder: com.easylab.v1.ListWorkflowsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListWorkflowsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListWorkflowsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListWorkflowsResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListWorkflowsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListWorkflowsResponseKt {
     /**
      * `repeated .easylab.v1.Workflow workflows = 1 [json_name = "workflows"];`
      */
-     public val workflows: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>
+     public val workflows: com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.workflowsList
@@ -49,7 +49,7 @@ public object ListWorkflowsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addWorkflows")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>.add(value: easylab.v1.Easylab.Workflow) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>.add(value: com.easylab.v1.Workflow) {
       _builder.addWorkflows(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListWorkflowsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignWorkflows")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>.plusAssign(value: easylab.v1.Easylab.Workflow) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>.plusAssign(value: com.easylab.v1.Workflow) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListWorkflowsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllWorkflows")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.Workflow>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.Workflow>) {
       _builder.addAllWorkflows(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListWorkflowsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllWorkflows")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.Workflow>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.Workflow>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListWorkflowsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setWorkflows")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.Workflow) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>.set(index: kotlin.Int, value: com.easylab.v1.Workflow) {
       _builder.setWorkflows(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListWorkflowsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearWorkflows")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Workflow, WorkflowsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Workflow, WorkflowsProxy>.clear() {
       _builder.clearWorkflows()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListWorkflowsResponse.copy(block: `easylab.v1`.ListWorkflowsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListWorkflowsResponse =
-  `easylab.v1`.ListWorkflowsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListWorkflowsResponse.copy(block: `com.easylab.v1`.ListWorkflowsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListWorkflowsResponse =
+  `com.easylab.v1`.ListWorkflowsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

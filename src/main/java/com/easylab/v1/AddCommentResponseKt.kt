@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeaddCommentResponse")
-public inline fun addCommentResponse(block: easylab.v1.AddCommentResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.AddCommentResponse =
-  easylab.v1.AddCommentResponseKt.Dsl._create(easylab.v1.Easylab.AddCommentResponse.newBuilder()).apply { block() }._build()
+public inline fun addCommentResponse(block: com.easylab.v1.AddCommentResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.AddCommentResponse =
+  com.easylab.v1.AddCommentResponseKt.Dsl._create(com.easylab.v1.AddCommentResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.AddCommentResponse`
  */
@@ -17,17 +17,17 @@ public object AddCommentResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.AddCommentResponse.Builder
+    private val _builder: com.easylab.v1.AddCommentResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.AddCommentResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.AddCommentResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.AddCommentResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.AddCommentResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object AddCommentResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.AddCommentResponse.copy(block: `easylab.v1`.AddCommentResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.AddCommentResponse =
-  `easylab.v1`.AddCommentResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.AddCommentResponse.copy(block: `com.easylab.v1`.AddCommentResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.AddCommentResponse =
+  `com.easylab.v1`.AddCommentResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

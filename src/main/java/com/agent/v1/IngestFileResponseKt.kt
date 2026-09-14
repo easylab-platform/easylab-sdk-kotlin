@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeingestFileResponse")
-public inline fun ingestFileResponse(block: agent.v1.IngestFileResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.IngestFileResponse =
-  agent.v1.IngestFileResponseKt.Dsl._create(agent.v1.Agent.IngestFileResponse.newBuilder()).apply { block() }._build()
+public inline fun ingestFileResponse(block: com.agent.v1.IngestFileResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.IngestFileResponse =
+  com.agent.v1.IngestFileResponseKt.Dsl._create(com.agent.v1.IngestFileResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.IngestFileResponse`
  */
@@ -17,17 +17,17 @@ public object IngestFileResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.IngestFileResponse.Builder
+    private val _builder: com.agent.v1.IngestFileResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.IngestFileResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.IngestFileResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.IngestFileResponse = _builder.build()
+    internal fun _build(): com.agent.v1.IngestFileResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object IngestFileResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.IngestFileResponse.copy(block: `agent.v1`.IngestFileResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.IngestFileResponse =
-  `agent.v1`.IngestFileResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.IngestFileResponse.copy(block: `com.agent.v1`.IngestFileResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.IngestFileResponse =
+  `com.agent.v1`.IngestFileResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

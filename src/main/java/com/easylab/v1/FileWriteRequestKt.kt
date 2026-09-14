@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializefileWriteRequest")
-public inline fun fileWriteRequest(block: easylab.v1.FileWriteRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileWriteRequest =
-  easylab.v1.FileWriteRequestKt.Dsl._create(easylab.v1.Easylab.FileWriteRequest.newBuilder()).apply { block() }._build()
+public inline fun fileWriteRequest(block: com.easylab.v1.FileWriteRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileWriteRequest =
+  com.easylab.v1.FileWriteRequestKt.Dsl._create(com.easylab.v1.FileWriteRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.FileWriteRequest`
  */
@@ -17,17 +17,17 @@ public object FileWriteRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.FileWriteRequest.Builder
+    private val _builder: com.easylab.v1.FileWriteRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.FileWriteRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.FileWriteRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.FileWriteRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.FileWriteRequest = _builder.build()
 
     /**
      * `string sandbox = 1 [json_name = "sandbox"];`
@@ -49,7 +49,7 @@ public object FileWriteRequestKt {
     /**
      * `.worker.v1.FileWriteRequest req = 2 [json_name = "req"];`
      */
-    public var req: worker.v1.Worker.FileWriteRequest
+    public var req: com.worker.v1.FileWriteRequest
       @kotlin.jvm.JvmName("getReq")
         get() = _builder.req
       @kotlin.jvm.JvmName("setReq")
@@ -70,13 +70,13 @@ public object FileWriteRequestKt {
       return _builder.hasReq()
     }
 
-    public val FileWriteRequestKt.Dsl.reqOrNull: worker.v1.Worker.FileWriteRequest?
+    public val FileWriteRequestKt.Dsl.reqOrNull: com.worker.v1.FileWriteRequest?
       get() = _builder.reqOrNull
   }
 }
-public inline fun easylab.v1.Easylab.FileWriteRequest.copy(block: `easylab.v1`.FileWriteRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileWriteRequest =
-  `easylab.v1`.FileWriteRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.FileWriteRequest.copy(block: `com.easylab.v1`.FileWriteRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileWriteRequest =
+  `com.easylab.v1`.FileWriteRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.FileWriteRequestOrBuilder.reqOrNull: worker.v1.Worker.FileWriteRequest?
+public val com.easylab.v1.FileWriteRequestOrBuilder.reqOrNull: com.worker.v1.FileWriteRequest?
   get() = if (hasReq()) getReq() else null
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeupsertPresetResponse")
-public inline fun upsertPresetResponse(block: agent.v1.UpsertPresetResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpsertPresetResponse =
-  agent.v1.UpsertPresetResponseKt.Dsl._create(agent.v1.Agent.UpsertPresetResponse.newBuilder()).apply { block() }._build()
+public inline fun upsertPresetResponse(block: com.agent.v1.UpsertPresetResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpsertPresetResponse =
+  com.agent.v1.UpsertPresetResponseKt.Dsl._create(com.agent.v1.UpsertPresetResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UpsertPresetResponse`
  */
@@ -17,17 +17,17 @@ public object UpsertPresetResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.UpsertPresetResponse.Builder
+    private val _builder: com.agent.v1.UpsertPresetResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.UpsertPresetResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.UpsertPresetResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.UpsertPresetResponse = _builder.build()
+    internal fun _build(): com.agent.v1.UpsertPresetResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object UpsertPresetResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.UpsertPresetResponse.copy(block: `agent.v1`.UpsertPresetResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpsertPresetResponse =
-  `agent.v1`.UpsertPresetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.UpsertPresetResponse.copy(block: `com.agent.v1`.UpsertPresetResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpsertPresetResponse =
+  `com.agent.v1`.UpsertPresetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

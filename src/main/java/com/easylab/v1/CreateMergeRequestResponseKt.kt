@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateMergeRequestResponse")
-public inline fun createMergeRequestResponse(block: easylab.v1.CreateMergeRequestResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateMergeRequestResponse =
-  easylab.v1.CreateMergeRequestResponseKt.Dsl._create(easylab.v1.Easylab.CreateMergeRequestResponse.newBuilder()).apply { block() }._build()
+public inline fun createMergeRequestResponse(block: com.easylab.v1.CreateMergeRequestResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateMergeRequestResponse =
+  com.easylab.v1.CreateMergeRequestResponseKt.Dsl._create(com.easylab.v1.CreateMergeRequestResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CreateMergeRequestResponse`
  */
@@ -17,17 +17,17 @@ public object CreateMergeRequestResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CreateMergeRequestResponse.Builder
+    private val _builder: com.easylab.v1.CreateMergeRequestResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CreateMergeRequestResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CreateMergeRequestResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CreateMergeRequestResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.CreateMergeRequestResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -66,7 +66,7 @@ public object CreateMergeRequestResponseKt {
     /**
      * `.easylab.v1.MergeRequest merge_request = 3 [json_name = "mergeRequest"];`
      */
-    public var mergeRequest: easylab.v1.Easylab.MergeRequest
+    public var mergeRequest: com.easylab.v1.MergeRequest
       @kotlin.jvm.JvmName("getMergeRequest")
         get() = _builder.mergeRequest
       @kotlin.jvm.JvmName("setMergeRequest")
@@ -87,13 +87,13 @@ public object CreateMergeRequestResponseKt {
       return _builder.hasMergeRequest()
     }
 
-    public val CreateMergeRequestResponseKt.Dsl.mergeRequestOrNull: easylab.v1.Easylab.MergeRequest?
+    public val CreateMergeRequestResponseKt.Dsl.mergeRequestOrNull: com.easylab.v1.MergeRequest?
       get() = _builder.mergeRequestOrNull
   }
 }
-public inline fun easylab.v1.Easylab.CreateMergeRequestResponse.copy(block: `easylab.v1`.CreateMergeRequestResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateMergeRequestResponse =
-  `easylab.v1`.CreateMergeRequestResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CreateMergeRequestResponse.copy(block: `com.easylab.v1`.CreateMergeRequestResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateMergeRequestResponse =
+  `com.easylab.v1`.CreateMergeRequestResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.CreateMergeRequestResponseOrBuilder.mergeRequestOrNull: easylab.v1.Easylab.MergeRequest?
+public val com.easylab.v1.CreateMergeRequestResponseOrBuilder.mergeRequestOrNull: com.easylab.v1.MergeRequest?
   get() = if (hasMergeRequest()) getMergeRequest() else null
 

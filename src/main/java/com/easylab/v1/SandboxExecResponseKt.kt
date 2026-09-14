@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesandboxExecResponse")
-public inline fun sandboxExecResponse(block: easylab.v1.SandboxExecResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxExecResponse =
-  easylab.v1.SandboxExecResponseKt.Dsl._create(easylab.v1.Easylab.SandboxExecResponse.newBuilder()).apply { block() }._build()
+public inline fun sandboxExecResponse(block: com.easylab.v1.SandboxExecResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SandboxExecResponse =
+  com.easylab.v1.SandboxExecResponseKt.Dsl._create(com.easylab.v1.SandboxExecResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SandboxExecResponse`
  */
@@ -17,17 +17,17 @@ public object SandboxExecResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SandboxExecResponse.Builder
+    private val _builder: com.easylab.v1.SandboxExecResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SandboxExecResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SandboxExecResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SandboxExecResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.SandboxExecResponse = _builder.build()
 
     /**
      * `int32 exit_code = 1 [json_name = "exitCode"];`
@@ -132,6 +132,6 @@ public object SandboxExecResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SandboxExecResponse.copy(block: `easylab.v1`.SandboxExecResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxExecResponse =
-  `easylab.v1`.SandboxExecResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SandboxExecResponse.copy(block: `com.easylab.v1`.SandboxExecResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SandboxExecResponse =
+  `com.easylab.v1`.SandboxExecResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

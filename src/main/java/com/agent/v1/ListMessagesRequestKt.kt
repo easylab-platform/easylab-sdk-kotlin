@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistMessagesRequest")
-public inline fun listMessagesRequest(block: agent.v1.ListMessagesRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesRequest =
-  agent.v1.ListMessagesRequestKt.Dsl._create(agent.v1.Agent.ListMessagesRequest.newBuilder()).apply { block() }._build()
+public inline fun listMessagesRequest(block: com.agent.v1.ListMessagesRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListMessagesRequest =
+  com.agent.v1.ListMessagesRequestKt.Dsl._create(com.agent.v1.ListMessagesRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * ListMessages reads a session's message chain. Two modes:
@@ -32,17 +32,17 @@ public object ListMessagesRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ListMessagesRequest.Builder
+    private val _builder: com.agent.v1.ListMessagesRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ListMessagesRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ListMessagesRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ListMessagesRequest = _builder.build()
+    internal fun _build(): com.agent.v1.ListMessagesRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -131,6 +131,6 @@ public object ListMessagesRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.ListMessagesRequest.copy(block: `agent.v1`.ListMessagesRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesRequest =
-  `agent.v1`.ListMessagesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ListMessagesRequest.copy(block: `com.agent.v1`.ListMessagesRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListMessagesRequest =
+  `com.agent.v1`.ListMessagesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

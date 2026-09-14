@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesetPackageVisibilityResponse")
-public inline fun setPackageVisibilityResponse(block: easylab.v1.SetPackageVisibilityResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SetPackageVisibilityResponse =
-  easylab.v1.SetPackageVisibilityResponseKt.Dsl._create(easylab.v1.Easylab.SetPackageVisibilityResponse.newBuilder()).apply { block() }._build()
+public inline fun setPackageVisibilityResponse(block: com.easylab.v1.SetPackageVisibilityResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SetPackageVisibilityResponse =
+  com.easylab.v1.SetPackageVisibilityResponseKt.Dsl._create(com.easylab.v1.SetPackageVisibilityResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SetPackageVisibilityResponse`
  */
@@ -17,17 +17,17 @@ public object SetPackageVisibilityResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SetPackageVisibilityResponse.Builder
+    private val _builder: com.easylab.v1.SetPackageVisibilityResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SetPackageVisibilityResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SetPackageVisibilityResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SetPackageVisibilityResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.SetPackageVisibilityResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object SetPackageVisibilityResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SetPackageVisibilityResponse.copy(block: `easylab.v1`.SetPackageVisibilityResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SetPackageVisibilityResponse =
-  `easylab.v1`.SetPackageVisibilityResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SetPackageVisibilityResponse.copy(block: `com.easylab.v1`.SetPackageVisibilityResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SetPackageVisibilityResponse =
+  `com.easylab.v1`.SetPackageVisibilityResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

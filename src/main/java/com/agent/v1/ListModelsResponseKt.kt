@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistModelsResponse")
-public inline fun listModelsResponse(block: agent.v1.ListModelsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListModelsResponse =
-  agent.v1.ListModelsResponseKt.Dsl._create(agent.v1.Agent.ListModelsResponse.newBuilder()).apply { block() }._build()
+public inline fun listModelsResponse(block: com.agent.v1.ListModelsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListModelsResponse =
+  com.agent.v1.ListModelsResponseKt.Dsl._create(com.agent.v1.ListModelsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListModelsResponse`
  */
@@ -17,17 +17,17 @@ public object ListModelsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ListModelsResponse.Builder
+    private val _builder: com.agent.v1.ListModelsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ListModelsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ListModelsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ListModelsResponse = _builder.build()
+    internal fun _build(): com.agent.v1.ListModelsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListModelsResponseKt {
     /**
      * `repeated .agent.v1.ModelInfo models = 1 [json_name = "models"];`
      */
-     public val models: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>
+     public val models: com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.modelsList
@@ -49,7 +49,7 @@ public object ListModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addModels")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>.add(value: agent.v1.Agent.ModelInfo) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>.add(value: com.agent.v1.ModelInfo) {
       _builder.addModels(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListModelsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignModels")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>.plusAssign(value: agent.v1.Agent.ModelInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>.plusAssign(value: com.agent.v1.ModelInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllModels")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ModelInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.ModelInfo>) {
       _builder.addAllModels(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListModelsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllModels")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ModelInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.ModelInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setModels")
-    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ModelInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>.set(index: kotlin.Int, value: com.agent.v1.ModelInfo) {
       _builder.setModels(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearModels")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ModelInfo, ModelsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ModelInfo, ModelsProxy>.clear() {
       _builder.clearModels()
     }
   }
 }
-public inline fun agent.v1.Agent.ListModelsResponse.copy(block: `agent.v1`.ListModelsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListModelsResponse =
-  `agent.v1`.ListModelsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ListModelsResponse.copy(block: `com.agent.v1`.ListModelsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListModelsResponse =
+  `com.agent.v1`.ListModelsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

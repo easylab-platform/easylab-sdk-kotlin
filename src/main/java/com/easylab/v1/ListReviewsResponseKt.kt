@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistReviewsResponse")
-public inline fun listReviewsResponse(block: easylab.v1.ListReviewsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReviewsResponse =
-  easylab.v1.ListReviewsResponseKt.Dsl._create(easylab.v1.Easylab.ListReviewsResponse.newBuilder()).apply { block() }._build()
+public inline fun listReviewsResponse(block: com.easylab.v1.ListReviewsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListReviewsResponse =
+  com.easylab.v1.ListReviewsResponseKt.Dsl._create(com.easylab.v1.ListReviewsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListReviewsResponse`
  */
@@ -17,17 +17,17 @@ public object ListReviewsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListReviewsResponse.Builder
+    private val _builder: com.easylab.v1.ListReviewsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListReviewsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListReviewsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListReviewsResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListReviewsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListReviewsResponseKt {
     /**
      * `repeated .easylab.v1.MergeReview reviews = 1 [json_name = "reviews"];`
      */
-     public val reviews: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>
+     public val reviews: com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.reviewsList
@@ -49,7 +49,7 @@ public object ListReviewsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addReviews")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>.add(value: easylab.v1.Easylab.MergeReview) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>.add(value: com.easylab.v1.MergeReview) {
       _builder.addReviews(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListReviewsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignReviews")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>.plusAssign(value: easylab.v1.Easylab.MergeReview) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>.plusAssign(value: com.easylab.v1.MergeReview) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListReviewsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllReviews")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.MergeReview>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.MergeReview>) {
       _builder.addAllReviews(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListReviewsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllReviews")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.MergeReview>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.MergeReview>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListReviewsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setReviews")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.MergeReview) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>.set(index: kotlin.Int, value: com.easylab.v1.MergeReview) {
       _builder.setReviews(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListReviewsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearReviews")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.MergeReview, ReviewsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.MergeReview, ReviewsProxy>.clear() {
       _builder.clearReviews()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListReviewsResponse.copy(block: `easylab.v1`.ListReviewsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListReviewsResponse =
-  `easylab.v1`.ListReviewsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListReviewsResponse.copy(block: `com.easylab.v1`.ListReviewsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListReviewsResponse =
+  `com.easylab.v1`.ListReviewsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

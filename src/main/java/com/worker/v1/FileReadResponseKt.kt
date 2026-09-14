@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializefileReadResponse")
-public inline fun fileReadResponse(block: worker.v1.FileReadResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileReadResponse =
-  worker.v1.FileReadResponseKt.Dsl._create(worker.v1.Worker.FileReadResponse.newBuilder()).apply { block() }._build()
+public inline fun fileReadResponse(block: com.worker.v1.FileReadResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileReadResponse =
+  com.worker.v1.FileReadResponseKt.Dsl._create(com.worker.v1.FileReadResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.FileReadResponse`
  */
@@ -17,17 +17,17 @@ public object FileReadResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.FileReadResponse.Builder
+    private val _builder: com.worker.v1.FileReadResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.FileReadResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.FileReadResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.FileReadResponse = _builder.build()
+    internal fun _build(): com.worker.v1.FileReadResponse = _builder.build()
 
     /**
      * `bytes content = 1 [json_name = "content"];`
@@ -47,6 +47,6 @@ public object FileReadResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.FileReadResponse.copy(block: `worker.v1`.FileReadResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileReadResponse =
-  `worker.v1`.FileReadResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.FileReadResponse.copy(block: `com.worker.v1`.FileReadResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileReadResponse =
+  `com.worker.v1`.FileReadResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

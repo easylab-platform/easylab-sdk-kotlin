@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistRunsRequest")
-public inline fun listRunsRequest(block: easylab.v1.ListRunsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListRunsRequest =
-  easylab.v1.ListRunsRequestKt.Dsl._create(easylab.v1.Easylab.ListRunsRequest.newBuilder()).apply { block() }._build()
+public inline fun listRunsRequest(block: com.easylab.v1.ListRunsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListRunsRequest =
+  com.easylab.v1.ListRunsRequestKt.Dsl._create(com.easylab.v1.ListRunsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListRunsRequest`
  */
@@ -17,17 +17,17 @@ public object ListRunsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListRunsRequest.Builder
+    private val _builder: com.easylab.v1.ListRunsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListRunsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListRunsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListRunsRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ListRunsRequest = _builder.build()
 
     /**
      * `string workflow_id = 1 [json_name = "workflowId"];`
@@ -47,6 +47,6 @@ public object ListRunsRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListRunsRequest.copy(block: `easylab.v1`.ListRunsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListRunsRequest =
-  `easylab.v1`.ListRunsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListRunsRequest.copy(block: `com.easylab.v1`.ListRunsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListRunsRequest =
+  `com.easylab.v1`.ListRunsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

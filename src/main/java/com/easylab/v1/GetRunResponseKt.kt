@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetRunResponse")
-public inline fun getRunResponse(block: easylab.v1.GetRunResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetRunResponse =
-  easylab.v1.GetRunResponseKt.Dsl._create(easylab.v1.Easylab.GetRunResponse.newBuilder()).apply { block() }._build()
+public inline fun getRunResponse(block: com.easylab.v1.GetRunResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetRunResponse =
+  com.easylab.v1.GetRunResponseKt.Dsl._create(com.easylab.v1.GetRunResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetRunResponse`
  */
@@ -17,22 +17,22 @@ public object GetRunResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetRunResponse.Builder
+    private val _builder: com.easylab.v1.GetRunResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetRunResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GetRunResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetRunResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.GetRunResponse = _builder.build()
 
     /**
      * `.easylab.v1.Run run = 1 [json_name = "run"];`
      */
-    public var run: easylab.v1.Easylab.Run
+    public var run: com.easylab.v1.Run
       @kotlin.jvm.JvmName("getRun")
         get() = _builder.run
       @kotlin.jvm.JvmName("setRun")
@@ -53,13 +53,13 @@ public object GetRunResponseKt {
       return _builder.hasRun()
     }
 
-    public val GetRunResponseKt.Dsl.runOrNull: easylab.v1.Easylab.Run?
+    public val GetRunResponseKt.Dsl.runOrNull: com.easylab.v1.Run?
       get() = _builder.runOrNull
   }
 }
-public inline fun easylab.v1.Easylab.GetRunResponse.copy(block: `easylab.v1`.GetRunResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetRunResponse =
-  `easylab.v1`.GetRunResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GetRunResponse.copy(block: `com.easylab.v1`.GetRunResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetRunResponse =
+  `com.easylab.v1`.GetRunResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.GetRunResponseOrBuilder.runOrNull: easylab.v1.Easylab.Run?
+public val com.easylab.v1.GetRunResponseOrBuilder.runOrNull: com.easylab.v1.Run?
   get() = if (hasRun()) getRun() else null
 

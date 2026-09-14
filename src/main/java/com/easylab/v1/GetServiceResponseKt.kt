@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetServiceResponse")
-public inline fun getServiceResponse(block: easylab.v1.GetServiceResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetServiceResponse =
-  easylab.v1.GetServiceResponseKt.Dsl._create(easylab.v1.Easylab.GetServiceResponse.newBuilder()).apply { block() }._build()
+public inline fun getServiceResponse(block: com.easylab.v1.GetServiceResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetServiceResponse =
+  com.easylab.v1.GetServiceResponseKt.Dsl._create(com.easylab.v1.GetServiceResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetServiceResponse`
  */
@@ -17,22 +17,22 @@ public object GetServiceResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetServiceResponse.Builder
+    private val _builder: com.easylab.v1.GetServiceResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetServiceResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GetServiceResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetServiceResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.GetServiceResponse = _builder.build()
 
     /**
      * `.easylab.v1.ServiceInfo service = 1 [json_name = "service"];`
      */
-    public var service: easylab.v1.Easylab.ServiceInfo
+    public var service: com.easylab.v1.ServiceInfo
       @kotlin.jvm.JvmName("getService")
         get() = _builder.service
       @kotlin.jvm.JvmName("setService")
@@ -53,7 +53,7 @@ public object GetServiceResponseKt {
       return _builder.hasService()
     }
 
-    public val GetServiceResponseKt.Dsl.serviceOrNull: easylab.v1.Easylab.ServiceInfo?
+    public val GetServiceResponseKt.Dsl.serviceOrNull: com.easylab.v1.ServiceInfo?
       get() = _builder.serviceOrNull
 
     /**
@@ -65,7 +65,7 @@ public object GetServiceResponseKt {
     /**
      * `repeated .easylab.v1.ServicePod pods = 2 [json_name = "pods"];`
      */
-     public val pods: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>
+     public val pods: com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.podsList
@@ -76,7 +76,7 @@ public object GetServiceResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addPods")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>.add(value: easylab.v1.Easylab.ServicePod) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>.add(value: com.easylab.v1.ServicePod) {
       _builder.addPods(value)
     }
     /**
@@ -86,7 +86,7 @@ public object GetServiceResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignPods")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>.plusAssign(value: easylab.v1.Easylab.ServicePod) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>.plusAssign(value: com.easylab.v1.ServicePod) {
       add(value)
     }
     /**
@@ -95,7 +95,7 @@ public object GetServiceResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllPods")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.ServicePod>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.ServicePod>) {
       _builder.addAllPods(values)
     }
     /**
@@ -105,7 +105,7 @@ public object GetServiceResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllPods")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.ServicePod>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.ServicePod>) {
       addAll(values)
     }
     /**
@@ -115,7 +115,7 @@ public object GetServiceResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setPods")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.ServicePod) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>.set(index: kotlin.Int, value: com.easylab.v1.ServicePod) {
       _builder.setPods(index, value)
     }
     /**
@@ -123,14 +123,14 @@ public object GetServiceResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearPods")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ServicePod, PodsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ServicePod, PodsProxy>.clear() {
       _builder.clearPods()
     }
   }
 }
-public inline fun easylab.v1.Easylab.GetServiceResponse.copy(block: `easylab.v1`.GetServiceResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetServiceResponse =
-  `easylab.v1`.GetServiceResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GetServiceResponse.copy(block: `com.easylab.v1`.GetServiceResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetServiceResponse =
+  `com.easylab.v1`.GetServiceResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.GetServiceResponseOrBuilder.serviceOrNull: easylab.v1.Easylab.ServiceInfo?
+public val com.easylab.v1.GetServiceResponseOrBuilder.serviceOrNull: com.easylab.v1.ServiceInfo?
   get() = if (hasService()) getService() else null
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeensureRepoRequest")
-public inline fun ensureRepoRequest(block: easylab.v1.EnsureRepoRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureRepoRequest =
-  easylab.v1.EnsureRepoRequestKt.Dsl._create(easylab.v1.Easylab.EnsureRepoRequest.newBuilder()).apply { block() }._build()
+public inline fun ensureRepoRequest(block: com.easylab.v1.EnsureRepoRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureRepoRequest =
+  com.easylab.v1.EnsureRepoRequestKt.Dsl._create(com.easylab.v1.EnsureRepoRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.EnsureRepoRequest`
  */
@@ -17,17 +17,17 @@ public object EnsureRepoRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.EnsureRepoRequest.Builder
+    private val _builder: com.easylab.v1.EnsureRepoRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.EnsureRepoRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.EnsureRepoRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.EnsureRepoRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.EnsureRepoRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -64,6 +64,6 @@ public object EnsureRepoRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.EnsureRepoRequest.copy(block: `easylab.v1`.EnsureRepoRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureRepoRequest =
-  `easylab.v1`.EnsureRepoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.EnsureRepoRequest.copy(block: `com.easylab.v1`.EnsureRepoRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureRepoRequest =
+  `com.easylab.v1`.EnsureRepoRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

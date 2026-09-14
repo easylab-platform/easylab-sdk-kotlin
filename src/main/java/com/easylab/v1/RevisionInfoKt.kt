@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerevisionInfo")
-public inline fun revisionInfo(block: easylab.v1.RevisionInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionInfo =
-  easylab.v1.RevisionInfoKt.Dsl._create(easylab.v1.Easylab.RevisionInfo.newBuilder()).apply { block() }._build()
+public inline fun revisionInfo(block: com.easylab.v1.RevisionInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionInfo =
+  com.easylab.v1.RevisionInfoKt.Dsl._create(com.easylab.v1.RevisionInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RevisionInfo`
  */
@@ -17,17 +17,17 @@ public object RevisionInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RevisionInfo.Builder
+    private val _builder: com.easylab.v1.RevisionInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RevisionInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RevisionInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RevisionInfo = _builder.build()
+    internal fun _build(): com.easylab.v1.RevisionInfo = _builder.build()
 
     /**
      * `string rev = 1 [json_name = "rev"];`
@@ -115,6 +115,6 @@ public object RevisionInfoKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RevisionInfo.copy(block: `easylab.v1`.RevisionInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionInfo =
-  `easylab.v1`.RevisionInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RevisionInfo.copy(block: `com.easylab.v1`.RevisionInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionInfo =
+  `com.easylab.v1`.RevisionInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializemessage")
-public inline fun message(block: agent.v1.MessageKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Message =
-  agent.v1.MessageKt.Dsl._create(agent.v1.Agent.Message.newBuilder()).apply { block() }._build()
+public inline fun message(block: com.agent.v1.MessageKt.Dsl.() -> kotlin.Unit): com.agent.v1.Message =
+  com.agent.v1.MessageKt.Dsl._create(com.agent.v1.Message.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Message row (bare).
@@ -21,17 +21,17 @@ public object MessageKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.Message.Builder
+    private val _builder: com.agent.v1.Message.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.Message.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.Message.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.Message = _builder.build()
+    internal fun _build(): com.agent.v1.Message = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -110,7 +110,7 @@ public object MessageKt {
     /**
      * `repeated .agent.v1.Part parts = 5 [json_name = "parts"];`
      */
-     public val parts: com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>
+     public val parts: com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.partsList
@@ -121,7 +121,7 @@ public object MessageKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addParts")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>.add(value: agent.v1.Agent.Part) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>.add(value: com.agent.v1.Part) {
       _builder.addParts(value)
     }
     /**
@@ -131,7 +131,7 @@ public object MessageKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignParts")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>.plusAssign(value: agent.v1.Agent.Part) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>.plusAssign(value: com.agent.v1.Part) {
       add(value)
     }
     /**
@@ -140,7 +140,7 @@ public object MessageKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllParts")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.Part>) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.Part>) {
       _builder.addAllParts(values)
     }
     /**
@@ -150,7 +150,7 @@ public object MessageKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllParts")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.Part>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.Part>) {
       addAll(values)
     }
     /**
@@ -160,7 +160,7 @@ public object MessageKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setParts")
-    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.Part) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>.set(index: kotlin.Int, value: com.agent.v1.Part) {
       _builder.setParts(index, value)
     }
     /**
@@ -168,11 +168,11 @@ public object MessageKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearParts")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Part, PartsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Part, PartsProxy>.clear() {
       _builder.clearParts()
     }
   }
 }
-public inline fun agent.v1.Agent.Message.copy(block: `agent.v1`.MessageKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Message =
-  `agent.v1`.MessageKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.Message.copy(block: `com.agent.v1`.MessageKt.Dsl.() -> kotlin.Unit): com.agent.v1.Message =
+  `com.agent.v1`.MessageKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeensureSandboxImageRequest")
-public inline fun ensureSandboxImageRequest(block: easylab.v1.EnsureSandboxImageRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureSandboxImageRequest =
-  easylab.v1.EnsureSandboxImageRequestKt.Dsl._create(easylab.v1.Easylab.EnsureSandboxImageRequest.newBuilder()).apply { block() }._build()
+public inline fun ensureSandboxImageRequest(block: com.easylab.v1.EnsureSandboxImageRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureSandboxImageRequest =
+  com.easylab.v1.EnsureSandboxImageRequestKt.Dsl._create(com.easylab.v1.EnsureSandboxImageRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.EnsureSandboxImageRequest`
  */
@@ -17,17 +17,17 @@ public object EnsureSandboxImageRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.EnsureSandboxImageRequest.Builder
+    private val _builder: com.easylab.v1.EnsureSandboxImageRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.EnsureSandboxImageRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.EnsureSandboxImageRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.EnsureSandboxImageRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.EnsureSandboxImageRequest = _builder.build()
 
     /**
      * `string base_image = 1 [json_name = "baseImage"];`
@@ -72,6 +72,6 @@ public object EnsureSandboxImageRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.EnsureSandboxImageRequest.copy(block: `easylab.v1`.EnsureSandboxImageRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureSandboxImageRequest =
-  `easylab.v1`.EnsureSandboxImageRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.EnsureSandboxImageRequest.copy(block: `com.easylab.v1`.EnsureSandboxImageRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.EnsureSandboxImageRequest =
+  `com.easylab.v1`.EnsureSandboxImageRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

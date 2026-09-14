@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeoCICatalogResponse")
-public inline fun oCICatalogResponse(block: easylab.v1.OCICatalogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OCICatalogResponse =
-  easylab.v1.OCICatalogResponseKt.Dsl._create(easylab.v1.Easylab.OCICatalogResponse.newBuilder()).apply { block() }._build()
+public inline fun oCICatalogResponse(block: com.easylab.v1.OCICatalogResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.OCICatalogResponse =
+  com.easylab.v1.OCICatalogResponseKt.Dsl._create(com.easylab.v1.OCICatalogResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.OCICatalogResponse`
  */
@@ -17,17 +17,17 @@ public object OCICatalogResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.OCICatalogResponse.Builder
+    private val _builder: com.easylab.v1.OCICatalogResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.OCICatalogResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.OCICatalogResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.OCICatalogResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.OCICatalogResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -100,6 +100,6 @@ public object OCICatalogResponseKt {
       _builder.clearRepositories()
     }}
 }
-public inline fun easylab.v1.Easylab.OCICatalogResponse.copy(block: `easylab.v1`.OCICatalogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.OCICatalogResponse =
-  `easylab.v1`.OCICatalogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.OCICatalogResponse.copy(block: `com.easylab.v1`.OCICatalogResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.OCICatalogResponse =
+  `com.easylab.v1`.OCICatalogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

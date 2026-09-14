@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializearchiveResponse")
-public inline fun archiveResponse(block: easylab.v1.ArchiveResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ArchiveResponse =
-  easylab.v1.ArchiveResponseKt.Dsl._create(easylab.v1.Easylab.ArchiveResponse.newBuilder()).apply { block() }._build()
+public inline fun archiveResponse(block: com.easylab.v1.ArchiveResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ArchiveResponse =
+  com.easylab.v1.ArchiveResponseKt.Dsl._create(com.easylab.v1.ArchiveResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ArchiveResponse`
  */
@@ -17,17 +17,17 @@ public object ArchiveResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ArchiveResponse.Builder
+    private val _builder: com.easylab.v1.ArchiveResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ArchiveResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ArchiveResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ArchiveResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ArchiveResponse = _builder.build()
 
     /**
      * `bytes data = 1 [json_name = "data"];`
@@ -64,6 +64,6 @@ public object ArchiveResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ArchiveResponse.copy(block: `easylab.v1`.ArchiveResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ArchiveResponse =
-  `easylab.v1`.ArchiveResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ArchiveResponse.copy(block: `com.easylab.v1`.ArchiveResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ArchiveResponse =
+  `com.easylab.v1`.ArchiveResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

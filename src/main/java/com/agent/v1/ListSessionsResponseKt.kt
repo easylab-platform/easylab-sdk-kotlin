@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistSessionsResponse")
-public inline fun listSessionsResponse(block: agent.v1.ListSessionsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListSessionsResponse =
-  agent.v1.ListSessionsResponseKt.Dsl._create(agent.v1.Agent.ListSessionsResponse.newBuilder()).apply { block() }._build()
+public inline fun listSessionsResponse(block: com.agent.v1.ListSessionsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListSessionsResponse =
+  com.agent.v1.ListSessionsResponseKt.Dsl._create(com.agent.v1.ListSessionsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListSessionsResponse`
  */
@@ -17,17 +17,17 @@ public object ListSessionsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ListSessionsResponse.Builder
+    private val _builder: com.agent.v1.ListSessionsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ListSessionsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ListSessionsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ListSessionsResponse = _builder.build()
+    internal fun _build(): com.agent.v1.ListSessionsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListSessionsResponseKt {
     /**
      * `repeated .agent.v1.Session sessions = 1 [json_name = "sessions"];`
      */
-     public val sessions: com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>
+     public val sessions: com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.sessionsList
@@ -49,7 +49,7 @@ public object ListSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addSessions")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>.add(value: agent.v1.Agent.Session) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>.add(value: com.agent.v1.Session) {
       _builder.addSessions(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListSessionsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignSessions")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>.plusAssign(value: agent.v1.Agent.Session) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>.plusAssign(value: com.agent.v1.Session) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllSessions")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.Session>) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.Session>) {
       _builder.addAllSessions(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListSessionsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllSessions")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.Session>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.Session>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setSessions")
-    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.Session) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>.set(index: kotlin.Int, value: com.agent.v1.Session) {
       _builder.setSessions(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearSessions")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, SessionsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, SessionsProxy>.clear() {
       _builder.clearSessions()
     }
   }
 }
-public inline fun agent.v1.Agent.ListSessionsResponse.copy(block: `agent.v1`.ListSessionsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListSessionsResponse =
-  `agent.v1`.ListSessionsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ListSessionsResponse.copy(block: `com.agent.v1`.ListSessionsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListSessionsResponse =
+  `com.agent.v1`.ListSessionsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

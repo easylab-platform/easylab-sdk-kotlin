@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteReleaseResponse")
-public inline fun deleteReleaseResponse(block: easylab.v1.DeleteReleaseResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteReleaseResponse =
-  easylab.v1.DeleteReleaseResponseKt.Dsl._create(easylab.v1.Easylab.DeleteReleaseResponse.newBuilder()).apply { block() }._build()
+public inline fun deleteReleaseResponse(block: com.easylab.v1.DeleteReleaseResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteReleaseResponse =
+  com.easylab.v1.DeleteReleaseResponseKt.Dsl._create(com.easylab.v1.DeleteReleaseResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeleteReleaseResponse`
  */
@@ -17,17 +17,17 @@ public object DeleteReleaseResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DeleteReleaseResponse.Builder
+    private val _builder: com.easylab.v1.DeleteReleaseResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DeleteReleaseResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DeleteReleaseResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DeleteReleaseResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.DeleteReleaseResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object DeleteReleaseResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DeleteReleaseResponse.copy(block: `easylab.v1`.DeleteReleaseResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteReleaseResponse =
-  `easylab.v1`.DeleteReleaseResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DeleteReleaseResponse.copy(block: `com.easylab.v1`.DeleteReleaseResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteReleaseResponse =
+  `com.easylab.v1`.DeleteReleaseResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

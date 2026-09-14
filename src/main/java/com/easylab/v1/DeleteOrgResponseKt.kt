@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeleteOrgResponse")
-public inline fun deleteOrgResponse(block: easylab.v1.DeleteOrgResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteOrgResponse =
-  easylab.v1.DeleteOrgResponseKt.Dsl._create(easylab.v1.Easylab.DeleteOrgResponse.newBuilder()).apply { block() }._build()
+public inline fun deleteOrgResponse(block: com.easylab.v1.DeleteOrgResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteOrgResponse =
+  com.easylab.v1.DeleteOrgResponseKt.Dsl._create(com.easylab.v1.DeleteOrgResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeleteOrgResponse`
  */
@@ -17,17 +17,17 @@ public object DeleteOrgResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DeleteOrgResponse.Builder
+    private val _builder: com.easylab.v1.DeleteOrgResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DeleteOrgResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DeleteOrgResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DeleteOrgResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.DeleteOrgResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object DeleteOrgResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DeleteOrgResponse.copy(block: `easylab.v1`.DeleteOrgResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeleteOrgResponse =
-  `easylab.v1`.DeleteOrgResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DeleteOrgResponse.copy(block: `com.easylab.v1`.DeleteOrgResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeleteOrgResponse =
+  `com.easylab.v1`.DeleteOrgResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

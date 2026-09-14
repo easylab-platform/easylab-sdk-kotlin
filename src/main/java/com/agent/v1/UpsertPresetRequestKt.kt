@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeupsertPresetRequest")
-public inline fun upsertPresetRequest(block: agent.v1.UpsertPresetRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpsertPresetRequest =
-  agent.v1.UpsertPresetRequestKt.Dsl._create(agent.v1.Agent.UpsertPresetRequest.newBuilder()).apply { block() }._build()
+public inline fun upsertPresetRequest(block: com.agent.v1.UpsertPresetRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpsertPresetRequest =
+  com.agent.v1.UpsertPresetRequestKt.Dsl._create(com.agent.v1.UpsertPresetRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UpsertPresetRequest`
  */
@@ -17,22 +17,22 @@ public object UpsertPresetRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.UpsertPresetRequest.Builder
+    private val _builder: com.agent.v1.UpsertPresetRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.UpsertPresetRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.UpsertPresetRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.UpsertPresetRequest = _builder.build()
+    internal fun _build(): com.agent.v1.UpsertPresetRequest = _builder.build()
 
     /**
      * `.agent.v1.Preset preset = 1 [json_name = "preset"];`
      */
-    public var preset: agent.v1.Agent.Preset
+    public var preset: com.agent.v1.Preset
       @kotlin.jvm.JvmName("getPreset")
         get() = _builder.preset
       @kotlin.jvm.JvmName("setPreset")
@@ -53,13 +53,13 @@ public object UpsertPresetRequestKt {
       return _builder.hasPreset()
     }
 
-    public val UpsertPresetRequestKt.Dsl.presetOrNull: agent.v1.Agent.Preset?
+    public val UpsertPresetRequestKt.Dsl.presetOrNull: com.agent.v1.Preset?
       get() = _builder.presetOrNull
   }
 }
-public inline fun agent.v1.Agent.UpsertPresetRequest.copy(block: `agent.v1`.UpsertPresetRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpsertPresetRequest =
-  `agent.v1`.UpsertPresetRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.UpsertPresetRequest.copy(block: `com.agent.v1`.UpsertPresetRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpsertPresetRequest =
+  `com.agent.v1`.UpsertPresetRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.UpsertPresetRequestOrBuilder.presetOrNull: agent.v1.Agent.Preset?
+public val com.agent.v1.UpsertPresetRequestOrBuilder.presetOrNull: com.agent.v1.Preset?
   get() = if (hasPreset()) getPreset() else null
 

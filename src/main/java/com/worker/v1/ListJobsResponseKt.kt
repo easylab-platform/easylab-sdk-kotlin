@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializelistJobsResponse")
-public inline fun listJobsResponse(block: worker.v1.ListJobsResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ListJobsResponse =
-  worker.v1.ListJobsResponseKt.Dsl._create(worker.v1.Worker.ListJobsResponse.newBuilder()).apply { block() }._build()
+public inline fun listJobsResponse(block: com.worker.v1.ListJobsResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.ListJobsResponse =
+  com.worker.v1.ListJobsResponseKt.Dsl._create(com.worker.v1.ListJobsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.ListJobsResponse`
  */
@@ -17,17 +17,17 @@ public object ListJobsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.ListJobsResponse.Builder
+    private val _builder: com.worker.v1.ListJobsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.ListJobsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.ListJobsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.ListJobsResponse = _builder.build()
+    internal fun _build(): com.worker.v1.ListJobsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListJobsResponseKt {
     /**
      * `repeated .worker.v1.JobEntry jobs = 1 [json_name = "jobs"];`
      */
-     public val jobs: com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>
+     public val jobs: com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.jobsList
@@ -49,7 +49,7 @@ public object ListJobsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addJobs")
-    public fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>.add(value: worker.v1.Worker.JobEntry) {
+    public fun com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>.add(value: com.worker.v1.JobEntry) {
       _builder.addJobs(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListJobsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignJobs")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>.plusAssign(value: worker.v1.Worker.JobEntry) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>.plusAssign(value: com.worker.v1.JobEntry) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListJobsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllJobs")
-    public fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>.addAll(values: kotlin.collections.Iterable<worker.v1.Worker.JobEntry>) {
+    public fun com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>.addAll(values: kotlin.collections.Iterable<com.worker.v1.JobEntry>) {
       _builder.addAllJobs(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListJobsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllJobs")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>.plusAssign(values: kotlin.collections.Iterable<worker.v1.Worker.JobEntry>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>.plusAssign(values: kotlin.collections.Iterable<com.worker.v1.JobEntry>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListJobsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setJobs")
-    public operator fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>.set(index: kotlin.Int, value: worker.v1.Worker.JobEntry) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>.set(index: kotlin.Int, value: com.worker.v1.JobEntry) {
       _builder.setJobs(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListJobsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearJobs")
-    public fun com.google.protobuf.kotlin.DslList<worker.v1.Worker.JobEntry, JobsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.worker.v1.JobEntry, JobsProxy>.clear() {
       _builder.clearJobs()
     }
   }
 }
-public inline fun worker.v1.Worker.ListJobsResponse.copy(block: `worker.v1`.ListJobsResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ListJobsResponse =
-  `worker.v1`.ListJobsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.ListJobsResponse.copy(block: `com.worker.v1`.ListJobsResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.ListJobsResponse =
+  `com.worker.v1`.ListJobsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

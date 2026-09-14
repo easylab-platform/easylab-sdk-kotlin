@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -16,85 +16,85 @@ import com.connectrpc.StreamType
 public class RegistryServiceClient(
   private val client: ProtocolClientInterface,
 ) : RegistryServiceClientInterface {
-  override suspend fun listPackageTypes(request: Easylab.ListPackageTypesRequest, headers: Headers): ResponseMessage<Easylab.ListPackageTypesResponse> = client.unary(
+  override suspend fun listPackageTypes(request: ListPackageTypesRequest, headers: Headers): ResponseMessage<ListPackageTypesResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/ListPackageTypes",
-      easylab.v1.Easylab.ListPackageTypesRequest::class,
-      easylab.v1.Easylab.ListPackageTypesResponse::class,
+      com.easylab.v1.ListPackageTypesRequest::class,
+      com.easylab.v1.ListPackageTypesResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listPackages(request: Easylab.ListPackagesRequest, headers: Headers): ResponseMessage<Easylab.ListPackagesResponse> = client.unary(
+  override suspend fun listPackages(request: ListPackagesRequest, headers: Headers): ResponseMessage<ListPackagesResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/ListPackages",
-      easylab.v1.Easylab.ListPackagesRequest::class,
-      easylab.v1.Easylab.ListPackagesResponse::class,
+      com.easylab.v1.ListPackagesRequest::class,
+      com.easylab.v1.ListPackagesResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun packageVersions(request: Easylab.PackageVersionsRequest, headers: Headers): ResponseMessage<Easylab.PackageVersionsResponse> = client.unary(
+  override suspend fun packageVersions(request: PackageVersionsRequest, headers: Headers): ResponseMessage<PackageVersionsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/PackageVersions",
-      easylab.v1.Easylab.PackageVersionsRequest::class,
-      easylab.v1.Easylab.PackageVersionsResponse::class,
+      com.easylab.v1.PackageVersionsRequest::class,
+      com.easylab.v1.PackageVersionsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deletePackage(request: Easylab.DeletePackageRequest, headers: Headers): ResponseMessage<Easylab.DeletePackageResponse> = client.unary(
+  override suspend fun deletePackage(request: DeletePackageRequest, headers: Headers): ResponseMessage<DeletePackageResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/DeletePackage",
-      easylab.v1.Easylab.DeletePackageRequest::class,
-      easylab.v1.Easylab.DeletePackageResponse::class,
+      com.easylab.v1.DeletePackageRequest::class,
+      com.easylab.v1.DeletePackageResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deletePackageVersion(request: Easylab.DeletePackageVersionRequest, headers: Headers): ResponseMessage<Easylab.DeletePackageVersionResponse> = client.unary(
+  override suspend fun deletePackageVersion(request: DeletePackageVersionRequest, headers: Headers): ResponseMessage<DeletePackageVersionResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/DeletePackageVersion",
-      easylab.v1.Easylab.DeletePackageVersionRequest::class,
-      easylab.v1.Easylab.DeletePackageVersionResponse::class,
+      com.easylab.v1.DeletePackageVersionRequest::class,
+      com.easylab.v1.DeletePackageVersionResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listPublishSpecs(request: Easylab.ListPublishSpecsRequest, headers: Headers): ResponseMessage<Easylab.ListPublishSpecsResponse> = client.unary(
+  override suspend fun listPublishSpecs(request: ListPublishSpecsRequest, headers: Headers): ResponseMessage<ListPublishSpecsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/ListPublishSpecs",
-      easylab.v1.Easylab.ListPublishSpecsRequest::class,
-      easylab.v1.Easylab.ListPublishSpecsResponse::class,
+      com.easylab.v1.ListPublishSpecsRequest::class,
+      com.easylab.v1.ListPublishSpecsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun oCICatalog(request: Easylab.OCICatalogRequest, headers: Headers): ResponseMessage<Easylab.OCICatalogResponse> = client.unary(
+  override suspend fun oCICatalog(request: OCICatalogRequest, headers: Headers): ResponseMessage<OCICatalogResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/OCICatalog",
-      easylab.v1.Easylab.OCICatalogRequest::class,
-      easylab.v1.Easylab.OCICatalogResponse::class,
+      com.easylab.v1.OCICatalogRequest::class,
+      com.easylab.v1.OCICatalogResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -104,13 +104,13 @@ public class RegistryServiceClient(
    *  SetPackageVisibility flips a package's visibility (public|private). Requires
    *  maintainer+ on the package's scope (mapped repository, else owning user).
    */
-  override suspend fun setPackageVisibility(request: Easylab.SetPackageVisibilityRequest, headers: Headers): ResponseMessage<Easylab.SetPackageVisibilityResponse> = client.unary(
+  override suspend fun setPackageVisibility(request: SetPackageVisibilityRequest, headers: Headers): ResponseMessage<SetPackageVisibilityResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.RegistryService/SetPackageVisibility",
-      easylab.v1.Easylab.SetPackageVisibilityRequest::class,
-      easylab.v1.Easylab.SetPackageVisibilityResponse::class,
+      com.easylab.v1.SetPackageVisibilityRequest::class,
+      com.easylab.v1.SetPackageVisibilityResponse::class,
       StreamType.UNARY,
     ),
   )

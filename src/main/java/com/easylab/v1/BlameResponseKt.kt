@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeblameResponse")
-public inline fun blameResponse(block: easylab.v1.BlameResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BlameResponse =
-  easylab.v1.BlameResponseKt.Dsl._create(easylab.v1.Easylab.BlameResponse.newBuilder()).apply { block() }._build()
+public inline fun blameResponse(block: com.easylab.v1.BlameResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BlameResponse =
+  com.easylab.v1.BlameResponseKt.Dsl._create(com.easylab.v1.BlameResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.BlameResponse`
  */
@@ -17,17 +17,17 @@ public object BlameResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.BlameResponse.Builder
+    private val _builder: com.easylab.v1.BlameResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.BlameResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.BlameResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.BlameResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.BlameResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -100,6 +100,6 @@ public object BlameResponseKt {
       _builder.clearLines()
     }}
 }
-public inline fun easylab.v1.Easylab.BlameResponse.copy(block: `easylab.v1`.BlameResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.BlameResponse =
-  `easylab.v1`.BlameResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.BlameResponse.copy(block: `com.easylab.v1`.BlameResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.BlameResponse =
+  `com.easylab.v1`.BlameResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

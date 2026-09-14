@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializejobOutputResponse")
-public inline fun jobOutputResponse(block: worker.v1.JobOutputResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobOutputResponse =
-  worker.v1.JobOutputResponseKt.Dsl._create(worker.v1.Worker.JobOutputResponse.newBuilder()).apply { block() }._build()
+public inline fun jobOutputResponse(block: com.worker.v1.JobOutputResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobOutputResponse =
+  com.worker.v1.JobOutputResponseKt.Dsl._create(com.worker.v1.JobOutputResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.JobOutputResponse`
  */
@@ -17,17 +17,17 @@ public object JobOutputResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.JobOutputResponse.Builder
+    private val _builder: com.worker.v1.JobOutputResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.JobOutputResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.JobOutputResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.JobOutputResponse = _builder.build()
+    internal fun _build(): com.worker.v1.JobOutputResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -168,6 +168,6 @@ public object JobOutputResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.JobOutputResponse.copy(block: `worker.v1`.JobOutputResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobOutputResponse =
-  `worker.v1`.JobOutputResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.JobOutputResponse.copy(block: `com.worker.v1`.JobOutputResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobOutputResponse =
+  `com.worker.v1`.JobOutputResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

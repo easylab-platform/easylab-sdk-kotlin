@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeupdateSettingsRequest")
-public inline fun updateSettingsRequest(block: agent.v1.UpdateSettingsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpdateSettingsRequest =
-  agent.v1.UpdateSettingsRequestKt.Dsl._create(agent.v1.Agent.UpdateSettingsRequest.newBuilder()).apply { block() }._build()
+public inline fun updateSettingsRequest(block: com.agent.v1.UpdateSettingsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpdateSettingsRequest =
+  com.agent.v1.UpdateSettingsRequestKt.Dsl._create(com.agent.v1.UpdateSettingsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UpdateSettingsRequest`
  */
@@ -17,17 +17,17 @@ public object UpdateSettingsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.UpdateSettingsRequest.Builder
+    private val _builder: com.agent.v1.UpdateSettingsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.UpdateSettingsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.UpdateSettingsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.UpdateSettingsRequest = _builder.build()
+    internal fun _build(): com.agent.v1.UpdateSettingsRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -177,8 +177,47 @@ public object UpdateSettingsRequestKt {
     public fun clearVariant() {
       _builder.clearVariant()
     }
+
+    /**
+     * ```
+     * Generic grouping key (empty clears it). Included for completeness; the
+     * subsession flow sets it at creation time.
+     * ```
+     *
+     * `optional string group = 8 [json_name = "group"];`
+     */
+    public var group: kotlin.String
+      @kotlin.jvm.JvmName("getGroup")
+        get() = _builder.group
+      @kotlin.jvm.JvmName("setGroup")
+        set(value) {
+        _builder.group = value
+      }
+    /**
+     * ```
+     * Generic grouping key (empty clears it). Included for completeness; the
+     * subsession flow sets it at creation time.
+     * ```
+     *
+     * `optional string group = 8 [json_name = "group"];`
+     */
+    public fun clearGroup() {
+      _builder.clearGroup()
+    }
+    /**
+     * ```
+     * Generic grouping key (empty clears it). Included for completeness; the
+     * subsession flow sets it at creation time.
+     * ```
+     *
+     * `optional string group = 8 [json_name = "group"];`
+     * @return Whether the group field is set.
+     */
+    public fun hasGroup(): kotlin.Boolean {
+      return _builder.hasGroup()
+    }
   }
 }
-public inline fun agent.v1.Agent.UpdateSettingsRequest.copy(block: `agent.v1`.UpdateSettingsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpdateSettingsRequest =
-  `agent.v1`.UpdateSettingsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.UpdateSettingsRequest.copy(block: `com.agent.v1`.UpdateSettingsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpdateSettingsRequest =
+  `com.agent.v1`.UpdateSettingsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

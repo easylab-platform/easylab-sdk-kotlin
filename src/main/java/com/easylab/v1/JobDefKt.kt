@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializejobDef")
-public inline fun jobDef(block: easylab.v1.JobDefKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.JobDef =
-  easylab.v1.JobDefKt.Dsl._create(easylab.v1.Easylab.JobDef.newBuilder()).apply { block() }._build()
+public inline fun jobDef(block: com.easylab.v1.JobDefKt.Dsl.() -> kotlin.Unit): com.easylab.v1.JobDef =
+  com.easylab.v1.JobDefKt.Dsl._create(com.easylab.v1.JobDef.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.JobDef`
  */
@@ -17,17 +17,17 @@ public object JobDefKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.JobDef.Builder
+    private val _builder: com.easylab.v1.JobDef.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.JobDef.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.JobDef.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.JobDef = _builder.build()
+    internal fun _build(): com.easylab.v1.JobDef = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -293,7 +293,7 @@ public object JobDefKt {
     /**
      * `repeated .easylab.v1.Step steps = 6 [json_name = "steps"];`
      */
-     public val steps: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>
+     public val steps: com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.stepsList
@@ -304,7 +304,7 @@ public object JobDefKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addSteps")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>.add(value: easylab.v1.Easylab.Step) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>.add(value: com.easylab.v1.Step) {
       _builder.addSteps(value)
     }
     /**
@@ -314,7 +314,7 @@ public object JobDefKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignSteps")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>.plusAssign(value: easylab.v1.Easylab.Step) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>.plusAssign(value: com.easylab.v1.Step) {
       add(value)
     }
     /**
@@ -323,7 +323,7 @@ public object JobDefKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllSteps")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.Step>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.Step>) {
       _builder.addAllSteps(values)
     }
     /**
@@ -333,7 +333,7 @@ public object JobDefKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllSteps")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.Step>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.Step>) {
       addAll(values)
     }
     /**
@@ -343,7 +343,7 @@ public object JobDefKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setSteps")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.Step) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>.set(index: kotlin.Int, value: com.easylab.v1.Step) {
       _builder.setSteps(index, value)
     }
     /**
@@ -351,14 +351,14 @@ public object JobDefKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearSteps")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.Step, StepsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.Step, StepsProxy>.clear() {
       _builder.clearSteps()
     }
 
     /**
      * `.easylab.v1.Produce produce = 7 [json_name = "produce"];`
      */
-    public var produce: easylab.v1.Easylab.Produce
+    public var produce: com.easylab.v1.Produce
       @kotlin.jvm.JvmName("getProduce")
         get() = _builder.produce
       @kotlin.jvm.JvmName("setProduce")
@@ -379,13 +379,13 @@ public object JobDefKt {
       return _builder.hasProduce()
     }
 
-    public val JobDefKt.Dsl.produceOrNull: easylab.v1.Easylab.Produce?
+    public val JobDefKt.Dsl.produceOrNull: com.easylab.v1.Produce?
       get() = _builder.produceOrNull
   }
 }
-public inline fun easylab.v1.Easylab.JobDef.copy(block: `easylab.v1`.JobDefKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.JobDef =
-  `easylab.v1`.JobDefKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.JobDef.copy(block: `com.easylab.v1`.JobDefKt.Dsl.() -> kotlin.Unit): com.easylab.v1.JobDef =
+  `com.easylab.v1`.JobDefKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.JobDefOrBuilder.produceOrNull: easylab.v1.Easylab.Produce?
+public val com.easylab.v1.JobDefOrBuilder.produceOrNull: com.easylab.v1.Produce?
   get() = if (hasProduce()) getProduce() else null
 

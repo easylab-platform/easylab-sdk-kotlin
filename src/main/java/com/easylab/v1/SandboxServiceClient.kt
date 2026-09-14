@@ -2,7 +2,7 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -10,7 +10,16 @@ import com.connectrpc.ProtocolClientInterface
 import com.connectrpc.ResponseMessage
 import com.connectrpc.ServerOnlyStreamInterface
 import com.connectrpc.StreamType
-import worker.v1.Worker
+import com.worker.v1.ExecuteResponse
+import com.worker.v1.FileListResponse
+import com.worker.v1.FileReadResponse
+import com.worker.v1.FileWriteResponse
+import com.worker.v1.JobKillResponse
+import com.worker.v1.JobOutputResponse
+import com.worker.v1.JobStdinResponse
+import com.worker.v1.JobWaitResponse
+import com.worker.v1.ListJobsResponse
+import com.worker.v1.WatchJobResponse
 
 /**
  *  SandboxService fronts every worker.v1 API for the UI/console and owns the
@@ -22,61 +31,61 @@ public class SandboxServiceClient(
   /**
    *  lifecycle
    */
-  override suspend fun listSandboxes(request: Easylab.ListSandboxesRequest, headers: Headers): ResponseMessage<Easylab.ListSandboxesResponse> = client.unary(
+  override suspend fun listSandboxes(request: ListSandboxesRequest, headers: Headers): ResponseMessage<ListSandboxesResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/ListSandboxes",
-      easylab.v1.Easylab.ListSandboxesRequest::class,
-      easylab.v1.Easylab.ListSandboxesResponse::class,
+      com.easylab.v1.ListSandboxesRequest::class,
+      com.easylab.v1.ListSandboxesResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getSandbox(request: Easylab.GetSandboxRequest, headers: Headers): ResponseMessage<Easylab.GetSandboxResponse> = client.unary(
+  override suspend fun getSandbox(request: GetSandboxRequest, headers: Headers): ResponseMessage<GetSandboxResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/GetSandbox",
-      easylab.v1.Easylab.GetSandboxRequest::class,
-      easylab.v1.Easylab.GetSandboxResponse::class,
+      com.easylab.v1.GetSandboxRequest::class,
+      com.easylab.v1.GetSandboxResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun ensureSandboxImage(request: Easylab.EnsureSandboxImageRequest, headers: Headers): ResponseMessage<Easylab.EnsureSandboxImageResponse> = client.unary(
+  override suspend fun ensureSandboxImage(request: EnsureSandboxImageRequest, headers: Headers): ResponseMessage<EnsureSandboxImageResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/EnsureSandboxImage",
-      easylab.v1.Easylab.EnsureSandboxImageRequest::class,
-      easylab.v1.Easylab.EnsureSandboxImageResponse::class,
+      com.easylab.v1.EnsureSandboxImageRequest::class,
+      com.easylab.v1.EnsureSandboxImageResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun launchSandbox(request: Easylab.LaunchSandboxRequest, headers: Headers): ResponseMessage<Easylab.LaunchSandboxResponse> = client.unary(
+  override suspend fun launchSandbox(request: LaunchSandboxRequest, headers: Headers): ResponseMessage<LaunchSandboxResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/LaunchSandbox",
-      easylab.v1.Easylab.LaunchSandboxRequest::class,
-      easylab.v1.Easylab.LaunchSandboxResponse::class,
+      com.easylab.v1.LaunchSandboxRequest::class,
+      com.easylab.v1.LaunchSandboxResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteSandbox(request: Easylab.DeleteSandboxRequest, headers: Headers): ResponseMessage<Easylab.DeleteSandboxResponse> = client.unary(
+  override suspend fun deleteSandbox(request: DeleteSandboxRequest, headers: Headers): ResponseMessage<DeleteSandboxResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/DeleteSandbox",
-      easylab.v1.Easylab.DeleteSandboxRequest::class,
-      easylab.v1.Easylab.DeleteSandboxResponse::class,
+      com.easylab.v1.DeleteSandboxRequest::class,
+      com.easylab.v1.DeleteSandboxResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -85,96 +94,96 @@ public class SandboxServiceClient(
   /**
    *  worker passthroughs (sandbox routing + worker.v1 payloads)
    */
-  override suspend fun execute(request: Easylab.ExecuteRequest, headers: Headers): ResponseMessage<Worker.ExecuteResponse> = client.unary(
+  override suspend fun execute(request: ExecuteRequest, headers: Headers): ResponseMessage<ExecuteResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/Execute",
-      easylab.v1.Easylab.ExecuteRequest::class,
-      worker.v1.Worker.ExecuteResponse::class,
+      com.easylab.v1.ExecuteRequest::class,
+      com.worker.v1.ExecuteResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listJobs(request: Easylab.ListJobsRequest, headers: Headers): ResponseMessage<Worker.ListJobsResponse> = client.unary(
+  override suspend fun listJobs(request: ListJobsRequest, headers: Headers): ResponseMessage<ListJobsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/ListJobs",
-      easylab.v1.Easylab.ListJobsRequest::class,
-      worker.v1.Worker.ListJobsResponse::class,
+      com.easylab.v1.ListJobsRequest::class,
+      com.worker.v1.ListJobsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun jobOutput(request: Easylab.JobOutputRequest, headers: Headers): ResponseMessage<Worker.JobOutputResponse> = client.unary(
+  override suspend fun jobOutput(request: JobOutputRequest, headers: Headers): ResponseMessage<JobOutputResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/JobOutput",
-      easylab.v1.Easylab.JobOutputRequest::class,
-      worker.v1.Worker.JobOutputResponse::class,
+      com.easylab.v1.JobOutputRequest::class,
+      com.worker.v1.JobOutputResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun watchJob(headers: Headers): ServerOnlyStreamInterface<Easylab.WatchJobRequest, Worker.WatchJobResponse> = client.serverStream(
+  override suspend fun watchJob(headers: Headers): ServerOnlyStreamInterface<WatchJobRequest, WatchJobResponse> = client.serverStream(
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/WatchJob",
-      easylab.v1.Easylab.WatchJobRequest::class,
-      worker.v1.Worker.WatchJobResponse::class,
+      com.easylab.v1.WatchJobRequest::class,
+      com.worker.v1.WatchJobResponse::class,
       StreamType.SERVER,
     ),
   )
 
 
-  override suspend fun jobWait(request: Easylab.JobWaitRequest, headers: Headers): ResponseMessage<Worker.JobWaitResponse> = client.unary(
+  override suspend fun jobWait(request: JobWaitRequest, headers: Headers): ResponseMessage<JobWaitResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/JobWait",
-      easylab.v1.Easylab.JobWaitRequest::class,
-      worker.v1.Worker.JobWaitResponse::class,
+      com.easylab.v1.JobWaitRequest::class,
+      com.worker.v1.JobWaitResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun jobStdin(request: Easylab.JobStdinRequest, headers: Headers): ResponseMessage<Worker.JobStdinResponse> = client.unary(
+  override suspend fun jobStdin(request: JobStdinRequest, headers: Headers): ResponseMessage<JobStdinResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/JobStdin",
-      easylab.v1.Easylab.JobStdinRequest::class,
-      worker.v1.Worker.JobStdinResponse::class,
+      com.easylab.v1.JobStdinRequest::class,
+      com.worker.v1.JobStdinResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun jobKill(request: Easylab.JobKillRequest, headers: Headers): ResponseMessage<Worker.JobKillResponse> = client.unary(
+  override suspend fun jobKill(request: JobKillRequest, headers: Headers): ResponseMessage<JobKillResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/JobKill",
-      easylab.v1.Easylab.JobKillRequest::class,
-      worker.v1.Worker.JobKillResponse::class,
+      com.easylab.v1.JobKillRequest::class,
+      com.worker.v1.JobKillResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileRead(request: Easylab.FileReadRequest, headers: Headers): ResponseMessage<Worker.FileReadResponse> = client.unary(
+  override suspend fun fileRead(request: FileReadRequest, headers: Headers): ResponseMessage<FileReadResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/FileRead",
-      easylab.v1.Easylab.FileReadRequest::class,
-      worker.v1.Worker.FileReadResponse::class,
+      com.easylab.v1.FileReadRequest::class,
+      com.worker.v1.FileReadResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -184,37 +193,37 @@ public class SandboxServiceClient(
    *  SyncWorkspace pushes the repo tree at rev into the sandbox and records
    *  rev + worker boot id in the registry (single rev-coherence write).
    */
-  override suspend fun syncWorkspace(request: Easylab.SyncWorkspaceRequest, headers: Headers): ResponseMessage<Easylab.SyncWorkspaceResponse> = client.unary(
+  override suspend fun syncWorkspace(request: SyncWorkspaceRequest, headers: Headers): ResponseMessage<SyncWorkspaceResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/SyncWorkspace",
-      easylab.v1.Easylab.SyncWorkspaceRequest::class,
-      easylab.v1.Easylab.SyncWorkspaceResponse::class,
+      com.easylab.v1.SyncWorkspaceRequest::class,
+      com.easylab.v1.SyncWorkspaceResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileWrite(request: Easylab.FileWriteRequest, headers: Headers): ResponseMessage<Worker.FileWriteResponse> = client.unary(
+  override suspend fun fileWrite(request: FileWriteRequest, headers: Headers): ResponseMessage<FileWriteResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/FileWrite",
-      easylab.v1.Easylab.FileWriteRequest::class,
-      worker.v1.Worker.FileWriteResponse::class,
+      com.easylab.v1.FileWriteRequest::class,
+      com.worker.v1.FileWriteResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileList(request: Easylab.FileListRequest, headers: Headers): ResponseMessage<Worker.FileListResponse> = client.unary(
+  override suspend fun fileList(request: FileListRequest, headers: Headers): ResponseMessage<FileListResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/FileList",
-      easylab.v1.Easylab.FileListRequest::class,
-      worker.v1.Worker.FileListResponse::class,
+      com.easylab.v1.FileListRequest::class,
+      com.worker.v1.FileListResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -227,13 +236,13 @@ public class SandboxServiceClient(
    *  already provisioned on the worker. easylab persists the token + address so
    *  its worker passthroughs keep working across restarts.
    */
-  override suspend fun registerExternalSandbox(request: Easylab.RegisterExternalSandboxRequest, headers: Headers): ResponseMessage<Easylab.RegisterExternalSandboxResponse> = client.unary(
+  override suspend fun registerExternalSandbox(request: RegisterExternalSandboxRequest, headers: Headers): ResponseMessage<RegisterExternalSandboxResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/RegisterExternalSandbox",
-      easylab.v1.Easylab.RegisterExternalSandboxRequest::class,
-      easylab.v1.Easylab.RegisterExternalSandboxResponse::class,
+      com.easylab.v1.RegisterExternalSandboxRequest::class,
+      com.easylab.v1.RegisterExternalSandboxResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -243,13 +252,13 @@ public class SandboxServiceClient(
    *  ListExternalSandboxes returns the externally-registered workers (mode =
    *  external), including address and owner — managed sandboxes are excluded.
    */
-  override suspend fun listExternalSandboxes(request: Easylab.ListExternalSandboxesRequest, headers: Headers): ResponseMessage<Easylab.ListExternalSandboxesResponse> = client.unary(
+  override suspend fun listExternalSandboxes(request: ListExternalSandboxesRequest, headers: Headers): ResponseMessage<ListExternalSandboxesResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/ListExternalSandboxes",
-      easylab.v1.Easylab.ListExternalSandboxesRequest::class,
-      easylab.v1.Easylab.ListExternalSandboxesResponse::class,
+      com.easylab.v1.ListExternalSandboxesRequest::class,
+      com.easylab.v1.ListExternalSandboxesResponse::class,
       StreamType.UNARY,
     ),
   )
@@ -261,13 +270,13 @@ public class SandboxServiceClient(
    *  release any caller presenting the new code may claim it. Managed sandboxes
    *  cannot be released.
    */
-  override suspend fun releaseExternalSandbox(request: Easylab.ReleaseExternalSandboxRequest, headers: Headers): ResponseMessage<Easylab.ReleaseExternalSandboxResponse> = client.unary(
+  override suspend fun releaseExternalSandbox(request: ReleaseExternalSandboxRequest, headers: Headers): ResponseMessage<ReleaseExternalSandboxResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "easylab.v1.SandboxService/ReleaseExternalSandbox",
-      easylab.v1.Easylab.ReleaseExternalSandboxRequest::class,
-      easylab.v1.Easylab.ReleaseExternalSandboxResponse::class,
+      com.easylab.v1.ReleaseExternalSandboxRequest::class,
+      com.easylab.v1.ReleaseExternalSandboxResponse::class,
       StreamType.UNARY,
     ),
   )

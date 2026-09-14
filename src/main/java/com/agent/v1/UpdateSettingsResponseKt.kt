@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeupdateSettingsResponse")
-public inline fun updateSettingsResponse(block: agent.v1.UpdateSettingsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpdateSettingsResponse =
-  agent.v1.UpdateSettingsResponseKt.Dsl._create(agent.v1.Agent.UpdateSettingsResponse.newBuilder()).apply { block() }._build()
+public inline fun updateSettingsResponse(block: com.agent.v1.UpdateSettingsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpdateSettingsResponse =
+  com.agent.v1.UpdateSettingsResponseKt.Dsl._create(com.agent.v1.UpdateSettingsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.UpdateSettingsResponse`
  */
@@ -17,22 +17,22 @@ public object UpdateSettingsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.UpdateSettingsResponse.Builder
+    private val _builder: com.agent.v1.UpdateSettingsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.UpdateSettingsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.UpdateSettingsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.UpdateSettingsResponse = _builder.build()
+    internal fun _build(): com.agent.v1.UpdateSettingsResponse = _builder.build()
 
     /**
      * `.agent.v1.Session session = 1 [json_name = "session"];`
      */
-    public var session: agent.v1.Agent.Session
+    public var session: com.agent.v1.Session
       @kotlin.jvm.JvmName("getSession")
         get() = _builder.session
       @kotlin.jvm.JvmName("setSession")
@@ -53,13 +53,13 @@ public object UpdateSettingsResponseKt {
       return _builder.hasSession()
     }
 
-    public val UpdateSettingsResponseKt.Dsl.sessionOrNull: agent.v1.Agent.Session?
+    public val UpdateSettingsResponseKt.Dsl.sessionOrNull: com.agent.v1.Session?
       get() = _builder.sessionOrNull
   }
 }
-public inline fun agent.v1.Agent.UpdateSettingsResponse.copy(block: `agent.v1`.UpdateSettingsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.UpdateSettingsResponse =
-  `agent.v1`.UpdateSettingsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.UpdateSettingsResponse.copy(block: `com.agent.v1`.UpdateSettingsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.UpdateSettingsResponse =
+  `com.agent.v1`.UpdateSettingsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.UpdateSettingsResponseOrBuilder.sessionOrNull: agent.v1.Agent.Session?
+public val com.agent.v1.UpdateSettingsResponseOrBuilder.sessionOrNull: com.agent.v1.Session?
   get() = if (hasSession()) getSession() else null
 

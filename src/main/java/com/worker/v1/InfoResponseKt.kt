@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializeinfoResponse")
-public inline fun infoResponse(block: worker.v1.InfoResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.InfoResponse =
-  worker.v1.InfoResponseKt.Dsl._create(worker.v1.Worker.InfoResponse.newBuilder()).apply { block() }._build()
+public inline fun infoResponse(block: com.worker.v1.InfoResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.InfoResponse =
+  com.worker.v1.InfoResponseKt.Dsl._create(com.worker.v1.InfoResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.InfoResponse`
  */
@@ -17,17 +17,17 @@ public object InfoResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.InfoResponse.Builder
+    private val _builder: com.worker.v1.InfoResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.InfoResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.InfoResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.InfoResponse = _builder.build()
+    internal fun _build(): com.worker.v1.InfoResponse = _builder.build()
 
     /**
      * ```
@@ -155,6 +155,6 @@ public object InfoResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.InfoResponse.copy(block: `worker.v1`.InfoResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.InfoResponse =
-  `worker.v1`.InfoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.InfoResponse.copy(block: `com.worker.v1`.InfoResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.InfoResponse =
+  `com.worker.v1`.InfoResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

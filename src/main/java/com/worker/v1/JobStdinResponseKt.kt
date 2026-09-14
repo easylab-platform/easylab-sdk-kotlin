@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializejobStdinResponse")
-public inline fun jobStdinResponse(block: worker.v1.JobStdinResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobStdinResponse =
-  worker.v1.JobStdinResponseKt.Dsl._create(worker.v1.Worker.JobStdinResponse.newBuilder()).apply { block() }._build()
+public inline fun jobStdinResponse(block: com.worker.v1.JobStdinResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobStdinResponse =
+  com.worker.v1.JobStdinResponseKt.Dsl._create(com.worker.v1.JobStdinResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.JobStdinResponse`
  */
@@ -17,17 +17,17 @@ public object JobStdinResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.JobStdinResponse.Builder
+    private val _builder: com.worker.v1.JobStdinResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.JobStdinResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.JobStdinResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.JobStdinResponse = _builder.build()
+    internal fun _build(): com.worker.v1.JobStdinResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object JobStdinResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.JobStdinResponse.copy(block: `worker.v1`.JobStdinResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobStdinResponse =
-  `worker.v1`.JobStdinResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.JobStdinResponse.copy(block: `com.worker.v1`.JobStdinResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobStdinResponse =
+  `com.worker.v1`.JobStdinResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

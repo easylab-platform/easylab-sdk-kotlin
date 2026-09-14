@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeserviceInfo")
-public inline fun serviceInfo(block: easylab.v1.ServiceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServiceInfo =
-  easylab.v1.ServiceInfoKt.Dsl._create(easylab.v1.Easylab.ServiceInfo.newBuilder()).apply { block() }._build()
+public inline fun serviceInfo(block: com.easylab.v1.ServiceInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ServiceInfo =
+  com.easylab.v1.ServiceInfoKt.Dsl._create(com.easylab.v1.ServiceInfo.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ServiceInfo`
  */
@@ -17,17 +17,17 @@ public object ServiceInfoKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ServiceInfo.Builder
+    private val _builder: com.easylab.v1.ServiceInfo.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ServiceInfo.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ServiceInfo.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ServiceInfo = _builder.build()
+    internal fun _build(): com.easylab.v1.ServiceInfo = _builder.build()
 
     /**
      * `string name = 1 [json_name = "name"];`
@@ -376,6 +376,6 @@ public object ServiceInfoKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ServiceInfo.copy(block: `easylab.v1`.ServiceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServiceInfo =
-  `easylab.v1`.ServiceInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ServiceInfo.copy(block: `com.easylab.v1`.ServiceInfoKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ServiceInfo =
+  `com.easylab.v1`.ServiceInfoKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

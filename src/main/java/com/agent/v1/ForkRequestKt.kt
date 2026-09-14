@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeforkRequest")
-public inline fun forkRequest(block: agent.v1.ForkRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ForkRequest =
-  agent.v1.ForkRequestKt.Dsl._create(agent.v1.Agent.ForkRequest.newBuilder()).apply { block() }._build()
+public inline fun forkRequest(block: com.agent.v1.ForkRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ForkRequest =
+  com.agent.v1.ForkRequestKt.Dsl._create(com.agent.v1.ForkRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ForkRequest`
  */
@@ -17,17 +17,17 @@ public object ForkRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ForkRequest.Builder
+    private val _builder: com.agent.v1.ForkRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ForkRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ForkRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ForkRequest = _builder.build()
+    internal fun _build(): com.agent.v1.ForkRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -98,6 +98,6 @@ public object ForkRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.ForkRequest.copy(block: `agent.v1`.ForkRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ForkRequest =
-  `agent.v1`.ForkRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ForkRequest.copy(block: `com.agent.v1`.ForkRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ForkRequest =
+  `com.agent.v1`.ForkRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

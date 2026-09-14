@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedownloadReleaseAssetResponse")
-public inline fun downloadReleaseAssetResponse(block: easylab.v1.DownloadReleaseAssetResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DownloadReleaseAssetResponse =
-  easylab.v1.DownloadReleaseAssetResponseKt.Dsl._create(easylab.v1.Easylab.DownloadReleaseAssetResponse.newBuilder()).apply { block() }._build()
+public inline fun downloadReleaseAssetResponse(block: com.easylab.v1.DownloadReleaseAssetResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DownloadReleaseAssetResponse =
+  com.easylab.v1.DownloadReleaseAssetResponseKt.Dsl._create(com.easylab.v1.DownloadReleaseAssetResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DownloadReleaseAssetResponse`
  */
@@ -17,17 +17,17 @@ public object DownloadReleaseAssetResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DownloadReleaseAssetResponse.Builder
+    private val _builder: com.easylab.v1.DownloadReleaseAssetResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DownloadReleaseAssetResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DownloadReleaseAssetResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DownloadReleaseAssetResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.DownloadReleaseAssetResponse = _builder.build()
 
     /**
      * `bytes data = 1 [json_name = "data"];`
@@ -81,6 +81,6 @@ public object DownloadReleaseAssetResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DownloadReleaseAssetResponse.copy(block: `easylab.v1`.DownloadReleaseAssetResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DownloadReleaseAssetResponse =
-  `easylab.v1`.DownloadReleaseAssetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DownloadReleaseAssetResponse.copy(block: `com.easylab.v1`.DownloadReleaseAssetResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DownloadReleaseAssetResponse =
+  `com.easylab.v1`.DownloadReleaseAssetResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

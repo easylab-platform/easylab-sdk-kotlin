@@ -2,37 +2,37 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
 import com.connectrpc.ServerOnlyStreamInterface
 
 public interface WorkflowServiceClientInterface {
-  public suspend fun createWorkflow(request: Easylab.CreateWorkflowRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CreateWorkflowResponse>
+  public suspend fun createWorkflow(request: CreateWorkflowRequest, headers: Headers = emptyMap()): ResponseMessage<CreateWorkflowResponse>
 
-  public suspend fun getWorkflow(request: Easylab.GetWorkflowRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetWorkflowResponse>
+  public suspend fun getWorkflow(request: GetWorkflowRequest, headers: Headers = emptyMap()): ResponseMessage<GetWorkflowResponse>
 
-  public suspend fun listWorkflows(request: Easylab.ListWorkflowsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListWorkflowsResponse>
+  public suspend fun listWorkflows(request: ListWorkflowsRequest, headers: Headers = emptyMap()): ResponseMessage<ListWorkflowsResponse>
 
-  public suspend fun triggerRun(request: Easylab.TriggerRunRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.TriggerRunResponse>
+  public suspend fun triggerRun(request: TriggerRunRequest, headers: Headers = emptyMap()): ResponseMessage<TriggerRunResponse>
 
-  public suspend fun getRun(request: Easylab.GetRunRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetRunResponse>
+  public suspend fun getRun(request: GetRunRequest, headers: Headers = emptyMap()): ResponseMessage<GetRunResponse>
 
-  public suspend fun listRuns(request: Easylab.ListRunsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListRunsResponse>
+  public suspend fun listRuns(request: ListRunsRequest, headers: Headers = emptyMap()): ResponseMessage<ListRunsResponse>
 
-  public suspend fun runJobLog(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Easylab.RunJobLogRequest, Easylab.RunJobLogResponse>
+  public suspend fun runJobLog(headers: Headers = emptyMap()): ServerOnlyStreamInterface<RunJobLogRequest, RunJobLogResponse>
 
-  public suspend fun cancelRun(request: Easylab.CancelRunRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.CancelRunResponse>
+  public suspend fun cancelRun(request: CancelRunRequest, headers: Headers = emptyMap()): ResponseMessage<CancelRunResponse>
 
-  public suspend fun registerRunner(request: Easylab.RegisterRunnerRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RegisterRunnerResponse>
+  public suspend fun registerRunner(request: RegisterRunnerRequest, headers: Headers = emptyMap()): ResponseMessage<RegisterRunnerResponse>
 
-  public suspend fun listRunners(request: Easylab.ListRunnersRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListRunnersResponse>
+  public suspend fun listRunners(request: ListRunnersRequest, headers: Headers = emptyMap()): ResponseMessage<ListRunnersResponse>
 
   /**
    *  RunWorkflowFile loads .easylab/workflows.yaml from the branch tree and runs
    *  the named workflow (or all when name is empty). Asynchronous: returns the
    *  created runs (pending/running); poll GetRun / stream RunJobLog.
    */
-  public suspend fun runWorkflowFile(request: Easylab.RunWorkflowFileRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RunWorkflowFileResponse>
+  public suspend fun runWorkflowFile(request: RunWorkflowFileRequest, headers: Headers = emptyMap()): ResponseMessage<RunWorkflowFileResponse>
 }

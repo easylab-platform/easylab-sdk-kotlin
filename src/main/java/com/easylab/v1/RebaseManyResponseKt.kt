@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerebaseManyResponse")
-public inline fun rebaseManyResponse(block: easylab.v1.RebaseManyResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RebaseManyResponse =
-  easylab.v1.RebaseManyResponseKt.Dsl._create(easylab.v1.Easylab.RebaseManyResponse.newBuilder()).apply { block() }._build()
+public inline fun rebaseManyResponse(block: com.easylab.v1.RebaseManyResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RebaseManyResponse =
+  com.easylab.v1.RebaseManyResponseKt.Dsl._create(com.easylab.v1.RebaseManyResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RebaseManyResponse`
  */
@@ -17,17 +17,17 @@ public object RebaseManyResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RebaseManyResponse.Builder
+    private val _builder: com.easylab.v1.RebaseManyResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RebaseManyResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RebaseManyResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RebaseManyResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.RebaseManyResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object RebaseManyResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RebaseManyResponse.copy(block: `easylab.v1`.RebaseManyResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RebaseManyResponse =
-  `easylab.v1`.RebaseManyResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RebaseManyResponse.copy(block: `com.easylab.v1`.RebaseManyResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RebaseManyResponse =
+  `com.easylab.v1`.RebaseManyResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

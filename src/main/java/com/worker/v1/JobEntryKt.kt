@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializejobEntry")
-public inline fun jobEntry(block: worker.v1.JobEntryKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobEntry =
-  worker.v1.JobEntryKt.Dsl._create(worker.v1.Worker.JobEntry.newBuilder()).apply { block() }._build()
+public inline fun jobEntry(block: com.worker.v1.JobEntryKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobEntry =
+  com.worker.v1.JobEntryKt.Dsl._create(com.worker.v1.JobEntry.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.JobEntry`
  */
@@ -17,17 +17,17 @@ public object JobEntryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.JobEntry.Builder
+    private val _builder: com.worker.v1.JobEntry.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.JobEntry.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.JobEntry.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.JobEntry = _builder.build()
+    internal fun _build(): com.worker.v1.JobEntry = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -156,6 +156,6 @@ public object JobEntryKt {
     }
   }
 }
-public inline fun worker.v1.Worker.JobEntry.copy(block: `worker.v1`.JobEntryKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobEntry =
-  `worker.v1`.JobEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.JobEntry.copy(block: `com.worker.v1`.JobEntryKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobEntry =
+  `com.worker.v1`.JobEntryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

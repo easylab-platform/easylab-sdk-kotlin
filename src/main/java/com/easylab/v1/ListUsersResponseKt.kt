@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistUsersResponse")
-public inline fun listUsersResponse(block: easylab.v1.ListUsersResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListUsersResponse =
-  easylab.v1.ListUsersResponseKt.Dsl._create(easylab.v1.Easylab.ListUsersResponse.newBuilder()).apply { block() }._build()
+public inline fun listUsersResponse(block: com.easylab.v1.ListUsersResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListUsersResponse =
+  com.easylab.v1.ListUsersResponseKt.Dsl._create(com.easylab.v1.ListUsersResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListUsersResponse`
  */
@@ -17,17 +17,17 @@ public object ListUsersResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListUsersResponse.Builder
+    private val _builder: com.easylab.v1.ListUsersResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListUsersResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListUsersResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListUsersResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ListUsersResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object ListUsersResponseKt {
     /**
      * `repeated .easylab.v1.User users = 1 [json_name = "users"];`
      */
-     public val users: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>
+     public val users: com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.usersList
@@ -49,7 +49,7 @@ public object ListUsersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addUsers")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>.add(value: easylab.v1.Easylab.User) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>.add(value: com.easylab.v1.User) {
       _builder.addUsers(value)
     }
     /**
@@ -59,7 +59,7 @@ public object ListUsersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignUsers")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>.plusAssign(value: easylab.v1.Easylab.User) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>.plusAssign(value: com.easylab.v1.User) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object ListUsersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllUsers")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.User>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.User>) {
       _builder.addAllUsers(values)
     }
     /**
@@ -78,7 +78,7 @@ public object ListUsersResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllUsers")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.User>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.User>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object ListUsersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setUsers")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.User) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>.set(index: kotlin.Int, value: com.easylab.v1.User) {
       _builder.setUsers(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object ListUsersResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearUsers")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.User, UsersProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.User, UsersProxy>.clear() {
       _builder.clearUsers()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListUsersResponse.copy(block: `easylab.v1`.ListUsersResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListUsersResponse =
-  `easylab.v1`.ListUsersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListUsersResponse.copy(block: `com.easylab.v1`.ListUsersResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListUsersResponse =
+  `com.easylab.v1`.ListUsersResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

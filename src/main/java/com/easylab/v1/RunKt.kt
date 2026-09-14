@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerun")
-public inline fun run(block: easylab.v1.RunKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Run =
-  easylab.v1.RunKt.Dsl._create(easylab.v1.Easylab.Run.newBuilder()).apply { block() }._build()
+public inline fun run(block: com.easylab.v1.RunKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Run =
+  com.easylab.v1.RunKt.Dsl._create(com.easylab.v1.Run.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.Run`
  */
@@ -17,17 +17,17 @@ public object RunKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.Run.Builder
+    private val _builder: com.easylab.v1.Run.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.Run.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.Run.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.Run = _builder.build()
+    internal fun _build(): com.easylab.v1.Run = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -97,7 +97,7 @@ public object RunKt {
     /**
      * `repeated .easylab.v1.JobInstance jobs = 4 [json_name = "jobs"];`
      */
-     public val jobs: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>
+     public val jobs: com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.jobsList
@@ -108,7 +108,7 @@ public object RunKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addJobs")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>.add(value: easylab.v1.Easylab.JobInstance) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>.add(value: com.easylab.v1.JobInstance) {
       _builder.addJobs(value)
     }
     /**
@@ -118,7 +118,7 @@ public object RunKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignJobs")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>.plusAssign(value: easylab.v1.Easylab.JobInstance) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>.plusAssign(value: com.easylab.v1.JobInstance) {
       add(value)
     }
     /**
@@ -127,7 +127,7 @@ public object RunKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllJobs")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.JobInstance>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.JobInstance>) {
       _builder.addAllJobs(values)
     }
     /**
@@ -137,7 +137,7 @@ public object RunKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllJobs")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.JobInstance>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.JobInstance>) {
       addAll(values)
     }
     /**
@@ -147,7 +147,7 @@ public object RunKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setJobs")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.JobInstance) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>.set(index: kotlin.Int, value: com.easylab.v1.JobInstance) {
       _builder.setJobs(index, value)
     }
     /**
@@ -155,7 +155,7 @@ public object RunKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearJobs")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.JobInstance, JobsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.JobInstance, JobsProxy>.clear() {
       _builder.clearJobs()
     }
 
@@ -194,6 +194,6 @@ public object RunKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.Run.copy(block: `easylab.v1`.RunKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.Run =
-  `easylab.v1`.RunKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.Run.copy(block: `com.easylab.v1`.RunKt.Dsl.() -> kotlin.Unit): com.easylab.v1.Run =
+  `com.easylab.v1`.RunKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

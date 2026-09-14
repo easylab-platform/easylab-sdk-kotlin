@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerevisionsResponse")
-public inline fun revisionsResponse(block: easylab.v1.RevisionsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionsResponse =
-  easylab.v1.RevisionsResponseKt.Dsl._create(easylab.v1.Easylab.RevisionsResponse.newBuilder()).apply { block() }._build()
+public inline fun revisionsResponse(block: com.easylab.v1.RevisionsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionsResponse =
+  com.easylab.v1.RevisionsResponseKt.Dsl._create(com.easylab.v1.RevisionsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RevisionsResponse`
  */
@@ -17,17 +17,17 @@ public object RevisionsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RevisionsResponse.Builder
+    private val _builder: com.easylab.v1.RevisionsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RevisionsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RevisionsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RevisionsResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.RevisionsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object RevisionsResponseKt {
     /**
      * `repeated .easylab.v1.RevisionInfo revisions = 1 [json_name = "revisions"];`
      */
-     public val revisions: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>
+     public val revisions: com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.revisionsList
@@ -49,7 +49,7 @@ public object RevisionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addRevisions")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>.add(value: easylab.v1.Easylab.RevisionInfo) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>.add(value: com.easylab.v1.RevisionInfo) {
       _builder.addRevisions(value)
     }
     /**
@@ -59,7 +59,7 @@ public object RevisionsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignRevisions")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>.plusAssign(value: easylab.v1.Easylab.RevisionInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>.plusAssign(value: com.easylab.v1.RevisionInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object RevisionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllRevisions")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.RevisionInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.RevisionInfo>) {
       _builder.addAllRevisions(values)
     }
     /**
@@ -78,7 +78,7 @@ public object RevisionsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllRevisions")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.RevisionInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.RevisionInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object RevisionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setRevisions")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.RevisionInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>.set(index: kotlin.Int, value: com.easylab.v1.RevisionInfo) {
       _builder.setRevisions(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object RevisionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearRevisions")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.RevisionInfo, RevisionsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.RevisionInfo, RevisionsProxy>.clear() {
       _builder.clearRevisions()
     }
   }
 }
-public inline fun easylab.v1.Easylab.RevisionsResponse.copy(block: `easylab.v1`.RevisionsResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionsResponse =
-  `easylab.v1`.RevisionsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RevisionsResponse.copy(block: `com.easylab.v1`.RevisionsResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionsResponse =
+  `com.easylab.v1`.RevisionsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

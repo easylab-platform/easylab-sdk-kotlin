@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializestateResponse")
-public inline fun stateResponse(block: agent.v1.StateResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.StateResponse =
-  agent.v1.StateResponseKt.Dsl._create(agent.v1.Agent.StateResponse.newBuilder()).apply { block() }._build()
+public inline fun stateResponse(block: com.agent.v1.StateResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.StateResponse =
+  com.agent.v1.StateResponseKt.Dsl._create(com.agent.v1.StateResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.StateResponse`
  */
@@ -17,17 +17,17 @@ public object StateResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.StateResponse.Builder
+    private val _builder: com.agent.v1.StateResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.StateResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.StateResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.StateResponse = _builder.build()
+    internal fun _build(): com.agent.v1.StateResponse = _builder.build()
 
     /**
      * `.google.protobuf.Struct state = 1 [json_name = "state"];`
@@ -57,9 +57,9 @@ public object StateResponseKt {
       get() = _builder.stateOrNull
   }
 }
-public inline fun agent.v1.Agent.StateResponse.copy(block: `agent.v1`.StateResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.StateResponse =
-  `agent.v1`.StateResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.StateResponse.copy(block: `com.agent.v1`.StateResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.StateResponse =
+  `com.agent.v1`.StateResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.StateResponseOrBuilder.stateOrNull: com.google.protobuf.Struct?
+public val com.agent.v1.StateResponseOrBuilder.stateOrNull: com.google.protobuf.Struct?
   get() = if (hasState()) getState() else null
 

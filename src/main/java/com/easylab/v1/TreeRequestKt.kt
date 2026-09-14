@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializetreeRequest")
-public inline fun treeRequest(block: easylab.v1.TreeRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TreeRequest =
-  easylab.v1.TreeRequestKt.Dsl._create(easylab.v1.Easylab.TreeRequest.newBuilder()).apply { block() }._build()
+public inline fun treeRequest(block: com.easylab.v1.TreeRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TreeRequest =
+  com.easylab.v1.TreeRequestKt.Dsl._create(com.easylab.v1.TreeRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.TreeRequest`
  */
@@ -17,17 +17,17 @@ public object TreeRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.TreeRequest.Builder
+    private val _builder: com.easylab.v1.TreeRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.TreeRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.TreeRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.TreeRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.TreeRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,6 @@ public object TreeRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.TreeRequest.copy(block: `easylab.v1`.TreeRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.TreeRequest =
-  `easylab.v1`.TreeRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.TreeRequest.copy(block: `com.easylab.v1`.TreeRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.TreeRequest =
+  `com.easylab.v1`.TreeRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

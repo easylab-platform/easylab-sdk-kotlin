@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializefileChange")
-public inline fun fileChange(block: easylab.v1.FileChangeKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileChange =
-  easylab.v1.FileChangeKt.Dsl._create(easylab.v1.Easylab.FileChange.newBuilder()).apply { block() }._build()
+public inline fun fileChange(block: com.easylab.v1.FileChangeKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileChange =
+  com.easylab.v1.FileChangeKt.Dsl._create(com.easylab.v1.FileChange.newBuilder()).apply { block() }._build()
 /**
  * ```
  * FileChange is one atomic path action inside WriteFiles.
@@ -21,17 +21,17 @@ public object FileChangeKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.FileChange.Builder
+    private val _builder: com.easylab.v1.FileChange.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.FileChange.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.FileChange.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.FileChange = _builder.build()
+    internal fun _build(): com.easylab.v1.FileChange = _builder.build()
 
     /**
      * `string path = 1 [json_name = "path"];`
@@ -102,6 +102,6 @@ public object FileChangeKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.FileChange.copy(block: `easylab.v1`.FileChangeKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.FileChange =
-  `easylab.v1`.FileChangeKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.FileChange.copy(block: `com.easylab.v1`.FileChangeKt.Dsl.() -> kotlin.Unit): com.easylab.v1.FileChange =
+  `com.easylab.v1`.FileChangeKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

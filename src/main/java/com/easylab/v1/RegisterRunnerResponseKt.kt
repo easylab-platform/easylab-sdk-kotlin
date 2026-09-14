@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeregisterRunnerResponse")
-public inline fun registerRunnerResponse(block: easylab.v1.RegisterRunnerResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RegisterRunnerResponse =
-  easylab.v1.RegisterRunnerResponseKt.Dsl._create(easylab.v1.Easylab.RegisterRunnerResponse.newBuilder()).apply { block() }._build()
+public inline fun registerRunnerResponse(block: com.easylab.v1.RegisterRunnerResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RegisterRunnerResponse =
+  com.easylab.v1.RegisterRunnerResponseKt.Dsl._create(com.easylab.v1.RegisterRunnerResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RegisterRunnerResponse`
  */
@@ -17,17 +17,17 @@ public object RegisterRunnerResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RegisterRunnerResponse.Builder
+    private val _builder: com.easylab.v1.RegisterRunnerResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RegisterRunnerResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RegisterRunnerResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RegisterRunnerResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.RegisterRunnerResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object RegisterRunnerResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RegisterRunnerResponse.copy(block: `easylab.v1`.RegisterRunnerResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RegisterRunnerResponse =
-  `easylab.v1`.RegisterRunnerResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RegisterRunnerResponse.copy(block: `com.easylab.v1`.RegisterRunnerResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RegisterRunnerResponse =
+  `com.easylab.v1`.RegisterRunnerResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

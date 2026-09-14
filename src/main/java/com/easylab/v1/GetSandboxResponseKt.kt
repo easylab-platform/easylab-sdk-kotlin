@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializegetSandboxResponse")
-public inline fun getSandboxResponse(block: easylab.v1.GetSandboxResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetSandboxResponse =
-  easylab.v1.GetSandboxResponseKt.Dsl._create(easylab.v1.Easylab.GetSandboxResponse.newBuilder()).apply { block() }._build()
+public inline fun getSandboxResponse(block: com.easylab.v1.GetSandboxResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetSandboxResponse =
+  com.easylab.v1.GetSandboxResponseKt.Dsl._create(com.easylab.v1.GetSandboxResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.GetSandboxResponse`
  */
@@ -17,22 +17,22 @@ public object GetSandboxResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetSandboxResponse.Builder
+    private val _builder: com.easylab.v1.GetSandboxResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetSandboxResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.GetSandboxResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetSandboxResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.GetSandboxResponse = _builder.build()
 
     /**
      * `.easylab.v1.SandboxInfo sandbox = 1 [json_name = "sandbox"];`
      */
-    public var sandbox: easylab.v1.Easylab.SandboxInfo
+    public var sandbox: com.easylab.v1.SandboxInfo
       @kotlin.jvm.JvmName("getSandbox")
         get() = _builder.sandbox
       @kotlin.jvm.JvmName("setSandbox")
@@ -53,13 +53,13 @@ public object GetSandboxResponseKt {
       return _builder.hasSandbox()
     }
 
-    public val GetSandboxResponseKt.Dsl.sandboxOrNull: easylab.v1.Easylab.SandboxInfo?
+    public val GetSandboxResponseKt.Dsl.sandboxOrNull: com.easylab.v1.SandboxInfo?
       get() = _builder.sandboxOrNull
   }
 }
-public inline fun easylab.v1.Easylab.GetSandboxResponse.copy(block: `easylab.v1`.GetSandboxResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetSandboxResponse =
-  `easylab.v1`.GetSandboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.GetSandboxResponse.copy(block: `com.easylab.v1`.GetSandboxResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.GetSandboxResponse =
+  `com.easylab.v1`.GetSandboxResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.GetSandboxResponseOrBuilder.sandboxOrNull: easylab.v1.Easylab.SandboxInfo?
+public val com.easylab.v1.GetSandboxResponseOrBuilder.sandboxOrNull: com.easylab.v1.SandboxInfo?
   get() = if (hasSandbox()) getSandbox() else null
 

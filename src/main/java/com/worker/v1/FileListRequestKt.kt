@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializefileListRequest")
-public inline fun fileListRequest(block: worker.v1.FileListRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileListRequest =
-  worker.v1.FileListRequestKt.Dsl._create(worker.v1.Worker.FileListRequest.newBuilder()).apply { block() }._build()
+public inline fun fileListRequest(block: com.worker.v1.FileListRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileListRequest =
+  com.worker.v1.FileListRequestKt.Dsl._create(com.worker.v1.FileListRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.FileListRequest`
  */
@@ -17,17 +17,17 @@ public object FileListRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.FileListRequest.Builder
+    private val _builder: com.worker.v1.FileListRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.FileListRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.FileListRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.FileListRequest = _builder.build()
+    internal fun _build(): com.worker.v1.FileListRequest = _builder.build()
 
     /**
      * `string path = 1 [json_name = "path"];`
@@ -47,6 +47,6 @@ public object FileListRequestKt {
     }
   }
 }
-public inline fun worker.v1.Worker.FileListRequest.copy(block: `worker.v1`.FileListRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileListRequest =
-  `worker.v1`.FileListRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.FileListRequest.copy(block: `com.worker.v1`.FileListRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileListRequest =
+  `com.worker.v1`.FileListRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializediscoverGatewayModelsRequest")
-public inline fun discoverGatewayModelsRequest(block: agent.v1.DiscoverGatewayModelsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DiscoverGatewayModelsRequest =
-  agent.v1.DiscoverGatewayModelsRequestKt.Dsl._create(agent.v1.Agent.DiscoverGatewayModelsRequest.newBuilder()).apply { block() }._build()
+public inline fun discoverGatewayModelsRequest(block: com.agent.v1.DiscoverGatewayModelsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.DiscoverGatewayModelsRequest =
+  com.agent.v1.DiscoverGatewayModelsRequestKt.Dsl._create(com.agent.v1.DiscoverGatewayModelsRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * DiscoverGatewayModels asks a `vercel-compatible-gateway` for the models it
@@ -26,17 +26,17 @@ public object DiscoverGatewayModelsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.DiscoverGatewayModelsRequest.Builder
+    private val _builder: com.agent.v1.DiscoverGatewayModelsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.DiscoverGatewayModelsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.DiscoverGatewayModelsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.DiscoverGatewayModelsRequest = _builder.build()
+    internal fun _build(): com.agent.v1.DiscoverGatewayModelsRequest = _builder.build()
 
     /**
      * `string provider_id = 1 [json_name = "providerId"];`
@@ -168,6 +168,6 @@ public object DiscoverGatewayModelsRequestKt {
        }
   }
 }
-public inline fun agent.v1.Agent.DiscoverGatewayModelsRequest.copy(block: `agent.v1`.DiscoverGatewayModelsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DiscoverGatewayModelsRequest =
-  `agent.v1`.DiscoverGatewayModelsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.DiscoverGatewayModelsRequest.copy(block: `com.agent.v1`.DiscoverGatewayModelsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.DiscoverGatewayModelsRequest =
+  `com.agent.v1`.DiscoverGatewayModelsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerevisionFile")
-public inline fun revisionFile(block: easylab.v1.RevisionFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionFile =
-  easylab.v1.RevisionFileKt.Dsl._create(easylab.v1.Easylab.RevisionFile.newBuilder()).apply { block() }._build()
+public inline fun revisionFile(block: com.easylab.v1.RevisionFileKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionFile =
+  com.easylab.v1.RevisionFileKt.Dsl._create(com.easylab.v1.RevisionFile.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RevisionFile`
  */
@@ -17,17 +17,17 @@ public object RevisionFileKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RevisionFile.Builder
+    private val _builder: com.easylab.v1.RevisionFile.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RevisionFile.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RevisionFile.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RevisionFile = _builder.build()
+    internal fun _build(): com.easylab.v1.RevisionFile = _builder.build()
 
     /**
      * `string path = 1 [json_name = "path"];`
@@ -81,6 +81,6 @@ public object RevisionFileKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RevisionFile.copy(block: `easylab.v1`.RevisionFileKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevisionFile =
-  `easylab.v1`.RevisionFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RevisionFile.copy(block: `com.easylab.v1`.RevisionFileKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevisionFile =
+  `com.easylab.v1`.RevisionFileKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

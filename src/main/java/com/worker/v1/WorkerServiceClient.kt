@@ -2,7 +2,7 @@
 //
 // Source: worker/v1/worker.proto
 //
-package worker.v1
+package com.worker.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -14,132 +14,144 @@ import com.connectrpc.StreamType
 public class WorkerServiceClient(
   private val client: ProtocolClientInterface,
 ) : WorkerServiceClientInterface {
-  override suspend fun info(request: Worker.InfoRequest, headers: Headers): ResponseMessage<Worker.InfoResponse> = client.unary(
+  override suspend fun info(request: InfoRequest, headers: Headers): ResponseMessage<InfoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/Info",
-      worker.v1.Worker.InfoRequest::class,
-      worker.v1.Worker.InfoResponse::class,
+      com.worker.v1.InfoRequest::class,
+      com.worker.v1.InfoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun execute(request: Worker.ExecuteRequest, headers: Headers): ResponseMessage<Worker.ExecuteResponse> = client.unary(
+  override suspend fun execute(request: ExecuteRequest, headers: Headers): ResponseMessage<ExecuteResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/Execute",
-      worker.v1.Worker.ExecuteRequest::class,
-      worker.v1.Worker.ExecuteResponse::class,
+      com.worker.v1.ExecuteRequest::class,
+      com.worker.v1.ExecuteResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listJobs(request: Worker.ListJobsRequest, headers: Headers): ResponseMessage<Worker.ListJobsResponse> = client.unary(
+  override suspend fun listJobs(request: ListJobsRequest, headers: Headers): ResponseMessage<ListJobsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/ListJobs",
-      worker.v1.Worker.ListJobsRequest::class,
-      worker.v1.Worker.ListJobsResponse::class,
+      com.worker.v1.ListJobsRequest::class,
+      com.worker.v1.ListJobsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun watchJob(headers: Headers): ServerOnlyStreamInterface<Worker.WatchJobRequest, Worker.WatchJobResponse> = client.serverStream(
+  override suspend fun watchJob(headers: Headers): ServerOnlyStreamInterface<WatchJobRequest, WatchJobResponse> = client.serverStream(
     headers,
     MethodSpec(
     "worker.v1.WorkerService/WatchJob",
-      worker.v1.Worker.WatchJobRequest::class,
-      worker.v1.Worker.WatchJobResponse::class,
+      com.worker.v1.WatchJobRequest::class,
+      com.worker.v1.WatchJobResponse::class,
       StreamType.SERVER,
     ),
   )
 
 
-  override suspend fun jobOutput(request: Worker.JobOutputRequest, headers: Headers): ResponseMessage<Worker.JobOutputResponse> = client.unary(
+  override suspend fun jobOutput(request: JobOutputRequest, headers: Headers): ResponseMessage<JobOutputResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/JobOutput",
-      worker.v1.Worker.JobOutputRequest::class,
-      worker.v1.Worker.JobOutputResponse::class,
+      com.worker.v1.JobOutputRequest::class,
+      com.worker.v1.JobOutputResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun jobWait(request: Worker.JobWaitRequest, headers: Headers): ResponseMessage<Worker.JobWaitResponse> = client.unary(
+  override suspend fun jobWait(request: JobWaitRequest, headers: Headers): ResponseMessage<JobWaitResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/JobWait",
-      worker.v1.Worker.JobWaitRequest::class,
-      worker.v1.Worker.JobWaitResponse::class,
+      com.worker.v1.JobWaitRequest::class,
+      com.worker.v1.JobWaitResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun jobStdin(request: Worker.JobStdinRequest, headers: Headers): ResponseMessage<Worker.JobStdinResponse> = client.unary(
+  override suspend fun jobStdin(request: JobStdinRequest, headers: Headers): ResponseMessage<JobStdinResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/JobStdin",
-      worker.v1.Worker.JobStdinRequest::class,
-      worker.v1.Worker.JobStdinResponse::class,
+      com.worker.v1.JobStdinRequest::class,
+      com.worker.v1.JobStdinResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun jobKill(request: Worker.JobKillRequest, headers: Headers): ResponseMessage<Worker.JobKillResponse> = client.unary(
+  override suspend fun jobKill(request: JobKillRequest, headers: Headers): ResponseMessage<JobKillResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/JobKill",
-      worker.v1.Worker.JobKillRequest::class,
-      worker.v1.Worker.JobKillResponse::class,
+      com.worker.v1.JobKillRequest::class,
+      com.worker.v1.JobKillResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileRead(request: Worker.FileReadRequest, headers: Headers): ResponseMessage<Worker.FileReadResponse> = client.unary(
+  override suspend fun fileRead(request: FileReadRequest, headers: Headers): ResponseMessage<FileReadResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/FileRead",
-      worker.v1.Worker.FileReadRequest::class,
-      worker.v1.Worker.FileReadResponse::class,
+      com.worker.v1.FileReadRequest::class,
+      com.worker.v1.FileReadResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileWrite(request: Worker.FileWriteRequest, headers: Headers): ResponseMessage<Worker.FileWriteResponse> = client.unary(
+  override suspend fun fileWrite(request: FileWriteRequest, headers: Headers): ResponseMessage<FileWriteResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/FileWrite",
-      worker.v1.Worker.FileWriteRequest::class,
-      worker.v1.Worker.FileWriteResponse::class,
+      com.worker.v1.FileWriteRequest::class,
+      com.worker.v1.FileWriteResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun fileList(request: Worker.FileListRequest, headers: Headers): ResponseMessage<Worker.FileListResponse> = client.unary(
+  override suspend fun fileList(request: FileListRequest, headers: Headers): ResponseMessage<FileListResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "worker.v1.WorkerService/FileList",
-      worker.v1.Worker.FileListRequest::class,
-      worker.v1.Worker.FileListResponse::class,
+      com.worker.v1.FileListRequest::class,
+      com.worker.v1.FileListResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun syncFolder(request: SyncFolderRequest, headers: Headers): ResponseMessage<SyncFolderResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "worker.v1.WorkerService/SyncFolder",
+      com.worker.v1.SyncFolderRequest::class,
+      com.worker.v1.SyncFolderResponse::class,
       StreamType.UNARY,
     ),
   )

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializearchiveRequest")
-public inline fun archiveRequest(block: easylab.v1.ArchiveRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ArchiveRequest =
-  easylab.v1.ArchiveRequestKt.Dsl._create(easylab.v1.Easylab.ArchiveRequest.newBuilder()).apply { block() }._build()
+public inline fun archiveRequest(block: com.easylab.v1.ArchiveRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ArchiveRequest =
+  com.easylab.v1.ArchiveRequestKt.Dsl._create(com.easylab.v1.ArchiveRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ArchiveRequest`
  */
@@ -17,17 +17,17 @@ public object ArchiveRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ArchiveRequest.Builder
+    private val _builder: com.easylab.v1.ArchiveRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ArchiveRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ArchiveRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ArchiveRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ArchiveRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -81,6 +81,6 @@ public object ArchiveRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ArchiveRequest.copy(block: `easylab.v1`.ArchiveRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ArchiveRequest =
-  `easylab.v1`.ArchiveRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ArchiveRequest.copy(block: `com.easylab.v1`.ArchiveRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ArchiveRequest =
+  `com.easylab.v1`.ArchiveRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

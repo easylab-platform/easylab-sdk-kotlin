@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializepreset")
-public inline fun preset(block: agent.v1.PresetKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Preset =
-  agent.v1.PresetKt.Dsl._create(agent.v1.Agent.Preset.newBuilder()).apply { block() }._build()
+public inline fun preset(block: com.agent.v1.PresetKt.Dsl.() -> kotlin.Unit): com.agent.v1.Preset =
+  com.agent.v1.PresetKt.Dsl._create(com.agent.v1.Preset.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Preset row.
@@ -21,17 +21,17 @@ public object PresetKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.Preset.Builder
+    private val _builder: com.agent.v1.Preset.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.Preset.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.Preset.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.Preset = _builder.build()
+    internal fun _build(): com.agent.v1.Preset = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -189,6 +189,6 @@ public object PresetKt {
     }
   }
 }
-public inline fun agent.v1.Agent.Preset.copy(block: `agent.v1`.PresetKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.Preset =
-  `agent.v1`.PresetKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.Preset.copy(block: `com.agent.v1`.PresetKt.Dsl.() -> kotlin.Unit): com.agent.v1.Preset =
+  `com.agent.v1`.PresetKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

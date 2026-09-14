@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializewriteFilesRequest")
-public inline fun writeFilesRequest(block: easylab.v1.WriteFilesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.WriteFilesRequest =
-  easylab.v1.WriteFilesRequestKt.Dsl._create(easylab.v1.Easylab.WriteFilesRequest.newBuilder()).apply { block() }._build()
+public inline fun writeFilesRequest(block: com.easylab.v1.WriteFilesRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.WriteFilesRequest =
+  com.easylab.v1.WriteFilesRequestKt.Dsl._create(com.easylab.v1.WriteFilesRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * WriteFiles commits one or more file changes onto a branch in a single
@@ -22,17 +22,17 @@ public object WriteFilesRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.WriteFilesRequest.Builder
+    private val _builder: com.easylab.v1.WriteFilesRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.WriteFilesRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.WriteFilesRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.WriteFilesRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.WriteFilesRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -111,7 +111,7 @@ public object WriteFilesRequestKt {
     /**
      * `repeated .easylab.v1.FileChange changes = 5 [json_name = "changes"];`
      */
-     public val changes: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>
+     public val changes: com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.changesList
@@ -122,7 +122,7 @@ public object WriteFilesRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addChanges")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>.add(value: easylab.v1.Easylab.FileChange) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>.add(value: com.easylab.v1.FileChange) {
       _builder.addChanges(value)
     }
     /**
@@ -132,7 +132,7 @@ public object WriteFilesRequestKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignChanges")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>.plusAssign(value: easylab.v1.Easylab.FileChange) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>.plusAssign(value: com.easylab.v1.FileChange) {
       add(value)
     }
     /**
@@ -141,7 +141,7 @@ public object WriteFilesRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllChanges")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.FileChange>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.FileChange>) {
       _builder.addAllChanges(values)
     }
     /**
@@ -151,7 +151,7 @@ public object WriteFilesRequestKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllChanges")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.FileChange>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.FileChange>) {
       addAll(values)
     }
     /**
@@ -161,7 +161,7 @@ public object WriteFilesRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setChanges")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.FileChange) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>.set(index: kotlin.Int, value: com.easylab.v1.FileChange) {
       _builder.setChanges(index, value)
     }
     /**
@@ -169,7 +169,7 @@ public object WriteFilesRequestKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearChanges")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.FileChange, ChangesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.FileChange, ChangesProxy>.clear() {
       _builder.clearChanges()
     }
 
@@ -191,6 +191,6 @@ public object WriteFilesRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.WriteFilesRequest.copy(block: `easylab.v1`.WriteFilesRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.WriteFilesRequest =
-  `easylab.v1`.WriteFilesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.WriteFilesRequest.copy(block: `com.easylab.v1`.WriteFilesRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.WriteFilesRequest =
+  `com.easylab.v1`.WriteFilesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

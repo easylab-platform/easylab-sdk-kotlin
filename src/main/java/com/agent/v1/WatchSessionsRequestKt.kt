@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializewatchSessionsRequest")
-public inline fun watchSessionsRequest(block: agent.v1.WatchSessionsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionsRequest =
-  agent.v1.WatchSessionsRequestKt.Dsl._create(agent.v1.Agent.WatchSessionsRequest.newBuilder()).apply { block() }._build()
+public inline fun watchSessionsRequest(block: com.agent.v1.WatchSessionsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.WatchSessionsRequest =
+  com.agent.v1.WatchSessionsRequestKt.Dsl._create(com.agent.v1.WatchSessionsRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * WatchSessions streams the session list in real time: an initial full
@@ -23,19 +23,19 @@ public object WatchSessionsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.WatchSessionsRequest.Builder
+    private val _builder: com.agent.v1.WatchSessionsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.WatchSessionsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.WatchSessionsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.WatchSessionsRequest = _builder.build()
+    internal fun _build(): com.agent.v1.WatchSessionsRequest = _builder.build()
   }
 }
-public inline fun agent.v1.Agent.WatchSessionsRequest.copy(block: `agent.v1`.WatchSessionsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionsRequest =
-  `agent.v1`.WatchSessionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.WatchSessionsRequest.copy(block: `com.agent.v1`.WatchSessionsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.WatchSessionsRequest =
+  `com.agent.v1`.WatchSessionsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializefileReadRequest")
-public inline fun fileReadRequest(block: worker.v1.FileReadRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileReadRequest =
-  worker.v1.FileReadRequestKt.Dsl._create(worker.v1.Worker.FileReadRequest.newBuilder()).apply { block() }._build()
+public inline fun fileReadRequest(block: com.worker.v1.FileReadRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileReadRequest =
+  com.worker.v1.FileReadRequestKt.Dsl._create(com.worker.v1.FileReadRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.FileReadRequest`
  */
@@ -17,17 +17,17 @@ public object FileReadRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.FileReadRequest.Builder
+    private val _builder: com.worker.v1.FileReadRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.FileReadRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.FileReadRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.FileReadRequest = _builder.build()
+    internal fun _build(): com.worker.v1.FileReadRequest = _builder.build()
 
     /**
      * `string path = 1 [json_name = "path"];`
@@ -47,6 +47,6 @@ public object FileReadRequestKt {
     }
   }
 }
-public inline fun worker.v1.Worker.FileReadRequest.copy(block: `worker.v1`.FileReadRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.FileReadRequest =
-  `worker.v1`.FileReadRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.FileReadRequest.copy(block: `com.worker.v1`.FileReadRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.FileReadRequest =
+  `com.worker.v1`.FileReadRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

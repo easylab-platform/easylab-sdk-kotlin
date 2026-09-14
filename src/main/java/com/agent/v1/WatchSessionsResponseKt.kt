@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializewatchSessionsResponse")
-public inline fun watchSessionsResponse(block: agent.v1.WatchSessionsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionsResponse =
-  agent.v1.WatchSessionsResponseKt.Dsl._create(agent.v1.Agent.WatchSessionsResponse.newBuilder()).apply { block() }._build()
+public inline fun watchSessionsResponse(block: com.agent.v1.WatchSessionsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.WatchSessionsResponse =
+  com.agent.v1.WatchSessionsResponseKt.Dsl._create(com.agent.v1.WatchSessionsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.WatchSessionsResponse`
  */
@@ -17,17 +17,17 @@ public object WatchSessionsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.WatchSessionsResponse.Builder
+    private val _builder: com.agent.v1.WatchSessionsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.WatchSessionsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.WatchSessionsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.WatchSessionsResponse = _builder.build()
+    internal fun _build(): com.agent.v1.WatchSessionsResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -42,7 +42,7 @@ public object WatchSessionsResponseKt {
      *
      * `repeated .agent.v1.Session upserts = 1 [json_name = "upserts"];`
      */
-     public val upserts: com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>
+     public val upserts: com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.upsertsList
@@ -57,7 +57,7 @@ public object WatchSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addUpserts")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>.add(value: agent.v1.Agent.Session) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>.add(value: com.agent.v1.Session) {
       _builder.addUpserts(value)
     }
     /**
@@ -71,7 +71,7 @@ public object WatchSessionsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignUpserts")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>.plusAssign(value: agent.v1.Agent.Session) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>.plusAssign(value: com.agent.v1.Session) {
       add(value)
     }
     /**
@@ -84,7 +84,7 @@ public object WatchSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllUpserts")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.Session>) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.Session>) {
       _builder.addAllUpserts(values)
     }
     /**
@@ -98,7 +98,7 @@ public object WatchSessionsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllUpserts")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.Session>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.Session>) {
       addAll(values)
     }
     /**
@@ -112,7 +112,7 @@ public object WatchSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setUpserts")
-    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.Session) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>.set(index: kotlin.Int, value: com.agent.v1.Session) {
       _builder.setUpserts(index, value)
     }
     /**
@@ -124,7 +124,7 @@ public object WatchSessionsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearUpserts")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Session, UpsertsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.Session, UpsertsProxy>.clear() {
       _builder.clearUpserts()
     }
 
@@ -254,6 +254,6 @@ public object WatchSessionsResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.WatchSessionsResponse.copy(block: `agent.v1`.WatchSessionsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.WatchSessionsResponse =
-  `agent.v1`.WatchSessionsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.WatchSessionsResponse.copy(block: `com.agent.v1`.WatchSessionsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.WatchSessionsResponse =
+  `com.agent.v1`.WatchSessionsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

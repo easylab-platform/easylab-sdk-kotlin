@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializeexecuteRequest")
-public inline fun executeRequest(block: worker.v1.ExecuteRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ExecuteRequest =
-  worker.v1.ExecuteRequestKt.Dsl._create(worker.v1.Worker.ExecuteRequest.newBuilder()).apply { block() }._build()
+public inline fun executeRequest(block: com.worker.v1.ExecuteRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.ExecuteRequest =
+  com.worker.v1.ExecuteRequestKt.Dsl._create(com.worker.v1.ExecuteRequest.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Execute always registers a job (no fast/slow split, same as legacy worker).
@@ -21,17 +21,17 @@ public object ExecuteRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.ExecuteRequest.Builder
+    private val _builder: com.worker.v1.ExecuteRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.ExecuteRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.ExecuteRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.ExecuteRequest = _builder.build()
+    internal fun _build(): com.worker.v1.ExecuteRequest = _builder.build()
 
     /**
      * `string command = 1 [json_name = "command"];`
@@ -137,6 +137,6 @@ public object ExecuteRequestKt {
        }
   }
 }
-public inline fun worker.v1.Worker.ExecuteRequest.copy(block: `worker.v1`.ExecuteRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.ExecuteRequest =
-  `worker.v1`.ExecuteRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.ExecuteRequest.copy(block: `com.worker.v1`.ExecuteRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.ExecuteRequest =
+  `com.worker.v1`.ExecuteRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

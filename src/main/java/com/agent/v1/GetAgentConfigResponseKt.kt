@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetAgentConfigResponse")
-public inline fun getAgentConfigResponse(block: agent.v1.GetAgentConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetAgentConfigResponse =
-  agent.v1.GetAgentConfigResponseKt.Dsl._create(agent.v1.Agent.GetAgentConfigResponse.newBuilder()).apply { block() }._build()
+public inline fun getAgentConfigResponse(block: com.agent.v1.GetAgentConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetAgentConfigResponse =
+  com.agent.v1.GetAgentConfigResponseKt.Dsl._create(com.agent.v1.GetAgentConfigResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetAgentConfigResponse`
  */
@@ -17,17 +17,17 @@ public object GetAgentConfigResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.GetAgentConfigResponse.Builder
+    private val _builder: com.agent.v1.GetAgentConfigResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.GetAgentConfigResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.GetAgentConfigResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.GetAgentConfigResponse = _builder.build()
+    internal fun _build(): com.agent.v1.GetAgentConfigResponse = _builder.build()
 
     /**
      * `.google.protobuf.Struct config = 1 [json_name = "config"];`
@@ -57,9 +57,9 @@ public object GetAgentConfigResponseKt {
       get() = _builder.configOrNull
   }
 }
-public inline fun agent.v1.Agent.GetAgentConfigResponse.copy(block: `agent.v1`.GetAgentConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetAgentConfigResponse =
-  `agent.v1`.GetAgentConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.GetAgentConfigResponse.copy(block: `com.agent.v1`.GetAgentConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetAgentConfigResponse =
+  `com.agent.v1`.GetAgentConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val agent.v1.Agent.GetAgentConfigResponseOrBuilder.configOrNull: com.google.protobuf.Struct?
+public val com.agent.v1.GetAgentConfigResponseOrBuilder.configOrNull: com.google.protobuf.Struct?
   get() = if (hasConfig()) getConfig() else null
 

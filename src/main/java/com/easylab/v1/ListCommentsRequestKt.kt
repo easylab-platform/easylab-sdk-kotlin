@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistCommentsRequest")
-public inline fun listCommentsRequest(block: easylab.v1.ListCommentsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListCommentsRequest =
-  easylab.v1.ListCommentsRequestKt.Dsl._create(easylab.v1.Easylab.ListCommentsRequest.newBuilder()).apply { block() }._build()
+public inline fun listCommentsRequest(block: com.easylab.v1.ListCommentsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListCommentsRequest =
+  com.easylab.v1.ListCommentsRequestKt.Dsl._create(com.easylab.v1.ListCommentsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListCommentsRequest`
  */
@@ -17,17 +17,17 @@ public object ListCommentsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListCommentsRequest.Builder
+    private val _builder: com.easylab.v1.ListCommentsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListCommentsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListCommentsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListCommentsRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ListCommentsRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -81,6 +81,6 @@ public object ListCommentsRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListCommentsRequest.copy(block: `easylab.v1`.ListCommentsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListCommentsRequest =
-  `easylab.v1`.ListCommentsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListCommentsRequest.copy(block: `com.easylab.v1`.ListCommentsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListCommentsRequest =
+  `com.easylab.v1`.ListCommentsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

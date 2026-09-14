@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeresolveResponse")
-public inline fun resolveResponse(block: easylab.v1.ResolveResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ResolveResponse =
-  easylab.v1.ResolveResponseKt.Dsl._create(easylab.v1.Easylab.ResolveResponse.newBuilder()).apply { block() }._build()
+public inline fun resolveResponse(block: com.easylab.v1.ResolveResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ResolveResponse =
+  com.easylab.v1.ResolveResponseKt.Dsl._create(com.easylab.v1.ResolveResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ResolveResponse`
  */
@@ -17,17 +17,17 @@ public object ResolveResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ResolveResponse.Builder
+    private val _builder: com.easylab.v1.ResolveResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ResolveResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ResolveResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ResolveResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.ResolveResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -98,6 +98,6 @@ public object ResolveResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ResolveResponse.copy(block: `easylab.v1`.ResolveResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ResolveResponse =
-  `easylab.v1`.ResolveResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ResolveResponse.copy(block: `com.easylab.v1`.ResolveResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ResolveResponse =
+  `com.easylab.v1`.ResolveResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

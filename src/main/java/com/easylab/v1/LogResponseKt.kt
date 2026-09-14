@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelogResponse")
-public inline fun logResponse(block: easylab.v1.LogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.LogResponse =
-  easylab.v1.LogResponseKt.Dsl._create(easylab.v1.Easylab.LogResponse.newBuilder()).apply { block() }._build()
+public inline fun logResponse(block: com.easylab.v1.LogResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.LogResponse =
+  com.easylab.v1.LogResponseKt.Dsl._create(com.easylab.v1.LogResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.LogResponse`
  */
@@ -17,17 +17,17 @@ public object LogResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.LogResponse.Builder
+    private val _builder: com.easylab.v1.LogResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.LogResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.LogResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.LogResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.LogResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -38,7 +38,7 @@ public object LogResponseKt {
     /**
      * `repeated .easylab.v1.CommitInfo commits = 1 [json_name = "commits"];`
      */
-     public val commits: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>
+     public val commits: com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.commitsList
@@ -49,7 +49,7 @@ public object LogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addCommits")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>.add(value: easylab.v1.Easylab.CommitInfo) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>.add(value: com.easylab.v1.CommitInfo) {
       _builder.addCommits(value)
     }
     /**
@@ -59,7 +59,7 @@ public object LogResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignCommits")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>.plusAssign(value: easylab.v1.Easylab.CommitInfo) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>.plusAssign(value: com.easylab.v1.CommitInfo) {
       add(value)
     }
     /**
@@ -68,7 +68,7 @@ public object LogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllCommits")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.CommitInfo>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.CommitInfo>) {
       _builder.addAllCommits(values)
     }
     /**
@@ -78,7 +78,7 @@ public object LogResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllCommits")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.CommitInfo>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.CommitInfo>) {
       addAll(values)
     }
     /**
@@ -88,7 +88,7 @@ public object LogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setCommits")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.CommitInfo) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>.set(index: kotlin.Int, value: com.easylab.v1.CommitInfo) {
       _builder.setCommits(index, value)
     }
     /**
@@ -96,11 +96,11 @@ public object LogResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearCommits")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.CommitInfo, CommitsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.CommitInfo, CommitsProxy>.clear() {
       _builder.clearCommits()
     }
   }
 }
-public inline fun easylab.v1.Easylab.LogResponse.copy(block: `easylab.v1`.LogResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.LogResponse =
-  `easylab.v1`.LogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.LogResponse.copy(block: `com.easylab.v1`.LogResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.LogResponse =
+  `com.easylab.v1`.LogResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

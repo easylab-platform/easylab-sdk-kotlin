@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetFileResponse")
-public inline fun getFileResponse(block: agent.v1.GetFileResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileResponse =
-  agent.v1.GetFileResponseKt.Dsl._create(agent.v1.Agent.GetFileResponse.newBuilder()).apply { block() }._build()
+public inline fun getFileResponse(block: com.agent.v1.GetFileResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetFileResponse =
+  com.agent.v1.GetFileResponseKt.Dsl._create(com.agent.v1.GetFileResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetFileResponse`
  */
@@ -17,17 +17,17 @@ public object GetFileResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.GetFileResponse.Builder
+    private val _builder: com.agent.v1.GetFileResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.GetFileResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.GetFileResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.GetFileResponse = _builder.build()
+    internal fun _build(): com.agent.v1.GetFileResponse = _builder.build()
 
     /**
      * `bytes data = 1 [json_name = "data"];`
@@ -81,6 +81,6 @@ public object GetFileResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.GetFileResponse.copy(block: `agent.v1`.GetFileResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetFileResponse =
-  `agent.v1`.GetFileResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.GetFileResponse.copy(block: `com.agent.v1`.GetFileResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetFileResponse =
+  `com.agent.v1`.GetFileResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

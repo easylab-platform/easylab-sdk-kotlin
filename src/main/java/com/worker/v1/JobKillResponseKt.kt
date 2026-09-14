@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializejobKillResponse")
-public inline fun jobKillResponse(block: worker.v1.JobKillResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobKillResponse =
-  worker.v1.JobKillResponseKt.Dsl._create(worker.v1.Worker.JobKillResponse.newBuilder()).apply { block() }._build()
+public inline fun jobKillResponse(block: com.worker.v1.JobKillResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobKillResponse =
+  com.worker.v1.JobKillResponseKt.Dsl._create(com.worker.v1.JobKillResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.JobKillResponse`
  */
@@ -17,17 +17,17 @@ public object JobKillResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.JobKillResponse.Builder
+    private val _builder: com.worker.v1.JobKillResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.JobKillResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.JobKillResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.JobKillResponse = _builder.build()
+    internal fun _build(): com.worker.v1.JobKillResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object JobKillResponseKt {
     }
   }
 }
-public inline fun worker.v1.Worker.JobKillResponse.copy(block: `worker.v1`.JobKillResponseKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobKillResponse =
-  `worker.v1`.JobKillResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.JobKillResponse.copy(block: `com.worker.v1`.JobKillResponseKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobKillResponse =
+  `com.worker.v1`.JobKillResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

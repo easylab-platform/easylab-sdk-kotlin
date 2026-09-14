@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializediscoverGatewayModelsResponse")
-public inline fun discoverGatewayModelsResponse(block: agent.v1.DiscoverGatewayModelsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DiscoverGatewayModelsResponse =
-  agent.v1.DiscoverGatewayModelsResponseKt.Dsl._create(agent.v1.Agent.DiscoverGatewayModelsResponse.newBuilder()).apply { block() }._build()
+public inline fun discoverGatewayModelsResponse(block: com.agent.v1.DiscoverGatewayModelsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.DiscoverGatewayModelsResponse =
+  com.agent.v1.DiscoverGatewayModelsResponseKt.Dsl._create(com.agent.v1.DiscoverGatewayModelsResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.DiscoverGatewayModelsResponse`
  */
@@ -17,17 +17,17 @@ public object DiscoverGatewayModelsResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.DiscoverGatewayModelsResponse.Builder
+    private val _builder: com.agent.v1.DiscoverGatewayModelsResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.DiscoverGatewayModelsResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.DiscoverGatewayModelsResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.DiscoverGatewayModelsResponse = _builder.build()
+    internal fun _build(): com.agent.v1.DiscoverGatewayModelsResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -72,7 +72,7 @@ public object DiscoverGatewayModelsResponseKt {
     /**
      * `repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];`
      */
-     public val models: com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>
+     public val models: com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.modelsList
@@ -83,7 +83,7 @@ public object DiscoverGatewayModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addModels")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.add(value: agent.v1.Agent.ProviderModel) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>.add(value: com.agent.v1.ProviderModel) {
       _builder.addModels(value)
     }
     /**
@@ -93,7 +93,7 @@ public object DiscoverGatewayModelsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignModels")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.plusAssign(value: agent.v1.Agent.ProviderModel) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>.plusAssign(value: com.agent.v1.ProviderModel) {
       add(value)
     }
     /**
@@ -102,7 +102,7 @@ public object DiscoverGatewayModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllModels")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.addAll(values: kotlin.collections.Iterable<agent.v1.Agent.ProviderModel>) {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>.addAll(values: kotlin.collections.Iterable<com.agent.v1.ProviderModel>) {
       _builder.addAllModels(values)
     }
     /**
@@ -112,7 +112,7 @@ public object DiscoverGatewayModelsResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllModels")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.plusAssign(values: kotlin.collections.Iterable<agent.v1.Agent.ProviderModel>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>.plusAssign(values: kotlin.collections.Iterable<com.agent.v1.ProviderModel>) {
       addAll(values)
     }
     /**
@@ -122,7 +122,7 @@ public object DiscoverGatewayModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setModels")
-    public operator fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.set(index: kotlin.Int, value: agent.v1.Agent.ProviderModel) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>.set(index: kotlin.Int, value: com.agent.v1.ProviderModel) {
       _builder.setModels(index, value)
     }
     /**
@@ -130,11 +130,11 @@ public object DiscoverGatewayModelsResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearModels")
-    public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.ProviderModel, ModelsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.agent.v1.ProviderModel, ModelsProxy>.clear() {
       _builder.clearModels()
     }
   }
 }
-public inline fun agent.v1.Agent.DiscoverGatewayModelsResponse.copy(block: `agent.v1`.DiscoverGatewayModelsResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.DiscoverGatewayModelsResponse =
-  `agent.v1`.DiscoverGatewayModelsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.DiscoverGatewayModelsResponse.copy(block: `com.agent.v1`.DiscoverGatewayModelsResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.DiscoverGatewayModelsResponse =
+  `com.agent.v1`.DiscoverGatewayModelsResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

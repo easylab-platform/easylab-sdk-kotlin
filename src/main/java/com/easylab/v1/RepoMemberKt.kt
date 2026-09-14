@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerepoMember")
-public inline fun repoMember(block: easylab.v1.RepoMemberKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RepoMember =
-  easylab.v1.RepoMemberKt.Dsl._create(easylab.v1.Easylab.RepoMember.newBuilder()).apply { block() }._build()
+public inline fun repoMember(block: com.easylab.v1.RepoMemberKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RepoMember =
+  com.easylab.v1.RepoMemberKt.Dsl._create(com.easylab.v1.RepoMember.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Repo permission roles (a user IS the ownership boundary; owner comes from
@@ -22,17 +22,17 @@ public object RepoMemberKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RepoMember.Builder
+    private val _builder: com.easylab.v1.RepoMember.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RepoMember.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RepoMember.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RepoMember = _builder.build()
+    internal fun _build(): com.easylab.v1.RepoMember = _builder.build()
 
     /**
      * `string username = 1 [json_name = "username"];`
@@ -77,6 +77,6 @@ public object RepoMemberKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RepoMember.copy(block: `easylab.v1`.RepoMemberKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RepoMember =
-  `easylab.v1`.RepoMemberKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RepoMember.copy(block: `com.easylab.v1`.RepoMemberKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RepoMember =
+  `com.easylab.v1`.RepoMemberKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

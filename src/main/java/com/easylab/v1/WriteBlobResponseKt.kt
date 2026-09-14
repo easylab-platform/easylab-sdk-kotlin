@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializewriteBlobResponse")
-public inline fun writeBlobResponse(block: easylab.v1.WriteBlobResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.WriteBlobResponse =
-  easylab.v1.WriteBlobResponseKt.Dsl._create(easylab.v1.Easylab.WriteBlobResponse.newBuilder()).apply { block() }._build()
+public inline fun writeBlobResponse(block: com.easylab.v1.WriteBlobResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.WriteBlobResponse =
+  com.easylab.v1.WriteBlobResponseKt.Dsl._create(com.easylab.v1.WriteBlobResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.WriteBlobResponse`
  */
@@ -17,17 +17,17 @@ public object WriteBlobResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.WriteBlobResponse.Builder
+    private val _builder: com.easylab.v1.WriteBlobResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.WriteBlobResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.WriteBlobResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.WriteBlobResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.WriteBlobResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -64,6 +64,6 @@ public object WriteBlobResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.WriteBlobResponse.copy(block: `easylab.v1`.WriteBlobResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.WriteBlobResponse =
-  `easylab.v1`.WriteBlobResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.WriteBlobResponse.copy(block: `com.easylab.v1`.WriteBlobResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.WriteBlobResponse =
+  `com.easylab.v1`.WriteBlobResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

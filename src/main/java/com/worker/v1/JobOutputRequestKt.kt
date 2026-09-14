@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package worker.v1;
+package com.worker.v1;
 
 @kotlin.jvm.JvmName("-initializejobOutputRequest")
-public inline fun jobOutputRequest(block: worker.v1.JobOutputRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobOutputRequest =
-  worker.v1.JobOutputRequestKt.Dsl._create(worker.v1.Worker.JobOutputRequest.newBuilder()).apply { block() }._build()
+public inline fun jobOutputRequest(block: com.worker.v1.JobOutputRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobOutputRequest =
+  com.worker.v1.JobOutputRequestKt.Dsl._create(com.worker.v1.JobOutputRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `worker.v1.JobOutputRequest`
  */
@@ -17,17 +17,17 @@ public object JobOutputRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: worker.v1.Worker.JobOutputRequest.Builder
+    private val _builder: com.worker.v1.JobOutputRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: worker.v1.Worker.JobOutputRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.worker.v1.JobOutputRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): worker.v1.Worker.JobOutputRequest = _builder.build()
+    internal fun _build(): com.worker.v1.JobOutputRequest = _builder.build()
 
     /**
      * `string job_id = 1 [json_name = "jobId"];`
@@ -122,6 +122,6 @@ public object JobOutputRequestKt {
     }
   }
 }
-public inline fun worker.v1.Worker.JobOutputRequest.copy(block: `worker.v1`.JobOutputRequestKt.Dsl.() -> kotlin.Unit): worker.v1.Worker.JobOutputRequest =
-  `worker.v1`.JobOutputRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.worker.v1.JobOutputRequest.copy(block: `com.worker.v1`.JobOutputRequestKt.Dsl.() -> kotlin.Unit): com.worker.v1.JobOutputRequest =
+  `com.worker.v1`.JobOutputRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializedeletePackageVersionRequest")
-public inline fun deletePackageVersionRequest(block: easylab.v1.DeletePackageVersionRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeletePackageVersionRequest =
-  easylab.v1.DeletePackageVersionRequestKt.Dsl._create(easylab.v1.Easylab.DeletePackageVersionRequest.newBuilder()).apply { block() }._build()
+public inline fun deletePackageVersionRequest(block: com.easylab.v1.DeletePackageVersionRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeletePackageVersionRequest =
+  com.easylab.v1.DeletePackageVersionRequestKt.Dsl._create(com.easylab.v1.DeletePackageVersionRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.DeletePackageVersionRequest`
  */
@@ -17,17 +17,17 @@ public object DeletePackageVersionRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.DeletePackageVersionRequest.Builder
+    private val _builder: com.easylab.v1.DeletePackageVersionRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.DeletePackageVersionRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.DeletePackageVersionRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.DeletePackageVersionRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.DeletePackageVersionRequest = _builder.build()
 
     /**
      * `string type = 1 [json_name = "type"];`
@@ -81,6 +81,6 @@ public object DeletePackageVersionRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.DeletePackageVersionRequest.copy(block: `easylab.v1`.DeletePackageVersionRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.DeletePackageVersionRequest =
-  `easylab.v1`.DeletePackageVersionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.DeletePackageVersionRequest.copy(block: `com.easylab.v1`.DeletePackageVersionRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.DeletePackageVersionRequest =
+  `com.easylab.v1`.DeletePackageVersionRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

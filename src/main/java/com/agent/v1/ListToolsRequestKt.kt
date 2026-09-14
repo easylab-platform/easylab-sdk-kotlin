@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistToolsRequest")
-public inline fun listToolsRequest(block: agent.v1.ListToolsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListToolsRequest =
-  agent.v1.ListToolsRequestKt.Dsl._create(agent.v1.Agent.ListToolsRequest.newBuilder()).apply { block() }._build()
+public inline fun listToolsRequest(block: com.agent.v1.ListToolsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListToolsRequest =
+  com.agent.v1.ListToolsRequestKt.Dsl._create(com.agent.v1.ListToolsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListToolsRequest`
  */
@@ -17,17 +17,17 @@ public object ListToolsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ListToolsRequest.Builder
+    private val _builder: com.agent.v1.ListToolsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ListToolsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ListToolsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ListToolsRequest = _builder.build()
+    internal fun _build(): com.agent.v1.ListToolsRequest = _builder.build()
 
     /**
      * `string locale = 1 [json_name = "locale"];`
@@ -47,6 +47,6 @@ public object ListToolsRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.ListToolsRequest.copy(block: `agent.v1`.ListToolsRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListToolsRequest =
-  `agent.v1`.ListToolsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ListToolsRequest.copy(block: `com.agent.v1`.ListToolsRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListToolsRequest =
+  `com.agent.v1`.ListToolsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

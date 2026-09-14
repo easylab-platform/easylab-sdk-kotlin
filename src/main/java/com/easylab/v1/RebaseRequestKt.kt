@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerebaseRequest")
-public inline fun rebaseRequest(block: easylab.v1.RebaseRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RebaseRequest =
-  easylab.v1.RebaseRequestKt.Dsl._create(easylab.v1.Easylab.RebaseRequest.newBuilder()).apply { block() }._build()
+public inline fun rebaseRequest(block: com.easylab.v1.RebaseRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RebaseRequest =
+  com.easylab.v1.RebaseRequestKt.Dsl._create(com.easylab.v1.RebaseRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RebaseRequest`
  */
@@ -17,17 +17,17 @@ public object RebaseRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RebaseRequest.Builder
+    private val _builder: com.easylab.v1.RebaseRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RebaseRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RebaseRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RebaseRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.RebaseRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -151,6 +151,6 @@ public object RebaseRequestKt {
       _builder.clearNewParents()
     }}
 }
-public inline fun easylab.v1.Easylab.RebaseRequest.copy(block: `easylab.v1`.RebaseRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RebaseRequest =
-  `easylab.v1`.RebaseRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RebaseRequest.copy(block: `com.easylab.v1`.RebaseRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RebaseRequest =
+  `com.easylab.v1`.RebaseRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

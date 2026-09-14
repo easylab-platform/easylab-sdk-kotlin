@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializelistProvidersRequest")
-public inline fun listProvidersRequest(block: agent.v1.ListProvidersRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListProvidersRequest =
-  agent.v1.ListProvidersRequestKt.Dsl._create(agent.v1.Agent.ListProvidersRequest.newBuilder()).apply { block() }._build()
+public inline fun listProvidersRequest(block: com.agent.v1.ListProvidersRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListProvidersRequest =
+  com.agent.v1.ListProvidersRequestKt.Dsl._create(com.agent.v1.ListProvidersRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.ListProvidersRequest`
  */
@@ -17,19 +17,19 @@ public object ListProvidersRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.ListProvidersRequest.Builder
+    private val _builder: com.agent.v1.ListProvidersRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.ListProvidersRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.ListProvidersRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.ListProvidersRequest = _builder.build()
+    internal fun _build(): com.agent.v1.ListProvidersRequest = _builder.build()
   }
 }
-public inline fun agent.v1.Agent.ListProvidersRequest.copy(block: `agent.v1`.ListProvidersRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListProvidersRequest =
-  `agent.v1`.ListProvidersRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.ListProvidersRequest.copy(block: `com.agent.v1`.ListProvidersRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.ListProvidersRequest =
+  `com.agent.v1`.ListProvidersRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

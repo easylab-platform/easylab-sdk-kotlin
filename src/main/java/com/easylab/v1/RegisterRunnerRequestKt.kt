@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializeregisterRunnerRequest")
-public inline fun registerRunnerRequest(block: easylab.v1.RegisterRunnerRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RegisterRunnerRequest =
-  easylab.v1.RegisterRunnerRequestKt.Dsl._create(easylab.v1.Easylab.RegisterRunnerRequest.newBuilder()).apply { block() }._build()
+public inline fun registerRunnerRequest(block: com.easylab.v1.RegisterRunnerRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RegisterRunnerRequest =
+  com.easylab.v1.RegisterRunnerRequestKt.Dsl._create(com.easylab.v1.RegisterRunnerRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RegisterRunnerRequest`
  */
@@ -17,22 +17,22 @@ public object RegisterRunnerRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RegisterRunnerRequest.Builder
+    private val _builder: com.easylab.v1.RegisterRunnerRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RegisterRunnerRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RegisterRunnerRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RegisterRunnerRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.RegisterRunnerRequest = _builder.build()
 
     /**
      * `.easylab.v1.Runner runner = 1 [json_name = "runner"];`
      */
-    public var runner: easylab.v1.Easylab.Runner
+    public var runner: com.easylab.v1.Runner
       @kotlin.jvm.JvmName("getRunner")
         get() = _builder.runner
       @kotlin.jvm.JvmName("setRunner")
@@ -53,13 +53,13 @@ public object RegisterRunnerRequestKt {
       return _builder.hasRunner()
     }
 
-    public val RegisterRunnerRequestKt.Dsl.runnerOrNull: easylab.v1.Easylab.Runner?
+    public val RegisterRunnerRequestKt.Dsl.runnerOrNull: com.easylab.v1.Runner?
       get() = _builder.runnerOrNull
   }
 }
-public inline fun easylab.v1.Easylab.RegisterRunnerRequest.copy(block: `easylab.v1`.RegisterRunnerRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RegisterRunnerRequest =
-  `easylab.v1`.RegisterRunnerRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RegisterRunnerRequest.copy(block: `com.easylab.v1`.RegisterRunnerRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RegisterRunnerRequest =
+  `com.easylab.v1`.RegisterRunnerRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val easylab.v1.Easylab.RegisterRunnerRequestOrBuilder.runnerOrNull: easylab.v1.Easylab.Runner?
+public val com.easylab.v1.RegisterRunnerRequestOrBuilder.runnerOrNull: com.easylab.v1.Runner?
   get() = if (hasRunner()) getRunner() else null
 

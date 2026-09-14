@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesyncRequest")
-public inline fun syncRequest(block: easylab.v1.SyncRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncRequest =
-  easylab.v1.SyncRequestKt.Dsl._create(easylab.v1.Easylab.SyncRequest.newBuilder()).apply { block() }._build()
+public inline fun syncRequest(block: com.easylab.v1.SyncRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SyncRequest =
+  com.easylab.v1.SyncRequestKt.Dsl._create(com.easylab.v1.SyncRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SyncRequest`
  */
@@ -17,17 +17,17 @@ public object SyncRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SyncRequest.Builder
+    private val _builder: com.easylab.v1.SyncRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SyncRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SyncRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SyncRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.SyncRequest = _builder.build()
 
     /**
      * ```
@@ -165,6 +165,6 @@ public object SyncRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SyncRequest.copy(block: `easylab.v1`.SyncRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SyncRequest =
-  `easylab.v1`.SyncRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SyncRequest.copy(block: `com.easylab.v1`.SyncRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SyncRequest =
+  `com.easylab.v1`.SyncRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

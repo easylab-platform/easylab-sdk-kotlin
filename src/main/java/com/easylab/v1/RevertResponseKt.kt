@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerevertResponse")
-public inline fun revertResponse(block: easylab.v1.RevertResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevertResponse =
-  easylab.v1.RevertResponseKt.Dsl._create(easylab.v1.Easylab.RevertResponse.newBuilder()).apply { block() }._build()
+public inline fun revertResponse(block: com.easylab.v1.RevertResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevertResponse =
+  com.easylab.v1.RevertResponseKt.Dsl._create(com.easylab.v1.RevertResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RevertResponse`
  */
@@ -17,17 +17,17 @@ public object RevertResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RevertResponse.Builder
+    private val _builder: com.easylab.v1.RevertResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RevertResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RevertResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RevertResponse = _builder.build()
+    internal fun _build(): com.easylab.v1.RevertResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -98,6 +98,6 @@ public object RevertResponseKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RevertResponse.copy(block: `easylab.v1`.RevertResponseKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RevertResponse =
-  `easylab.v1`.RevertResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RevertResponse.copy(block: `com.easylab.v1`.RevertResponseKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RevertResponse =
+  `com.easylab.v1`.RevertResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

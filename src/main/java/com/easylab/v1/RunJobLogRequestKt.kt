@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializerunJobLogRequest")
-public inline fun runJobLogRequest(block: easylab.v1.RunJobLogRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RunJobLogRequest =
-  easylab.v1.RunJobLogRequestKt.Dsl._create(easylab.v1.Easylab.RunJobLogRequest.newBuilder()).apply { block() }._build()
+public inline fun runJobLogRequest(block: com.easylab.v1.RunJobLogRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RunJobLogRequest =
+  com.easylab.v1.RunJobLogRequestKt.Dsl._create(com.easylab.v1.RunJobLogRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.RunJobLogRequest`
  */
@@ -17,17 +17,17 @@ public object RunJobLogRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.RunJobLogRequest.Builder
+    private val _builder: com.easylab.v1.RunJobLogRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.RunJobLogRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.RunJobLogRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.RunJobLogRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.RunJobLogRequest = _builder.build()
 
     /**
      * `string run_id = 1 [json_name = "runId"];`
@@ -64,6 +64,6 @@ public object RunJobLogRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.RunJobLogRequest.copy(block: `easylab.v1`.RunJobLogRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.RunJobLogRequest =
-  `easylab.v1`.RunJobLogRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.RunJobLogRequest.copy(block: `com.easylab.v1`.RunJobLogRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.RunJobLogRequest =
+  `com.easylab.v1`.RunJobLogRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializesetToolConfigResponse")
-public inline fun setToolConfigResponse(block: agent.v1.SetToolConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetToolConfigResponse =
-  agent.v1.SetToolConfigResponseKt.Dsl._create(agent.v1.Agent.SetToolConfigResponse.newBuilder()).apply { block() }._build()
+public inline fun setToolConfigResponse(block: com.agent.v1.SetToolConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetToolConfigResponse =
+  com.agent.v1.SetToolConfigResponseKt.Dsl._create(com.agent.v1.SetToolConfigResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.SetToolConfigResponse`
  */
@@ -17,17 +17,17 @@ public object SetToolConfigResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.SetToolConfigResponse.Builder
+    private val _builder: com.agent.v1.SetToolConfigResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.SetToolConfigResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.SetToolConfigResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.SetToolConfigResponse = _builder.build()
+    internal fun _build(): com.agent.v1.SetToolConfigResponse = _builder.build()
 
     /**
      * `bool ok = 1 [json_name = "ok"];`
@@ -47,6 +47,6 @@ public object SetToolConfigResponseKt {
     }
   }
 }
-public inline fun agent.v1.Agent.SetToolConfigResponse.copy(block: `agent.v1`.SetToolConfigResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.SetToolConfigResponse =
-  `agent.v1`.SetToolConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.SetToolConfigResponse.copy(block: `com.agent.v1`.SetToolConfigResponseKt.Dsl.() -> kotlin.Unit): com.agent.v1.SetToolConfigResponse =
+  `com.agent.v1`.SetToolConfigResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

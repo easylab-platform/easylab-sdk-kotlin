@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializecreateBranchRequest")
-public inline fun createBranchRequest(block: easylab.v1.CreateBranchRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateBranchRequest =
-  easylab.v1.CreateBranchRequestKt.Dsl._create(easylab.v1.Easylab.CreateBranchRequest.newBuilder()).apply { block() }._build()
+public inline fun createBranchRequest(block: com.easylab.v1.CreateBranchRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateBranchRequest =
+  com.easylab.v1.CreateBranchRequestKt.Dsl._create(com.easylab.v1.CreateBranchRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.CreateBranchRequest`
  */
@@ -17,17 +17,17 @@ public object CreateBranchRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.CreateBranchRequest.Builder
+    private val _builder: com.easylab.v1.CreateBranchRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.CreateBranchRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.CreateBranchRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.CreateBranchRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.CreateBranchRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,6 @@ public object CreateBranchRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.CreateBranchRequest.copy(block: `easylab.v1`.CreateBranchRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.CreateBranchRequest =
-  `easylab.v1`.CreateBranchRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.CreateBranchRequest.copy(block: `com.easylab.v1`.CreateBranchRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.CreateBranchRequest =
+  `com.easylab.v1`.CreateBranchRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

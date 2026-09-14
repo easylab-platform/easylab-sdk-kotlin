@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializereleaseView")
-public inline fun releaseView(block: easylab.v1.ReleaseViewKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReleaseView =
-  easylab.v1.ReleaseViewKt.Dsl._create(easylab.v1.Easylab.ReleaseView.newBuilder()).apply { block() }._build()
+public inline fun releaseView(block: com.easylab.v1.ReleaseViewKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ReleaseView =
+  com.easylab.v1.ReleaseViewKt.Dsl._create(com.easylab.v1.ReleaseView.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ReleaseView`
  */
@@ -17,17 +17,17 @@ public object ReleaseViewKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ReleaseView.Builder
+    private val _builder: com.easylab.v1.ReleaseView.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ReleaseView.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ReleaseView.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ReleaseView = _builder.build()
+    internal fun _build(): com.easylab.v1.ReleaseView = _builder.build()
 
     /**
      * `string tag = 1 [json_name = "tag"];`
@@ -157,7 +157,7 @@ public object ReleaseViewKt {
     /**
      * `repeated .easylab.v1.ReleaseAssetView assets = 8 [json_name = "assets"];`
      */
-     public val assets: com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>
+     public val assets: com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.assetsList
@@ -168,7 +168,7 @@ public object ReleaseViewKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAssets")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>.add(value: easylab.v1.Easylab.ReleaseAssetView) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>.add(value: com.easylab.v1.ReleaseAssetView) {
       _builder.addAssets(value)
     }
     /**
@@ -178,7 +178,7 @@ public object ReleaseViewKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAssets")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>.plusAssign(value: easylab.v1.Easylab.ReleaseAssetView) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>.plusAssign(value: com.easylab.v1.ReleaseAssetView) {
       add(value)
     }
     /**
@@ -187,7 +187,7 @@ public object ReleaseViewKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllAssets")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>.addAll(values: kotlin.collections.Iterable<easylab.v1.Easylab.ReleaseAssetView>) {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>.addAll(values: kotlin.collections.Iterable<com.easylab.v1.ReleaseAssetView>) {
       _builder.addAllAssets(values)
     }
     /**
@@ -197,7 +197,7 @@ public object ReleaseViewKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllAssets")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>.plusAssign(values: kotlin.collections.Iterable<easylab.v1.Easylab.ReleaseAssetView>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>.plusAssign(values: kotlin.collections.Iterable<com.easylab.v1.ReleaseAssetView>) {
       addAll(values)
     }
     /**
@@ -207,7 +207,7 @@ public object ReleaseViewKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setAssets")
-    public operator fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>.set(index: kotlin.Int, value: easylab.v1.Easylab.ReleaseAssetView) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>.set(index: kotlin.Int, value: com.easylab.v1.ReleaseAssetView) {
       _builder.setAssets(index, value)
     }
     /**
@@ -215,11 +215,11 @@ public object ReleaseViewKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearAssets")
-    public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.ReleaseAssetView, AssetsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.easylab.v1.ReleaseAssetView, AssetsProxy>.clear() {
       _builder.clearAssets()
     }
   }
 }
-public inline fun easylab.v1.Easylab.ReleaseView.copy(block: `easylab.v1`.ReleaseViewKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ReleaseView =
-  `easylab.v1`.ReleaseViewKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ReleaseView.copy(block: `com.easylab.v1`.ReleaseViewKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ReleaseView =
+  `com.easylab.v1`.ReleaseViewKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

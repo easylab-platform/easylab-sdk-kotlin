@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializesquashRequest")
-public inline fun squashRequest(block: easylab.v1.SquashRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SquashRequest =
-  easylab.v1.SquashRequestKt.Dsl._create(easylab.v1.Easylab.SquashRequest.newBuilder()).apply { block() }._build()
+public inline fun squashRequest(block: com.easylab.v1.SquashRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SquashRequest =
+  com.easylab.v1.SquashRequestKt.Dsl._create(com.easylab.v1.SquashRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.SquashRequest`
  */
@@ -17,17 +17,17 @@ public object SquashRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.SquashRequest.Builder
+    private val _builder: com.easylab.v1.SquashRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.SquashRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.SquashRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.SquashRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.SquashRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -98,6 +98,6 @@ public object SquashRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.SquashRequest.copy(block: `easylab.v1`.SquashRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SquashRequest =
-  `easylab.v1`.SquashRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.SquashRequest.copy(block: `com.easylab.v1`.SquashRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.SquashRequest =
+  `com.easylab.v1`.SquashRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

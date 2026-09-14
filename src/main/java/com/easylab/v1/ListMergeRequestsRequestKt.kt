@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package easylab.v1;
+package com.easylab.v1;
 
 @kotlin.jvm.JvmName("-initializelistMergeRequestsRequest")
-public inline fun listMergeRequestsRequest(block: easylab.v1.ListMergeRequestsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListMergeRequestsRequest =
-  easylab.v1.ListMergeRequestsRequestKt.Dsl._create(easylab.v1.Easylab.ListMergeRequestsRequest.newBuilder()).apply { block() }._build()
+public inline fun listMergeRequestsRequest(block: com.easylab.v1.ListMergeRequestsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListMergeRequestsRequest =
+  com.easylab.v1.ListMergeRequestsRequestKt.Dsl._create(com.easylab.v1.ListMergeRequestsRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `easylab.v1.ListMergeRequestsRequest`
  */
@@ -17,17 +17,17 @@ public object ListMergeRequestsRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.ListMergeRequestsRequest.Builder
+    private val _builder: com.easylab.v1.ListMergeRequestsRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.ListMergeRequestsRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.easylab.v1.ListMergeRequestsRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.ListMergeRequestsRequest = _builder.build()
+    internal fun _build(): com.easylab.v1.ListMergeRequestsRequest = _builder.build()
 
     /**
      * `string org = 1 [json_name = "org"];`
@@ -81,6 +81,6 @@ public object ListMergeRequestsRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.ListMergeRequestsRequest.copy(block: `easylab.v1`.ListMergeRequestsRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ListMergeRequestsRequest =
-  `easylab.v1`.ListMergeRequestsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.easylab.v1.ListMergeRequestsRequest.copy(block: `com.easylab.v1`.ListMergeRequestsRequestKt.Dsl.() -> kotlin.Unit): com.easylab.v1.ListMergeRequestsRequest =
+  `com.easylab.v1`.ListMergeRequestsRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

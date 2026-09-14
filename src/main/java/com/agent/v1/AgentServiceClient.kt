@@ -2,7 +2,7 @@
 //
 // Source: agent/v1/agent.proto
 //
-package agent.v1
+package com.agent.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
@@ -17,478 +17,478 @@ import com.connectrpc.StreamType
 public class AgentServiceClient(
   private val client: ProtocolClientInterface,
 ) : AgentServiceClientInterface {
-  override suspend fun health(request: Agent.HealthRequest, headers: Headers): ResponseMessage<Agent.HealthResponse> = client.unary(
+  override suspend fun health(request: HealthRequest, headers: Headers): ResponseMessage<HealthResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Health",
-      agent.v1.Agent.HealthRequest::class,
-      agent.v1.Agent.HealthResponse::class,
+      com.agent.v1.HealthRequest::class,
+      com.agent.v1.HealthResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listSessions(request: Agent.ListSessionsRequest, headers: Headers): ResponseMessage<Agent.ListSessionsResponse> = client.unary(
+  override suspend fun listSessions(request: ListSessionsRequest, headers: Headers): ResponseMessage<ListSessionsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListSessions",
-      agent.v1.Agent.ListSessionsRequest::class,
-      agent.v1.Agent.ListSessionsResponse::class,
+      com.agent.v1.ListSessionsRequest::class,
+      com.agent.v1.ListSessionsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun createSession(request: Agent.CreateSessionRequest, headers: Headers): ResponseMessage<Agent.CreateSessionResponse> = client.unary(
+  override suspend fun createSession(request: CreateSessionRequest, headers: Headers): ResponseMessage<CreateSessionResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/CreateSession",
-      agent.v1.Agent.CreateSessionRequest::class,
-      agent.v1.Agent.CreateSessionResponse::class,
+      com.agent.v1.CreateSessionRequest::class,
+      com.agent.v1.CreateSessionResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getSession(request: Agent.GetSessionRequest, headers: Headers): ResponseMessage<Agent.GetSessionResponse> = client.unary(
+  override suspend fun getSession(request: GetSessionRequest, headers: Headers): ResponseMessage<GetSessionResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/GetSession",
-      agent.v1.Agent.GetSessionRequest::class,
-      agent.v1.Agent.GetSessionResponse::class,
+      com.agent.v1.GetSessionRequest::class,
+      com.agent.v1.GetSessionResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteSession(request: Agent.DeleteSessionRequest, headers: Headers): ResponseMessage<Agent.DeleteSessionResponse> = client.unary(
+  override suspend fun deleteSession(request: DeleteSessionRequest, headers: Headers): ResponseMessage<DeleteSessionResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/DeleteSession",
-      agent.v1.Agent.DeleteSessionRequest::class,
-      agent.v1.Agent.DeleteSessionResponse::class,
+      com.agent.v1.DeleteSessionRequest::class,
+      com.agent.v1.DeleteSessionResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listMessages(request: Agent.ListMessagesRequest, headers: Headers): ResponseMessage<Agent.ListMessagesResponse> = client.unary(
+  override suspend fun listMessages(request: ListMessagesRequest, headers: Headers): ResponseMessage<ListMessagesResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListMessages",
-      agent.v1.Agent.ListMessagesRequest::class,
-      agent.v1.Agent.ListMessagesResponse::class,
+      com.agent.v1.ListMessagesRequest::class,
+      com.agent.v1.ListMessagesResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun prompt(headers: Headers): ServerOnlyStreamInterface<Agent.PromptRequest, Agent.PromptResponse> = client.serverStream(
+  override suspend fun prompt(headers: Headers): ServerOnlyStreamInterface<PromptRequest, PromptResponse> = client.serverStream(
     headers,
     MethodSpec(
     "agent.v1.AgentService/Prompt",
-      agent.v1.Agent.PromptRequest::class,
-      agent.v1.Agent.PromptResponse::class,
+      com.agent.v1.PromptRequest::class,
+      com.agent.v1.PromptResponse::class,
       StreamType.SERVER,
     ),
   )
 
 
-  override suspend fun watchSession(headers: Headers): ServerOnlyStreamInterface<Agent.WatchSessionRequest, Agent.WatchSessionResponse> = client.serverStream(
+  override suspend fun watchSession(headers: Headers): ServerOnlyStreamInterface<WatchSessionRequest, WatchSessionResponse> = client.serverStream(
     headers,
     MethodSpec(
     "agent.v1.AgentService/WatchSession",
-      agent.v1.Agent.WatchSessionRequest::class,
-      agent.v1.Agent.WatchSessionResponse::class,
+      com.agent.v1.WatchSessionRequest::class,
+      com.agent.v1.WatchSessionResponse::class,
       StreamType.SERVER,
     ),
   )
 
 
-  override suspend fun watchSessions(headers: Headers): ServerOnlyStreamInterface<Agent.WatchSessionsRequest, Agent.WatchSessionsResponse> = client.serverStream(
+  override suspend fun watchSessions(headers: Headers): ServerOnlyStreamInterface<WatchSessionsRequest, WatchSessionsResponse> = client.serverStream(
     headers,
     MethodSpec(
     "agent.v1.AgentService/WatchSessions",
-      agent.v1.Agent.WatchSessionsRequest::class,
-      agent.v1.Agent.WatchSessionsResponse::class,
+      com.agent.v1.WatchSessionsRequest::class,
+      com.agent.v1.WatchSessionsResponse::class,
       StreamType.SERVER,
     ),
   )
 
 
-  override suspend fun fork(request: Agent.ForkRequest, headers: Headers): ResponseMessage<Agent.ForkResponse> = client.unary(
+  override suspend fun fork(request: ForkRequest, headers: Headers): ResponseMessage<ForkResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Fork",
-      agent.v1.Agent.ForkRequest::class,
-      agent.v1.Agent.ForkResponse::class,
+      com.agent.v1.ForkRequest::class,
+      com.agent.v1.ForkResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun rename(request: Agent.RenameRequest, headers: Headers): ResponseMessage<Agent.RenameResponse> = client.unary(
+  override suspend fun rename(request: RenameRequest, headers: Headers): ResponseMessage<RenameResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Rename",
-      agent.v1.Agent.RenameRequest::class,
-      agent.v1.Agent.RenameResponse::class,
+      com.agent.v1.RenameRequest::class,
+      com.agent.v1.RenameResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun setModel(request: Agent.SetModelRequest, headers: Headers): ResponseMessage<Agent.SetModelResponse> = client.unary(
+  override suspend fun setModel(request: SetModelRequest, headers: Headers): ResponseMessage<SetModelResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/SetModel",
-      agent.v1.Agent.SetModelRequest::class,
-      agent.v1.Agent.SetModelResponse::class,
+      com.agent.v1.SetModelRequest::class,
+      com.agent.v1.SetModelResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun undo(request: Agent.UndoRequest, headers: Headers): ResponseMessage<Agent.UndoResponse> = client.unary(
+  override suspend fun undo(request: UndoRequest, headers: Headers): ResponseMessage<UndoResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Undo",
-      agent.v1.Agent.UndoRequest::class,
-      agent.v1.Agent.UndoResponse::class,
+      com.agent.v1.UndoRequest::class,
+      com.agent.v1.UndoResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun state(request: Agent.StateRequest, headers: Headers): ResponseMessage<Agent.StateResponse> = client.unary(
+  override suspend fun state(request: StateRequest, headers: Headers): ResponseMessage<StateResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/State",
-      agent.v1.Agent.StateRequest::class,
-      agent.v1.Agent.StateResponse::class,
+      com.agent.v1.StateRequest::class,
+      com.agent.v1.StateResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun mailbox(request: Agent.MailboxRequest, headers: Headers): ResponseMessage<Agent.MailboxResponse> = client.unary(
+  override suspend fun mailbox(request: MailboxRequest, headers: Headers): ResponseMessage<MailboxResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Mailbox",
-      agent.v1.Agent.MailboxRequest::class,
-      agent.v1.Agent.MailboxResponse::class,
+      com.agent.v1.MailboxRequest::class,
+      com.agent.v1.MailboxResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun updateSettings(request: Agent.UpdateSettingsRequest, headers: Headers): ResponseMessage<Agent.UpdateSettingsResponse> = client.unary(
+  override suspend fun updateSettings(request: UpdateSettingsRequest, headers: Headers): ResponseMessage<UpdateSettingsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/UpdateSettings",
-      agent.v1.Agent.UpdateSettingsRequest::class,
-      agent.v1.Agent.UpdateSettingsResponse::class,
+      com.agent.v1.UpdateSettingsRequest::class,
+      com.agent.v1.UpdateSettingsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun interrupt(request: Agent.InterruptRequest, headers: Headers): ResponseMessage<Agent.InterruptResponse> = client.unary(
+  override suspend fun interrupt(request: InterruptRequest, headers: Headers): ResponseMessage<InterruptResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Interrupt",
-      agent.v1.Agent.InterruptRequest::class,
-      agent.v1.Agent.InterruptResponse::class,
+      com.agent.v1.InterruptRequest::class,
+      com.agent.v1.InterruptResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun compact(request: Agent.CompactRequest, headers: Headers): ResponseMessage<Agent.CompactResponse> = client.unary(
+  override suspend fun compact(request: CompactRequest, headers: Headers): ResponseMessage<CompactResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/Compact",
-      agent.v1.Agent.CompactRequest::class,
-      agent.v1.Agent.CompactResponse::class,
+      com.agent.v1.CompactRequest::class,
+      com.agent.v1.CompactResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listProviders(request: Agent.ListProvidersRequest, headers: Headers): ResponseMessage<Agent.ListProvidersResponse> = client.unary(
+  override suspend fun listProviders(request: ListProvidersRequest, headers: Headers): ResponseMessage<ListProvidersResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListProviders",
-      agent.v1.Agent.ListProvidersRequest::class,
-      agent.v1.Agent.ListProvidersResponse::class,
+      com.agent.v1.ListProvidersRequest::class,
+      com.agent.v1.ListProvidersResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listProvidersCatalog(request: Agent.ListProvidersCatalogRequest, headers: Headers): ResponseMessage<Agent.ListProvidersCatalogResponse> = client.unary(
+  override suspend fun listProvidersCatalog(request: ListProvidersCatalogRequest, headers: Headers): ResponseMessage<ListProvidersCatalogResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListProvidersCatalog",
-      agent.v1.Agent.ListProvidersCatalogRequest::class,
-      agent.v1.Agent.ListProvidersCatalogResponse::class,
+      com.agent.v1.ListProvidersCatalogRequest::class,
+      com.agent.v1.ListProvidersCatalogResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun registerProvider(request: Agent.RegisterProviderRequest, headers: Headers): ResponseMessage<Agent.RegisterProviderResponse> = client.unary(
+  override suspend fun registerProvider(request: RegisterProviderRequest, headers: Headers): ResponseMessage<RegisterProviderResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/RegisterProvider",
-      agent.v1.Agent.RegisterProviderRequest::class,
-      agent.v1.Agent.RegisterProviderResponse::class,
+      com.agent.v1.RegisterProviderRequest::class,
+      com.agent.v1.RegisterProviderResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun discoverGatewayModels(request: Agent.DiscoverGatewayModelsRequest, headers: Headers): ResponseMessage<Agent.DiscoverGatewayModelsResponse> = client.unary(
+  override suspend fun discoverGatewayModels(request: DiscoverGatewayModelsRequest, headers: Headers): ResponseMessage<DiscoverGatewayModelsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/DiscoverGatewayModels",
-      agent.v1.Agent.DiscoverGatewayModelsRequest::class,
-      agent.v1.Agent.DiscoverGatewayModelsResponse::class,
+      com.agent.v1.DiscoverGatewayModelsRequest::class,
+      com.agent.v1.DiscoverGatewayModelsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deleteProvider(request: Agent.DeleteProviderRequest, headers: Headers): ResponseMessage<Agent.DeleteProviderResponse> = client.unary(
+  override suspend fun deleteProvider(request: DeleteProviderRequest, headers: Headers): ResponseMessage<DeleteProviderResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/DeleteProvider",
-      agent.v1.Agent.DeleteProviderRequest::class,
-      agent.v1.Agent.DeleteProviderResponse::class,
+      com.agent.v1.DeleteProviderRequest::class,
+      com.agent.v1.DeleteProviderResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun testProvider(request: Agent.TestProviderRequest, headers: Headers): ResponseMessage<Agent.TestProviderResponse> = client.unary(
+  override suspend fun testProvider(request: TestProviderRequest, headers: Headers): ResponseMessage<TestProviderResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/TestProvider",
-      agent.v1.Agent.TestProviderRequest::class,
-      agent.v1.Agent.TestProviderResponse::class,
+      com.agent.v1.TestProviderRequest::class,
+      com.agent.v1.TestProviderResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listModels(request: Agent.ListModelsRequest, headers: Headers): ResponseMessage<Agent.ListModelsResponse> = client.unary(
+  override suspend fun listModels(request: ListModelsRequest, headers: Headers): ResponseMessage<ListModelsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListModels",
-      agent.v1.Agent.ListModelsRequest::class,
-      agent.v1.Agent.ListModelsResponse::class,
+      com.agent.v1.ListModelsRequest::class,
+      com.agent.v1.ListModelsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listPresets(request: Agent.ListPresetsRequest, headers: Headers): ResponseMessage<Agent.ListPresetsResponse> = client.unary(
+  override suspend fun listPresets(request: ListPresetsRequest, headers: Headers): ResponseMessage<ListPresetsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListPresets",
-      agent.v1.Agent.ListPresetsRequest::class,
-      agent.v1.Agent.ListPresetsResponse::class,
+      com.agent.v1.ListPresetsRequest::class,
+      com.agent.v1.ListPresetsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun upsertPreset(request: Agent.UpsertPresetRequest, headers: Headers): ResponseMessage<Agent.UpsertPresetResponse> = client.unary(
+  override suspend fun upsertPreset(request: UpsertPresetRequest, headers: Headers): ResponseMessage<UpsertPresetResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/UpsertPreset",
-      agent.v1.Agent.UpsertPresetRequest::class,
-      agent.v1.Agent.UpsertPresetResponse::class,
+      com.agent.v1.UpsertPresetRequest::class,
+      com.agent.v1.UpsertPresetResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun deletePreset(request: Agent.DeletePresetRequest, headers: Headers): ResponseMessage<Agent.DeletePresetResponse> = client.unary(
+  override suspend fun deletePreset(request: DeletePresetRequest, headers: Headers): ResponseMessage<DeletePresetResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/DeletePreset",
-      agent.v1.Agent.DeletePresetRequest::class,
-      agent.v1.Agent.DeletePresetResponse::class,
+      com.agent.v1.DeletePresetRequest::class,
+      com.agent.v1.DeletePresetResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun previewPreset(request: Agent.PreviewPresetRequest, headers: Headers): ResponseMessage<Agent.PreviewPresetResponse> = client.unary(
+  override suspend fun previewPreset(request: PreviewPresetRequest, headers: Headers): ResponseMessage<PreviewPresetResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/PreviewPreset",
-      agent.v1.Agent.PreviewPresetRequest::class,
-      agent.v1.Agent.PreviewPresetResponse::class,
+      com.agent.v1.PreviewPresetRequest::class,
+      com.agent.v1.PreviewPresetResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getConfig(request: Agent.GetConfigRequest, headers: Headers): ResponseMessage<Agent.GetConfigResponse> = client.unary(
+  override suspend fun getConfig(request: GetConfigRequest, headers: Headers): ResponseMessage<GetConfigResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/GetConfig",
-      agent.v1.Agent.GetConfigRequest::class,
-      agent.v1.Agent.GetConfigResponse::class,
+      com.agent.v1.GetConfigRequest::class,
+      com.agent.v1.GetConfigResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun setConfig(request: Agent.SetConfigRequest, headers: Headers): ResponseMessage<Agent.SetConfigResponse> = client.unary(
+  override suspend fun setConfig(request: SetConfigRequest, headers: Headers): ResponseMessage<SetConfigResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/SetConfig",
-      agent.v1.Agent.SetConfigRequest::class,
-      agent.v1.Agent.SetConfigResponse::class,
+      com.agent.v1.SetConfigRequest::class,
+      com.agent.v1.SetConfigResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun listTools(request: Agent.ListToolsRequest, headers: Headers): ResponseMessage<Agent.ListToolsResponse> = client.unary(
+  override suspend fun listTools(request: ListToolsRequest, headers: Headers): ResponseMessage<ListToolsResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/ListTools",
-      agent.v1.Agent.ListToolsRequest::class,
-      agent.v1.Agent.ListToolsResponse::class,
+      com.agent.v1.ListToolsRequest::class,
+      com.agent.v1.ListToolsResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getToolConfig(request: Agent.GetToolConfigRequest, headers: Headers): ResponseMessage<Agent.GetToolConfigResponse> = client.unary(
+  override suspend fun getToolConfig(request: GetToolConfigRequest, headers: Headers): ResponseMessage<GetToolConfigResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/GetToolConfig",
-      agent.v1.Agent.GetToolConfigRequest::class,
-      agent.v1.Agent.GetToolConfigResponse::class,
+      com.agent.v1.GetToolConfigRequest::class,
+      com.agent.v1.GetToolConfigResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun setToolConfig(request: Agent.SetToolConfigRequest, headers: Headers): ResponseMessage<Agent.SetToolConfigResponse> = client.unary(
+  override suspend fun setToolConfig(request: SetToolConfigRequest, headers: Headers): ResponseMessage<SetToolConfigResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/SetToolConfig",
-      agent.v1.Agent.SetToolConfigRequest::class,
-      agent.v1.Agent.SetToolConfigResponse::class,
+      com.agent.v1.SetToolConfigRequest::class,
+      com.agent.v1.SetToolConfigResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun setExtensionConfig(request: Agent.SetExtensionConfigRequest, headers: Headers): ResponseMessage<Agent.SetExtensionConfigResponse> = client.unary(
+  override suspend fun setExtensionConfig(request: SetExtensionConfigRequest, headers: Headers): ResponseMessage<SetExtensionConfigResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/SetExtensionConfig",
-      agent.v1.Agent.SetExtensionConfigRequest::class,
-      agent.v1.Agent.SetExtensionConfigResponse::class,
+      com.agent.v1.SetExtensionConfigRequest::class,
+      com.agent.v1.SetExtensionConfigResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun uploadFile(request: Agent.UploadFileRequest, headers: Headers): ResponseMessage<Agent.UploadFileResponse> = client.unary(
+  override suspend fun uploadFile(request: UploadFileRequest, headers: Headers): ResponseMessage<UploadFileResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/UploadFile",
-      agent.v1.Agent.UploadFileRequest::class,
-      agent.v1.Agent.UploadFileResponse::class,
+      com.agent.v1.UploadFileRequest::class,
+      com.agent.v1.UploadFileResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun ingestFile(request: Agent.IngestFileRequest, headers: Headers): ResponseMessage<Agent.IngestFileResponse> = client.unary(
+  override suspend fun ingestFile(request: IngestFileRequest, headers: Headers): ResponseMessage<IngestFileResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/IngestFile",
-      agent.v1.Agent.IngestFileRequest::class,
-      agent.v1.Agent.IngestFileResponse::class,
+      com.agent.v1.IngestFileRequest::class,
+      com.agent.v1.IngestFileResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getFile(request: Agent.GetFileRequest, headers: Headers): ResponseMessage<Agent.GetFileResponse> = client.unary(
+  override suspend fun getFile(request: GetFileRequest, headers: Headers): ResponseMessage<GetFileResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/GetFile",
-      agent.v1.Agent.GetFileRequest::class,
-      agent.v1.Agent.GetFileResponse::class,
+      com.agent.v1.GetFileRequest::class,
+      com.agent.v1.GetFileResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getFileMeta(request: Agent.GetFileMetaRequest, headers: Headers): ResponseMessage<Agent.GetFileMetaResponse> = client.unary(
+  override suspend fun getFileMeta(request: GetFileMetaRequest, headers: Headers): ResponseMessage<GetFileMetaResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/GetFileMeta",
-      agent.v1.Agent.GetFileMetaRequest::class,
-      agent.v1.Agent.GetFileMetaResponse::class,
+      com.agent.v1.GetFileMetaRequest::class,
+      com.agent.v1.GetFileMetaResponse::class,
       StreamType.UNARY,
     ),
   )
 
 
-  override suspend fun getAgentConfig(request: Agent.GetAgentConfigRequest, headers: Headers): ResponseMessage<Agent.GetAgentConfigResponse> = client.unary(
+  override suspend fun getAgentConfig(request: GetAgentConfigRequest, headers: Headers): ResponseMessage<GetAgentConfigResponse> = client.unary(
     request,
     headers,
     MethodSpec(
     "agent.v1.AgentService/GetAgentConfig",
-      agent.v1.Agent.GetAgentConfigRequest::class,
-      agent.v1.Agent.GetAgentConfigResponse::class,
+      com.agent.v1.GetAgentConfigRequest::class,
+      com.agent.v1.GetAgentConfigResponse::class,
       StreamType.UNARY,
     ),
   )

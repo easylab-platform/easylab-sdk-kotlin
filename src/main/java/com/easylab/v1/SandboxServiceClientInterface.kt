@@ -2,12 +2,21 @@
 //
 // Source: easylab/v1/easylab.proto
 //
-package easylab.v1
+package com.easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
 import com.connectrpc.ServerOnlyStreamInterface
-import worker.v1.Worker
+import com.worker.v1.ExecuteResponse
+import com.worker.v1.FileListResponse
+import com.worker.v1.FileReadResponse
+import com.worker.v1.FileWriteResponse
+import com.worker.v1.JobKillResponse
+import com.worker.v1.JobOutputResponse
+import com.worker.v1.JobStdinResponse
+import com.worker.v1.JobWaitResponse
+import com.worker.v1.ListJobsResponse
+import com.worker.v1.WatchJobResponse
 
 /**
  *  SandboxService fronts every worker.v1 API for the UI/console and owns the
@@ -17,44 +26,44 @@ public interface SandboxServiceClientInterface {
   /**
    *  lifecycle
    */
-  public suspend fun listSandboxes(request: Easylab.ListSandboxesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListSandboxesResponse>
+  public suspend fun listSandboxes(request: ListSandboxesRequest, headers: Headers = emptyMap()): ResponseMessage<ListSandboxesResponse>
 
-  public suspend fun getSandbox(request: Easylab.GetSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetSandboxResponse>
+  public suspend fun getSandbox(request: GetSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<GetSandboxResponse>
 
-  public suspend fun ensureSandboxImage(request: Easylab.EnsureSandboxImageRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.EnsureSandboxImageResponse>
+  public suspend fun ensureSandboxImage(request: EnsureSandboxImageRequest, headers: Headers = emptyMap()): ResponseMessage<EnsureSandboxImageResponse>
 
-  public suspend fun launchSandbox(request: Easylab.LaunchSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.LaunchSandboxResponse>
+  public suspend fun launchSandbox(request: LaunchSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<LaunchSandboxResponse>
 
-  public suspend fun deleteSandbox(request: Easylab.DeleteSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.DeleteSandboxResponse>
+  public suspend fun deleteSandbox(request: DeleteSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<DeleteSandboxResponse>
 
   /**
    *  worker passthroughs (sandbox routing + worker.v1 payloads)
    */
-  public suspend fun execute(request: Easylab.ExecuteRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.ExecuteResponse>
+  public suspend fun execute(request: ExecuteRequest, headers: Headers = emptyMap()): ResponseMessage<ExecuteResponse>
 
-  public suspend fun listJobs(request: Easylab.ListJobsRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.ListJobsResponse>
+  public suspend fun listJobs(request: ListJobsRequest, headers: Headers = emptyMap()): ResponseMessage<ListJobsResponse>
 
-  public suspend fun jobOutput(request: Easylab.JobOutputRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobOutputResponse>
+  public suspend fun jobOutput(request: JobOutputRequest, headers: Headers = emptyMap()): ResponseMessage<JobOutputResponse>
 
-  public suspend fun watchJob(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Easylab.WatchJobRequest, Worker.WatchJobResponse>
+  public suspend fun watchJob(headers: Headers = emptyMap()): ServerOnlyStreamInterface<WatchJobRequest, WatchJobResponse>
 
-  public suspend fun jobWait(request: Easylab.JobWaitRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobWaitResponse>
+  public suspend fun jobWait(request: JobWaitRequest, headers: Headers = emptyMap()): ResponseMessage<JobWaitResponse>
 
-  public suspend fun jobStdin(request: Easylab.JobStdinRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobStdinResponse>
+  public suspend fun jobStdin(request: JobStdinRequest, headers: Headers = emptyMap()): ResponseMessage<JobStdinResponse>
 
-  public suspend fun jobKill(request: Easylab.JobKillRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.JobKillResponse>
+  public suspend fun jobKill(request: JobKillRequest, headers: Headers = emptyMap()): ResponseMessage<JobKillResponse>
 
-  public suspend fun fileRead(request: Easylab.FileReadRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileReadResponse>
+  public suspend fun fileRead(request: FileReadRequest, headers: Headers = emptyMap()): ResponseMessage<FileReadResponse>
 
   /**
    *  SyncWorkspace pushes the repo tree at rev into the sandbox and records
    *  rev + worker boot id in the registry (single rev-coherence write).
    */
-  public suspend fun syncWorkspace(request: Easylab.SyncWorkspaceRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SyncWorkspaceResponse>
+  public suspend fun syncWorkspace(request: SyncWorkspaceRequest, headers: Headers = emptyMap()): ResponseMessage<SyncWorkspaceResponse>
 
-  public suspend fun fileWrite(request: Easylab.FileWriteRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileWriteResponse>
+  public suspend fun fileWrite(request: FileWriteRequest, headers: Headers = emptyMap()): ResponseMessage<FileWriteResponse>
 
-  public suspend fun fileList(request: Easylab.FileListRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileListResponse>
+  public suspend fun fileList(request: FileListRequest, headers: Headers = emptyMap()): ResponseMessage<FileListResponse>
 
   /**
    *  RegisterExternalSandbox adopts an externally-run worker (not launched by
@@ -63,13 +72,13 @@ public interface SandboxServiceClientInterface {
    *  already provisioned on the worker. easylab persists the token + address so
    *  its worker passthroughs keep working across restarts.
    */
-  public suspend fun registerExternalSandbox(request: Easylab.RegisterExternalSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RegisterExternalSandboxResponse>
+  public suspend fun registerExternalSandbox(request: RegisterExternalSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<RegisterExternalSandboxResponse>
 
   /**
    *  ListExternalSandboxes returns the externally-registered workers (mode =
    *  external), including address and owner — managed sandboxes are excluded.
    */
-  public suspend fun listExternalSandboxes(request: Easylab.ListExternalSandboxesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListExternalSandboxesResponse>
+  public suspend fun listExternalSandboxes(request: ListExternalSandboxesRequest, headers: Headers = emptyMap()): ResponseMessage<ListExternalSandboxesResponse>
 
   /**
    *  ReleaseExternalSandbox revokes easylab's token on the worker and returns
@@ -77,5 +86,5 @@ public interface SandboxServiceClientInterface {
    *  release any caller presenting the new code may claim it. Managed sandboxes
    *  cannot be released.
    */
-  public suspend fun releaseExternalSandbox(request: Easylab.ReleaseExternalSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ReleaseExternalSandboxResponse>
+  public suspend fun releaseExternalSandbox(request: ReleaseExternalSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<ReleaseExternalSandboxResponse>
 }

@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializegetToolConfigRequest")
-public inline fun getToolConfigRequest(block: agent.v1.GetToolConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetToolConfigRequest =
-  agent.v1.GetToolConfigRequestKt.Dsl._create(agent.v1.Agent.GetToolConfigRequest.newBuilder()).apply { block() }._build()
+public inline fun getToolConfigRequest(block: com.agent.v1.GetToolConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetToolConfigRequest =
+  com.agent.v1.GetToolConfigRequestKt.Dsl._create(com.agent.v1.GetToolConfigRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.GetToolConfigRequest`
  */
@@ -17,19 +17,19 @@ public object GetToolConfigRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.GetToolConfigRequest.Builder
+    private val _builder: com.agent.v1.GetToolConfigRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.GetToolConfigRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.GetToolConfigRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.GetToolConfigRequest = _builder.build()
+    internal fun _build(): com.agent.v1.GetToolConfigRequest = _builder.build()
   }
 }
-public inline fun agent.v1.Agent.GetToolConfigRequest.copy(block: `agent.v1`.GetToolConfigRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.GetToolConfigRequest =
-  `agent.v1`.GetToolConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.GetToolConfigRequest.copy(block: `com.agent.v1`.GetToolConfigRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.GetToolConfigRequest =
+  `com.agent.v1`.GetToolConfigRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

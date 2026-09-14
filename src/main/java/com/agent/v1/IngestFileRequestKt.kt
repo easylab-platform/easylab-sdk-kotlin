@@ -5,11 +5,11 @@
 @file:com.google.protobuf.Generated
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package agent.v1;
+package com.agent.v1;
 
 @kotlin.jvm.JvmName("-initializeingestFileRequest")
-public inline fun ingestFileRequest(block: agent.v1.IngestFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.IngestFileRequest =
-  agent.v1.IngestFileRequestKt.Dsl._create(agent.v1.Agent.IngestFileRequest.newBuilder()).apply { block() }._build()
+public inline fun ingestFileRequest(block: com.agent.v1.IngestFileRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.IngestFileRequest =
+  com.agent.v1.IngestFileRequestKt.Dsl._create(com.agent.v1.IngestFileRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `agent.v1.IngestFileRequest`
  */
@@ -17,17 +17,17 @@ public object IngestFileRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: agent.v1.Agent.IngestFileRequest.Builder
+    private val _builder: com.agent.v1.IngestFileRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: agent.v1.Agent.IngestFileRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.agent.v1.IngestFileRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): agent.v1.Agent.IngestFileRequest = _builder.build()
+    internal fun _build(): com.agent.v1.IngestFileRequest = _builder.build()
 
     /**
      * ```
@@ -106,6 +106,6 @@ public object IngestFileRequestKt {
     }
   }
 }
-public inline fun agent.v1.Agent.IngestFileRequest.copy(block: `agent.v1`.IngestFileRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.IngestFileRequest =
-  `agent.v1`.IngestFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.agent.v1.IngestFileRequest.copy(block: `com.agent.v1`.IngestFileRequestKt.Dsl.() -> kotlin.Unit): com.agent.v1.IngestFileRequest =
+  `com.agent.v1`.IngestFileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
