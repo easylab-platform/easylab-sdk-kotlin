@@ -363,6 +363,56 @@ public object SandboxInfoKt {
     public fun clearError() {
       _builder.clearError()
     }
+
+    /**
+     * ```
+     * resolved runtime/profile (linux/windows/macos)
+     * ```
+     *
+     * `string runtime = 16 [json_name = "runtime"];`
+     */
+    public var runtime: kotlin.String
+      @kotlin.jvm.JvmName("getRuntime")
+        get() = _builder.runtime
+      @kotlin.jvm.JvmName("setRuntime")
+        set(value) {
+        _builder.runtime = value
+      }
+    /**
+     * ```
+     * resolved runtime/profile (linux/windows/macos)
+     * ```
+     *
+     * `string runtime = 16 [json_name = "runtime"];`
+     */
+    public fun clearRuntime() {
+      _builder.clearRuntime()
+    }
+
+    /**
+     * ```
+     * Owning user id (sandboxes are owner-only). Empty when unknown/legacy.
+     * ```
+     *
+     * `string owner = 17 [json_name = "owner"];`
+     */
+    public var owner: kotlin.String
+      @kotlin.jvm.JvmName("getOwner")
+        get() = _builder.owner
+      @kotlin.jvm.JvmName("setOwner")
+        set(value) {
+        _builder.owner = value
+      }
+    /**
+     * ```
+     * Owning user id (sandboxes are owner-only). Empty when unknown/legacy.
+     * ```
+     *
+     * `string owner = 17 [json_name = "owner"];`
+     */
+    public fun clearOwner() {
+      _builder.clearOwner()
+    }
   }
 }
 public inline fun easylab.v1.Easylab.SandboxInfo.copy(block: `easylab.v1`.SandboxInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.SandboxInfo =

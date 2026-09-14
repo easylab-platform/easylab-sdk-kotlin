@@ -241,6 +241,33 @@ public object LaunchSandboxRequestKt {
     public fun clearMemoryBytes() {
       _builder.clearMemoryBytes()
     }
+
+    /**
+     * ```
+     * Execution runtime/profile: "" or "linux" (default; base image + injected
+     * worker), "windows"/"macos" (a VM-backed worker image served by easylab).
+     * ```
+     *
+     * `string runtime = 10 [json_name = "runtime"];`
+     */
+    public var runtime: kotlin.String
+      @kotlin.jvm.JvmName("getRuntime")
+        get() = _builder.runtime
+      @kotlin.jvm.JvmName("setRuntime")
+        set(value) {
+        _builder.runtime = value
+      }
+    /**
+     * ```
+     * Execution runtime/profile: "" or "linux" (default; base image + injected
+     * worker), "windows"/"macos" (a VM-backed worker image served by easylab).
+     * ```
+     *
+     * `string runtime = 10 [json_name = "runtime"];`
+     */
+    public fun clearRuntime() {
+      _builder.clearRuntime()
+    }
   }
 }
 public inline fun easylab.v1.Easylab.LaunchSandboxRequest.copy(block: `easylab.v1`.LaunchSandboxRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.LaunchSandboxRequest =

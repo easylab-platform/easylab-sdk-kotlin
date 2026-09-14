@@ -7,27 +7,27 @@
 @file:Suppress("DEPRECATION")
 package easylab.v1;
 
-@kotlin.jvm.JvmName("-initializegetTaskRequest")
-public inline fun getTaskRequest(block: easylab.v1.GetTaskRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskRequest =
-  easylab.v1.GetTaskRequestKt.Dsl._create(easylab.v1.Easylab.GetTaskRequest.newBuilder()).apply { block() }._build()
+@kotlin.jvm.JvmName("-initializegetUserRequest")
+public inline fun getUserRequest(block: easylab.v1.GetUserRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetUserRequest =
+  easylab.v1.GetUserRequestKt.Dsl._create(easylab.v1.Easylab.GetUserRequest.newBuilder()).apply { block() }._build()
 /**
- * Protobuf type `easylab.v1.GetTaskRequest`
+ * Protobuf type `easylab.v1.GetUserRequest`
  */
-public object GetTaskRequestKt {
+public object GetUserRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: easylab.v1.Easylab.GetTaskRequest.Builder
+    private val _builder: easylab.v1.Easylab.GetUserRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: easylab.v1.Easylab.GetTaskRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: easylab.v1.Easylab.GetUserRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): easylab.v1.Easylab.GetTaskRequest = _builder.build()
+    internal fun _build(): easylab.v1.Easylab.GetUserRequest = _builder.build()
 
     /**
      * `string id = 1 [json_name = "id"];`
@@ -47,6 +47,6 @@ public object GetTaskRequestKt {
     }
   }
 }
-public inline fun easylab.v1.Easylab.GetTaskRequest.copy(block: `easylab.v1`.GetTaskRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetTaskRequest =
-  `easylab.v1`.GetTaskRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun easylab.v1.Easylab.GetUserRequest.copy(block: `easylab.v1`.GetUserRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.GetUserRequest =
+  `easylab.v1`.GetUserRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

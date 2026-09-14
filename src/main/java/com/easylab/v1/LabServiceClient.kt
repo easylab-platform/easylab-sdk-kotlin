@@ -423,4 +423,298 @@ public class LabServiceClient(
     ),
   )
 
+
+  /**
+   *  ---- repo metadata / refs / members (REST removal) ----
+   */
+  override suspend fun updateRepo(request: Easylab.UpdateRepoRequest, headers: Headers): ResponseMessage<Easylab.UpdateRepoResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/UpdateRepo",
+      easylab.v1.Easylab.UpdateRepoRequest::class,
+      easylab.v1.Easylab.UpdateRepoResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun setTag(request: Easylab.SetTagRequest, headers: Headers): ResponseMessage<Easylab.SetTagResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/SetTag",
+      easylab.v1.Easylab.SetTagRequest::class,
+      easylab.v1.Easylab.SetTagResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun deleteTag(request: Easylab.DeleteTagRequest, headers: Headers): ResponseMessage<Easylab.DeleteTagResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/DeleteTag",
+      easylab.v1.Easylab.DeleteTagRequest::class,
+      easylab.v1.Easylab.DeleteTagResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun writeFiles(request: Easylab.WriteFilesRequest, headers: Headers): ResponseMessage<Easylab.WriteFilesResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/WriteFiles",
+      easylab.v1.Easylab.WriteFilesRequest::class,
+      easylab.v1.Easylab.WriteFilesResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun drop(request: Easylab.DropRequest, headers: Headers): ResponseMessage<Easylab.DropResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/Drop",
+      easylab.v1.Easylab.DropRequest::class,
+      easylab.v1.Easylab.DropResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun revert(request: Easylab.RevertRequest, headers: Headers): ResponseMessage<Easylab.RevertResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/Revert",
+      easylab.v1.Easylab.RevertRequest::class,
+      easylab.v1.Easylab.RevertResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun resolve(request: Easylab.ResolveRequest, headers: Headers): ResponseMessage<Easylab.ResolveResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/Resolve",
+      easylab.v1.Easylab.ResolveRequest::class,
+      easylab.v1.Easylab.ResolveResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun squash(request: Easylab.SquashRequest, headers: Headers): ResponseMessage<Easylab.SquashResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/Squash",
+      easylab.v1.Easylab.SquashRequest::class,
+      easylab.v1.Easylab.SquashResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun rebaseMany(request: Easylab.RebaseManyRequest, headers: Headers): ResponseMessage<Easylab.RebaseManyResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/RebaseMany",
+      easylab.v1.Easylab.RebaseManyRequest::class,
+      easylab.v1.Easylab.RebaseManyResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun createRelease(request: Easylab.CreateReleaseRequest, headers: Headers): ResponseMessage<Easylab.CreateReleaseResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/CreateRelease",
+      easylab.v1.Easylab.CreateReleaseRequest::class,
+      easylab.v1.Easylab.CreateReleaseResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun deleteRelease(request: Easylab.DeleteReleaseRequest, headers: Headers): ResponseMessage<Easylab.DeleteReleaseResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/DeleteRelease",
+      easylab.v1.Easylab.DeleteReleaseRequest::class,
+      easylab.v1.Easylab.DeleteReleaseResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun uploadReleaseAsset(request: Easylab.UploadReleaseAssetRequest, headers: Headers): ResponseMessage<Easylab.UploadReleaseAssetResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/UploadReleaseAsset",
+      easylab.v1.Easylab.UploadReleaseAssetRequest::class,
+      easylab.v1.Easylab.UploadReleaseAssetResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun listRepoMembers(request: Easylab.ListRepoMembersRequest, headers: Headers): ResponseMessage<Easylab.ListRepoMembersResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/ListRepoMembers",
+      easylab.v1.Easylab.ListRepoMembersRequest::class,
+      easylab.v1.Easylab.ListRepoMembersResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun setRepoMember(request: Easylab.SetRepoMemberRequest, headers: Headers): ResponseMessage<Easylab.SetRepoMemberResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/SetRepoMember",
+      easylab.v1.Easylab.SetRepoMemberRequest::class,
+      easylab.v1.Easylab.SetRepoMemberResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun removeRepoMember(request: Easylab.RemoveRepoMemberRequest, headers: Headers): ResponseMessage<Easylab.RemoveRepoMemberResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/RemoveRepoMember",
+      easylab.v1.Easylab.RemoveRepoMemberRequest::class,
+      easylab.v1.Easylab.RemoveRepoMemberResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  /**
+   *  ---- merge requests (fork→upstream change requests) ----
+   */
+  override suspend fun listMergeRequests(request: Easylab.ListMergeRequestsRequest, headers: Headers): ResponseMessage<Easylab.ListMergeRequestsResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/ListMergeRequests",
+      easylab.v1.Easylab.ListMergeRequestsRequest::class,
+      easylab.v1.Easylab.ListMergeRequestsResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun getMergeRequest(request: Easylab.GetMergeRequestRequest, headers: Headers): ResponseMessage<Easylab.GetMergeRequestResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/GetMergeRequest",
+      easylab.v1.Easylab.GetMergeRequestRequest::class,
+      easylab.v1.Easylab.GetMergeRequestResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun createMergeRequest(request: Easylab.CreateMergeRequestRequest, headers: Headers): ResponseMessage<Easylab.CreateMergeRequestResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/CreateMergeRequest",
+      easylab.v1.Easylab.CreateMergeRequestRequest::class,
+      easylab.v1.Easylab.CreateMergeRequestResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun updateMergeRequest(request: Easylab.UpdateMergeRequestRequest, headers: Headers): ResponseMessage<Easylab.UpdateMergeRequestResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/UpdateMergeRequest",
+      easylab.v1.Easylab.UpdateMergeRequestRequest::class,
+      easylab.v1.Easylab.UpdateMergeRequestResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun mergeMergeRequest(request: Easylab.MergeMergeRequestRequest, headers: Headers): ResponseMessage<Easylab.MergeMergeRequestResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/MergeMergeRequest",
+      easylab.v1.Easylab.MergeMergeRequestRequest::class,
+      easylab.v1.Easylab.MergeMergeRequestResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun listReviews(request: Easylab.ListReviewsRequest, headers: Headers): ResponseMessage<Easylab.ListReviewsResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/ListReviews",
+      easylab.v1.Easylab.ListReviewsRequest::class,
+      easylab.v1.Easylab.ListReviewsResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun addReview(request: Easylab.AddReviewRequest, headers: Headers): ResponseMessage<Easylab.AddReviewResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/AddReview",
+      easylab.v1.Easylab.AddReviewRequest::class,
+      easylab.v1.Easylab.AddReviewResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun listComments(request: Easylab.ListCommentsRequest, headers: Headers): ResponseMessage<Easylab.ListCommentsResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/ListComments",
+      easylab.v1.Easylab.ListCommentsRequest::class,
+      easylab.v1.Easylab.ListCommentsResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  override suspend fun addComment(request: Easylab.AddCommentRequest, headers: Headers): ResponseMessage<Easylab.AddCommentResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.LabService/AddComment",
+      easylab.v1.Easylab.AddCommentRequest::class,
+      easylab.v1.Easylab.AddCommentResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
 }

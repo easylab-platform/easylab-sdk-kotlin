@@ -133,6 +133,56 @@ public object PackageInfoKt {
     public fun com.google.protobuf.kotlin.DslList<easylab.v1.Easylab.PackageVersion, VersionsProxy>.clear() {
       _builder.clearVersions()
     }
+
+    /**
+     * ```
+     * Ownership visibility: "public" (default) or "private".
+     * ```
+     *
+     * `string visibility = 4 [json_name = "visibility"];`
+     */
+    public var visibility: kotlin.String
+      @kotlin.jvm.JvmName("getVisibility")
+        get() = _builder.visibility
+      @kotlin.jvm.JvmName("setVisibility")
+        set(value) {
+        _builder.visibility = value
+      }
+    /**
+     * ```
+     * Ownership visibility: "public" (default) or "private".
+     * ```
+     *
+     * `string visibility = 4 [json_name = "visibility"];`
+     */
+    public fun clearVisibility() {
+      _builder.clearVisibility()
+    }
+
+    /**
+     * ```
+     * Owning user id ("" when unclaimed, e.g. a pull-through cache entry).
+     * ```
+     *
+     * `string owner = 5 [json_name = "owner"];`
+     */
+    public var owner: kotlin.String
+      @kotlin.jvm.JvmName("getOwner")
+        get() = _builder.owner
+      @kotlin.jvm.JvmName("setOwner")
+        set(value) {
+        _builder.owner = value
+      }
+    /**
+     * ```
+     * Owning user id ("" when unclaimed, e.g. a pull-through cache entry).
+     * ```
+     *
+     * `string owner = 5 [json_name = "owner"];`
+     */
+    public fun clearOwner() {
+      _builder.clearOwner()
+    }
   }
 }
 public inline fun easylab.v1.Easylab.PackageInfo.copy(block: `easylab.v1`.PackageInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.PackageInfo =

@@ -6,7 +6,6 @@ package easylab.v1
 
 import com.connectrpc.Headers
 import com.connectrpc.ResponseMessage
-import com.connectrpc.ServerOnlyStreamInterface
 
 /**
  *  OpsService covers the dev/deploy surface (services, sandboxes, builds).
@@ -33,12 +32,6 @@ public interface OpsServiceClientInterface {
   public suspend fun sandboxWrite(request: Easylab.SandboxWriteRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SandboxWriteResponse>
 
   public suspend fun sandboxJobKill(request: Easylab.SandboxJobKillRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SandboxJobKillResponse>
-
-  public suspend fun listTasks(request: Easylab.ListTasksRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListTasksResponse>
-
-  public suspend fun getTask(request: Easylab.GetTaskRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.GetTaskResponse>
-
-  public suspend fun taskLog(headers: Headers = emptyMap()): ServerOnlyStreamInterface<Easylab.TaskLogRequest, Easylab.TaskLogResponse>
 
   public suspend fun sync(request: Easylab.SyncRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SyncResponse>
 }

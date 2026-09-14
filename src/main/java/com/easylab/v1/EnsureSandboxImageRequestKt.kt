@@ -45,6 +45,31 @@ public object EnsureSandboxImageRequestKt {
     public fun clearBaseImage() {
       _builder.clearBaseImage()
     }
+
+    /**
+     * ```
+     * "" / "linux" (derive base+worker) or "windows"/"macos"
+     * ```
+     *
+     * `string runtime = 2 [json_name = "runtime"];`
+     */
+    public var runtime: kotlin.String
+      @kotlin.jvm.JvmName("getRuntime")
+        get() = _builder.runtime
+      @kotlin.jvm.JvmName("setRuntime")
+        set(value) {
+        _builder.runtime = value
+      }
+    /**
+     * ```
+     * "" / "linux" (derive base+worker) or "windows"/"macos"
+     * ```
+     *
+     * `string runtime = 2 [json_name = "runtime"];`
+     */
+    public fun clearRuntime() {
+      _builder.clearRuntime()
+    }
   }
 }
 public inline fun easylab.v1.Easylab.EnsureSandboxImageRequest.copy(block: `easylab.v1`.EnsureSandboxImageRequestKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.EnsureSandboxImageRequest =

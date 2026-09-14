@@ -8,7 +8,6 @@ import com.connectrpc.Headers
 import com.connectrpc.MethodSpec
 import com.connectrpc.ProtocolClientInterface
 import com.connectrpc.ResponseMessage
-import com.connectrpc.ServerOnlyStreamInterface
 import com.connectrpc.StreamType
 
 /**
@@ -145,41 +144,6 @@ public class OpsServiceClient(
       easylab.v1.Easylab.SandboxJobKillRequest::class,
       easylab.v1.Easylab.SandboxJobKillResponse::class,
       StreamType.UNARY,
-    ),
-  )
-
-
-  override suspend fun listTasks(request: Easylab.ListTasksRequest, headers: Headers): ResponseMessage<Easylab.ListTasksResponse> = client.unary(
-    request,
-    headers,
-    MethodSpec(
-    "easylab.v1.OpsService/ListTasks",
-      easylab.v1.Easylab.ListTasksRequest::class,
-      easylab.v1.Easylab.ListTasksResponse::class,
-      StreamType.UNARY,
-    ),
-  )
-
-
-  override suspend fun getTask(request: Easylab.GetTaskRequest, headers: Headers): ResponseMessage<Easylab.GetTaskResponse> = client.unary(
-    request,
-    headers,
-    MethodSpec(
-    "easylab.v1.OpsService/GetTask",
-      easylab.v1.Easylab.GetTaskRequest::class,
-      easylab.v1.Easylab.GetTaskResponse::class,
-      StreamType.UNARY,
-    ),
-  )
-
-
-  override suspend fun taskLog(headers: Headers): ServerOnlyStreamInterface<Easylab.TaskLogRequest, Easylab.TaskLogResponse> = client.serverStream(
-    headers,
-    MethodSpec(
-    "easylab.v1.OpsService/TaskLog",
-      easylab.v1.Easylab.TaskLogRequest::class,
-      easylab.v1.Easylab.TaskLogResponse::class,
-      StreamType.SERVER,
     ),
   )
 

@@ -313,6 +313,67 @@ public object ServiceInfoKt {
     public fun clearPhase() {
       _builder.clearPhase()
     }
+
+    /**
+     * ```
+     * Owning user id and repository coordinates (ownership labels). Empty for a
+     * standalone service (owned by its creator only).
+     * ```
+     *
+     * `string owner = 14 [json_name = "owner"];`
+     */
+    public var owner: kotlin.String
+      @kotlin.jvm.JvmName("getOwner")
+        get() = _builder.owner
+      @kotlin.jvm.JvmName("setOwner")
+        set(value) {
+        _builder.owner = value
+      }
+    /**
+     * ```
+     * Owning user id and repository coordinates (ownership labels). Empty for a
+     * standalone service (owned by its creator only).
+     * ```
+     *
+     * `string owner = 14 [json_name = "owner"];`
+     */
+    public fun clearOwner() {
+      _builder.clearOwner()
+    }
+
+    /**
+     * `string org = 15 [json_name = "org"];`
+     */
+    public var org: kotlin.String
+      @kotlin.jvm.JvmName("getOrg")
+        get() = _builder.org
+      @kotlin.jvm.JvmName("setOrg")
+        set(value) {
+        _builder.org = value
+      }
+    /**
+     * `string org = 15 [json_name = "org"];`
+     */
+    public fun clearOrg() {
+      _builder.clearOrg()
+    }
+
+    /**
+     * `string repo = 16 [json_name = "repo"];`
+     */
+    public var repo: kotlin.String
+      @kotlin.jvm.JvmName("getRepo")
+        get() = _builder.repo
+      @kotlin.jvm.JvmName("setRepo")
+        set(value) {
+        _builder.repo = value
+      }
+    /**
+     * `string repo = 16 [json_name = "repo"];`
+     */
+    public fun clearRepo() {
+      _builder.clearRepo()
+    }
   }
 }
 public inline fun easylab.v1.Easylab.ServiceInfo.copy(block: `easylab.v1`.ServiceInfoKt.Dsl.() -> kotlin.Unit): easylab.v1.Easylab.ServiceInfo =
