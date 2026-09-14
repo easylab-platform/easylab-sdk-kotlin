@@ -266,6 +266,18 @@ public class AgentServiceClient(
   )
 
 
+  override suspend fun discoverGatewayModels(request: Agent.DiscoverGatewayModelsRequest, headers: Headers): ResponseMessage<Agent.DiscoverGatewayModelsResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "agent.v1.AgentService/DiscoverGatewayModels",
+      agent.v1.Agent.DiscoverGatewayModelsRequest::class,
+      agent.v1.Agent.DiscoverGatewayModelsResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
   override suspend fun deleteProvider(request: Agent.DeleteProviderRequest, headers: Headers): ResponseMessage<Agent.DeleteProviderResponse> = client.unary(
     request,
     headers,

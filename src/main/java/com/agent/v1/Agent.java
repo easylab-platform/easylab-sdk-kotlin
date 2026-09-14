@@ -7316,6 +7316,30 @@ java.lang.String defaultValue) {
      * @return The contextLimit.
      */
     long getContextLimit();
+
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     * @return The modelType.
+     */
+    java.lang.String getModelType();
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     * @return The bytes for modelType.
+     */
+    com.google.protobuf.ByteString
+        getModelTypeBytes();
   }
   /**
    * <pre>
@@ -7323,9 +7347,14 @@ java.lang.String defaultValue) {
    * carry only text models: `context_limit` (&gt; 0) is REQUIRED and drives
    * compaction budgets. The single `vercel-compatible-gateway` provider is a
    * SUPERSET — it may carry text models (context_limit &gt; 0) AND multimodal
-   * models used by tools (image/video/speech/transcription, context_limit 0);
-   * which capability a multimodal model serves is implied by the tool's config
-   * knob (image_model / video_model / tts_model / asr_model), not stored here.
+   * models used by tools (image/video/speech/transcription, context_limit 0).
+   *
+   * `model_type` is the model's KIND as advertised by the gateway `/config`
+   * (`language` / `image` / `video` / `speech` / `transcription` / `embedding` /
+   * `reranking` / `realtime`), normalized to a short tag (`text` for language).
+   * It is DISPLAY/classification metadata only: which tool serves a given
+   * multimodal model is still implied by the tool's config knob
+   * (image_model / video_model / tts_model / asr_model). Empty when unknown.
    * </pre>
    *
    * Protobuf type {@code agent.v1.ProviderModel}
@@ -7338,6 +7367,7 @@ java.lang.String defaultValue) {
     private ProviderModel() {
       id_ = "";
       name_ = "";
+      modelType_ = "";
     }
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
@@ -7459,6 +7489,83 @@ java.lang.String defaultValue) {
       contextLimit_ = 0L;
     }
 
+    public static final int MODEL_TYPE_FIELD_NUMBER = 4;
+    private java.lang.String modelType_;
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     * @return The modelType.
+     */
+    @java.lang.Override
+    public java.lang.String getModelType() {
+      return modelType_;
+    }
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     * @return The bytes for modelType.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getModelTypeBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(modelType_);
+    }
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     * @param value The modelType to set.
+     */
+    private void setModelType(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      modelType_ = value;
+    }
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     */
+    private void clearModelType() {
+
+      modelType_ = getDefaultInstance().getModelType();
+    }
+    /**
+     * <pre>
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * </pre>
+     *
+     * <code>string model_type = 4 [json_name = "modelType"];</code>
+     * @param value The bytes for modelType to set.
+     */
+    private void setModelTypeBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      modelType_ = value.toStringUtf8();
+
+    }
+
     public static agent.v1.Agent.ProviderModel parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -7548,9 +7655,14 @@ java.lang.String defaultValue) {
      * carry only text models: `context_limit` (&gt; 0) is REQUIRED and drives
      * compaction budgets. The single `vercel-compatible-gateway` provider is a
      * SUPERSET — it may carry text models (context_limit &gt; 0) AND multimodal
-     * models used by tools (image/video/speech/transcription, context_limit 0);
-     * which capability a multimodal model serves is implied by the tool's config
-     * knob (image_model / video_model / tts_model / asr_model), not stored here.
+     * models used by tools (image/video/speech/transcription, context_limit 0).
+     *
+     * `model_type` is the model's KIND as advertised by the gateway `/config`
+     * (`language` / `image` / `video` / `speech` / `transcription` / `embedding` /
+     * `reranking` / `realtime`), normalized to a short tag (`text` for language).
+     * It is DISPLAY/classification metadata only: which tool serves a given
+     * multimodal model is still implied by the tool's config knob
+     * (image_model / video_model / tts_model / asr_model). Empty when unknown.
      * </pre>
      *
      * Protobuf type {@code agent.v1.ProviderModel}
@@ -7692,6 +7804,85 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * Display-only kind: text | image | video | speech | transcription |
+       * embedding | reranking | realtime (normalized from the gateway /config
+       * modelType). Empty for a plain text provider or an unknown kind.
+       * </pre>
+       *
+       * <code>string model_type = 4 [json_name = "modelType"];</code>
+       * @return The modelType.
+       */
+      @java.lang.Override
+      public java.lang.String getModelType() {
+        return instance.getModelType();
+      }
+      /**
+       * <pre>
+       * Display-only kind: text | image | video | speech | transcription |
+       * embedding | reranking | realtime (normalized from the gateway /config
+       * modelType). Empty for a plain text provider or an unknown kind.
+       * </pre>
+       *
+       * <code>string model_type = 4 [json_name = "modelType"];</code>
+       * @return The bytes for modelType.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getModelTypeBytes() {
+        return instance.getModelTypeBytes();
+      }
+      /**
+       * <pre>
+       * Display-only kind: text | image | video | speech | transcription |
+       * embedding | reranking | realtime (normalized from the gateway /config
+       * modelType). Empty for a plain text provider or an unknown kind.
+       * </pre>
+       *
+       * <code>string model_type = 4 [json_name = "modelType"];</code>
+       * @param value The modelType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModelType(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setModelType(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Display-only kind: text | image | video | speech | transcription |
+       * embedding | reranking | realtime (normalized from the gateway /config
+       * modelType). Empty for a plain text provider or an unknown kind.
+       * </pre>
+       *
+       * <code>string model_type = 4 [json_name = "modelType"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModelType() {
+        copyOnWrite();
+        instance.clearModelType();
+        return this;
+      }
+      /**
+       * <pre>
+       * Display-only kind: text | image | video | speech | transcription |
+       * embedding | reranking | realtime (normalized from the gateway /config
+       * modelType). Empty for a plain text provider or an unknown kind.
+       * </pre>
+       *
+       * <code>string model_type = 4 [json_name = "modelType"];</code>
+       * @param value The bytes for modelType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModelTypeBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setModelTypeBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.ProviderModel)
     }
     @java.lang.Override
@@ -7711,10 +7902,11 @@ java.lang.String defaultValue) {
               "id_",
               "name_",
               "contextLimit_",
+              "modelType_",
             };
             java.lang.String info =
-                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
-                "\u0003\u0002";
+                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0002\u0004\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -10916,11 +11108,26 @@ java.lang.String defaultValue) {
      */
     com.google.protobuf.ByteString
         getIdBytes();
+
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     * @return The since.
+     */
+    java.lang.String getSince();
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     * @return The bytes for since.
+     */
+    com.google.protobuf.ByteString
+        getSinceBytes();
   }
   /**
    * <pre>
    * WatchSession streams live session events (the Connect replacement for the
    * SSE /stream endpoint): turn deltas, tool calls, errors and completions.
+   * `since` is a message id ANCHOR for incremental replay: when set, a replay
+   * starts AFTER that message (so a client that was offline still catches the
+   * turns that completed meanwhile). Empty = live-from-now (or the active run).
    * </pre>
    *
    * Protobuf type {@code agent.v1.WatchSessionRequest}
@@ -10932,6 +11139,7 @@ java.lang.String defaultValue) {
       WatchSessionRequestOrBuilder {
     private WatchSessionRequest() {
       id_ = "";
+      since_ = "";
     }
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
@@ -10977,6 +11185,53 @@ java.lang.String defaultValue) {
         com.google.protobuf.ByteString value) {
       checkByteStringIsUtf8(value);
       id_ = value.toStringUtf8();
+
+    }
+
+    public static final int SINCE_FIELD_NUMBER = 2;
+    private java.lang.String since_;
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     * @return The since.
+     */
+    @java.lang.Override
+    public java.lang.String getSince() {
+      return since_;
+    }
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     * @return The bytes for since.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getSinceBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(since_);
+    }
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     * @param value The since to set.
+     */
+    private void setSince(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      since_ = value;
+    }
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     */
+    private void clearSince() {
+
+      since_ = getDefaultInstance().getSince();
+    }
+    /**
+     * <code>string since = 2 [json_name = "since"];</code>
+     * @param value The bytes for since to set.
+     */
+    private void setSinceBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      since_ = value.toStringUtf8();
 
     }
 
@@ -11067,6 +11322,9 @@ java.lang.String defaultValue) {
      * <pre>
      * WatchSession streams live session events (the Connect replacement for the
      * SSE /stream endpoint): turn deltas, tool calls, errors and completions.
+     * `since` is a message id ANCHOR for incremental replay: when set, a replay
+     * starts AFTER that message (so a client that was offline still catches the
+     * turns that completed meanwhile). Empty = live-from-now (or the active run).
      * </pre>
      *
      * Protobuf type {@code agent.v1.WatchSessionRequest}
@@ -11131,6 +11389,55 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <code>string since = 2 [json_name = "since"];</code>
+       * @return The since.
+       */
+      @java.lang.Override
+      public java.lang.String getSince() {
+        return instance.getSince();
+      }
+      /**
+       * <code>string since = 2 [json_name = "since"];</code>
+       * @return The bytes for since.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getSinceBytes() {
+        return instance.getSinceBytes();
+      }
+      /**
+       * <code>string since = 2 [json_name = "since"];</code>
+       * @param value The since to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSince(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setSince(value);
+        return this;
+      }
+      /**
+       * <code>string since = 2 [json_name = "since"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSince() {
+        copyOnWrite();
+        instance.clearSince();
+        return this;
+      }
+      /**
+       * <code>string since = 2 [json_name = "since"];</code>
+       * @param value The bytes for since to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSinceBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setSinceBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.WatchSessionRequest)
     }
     @java.lang.Override
@@ -11148,9 +11455,11 @@ java.lang.String defaultValue) {
         case BUILD_MESSAGE_INFO: {
             java.lang.Object[] objects = new java.lang.Object[] {
               "id_",
+              "since_",
             };
             java.lang.String info =
-                "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0208";
+                "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -16530,18 +16839,63 @@ java.lang.String defaultValue) {
     int getLimit();
 
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      * @return The before.
      */
     java.lang.String getBefore();
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      * @return The bytes for before.
      */
     com.google.protobuf.ByteString
         getBeforeBytes();
+
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     * @return The after.
+     */
+    java.lang.String getAfter();
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     * @return The bytes for after.
+     */
+    com.google.protobuf.ByteString
+        getAfterBytes();
   }
   /**
+   * <pre>
+   * ListMessages reads a session's message chain. Two modes:
+   * * ANCHORED / incremental: `after` is a message id ANCHOR (a pin) the
+   * client already has. The response is the chain segment AFTER it, i.e. the
+   * walk from the current tip back to (excluding) that anchor — the messages
+   * appended since the client last synced. If the anchor is NOT on the
+   * current chain (it was withdrawn via undo, or the chain was forked), the
+   * response sets `resync=true` and the client must drop its cache and
+   * re-fetch. `tip_id` always echoes the current tip so the client can store
+   * it as the next anchor.
+   * * BACKWARD paging (existing): with `before` set (and `after` empty) the
+   * chain is read oldest→newest for `limit` messages BEFORE that cursor;
+   * with neither set, the newest `limit` messages.
+   * </pre>
+   *
    * Protobuf type {@code agent.v1.ListMessagesRequest}
    */
   public  static final class ListMessagesRequest extends
@@ -16552,6 +16906,7 @@ java.lang.String defaultValue) {
     private ListMessagesRequest() {
       id_ = "";
       before_ = "";
+      after_ = "";
     }
     public static final int ID_FIELD_NUMBER = 1;
     private java.lang.String id_;
@@ -16629,6 +16984,10 @@ java.lang.String defaultValue) {
     public static final int BEFORE_FIELD_NUMBER = 3;
     private java.lang.String before_;
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      * @return The before.
      */
@@ -16637,6 +16996,10 @@ java.lang.String defaultValue) {
       return before_;
     }
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      * @return The bytes for before.
      */
@@ -16646,6 +17009,10 @@ java.lang.String defaultValue) {
       return com.google.protobuf.ByteString.copyFromUtf8(before_);
     }
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      * @param value The before to set.
      */
@@ -16656,6 +17023,10 @@ java.lang.String defaultValue) {
       before_ = value;
     }
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      */
     private void clearBefore() {
@@ -16663,6 +17034,10 @@ java.lang.String defaultValue) {
       before_ = getDefaultInstance().getBefore();
     }
     /**
+     * <pre>
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * </pre>
+     *
      * <code>string before = 3 [json_name = "before"];</code>
      * @param value The bytes for before to set.
      */
@@ -16670,6 +17045,78 @@ java.lang.String defaultValue) {
         com.google.protobuf.ByteString value) {
       checkByteStringIsUtf8(value);
       before_ = value.toStringUtf8();
+
+    }
+
+    public static final int AFTER_FIELD_NUMBER = 4;
+    private java.lang.String after_;
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     * @return The after.
+     */
+    @java.lang.Override
+    public java.lang.String getAfter() {
+      return after_;
+    }
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     * @return The bytes for after.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getAfterBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(after_);
+    }
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     * @param value The after to set.
+     */
+    private void setAfter(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      after_ = value;
+    }
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     */
+    private void clearAfter() {
+
+      after_ = getDefaultInstance().getAfter();
+    }
+    /**
+     * <pre>
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * </pre>
+     *
+     * <code>string after = 4 [json_name = "after"];</code>
+     * @param value The bytes for after to set.
+     */
+    private void setAfterBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      after_ = value.toStringUtf8();
 
     }
 
@@ -16757,6 +17204,21 @@ java.lang.String defaultValue) {
     }
 
     /**
+     * <pre>
+     * ListMessages reads a session's message chain. Two modes:
+     * * ANCHORED / incremental: `after` is a message id ANCHOR (a pin) the
+     * client already has. The response is the chain segment AFTER it, i.e. the
+     * walk from the current tip back to (excluding) that anchor — the messages
+     * appended since the client last synced. If the anchor is NOT on the
+     * current chain (it was withdrawn via undo, or the chain was forked), the
+     * response sets `resync=true` and the client must drop its cache and
+     * re-fetch. `tip_id` always echoes the current tip so the client can store
+     * it as the next anchor.
+     * * BACKWARD paging (existing): with `before` set (and `after` empty) the
+     * chain is read oldest→newest for `limit` messages BEFORE that cursor;
+     * with neither set, the newest `limit` messages.
+     * </pre>
+     *
      * Protobuf type {@code agent.v1.ListMessagesRequest}
      */
     public static final class Builder extends
@@ -16848,6 +17310,10 @@ java.lang.String defaultValue) {
       }
 
       /**
+       * <pre>
+       * Backward-paging cursor (exclusive): return messages before this id.
+       * </pre>
+       *
        * <code>string before = 3 [json_name = "before"];</code>
        * @return The before.
        */
@@ -16856,6 +17322,10 @@ java.lang.String defaultValue) {
         return instance.getBefore();
       }
       /**
+       * <pre>
+       * Backward-paging cursor (exclusive): return messages before this id.
+       * </pre>
+       *
        * <code>string before = 3 [json_name = "before"];</code>
        * @return The bytes for before.
        */
@@ -16865,6 +17335,10 @@ java.lang.String defaultValue) {
         return instance.getBeforeBytes();
       }
       /**
+       * <pre>
+       * Backward-paging cursor (exclusive): return messages before this id.
+       * </pre>
+       *
        * <code>string before = 3 [json_name = "before"];</code>
        * @param value The before to set.
        * @return This builder for chaining.
@@ -16876,6 +17350,10 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
+       * <pre>
+       * Backward-paging cursor (exclusive): return messages before this id.
+       * </pre>
+       *
        * <code>string before = 3 [json_name = "before"];</code>
        * @return This builder for chaining.
        */
@@ -16885,6 +17363,10 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
+       * <pre>
+       * Backward-paging cursor (exclusive): return messages before this id.
+       * </pre>
+       *
        * <code>string before = 3 [json_name = "before"];</code>
        * @param value The bytes for before to set.
        * @return This builder for chaining.
@@ -16893,6 +17375,80 @@ java.lang.String defaultValue) {
           com.google.protobuf.ByteString value) {
         copyOnWrite();
         instance.setBeforeBytes(value);
+        return this;
+      }
+
+      /**
+       * <pre>
+       * Incremental anchor (exclusive): return messages after this id. When the
+       * anchor is absent from the current chain, the server signals `resync`.
+       * </pre>
+       *
+       * <code>string after = 4 [json_name = "after"];</code>
+       * @return The after.
+       */
+      @java.lang.Override
+      public java.lang.String getAfter() {
+        return instance.getAfter();
+      }
+      /**
+       * <pre>
+       * Incremental anchor (exclusive): return messages after this id. When the
+       * anchor is absent from the current chain, the server signals `resync`.
+       * </pre>
+       *
+       * <code>string after = 4 [json_name = "after"];</code>
+       * @return The bytes for after.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getAfterBytes() {
+        return instance.getAfterBytes();
+      }
+      /**
+       * <pre>
+       * Incremental anchor (exclusive): return messages after this id. When the
+       * anchor is absent from the current chain, the server signals `resync`.
+       * </pre>
+       *
+       * <code>string after = 4 [json_name = "after"];</code>
+       * @param value The after to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAfter(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setAfter(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Incremental anchor (exclusive): return messages after this id. When the
+       * anchor is absent from the current chain, the server signals `resync`.
+       * </pre>
+       *
+       * <code>string after = 4 [json_name = "after"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAfter() {
+        copyOnWrite();
+        instance.clearAfter();
+        return this;
+      }
+      /**
+       * <pre>
+       * Incremental anchor (exclusive): return messages after this id. When the
+       * anchor is absent from the current chain, the server signals `resync`.
+       * </pre>
+       *
+       * <code>string after = 4 [json_name = "after"];</code>
+       * @param value The bytes for after to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAfterBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setAfterBytes(value);
         return this;
       }
 
@@ -16915,10 +17471,11 @@ java.lang.String defaultValue) {
               "id_",
               "limit_",
               "before_",
+              "after_",
             };
             java.lang.String info =
-                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\u0004" +
-                "\u0003\u0208";
+                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u0208\u0002\u0004" +
+                "\u0003\u0208\u0004\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -16996,6 +17553,37 @@ java.lang.String defaultValue) {
      * <code>repeated .agent.v1.Message messages = 2 [json_name = "messages"];</code>
      */
     int getMessagesCount();
+
+    /**
+     * <pre>
+     * The anchor was not on the current chain (withdrawn/forked): the client
+     * must discard its local copy of this session and re-fetch from scratch.
+     * </pre>
+     *
+     * <code>bool resync = 3 [json_name = "resync"];</code>
+     * @return The resync.
+     */
+    boolean getResync();
+
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     * @return The tipId.
+     */
+    java.lang.String getTipId();
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     * @return The bytes for tipId.
+     */
+    com.google.protobuf.ByteString
+        getTipIdBytes();
   }
   /**
    * Protobuf type {@code agent.v1.ListMessagesResponse}
@@ -17007,6 +17595,7 @@ java.lang.String defaultValue) {
       ListMessagesResponseOrBuilder {
     private ListMessagesResponse() {
       messages_ = emptyProtobufList();
+      tipId_ = "";
     }
     public static final int OK_FIELD_NUMBER = 1;
     private boolean ok_;
@@ -17126,6 +17715,114 @@ java.lang.String defaultValue) {
     private void removeMessages(int index) {
       ensureMessagesIsMutable();
       messages_.remove(index);
+    }
+
+    public static final int RESYNC_FIELD_NUMBER = 3;
+    private boolean resync_;
+    /**
+     * <pre>
+     * The anchor was not on the current chain (withdrawn/forked): the client
+     * must discard its local copy of this session and re-fetch from scratch.
+     * </pre>
+     *
+     * <code>bool resync = 3 [json_name = "resync"];</code>
+     * @return The resync.
+     */
+    @java.lang.Override
+    public boolean getResync() {
+      return resync_;
+    }
+    /**
+     * <pre>
+     * The anchor was not on the current chain (withdrawn/forked): the client
+     * must discard its local copy of this session and re-fetch from scratch.
+     * </pre>
+     *
+     * <code>bool resync = 3 [json_name = "resync"];</code>
+     * @param value The resync to set.
+     */
+    private void setResync(boolean value) {
+      
+      resync_ = value;
+    }
+    /**
+     * <pre>
+     * The anchor was not on the current chain (withdrawn/forked): the client
+     * must discard its local copy of this session and re-fetch from scratch.
+     * </pre>
+     *
+     * <code>bool resync = 3 [json_name = "resync"];</code>
+     */
+    private void clearResync() {
+
+      resync_ = false;
+    }
+
+    public static final int TIP_ID_FIELD_NUMBER = 4;
+    private java.lang.String tipId_;
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     * @return The tipId.
+     */
+    @java.lang.Override
+    public java.lang.String getTipId() {
+      return tipId_;
+    }
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     * @return The bytes for tipId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTipIdBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(tipId_);
+    }
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     * @param value The tipId to set.
+     */
+    private void setTipId(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      tipId_ = value;
+    }
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     */
+    private void clearTipId() {
+
+      tipId_ = getDefaultInstance().getTipId();
+    }
+    /**
+     * <pre>
+     * Current chain tip id (store as the next `after` anchor).
+     * </pre>
+     *
+     * <code>string tip_id = 4 [json_name = "tipId"];</code>
+     * @param value The bytes for tipId to set.
+     */
+    private void setTipIdBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      tipId_ = value.toStringUtf8();
+
     }
 
     public static agent.v1.Agent.ListMessagesResponse parseFrom(
@@ -17355,6 +18052,118 @@ java.lang.String defaultValue) {
         return this;
       }
 
+      /**
+       * <pre>
+       * The anchor was not on the current chain (withdrawn/forked): the client
+       * must discard its local copy of this session and re-fetch from scratch.
+       * </pre>
+       *
+       * <code>bool resync = 3 [json_name = "resync"];</code>
+       * @return The resync.
+       */
+      @java.lang.Override
+      public boolean getResync() {
+        return instance.getResync();
+      }
+      /**
+       * <pre>
+       * The anchor was not on the current chain (withdrawn/forked): the client
+       * must discard its local copy of this session and re-fetch from scratch.
+       * </pre>
+       *
+       * <code>bool resync = 3 [json_name = "resync"];</code>
+       * @param value The resync to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResync(boolean value) {
+        copyOnWrite();
+        instance.setResync(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * The anchor was not on the current chain (withdrawn/forked): the client
+       * must discard its local copy of this session and re-fetch from scratch.
+       * </pre>
+       *
+       * <code>bool resync = 3 [json_name = "resync"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearResync() {
+        copyOnWrite();
+        instance.clearResync();
+        return this;
+      }
+
+      /**
+       * <pre>
+       * Current chain tip id (store as the next `after` anchor).
+       * </pre>
+       *
+       * <code>string tip_id = 4 [json_name = "tipId"];</code>
+       * @return The tipId.
+       */
+      @java.lang.Override
+      public java.lang.String getTipId() {
+        return instance.getTipId();
+      }
+      /**
+       * <pre>
+       * Current chain tip id (store as the next `after` anchor).
+       * </pre>
+       *
+       * <code>string tip_id = 4 [json_name = "tipId"];</code>
+       * @return The bytes for tipId.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getTipIdBytes() {
+        return instance.getTipIdBytes();
+      }
+      /**
+       * <pre>
+       * Current chain tip id (store as the next `after` anchor).
+       * </pre>
+       *
+       * <code>string tip_id = 4 [json_name = "tipId"];</code>
+       * @param value The tipId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTipId(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setTipId(value);
+        return this;
+      }
+      /**
+       * <pre>
+       * Current chain tip id (store as the next `after` anchor).
+       * </pre>
+       *
+       * <code>string tip_id = 4 [json_name = "tipId"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTipId() {
+        copyOnWrite();
+        instance.clearTipId();
+        return this;
+      }
+      /**
+       * <pre>
+       * Current chain tip id (store as the next `after` anchor).
+       * </pre>
+       *
+       * <code>string tip_id = 4 [json_name = "tipId"];</code>
+       * @param value The bytes for tipId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTipIdBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setTipIdBytes(value);
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:agent.v1.ListMessagesResponse)
     }
     @java.lang.Override
@@ -17374,10 +18183,12 @@ java.lang.String defaultValue) {
               "ok_",
               "messages_",
               agent.v1.Agent.Message.class,
+              "resync_",
+              "tipId_",
             };
             java.lang.String info =
-                "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0001\u0000\u0001\u0007\u0002\u001b" +
-                "";
+                "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0001\u0000\u0001\u0007\u0002\u001b" +
+                "\u0003\u0007\u0004\u0208";
             return newMessageInfo(DEFAULT_INSTANCE, info, objects);
         }
         case GET_DEFAULT_INSTANCE: {
@@ -27753,6 +28564,1453 @@ com.google.protobuf.Value defaultValue) {
     private static volatile com.google.protobuf.Parser<RegisterProviderResponse> PARSER;
 
     public static com.google.protobuf.Parser<RegisterProviderResponse> parser() {
+      return DEFAULT_INSTANCE.getParserForType();
+    }
+  }
+
+  public interface DiscoverGatewayModelsRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:agent.v1.DiscoverGatewayModelsRequest)
+      com.google.protobuf.MessageLiteOrBuilder {
+
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The providerId.
+     */
+    java.lang.String getProviderId();
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The bytes for providerId.
+     */
+    com.google.protobuf.ByteString
+        getProviderIdBytes();
+
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     * @return The apiType.
+     */
+    java.lang.String getApiType();
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     * @return The bytes for apiType.
+     */
+    com.google.protobuf.ByteString
+        getApiTypeBytes();
+
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     * @return The baseUrl.
+     */
+    java.lang.String getBaseUrl();
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     * @return The bytes for baseUrl.
+     */
+    com.google.protobuf.ByteString
+        getBaseUrlBytes();
+
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     * @return The apiKey.
+     */
+    java.lang.String getApiKey();
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     * @return The bytes for apiKey.
+     */
+    com.google.protobuf.ByteString
+        getApiKeyBytes();
+
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    int getHeadersCount();
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    boolean containsHeaders(
+        java.lang.String key);
+    /**
+     * Use {@link #getHeadersMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.String, java.lang.String>
+    getHeaders();
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    java.util.Map<java.lang.String, java.lang.String>
+    getHeadersMap();
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+
+    /* nullable */
+java.lang.String getHeadersOrDefault(
+        java.lang.String key,
+        /* nullable */
+java.lang.String defaultValue);
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+
+    java.lang.String getHeadersOrThrow(
+        java.lang.String key);
+  }
+  /**
+   * <pre>
+   * DiscoverGatewayModels asks a `vercel-compatible-gateway` for the models it
+   * serves (the gateway's `/config`) and classifies each by the advertised
+   * `modelType`: language models get a real context limit, all other kinds
+   * (image/video/speech/transcription/embedding/reranking) get 0. The gateway is
+   * the only provider that can answer this, so a non-gateway api_type is
+   * rejected.
+   * </pre>
+   *
+   * Protobuf type {@code agent.v1.DiscoverGatewayModelsRequest}
+   */
+  public  static final class DiscoverGatewayModelsRequest extends
+      com.google.protobuf.GeneratedMessageLite<
+          DiscoverGatewayModelsRequest, DiscoverGatewayModelsRequest.Builder> implements
+      // @@protoc_insertion_point(message_implements:agent.v1.DiscoverGatewayModelsRequest)
+      DiscoverGatewayModelsRequestOrBuilder {
+    private DiscoverGatewayModelsRequest() {
+      providerId_ = "";
+      apiType_ = "";
+      baseUrl_ = "";
+      apiKey_ = "";
+    }
+    public static final int PROVIDER_ID_FIELD_NUMBER = 1;
+    private java.lang.String providerId_;
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The providerId.
+     */
+    @java.lang.Override
+    public java.lang.String getProviderId() {
+      return providerId_;
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @return The bytes for providerId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getProviderIdBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(providerId_);
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @param value The providerId to set.
+     */
+    private void setProviderId(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      providerId_ = value;
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     */
+    private void clearProviderId() {
+
+      providerId_ = getDefaultInstance().getProviderId();
+    }
+    /**
+     * <code>string provider_id = 1 [json_name = "providerId"];</code>
+     * @param value The bytes for providerId to set.
+     */
+    private void setProviderIdBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      providerId_ = value.toStringUtf8();
+
+    }
+
+    public static final int API_TYPE_FIELD_NUMBER = 2;
+    private java.lang.String apiType_;
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     * @return The apiType.
+     */
+    @java.lang.Override
+    public java.lang.String getApiType() {
+      return apiType_;
+    }
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     * @return The bytes for apiType.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getApiTypeBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(apiType_);
+    }
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     * @param value The apiType to set.
+     */
+    private void setApiType(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      apiType_ = value;
+    }
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     */
+    private void clearApiType() {
+
+      apiType_ = getDefaultInstance().getApiType();
+    }
+    /**
+     * <code>string api_type = 2 [json_name = "apiType"];</code>
+     * @param value The bytes for apiType to set.
+     */
+    private void setApiTypeBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      apiType_ = value.toStringUtf8();
+
+    }
+
+    public static final int BASE_URL_FIELD_NUMBER = 3;
+    private java.lang.String baseUrl_;
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     * @return The baseUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getBaseUrl() {
+      return baseUrl_;
+    }
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     * @return The bytes for baseUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getBaseUrlBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(baseUrl_);
+    }
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     * @param value The baseUrl to set.
+     */
+    private void setBaseUrl(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      baseUrl_ = value;
+    }
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     */
+    private void clearBaseUrl() {
+
+      baseUrl_ = getDefaultInstance().getBaseUrl();
+    }
+    /**
+     * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+     * @param value The bytes for baseUrl to set.
+     */
+    private void setBaseUrlBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      baseUrl_ = value.toStringUtf8();
+
+    }
+
+    public static final int API_KEY_FIELD_NUMBER = 4;
+    private java.lang.String apiKey_;
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     * @return The apiKey.
+     */
+    @java.lang.Override
+    public java.lang.String getApiKey() {
+      return apiKey_;
+    }
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     * @return The bytes for apiKey.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getApiKeyBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(apiKey_);
+    }
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     * @param value The apiKey to set.
+     */
+    private void setApiKey(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      apiKey_ = value;
+    }
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     */
+    private void clearApiKey() {
+
+      apiKey_ = getDefaultInstance().getApiKey();
+    }
+    /**
+     * <code>string api_key = 4 [json_name = "apiKey"];</code>
+     * @param value The bytes for apiKey to set.
+     */
+    private void setApiKeyBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      apiKey_ = value.toStringUtf8();
+
+    }
+
+    public static final int HEADERS_FIELD_NUMBER = 5;
+    private static final class HeadersDefaultEntryHolder {
+      static final com.google.protobuf.MapEntryLite<
+          java.lang.String, java.lang.String> defaultEntry =
+              com.google.protobuf.MapEntryLite
+              .<java.lang.String, java.lang.String>newDefaultInstance(
+                  com.google.protobuf.WireFormat.FieldType.STRING,
+                  "",
+                  com.google.protobuf.WireFormat.FieldType.STRING,
+                  "");
+    }
+    private com.google.protobuf.MapFieldLite<
+        java.lang.String, java.lang.String> headers_ =
+            com.google.protobuf.MapFieldLite.emptyMapField();
+    private com.google.protobuf.MapFieldLite<java.lang.String, java.lang.String>
+    internalGetHeaders() {
+      return headers_;
+    }
+    private com.google.protobuf.MapFieldLite<java.lang.String, java.lang.String>
+    internalGetMutableHeaders() {
+      if (!headers_.isMutable()) {
+        headers_ = headers_.mutableCopy();
+      }
+      return headers_;
+    }
+    @java.lang.Override
+
+    public int getHeadersCount() {
+      return internalGetHeaders().size();
+    }
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    @java.lang.Override
+
+    public boolean containsHeaders(
+        java.lang.String key) {
+      java.util.Objects.requireNonNull(key);
+      return internalGetHeaders().containsKey(key);
+    }
+    /**
+     * Use {@link #getHeadersMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.String, java.lang.String> getHeaders() {
+      return getHeadersMap();
+    }
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.String, java.lang.String> getHeadersMap() {
+      return java.util.Collections.unmodifiableMap(
+          internalGetHeaders());
+    }
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    @java.lang.Override
+
+    public /* nullable */
+java.lang.String getHeadersOrDefault(
+        java.lang.String key,
+        /* nullable */
+java.lang.String defaultValue) {
+      java.util.Objects.requireNonNull(key);
+      java.util.Map<java.lang.String, java.lang.String> map =
+          internalGetHeaders();
+      java.lang.String v = map.get(key);
+      return v != null ? v : defaultValue;
+    }
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    @java.lang.Override
+
+    public java.lang.String getHeadersOrThrow(
+        java.lang.String key) {
+      java.util.Objects.requireNonNull(key);
+      java.util.Map<java.lang.String, java.lang.String> map =
+          internalGetHeaders();
+      java.lang.String v = map.get(key);
+      if (v == null) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return v;
+    }
+    /**
+     * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+     */
+    private java.util.Map<java.lang.String, java.lang.String>
+    getMutableHeadersMap() {
+      return internalGetMutableHeaders();
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return (Builder) DEFAULT_INSTANCE.createBuilder();
+    }
+    public static Builder newBuilder(agent.v1.Agent.DiscoverGatewayModelsRequest prototype) {
+      return DEFAULT_INSTANCE.createBuilder(prototype);
+    }
+
+    /**
+     * <pre>
+     * DiscoverGatewayModels asks a `vercel-compatible-gateway` for the models it
+     * serves (the gateway's `/config`) and classifies each by the advertised
+     * `modelType`: language models get a real context limit, all other kinds
+     * (image/video/speech/transcription/embedding/reranking) get 0. The gateway is
+     * the only provider that can answer this, so a non-gateway api_type is
+     * rejected.
+     * </pre>
+     *
+     * Protobuf type {@code agent.v1.DiscoverGatewayModelsRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageLite.Builder<
+          agent.v1.Agent.DiscoverGatewayModelsRequest, Builder> implements
+        // @@protoc_insertion_point(builder_implements:agent.v1.DiscoverGatewayModelsRequest)
+        agent.v1.Agent.DiscoverGatewayModelsRequestOrBuilder {
+      // Construct using agent.v1.Agent.DiscoverGatewayModelsRequest.newBuilder()
+      private Builder() {
+        super(DEFAULT_INSTANCE);
+      }
+
+
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @return The providerId.
+       */
+      @java.lang.Override
+      public java.lang.String getProviderId() {
+        return instance.getProviderId();
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @return The bytes for providerId.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getProviderIdBytes() {
+        return instance.getProviderIdBytes();
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @param value The providerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProviderId(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setProviderId(value);
+        return this;
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProviderId() {
+        copyOnWrite();
+        instance.clearProviderId();
+        return this;
+      }
+      /**
+       * <code>string provider_id = 1 [json_name = "providerId"];</code>
+       * @param value The bytes for providerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProviderIdBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setProviderIdBytes(value);
+        return this;
+      }
+
+      /**
+       * <code>string api_type = 2 [json_name = "apiType"];</code>
+       * @return The apiType.
+       */
+      @java.lang.Override
+      public java.lang.String getApiType() {
+        return instance.getApiType();
+      }
+      /**
+       * <code>string api_type = 2 [json_name = "apiType"];</code>
+       * @return The bytes for apiType.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getApiTypeBytes() {
+        return instance.getApiTypeBytes();
+      }
+      /**
+       * <code>string api_type = 2 [json_name = "apiType"];</code>
+       * @param value The apiType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setApiType(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setApiType(value);
+        return this;
+      }
+      /**
+       * <code>string api_type = 2 [json_name = "apiType"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearApiType() {
+        copyOnWrite();
+        instance.clearApiType();
+        return this;
+      }
+      /**
+       * <code>string api_type = 2 [json_name = "apiType"];</code>
+       * @param value The bytes for apiType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setApiTypeBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setApiTypeBytes(value);
+        return this;
+      }
+
+      /**
+       * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+       * @return The baseUrl.
+       */
+      @java.lang.Override
+      public java.lang.String getBaseUrl() {
+        return instance.getBaseUrl();
+      }
+      /**
+       * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+       * @return The bytes for baseUrl.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getBaseUrlBytes() {
+        return instance.getBaseUrlBytes();
+      }
+      /**
+       * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+       * @param value The baseUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBaseUrl(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setBaseUrl(value);
+        return this;
+      }
+      /**
+       * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBaseUrl() {
+        copyOnWrite();
+        instance.clearBaseUrl();
+        return this;
+      }
+      /**
+       * <code>string base_url = 3 [json_name = "baseUrl"];</code>
+       * @param value The bytes for baseUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBaseUrlBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setBaseUrlBytes(value);
+        return this;
+      }
+
+      /**
+       * <code>string api_key = 4 [json_name = "apiKey"];</code>
+       * @return The apiKey.
+       */
+      @java.lang.Override
+      public java.lang.String getApiKey() {
+        return instance.getApiKey();
+      }
+      /**
+       * <code>string api_key = 4 [json_name = "apiKey"];</code>
+       * @return The bytes for apiKey.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getApiKeyBytes() {
+        return instance.getApiKeyBytes();
+      }
+      /**
+       * <code>string api_key = 4 [json_name = "apiKey"];</code>
+       * @param value The apiKey to set.
+       * @return This builder for chaining.
+       */
+      public Builder setApiKey(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setApiKey(value);
+        return this;
+      }
+      /**
+       * <code>string api_key = 4 [json_name = "apiKey"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearApiKey() {
+        copyOnWrite();
+        instance.clearApiKey();
+        return this;
+      }
+      /**
+       * <code>string api_key = 4 [json_name = "apiKey"];</code>
+       * @param value The bytes for apiKey to set.
+       * @return This builder for chaining.
+       */
+      public Builder setApiKeyBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setApiKeyBytes(value);
+        return this;
+      }
+
+      @java.lang.Override
+
+      public int getHeadersCount() {
+        return instance.getHeadersMap().size();
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+      @java.lang.Override
+
+      public boolean containsHeaders(
+          java.lang.String key) {
+        java.util.Objects.requireNonNull(key);
+        return instance.getHeadersMap().containsKey(key);
+      }
+
+      public Builder clearHeaders() {
+        copyOnWrite();
+        instance.getMutableHeadersMap().clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+
+      public Builder removeHeaders(
+          java.lang.String key) {
+        java.util.Objects.requireNonNull(key);
+        copyOnWrite();
+        instance.getMutableHeadersMap().remove(key);
+        return this;
+      }
+      /**
+       * Use {@link #getHeadersMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, java.lang.String> getHeaders() {
+        return getHeadersMap();
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+      @java.lang.Override
+      public java.util.Map<java.lang.String, java.lang.String> getHeadersMap() {
+        return java.util.Collections.unmodifiableMap(
+            instance.getHeadersMap());
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+      @java.lang.Override
+
+      public /* nullable */
+java.lang.String getHeadersOrDefault(
+          java.lang.String key,
+          /* nullable */
+java.lang.String defaultValue) {
+        java.util.Objects.requireNonNull(key);
+        java.util.Map<java.lang.String, java.lang.String> map =
+            instance.getHeadersMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+      @java.lang.Override
+
+      public java.lang.String getHeadersOrThrow(
+          java.lang.String key) {
+        java.util.Objects.requireNonNull(key);
+        java.util.Map<java.lang.String, java.lang.String> map =
+            instance.getHeadersMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+      public Builder putHeaders(
+          java.lang.String key,
+          java.lang.String value) {
+        java.util.Objects.requireNonNull(key);
+        java.util.Objects.requireNonNull(value);
+        copyOnWrite();
+        instance.getMutableHeadersMap().put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;string, string&gt; headers = 5 [json_name = "headers"];</code>
+       */
+      public Builder putAllHeaders(
+          java.util.Map<java.lang.String, java.lang.String> values) {
+        copyOnWrite();
+        instance.getMutableHeadersMap().putAll(values);
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:agent.v1.DiscoverGatewayModelsRequest)
+    }
+    @java.lang.Override
+    @java.lang.SuppressWarnings({"ThrowNull"})
+    protected final java.lang.Object dynamicMethod(
+        com.google.protobuf.GeneratedMessageLite.MethodToInvoke method,
+        java.lang.Object arg0, java.lang.Object arg1) {
+      switch (method) {
+        case NEW_MUTABLE_INSTANCE: {
+          return new agent.v1.Agent.DiscoverGatewayModelsRequest();
+        }
+        case NEW_BUILDER: {
+          return new Builder();
+        }
+        case BUILD_MESSAGE_INFO: {
+            java.lang.Object[] objects = new java.lang.Object[] {
+              "providerId_",
+              "apiType_",
+              "baseUrl_",
+              "apiKey_",
+              "headers_",
+              HeadersDefaultEntryHolder.defaultEntry,
+            };
+            java.lang.String info =
+                "\u0000\u0005\u0000\u0000\u0001\u0005\u0005\u0001\u0000\u0000\u0001\u0208\u0002\u0208" +
+                "\u0003\u0208\u0004\u0208\u00052";
+            return newMessageInfo(DEFAULT_INSTANCE, info, objects);
+        }
+        case GET_DEFAULT_INSTANCE: {
+          return DEFAULT_INSTANCE;
+        }
+        case GET_PARSER: {
+          com.google.protobuf.Parser<agent.v1.Agent.DiscoverGatewayModelsRequest> parser = PARSER;
+          if (parser == null) {
+            synchronized (agent.v1.Agent.DiscoverGatewayModelsRequest.class) {
+              parser = PARSER;
+              if (parser == null) {
+                parser =
+                    new DefaultInstanceBasedParser<agent.v1.Agent.DiscoverGatewayModelsRequest>(
+                        DEFAULT_INSTANCE);
+                PARSER = parser;
+              }
+            }
+          }
+          return parser;
+        }
+        case GET_MEMOIZED_IS_INITIALIZED: {
+          return (byte) 1;
+        }
+        // SET_MEMOIZED_IS_INITIALIZED is never called for this message.
+        // So it can do anything. Combine with default case for smaller codegen.
+        case SET_MEMOIZED_IS_INITIALIZED:
+      }
+      // Should never happen. Generates tight code to throw an exception.
+      throw null;
+    }
+
+
+    // @@protoc_insertion_point(class_scope:agent.v1.DiscoverGatewayModelsRequest)
+    private static final agent.v1.Agent.DiscoverGatewayModelsRequest DEFAULT_INSTANCE;
+    static {
+      DiscoverGatewayModelsRequest defaultInstance = new DiscoverGatewayModelsRequest();
+      // New instances are implicitly immutable so no need to make
+      // immutable.
+      DEFAULT_INSTANCE = defaultInstance;
+      com.google.protobuf.GeneratedMessageLite.registerDefaultInstance(
+        DiscoverGatewayModelsRequest.class, defaultInstance);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static volatile com.google.protobuf.Parser<DiscoverGatewayModelsRequest> PARSER;
+
+    public static com.google.protobuf.Parser<DiscoverGatewayModelsRequest> parser() {
+      return DEFAULT_INSTANCE.getParserForType();
+    }
+  }
+
+  public interface DiscoverGatewayModelsResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:agent.v1.DiscoverGatewayModelsResponse)
+      com.google.protobuf.MessageLiteOrBuilder {
+
+    /**
+     * <code>bool ok = 1 [json_name = "ok"];</code>
+     * @return The ok.
+     */
+    boolean getOk();
+
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     * @return The error.
+     */
+    java.lang.String getError();
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     * @return The bytes for error.
+     */
+    com.google.protobuf.ByteString
+        getErrorBytes();
+
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    java.util.List<agent.v1.Agent.ProviderModel> 
+        getModelsList();
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    agent.v1.Agent.ProviderModel getModels(int index);
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    int getModelsCount();
+  }
+  /**
+   * Protobuf type {@code agent.v1.DiscoverGatewayModelsResponse}
+   */
+  public  static final class DiscoverGatewayModelsResponse extends
+      com.google.protobuf.GeneratedMessageLite<
+          DiscoverGatewayModelsResponse, DiscoverGatewayModelsResponse.Builder> implements
+      // @@protoc_insertion_point(message_implements:agent.v1.DiscoverGatewayModelsResponse)
+      DiscoverGatewayModelsResponseOrBuilder {
+    private DiscoverGatewayModelsResponse() {
+      error_ = "";
+      models_ = emptyProtobufList();
+    }
+    public static final int OK_FIELD_NUMBER = 1;
+    private boolean ok_;
+    /**
+     * <code>bool ok = 1 [json_name = "ok"];</code>
+     * @return The ok.
+     */
+    @java.lang.Override
+    public boolean getOk() {
+      return ok_;
+    }
+    /**
+     * <code>bool ok = 1 [json_name = "ok"];</code>
+     * @param value The ok to set.
+     */
+    private void setOk(boolean value) {
+      
+      ok_ = value;
+    }
+    /**
+     * <code>bool ok = 1 [json_name = "ok"];</code>
+     */
+    private void clearOk() {
+
+      ok_ = false;
+    }
+
+    public static final int ERROR_FIELD_NUMBER = 2;
+    private java.lang.String error_;
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     * @return The error.
+     */
+    @java.lang.Override
+    public java.lang.String getError() {
+      return error_;
+    }
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     * @return The bytes for error.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getErrorBytes() {
+      return com.google.protobuf.ByteString.copyFromUtf8(error_);
+    }
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     * @param value The error to set.
+     */
+    private void setError(
+        java.lang.String value) {
+      java.util.Objects.requireNonNull(value);
+
+      error_ = value;
+    }
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     */
+    private void clearError() {
+
+      error_ = getDefaultInstance().getError();
+    }
+    /**
+     * <code>string error = 2 [json_name = "error"];</code>
+     * @param value The bytes for error to set.
+     */
+    private void setErrorBytes(
+        com.google.protobuf.ByteString value) {
+      checkByteStringIsUtf8(value);
+      error_ = value.toStringUtf8();
+
+    }
+
+    public static final int MODELS_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.ProviderModel> models_;
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    @java.lang.Override
+    public java.util.List<agent.v1.Agent.ProviderModel> getModelsList() {
+      return models_;
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    public java.util.List<? extends agent.v1.Agent.ProviderModelOrBuilder> 
+        getModelsOrBuilderList() {
+      return models_;
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    @java.lang.Override
+    public int getModelsCount() {
+      return models_.size();
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    @java.lang.Override
+    public agent.v1.Agent.ProviderModel getModels(int index) {
+      return models_.get(index);
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    public agent.v1.Agent.ProviderModelOrBuilder getModelsOrBuilder(
+        int index) {
+      return models_.get(index);
+    }
+    private void ensureModelsIsMutable() {
+      com.google.protobuf.Internal.ProtobufList<agent.v1.Agent.ProviderModel> tmp = models_;
+      if (!tmp.isModifiable()) {
+        models_ =
+            com.google.protobuf.GeneratedMessageLite.mutableCopy(tmp);
+       }
+    }
+
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    private void setModels(
+        int index, agent.v1.Agent.ProviderModel value) {
+      java.util.Objects.requireNonNull(value);
+      ensureModelsIsMutable();
+      models_.set(index, value);
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    private void addModels(agent.v1.Agent.ProviderModel value) {
+      java.util.Objects.requireNonNull(value);
+      ensureModelsIsMutable();
+      models_.add(value);
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    private void addModels(
+        int index, agent.v1.Agent.ProviderModel value) {
+      java.util.Objects.requireNonNull(value);
+      ensureModelsIsMutable();
+      models_.add(index, value);
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    private void addAllModels(
+        java.lang.Iterable<? extends agent.v1.Agent.ProviderModel> values) {
+      ensureModelsIsMutable();
+      com.google.protobuf.AbstractMessageLite.addAll(
+          values, models_);
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    private void clearModels() {
+      models_ = emptyProtobufList();
+    }
+    /**
+     * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+     */
+    private void removeModels(int index) {
+      ensureModelsIsMutable();
+      models_.remove(index);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return parseDelimitedFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input);
+    }
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageLite.parseFrom(
+          DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return (Builder) DEFAULT_INSTANCE.createBuilder();
+    }
+    public static Builder newBuilder(agent.v1.Agent.DiscoverGatewayModelsResponse prototype) {
+      return DEFAULT_INSTANCE.createBuilder(prototype);
+    }
+
+    /**
+     * Protobuf type {@code agent.v1.DiscoverGatewayModelsResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageLite.Builder<
+          agent.v1.Agent.DiscoverGatewayModelsResponse, Builder> implements
+        // @@protoc_insertion_point(builder_implements:agent.v1.DiscoverGatewayModelsResponse)
+        agent.v1.Agent.DiscoverGatewayModelsResponseOrBuilder {
+      // Construct using agent.v1.Agent.DiscoverGatewayModelsResponse.newBuilder()
+      private Builder() {
+        super(DEFAULT_INSTANCE);
+      }
+
+
+      /**
+       * <code>bool ok = 1 [json_name = "ok"];</code>
+       * @return The ok.
+       */
+      @java.lang.Override
+      public boolean getOk() {
+        return instance.getOk();
+      }
+      /**
+       * <code>bool ok = 1 [json_name = "ok"];</code>
+       * @param value The ok to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOk(boolean value) {
+        copyOnWrite();
+        instance.setOk(value);
+        return this;
+      }
+      /**
+       * <code>bool ok = 1 [json_name = "ok"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOk() {
+        copyOnWrite();
+        instance.clearOk();
+        return this;
+      }
+
+      /**
+       * <code>string error = 2 [json_name = "error"];</code>
+       * @return The error.
+       */
+      @java.lang.Override
+      public java.lang.String getError() {
+        return instance.getError();
+      }
+      /**
+       * <code>string error = 2 [json_name = "error"];</code>
+       * @return The bytes for error.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getErrorBytes() {
+        return instance.getErrorBytes();
+      }
+      /**
+       * <code>string error = 2 [json_name = "error"];</code>
+       * @param value The error to set.
+       * @return This builder for chaining.
+       */
+      public Builder setError(
+          java.lang.String value) {
+        copyOnWrite();
+        instance.setError(value);
+        return this;
+      }
+      /**
+       * <code>string error = 2 [json_name = "error"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearError() {
+        copyOnWrite();
+        instance.clearError();
+        return this;
+      }
+      /**
+       * <code>string error = 2 [json_name = "error"];</code>
+       * @param value The bytes for error to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorBytes(
+          com.google.protobuf.ByteString value) {
+        copyOnWrite();
+        instance.setErrorBytes(value);
+        return this;
+      }
+
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      @java.lang.Override
+      public java.util.List<agent.v1.Agent.ProviderModel> getModelsList() {
+        return java.util.Collections.unmodifiableList(
+            instance.getModelsList());
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      @java.lang.Override
+      public int getModelsCount() {
+        return instance.getModelsCount();
+      }/**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      @java.lang.Override
+      public agent.v1.Agent.ProviderModel getModels(int index) {
+        return instance.getModels(index);
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder setModels(
+          int index, agent.v1.Agent.ProviderModel value) {
+        copyOnWrite();
+        instance.setModels(index, value);
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder setModels(
+          int index, agent.v1.Agent.ProviderModel.Builder builderForValue) {
+        copyOnWrite();
+        instance.setModels(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder addModels(agent.v1.Agent.ProviderModel value) {
+        copyOnWrite();
+        instance.addModels(value);
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder addModels(
+          int index, agent.v1.Agent.ProviderModel value) {
+        copyOnWrite();
+        instance.addModels(index, value);
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder addModels(
+          agent.v1.Agent.ProviderModel.Builder builderForValue) {
+        copyOnWrite();
+        instance.addModels(builderForValue.build());
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder addModels(
+          int index, agent.v1.Agent.ProviderModel.Builder builderForValue) {
+        copyOnWrite();
+        instance.addModels(index,
+            builderForValue.build());
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder addAllModels(
+          java.lang.Iterable<? extends agent.v1.Agent.ProviderModel> values) {
+        copyOnWrite();
+        instance.addAllModels(values);
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder clearModels() {
+        copyOnWrite();
+        instance.clearModels();
+        return this;
+      }
+      /**
+       * <code>repeated .agent.v1.ProviderModel models = 3 [json_name = "models"];</code>
+       */
+      public Builder removeModels(int index) {
+        copyOnWrite();
+        instance.removeModels(index);
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:agent.v1.DiscoverGatewayModelsResponse)
+    }
+    @java.lang.Override
+    @java.lang.SuppressWarnings({"ThrowNull"})
+    protected final java.lang.Object dynamicMethod(
+        com.google.protobuf.GeneratedMessageLite.MethodToInvoke method,
+        java.lang.Object arg0, java.lang.Object arg1) {
+      switch (method) {
+        case NEW_MUTABLE_INSTANCE: {
+          return new agent.v1.Agent.DiscoverGatewayModelsResponse();
+        }
+        case NEW_BUILDER: {
+          return new Builder();
+        }
+        case BUILD_MESSAGE_INFO: {
+            java.lang.Object[] objects = new java.lang.Object[] {
+              "ok_",
+              "error_",
+              "models_",
+              agent.v1.Agent.ProviderModel.class,
+            };
+            java.lang.String info =
+                "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0001\u0000\u0001\u0007\u0002\u0208" +
+                "\u0003\u001b";
+            return newMessageInfo(DEFAULT_INSTANCE, info, objects);
+        }
+        case GET_DEFAULT_INSTANCE: {
+          return DEFAULT_INSTANCE;
+        }
+        case GET_PARSER: {
+          com.google.protobuf.Parser<agent.v1.Agent.DiscoverGatewayModelsResponse> parser = PARSER;
+          if (parser == null) {
+            synchronized (agent.v1.Agent.DiscoverGatewayModelsResponse.class) {
+              parser = PARSER;
+              if (parser == null) {
+                parser =
+                    new DefaultInstanceBasedParser<agent.v1.Agent.DiscoverGatewayModelsResponse>(
+                        DEFAULT_INSTANCE);
+                PARSER = parser;
+              }
+            }
+          }
+          return parser;
+        }
+        case GET_MEMOIZED_IS_INITIALIZED: {
+          return (byte) 1;
+        }
+        // SET_MEMOIZED_IS_INITIALIZED is never called for this message.
+        // So it can do anything. Combine with default case for smaller codegen.
+        case SET_MEMOIZED_IS_INITIALIZED:
+      }
+      // Should never happen. Generates tight code to throw an exception.
+      throw null;
+    }
+
+
+    // @@protoc_insertion_point(class_scope:agent.v1.DiscoverGatewayModelsResponse)
+    private static final agent.v1.Agent.DiscoverGatewayModelsResponse DEFAULT_INSTANCE;
+    static {
+      DiscoverGatewayModelsResponse defaultInstance = new DiscoverGatewayModelsResponse();
+      // New instances are implicitly immutable so no need to make
+      // immutable.
+      DEFAULT_INSTANCE = defaultInstance;
+      com.google.protobuf.GeneratedMessageLite.registerDefaultInstance(
+        DiscoverGatewayModelsResponse.class, defaultInstance);
+    }
+
+    public static agent.v1.Agent.DiscoverGatewayModelsResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static volatile com.google.protobuf.Parser<DiscoverGatewayModelsResponse> PARSER;
+
+    public static com.google.protobuf.Parser<DiscoverGatewayModelsResponse> parser() {
       return DEFAULT_INSTANCE.getParserForType();
     }
   }

@@ -28,4 +28,11 @@ public interface WorkflowServiceClientInterface {
   public suspend fun registerRunner(request: Easylab.RegisterRunnerRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RegisterRunnerResponse>
 
   public suspend fun listRunners(request: Easylab.ListRunnersRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListRunnersResponse>
+
+  /**
+   *  RunWorkflowFile loads .easylab/workflows.yaml from the branch tree and runs
+   *  the named workflow (or all when name is empty). Asynchronous: returns the
+   *  created runs (pending/running); poll GetRun / stream RunJobLog.
+   */
+  public suspend fun runWorkflowFile(request: Easylab.RunWorkflowFileRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RunWorkflowFileResponse>
 }

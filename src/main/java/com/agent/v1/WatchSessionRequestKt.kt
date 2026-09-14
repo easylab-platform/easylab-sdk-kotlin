@@ -14,6 +14,9 @@ public inline fun watchSessionRequest(block: agent.v1.WatchSessionRequestKt.Dsl.
  * ```
  * WatchSession streams live session events (the Connect replacement for the
  * SSE /stream endpoint): turn deltas, tool calls, errors and completions.
+ * `since` is a message id ANCHOR for incremental replay: when set, a replay
+ * starts AFTER that message (so a client that was offline still catches the
+ * turns that completed meanwhile). Empty = live-from-now (or the active run).
  * ```
  *
  * Protobuf type `agent.v1.WatchSessionRequest`
@@ -49,6 +52,23 @@ public object WatchSessionRequestKt {
      */
     public fun clearId() {
       _builder.clearId()
+    }
+
+    /**
+     * `string since = 2 [json_name = "since"];`
+     */
+    public var since: kotlin.String
+      @kotlin.jvm.JvmName("getSince")
+        get() = _builder.since
+      @kotlin.jvm.JvmName("setSince")
+        set(value) {
+        _builder.since = value
+      }
+    /**
+     * `string since = 2 [json_name = "since"];`
+     */
+    public fun clearSince() {
+      _builder.clearSince()
     }
   }
 }

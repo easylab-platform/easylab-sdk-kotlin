@@ -132,4 +132,21 @@ public class WorkflowServiceClient(
     ),
   )
 
+
+  /**
+   *  RunWorkflowFile loads .easylab/workflows.yaml from the branch tree and runs
+   *  the named workflow (or all when name is empty). Asynchronous: returns the
+   *  created runs (pending/running); poll GetRun / stream RunJobLog.
+   */
+  override suspend fun runWorkflowFile(request: Easylab.RunWorkflowFileRequest, headers: Headers): ResponseMessage<Easylab.RunWorkflowFileResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.WorkflowService/RunWorkflowFile",
+      easylab.v1.Easylab.RunWorkflowFileRequest::class,
+      easylab.v1.Easylab.RunWorkflowFileResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
 }

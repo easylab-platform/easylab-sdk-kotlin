@@ -54,6 +54,8 @@ public interface AgentServiceClientInterface {
 
   public suspend fun registerProvider(request: Agent.RegisterProviderRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.RegisterProviderResponse>
 
+  public suspend fun discoverGatewayModels(request: Agent.DiscoverGatewayModelsRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DiscoverGatewayModelsResponse>
+
   public suspend fun deleteProvider(request: Agent.DeleteProviderRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.DeleteProviderResponse>
 
   public suspend fun testProvider(request: Agent.TestProviderRequest, headers: Headers = emptyMap()): ResponseMessage<Agent.TestProviderResponse>

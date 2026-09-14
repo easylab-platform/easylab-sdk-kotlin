@@ -116,6 +116,58 @@ public object ListMessagesResponseKt {
     public fun com.google.protobuf.kotlin.DslList<agent.v1.Agent.Message, MessagesProxy>.clear() {
       _builder.clearMessages()
     }
+
+    /**
+     * ```
+     * The anchor was not on the current chain (withdrawn/forked): the client
+     * must discard its local copy of this session and re-fetch from scratch.
+     * ```
+     *
+     * `bool resync = 3 [json_name = "resync"];`
+     */
+    public var resync: kotlin.Boolean
+      @kotlin.jvm.JvmName("getResync")
+        get() = _builder.resync
+      @kotlin.jvm.JvmName("setResync")
+        set(value) {
+        _builder.resync = value
+      }
+    /**
+     * ```
+     * The anchor was not on the current chain (withdrawn/forked): the client
+     * must discard its local copy of this session and re-fetch from scratch.
+     * ```
+     *
+     * `bool resync = 3 [json_name = "resync"];`
+     */
+    public fun clearResync() {
+      _builder.clearResync()
+    }
+
+    /**
+     * ```
+     * Current chain tip id (store as the next `after` anchor).
+     * ```
+     *
+     * `string tip_id = 4 [json_name = "tipId"];`
+     */
+    public var tipId: kotlin.String
+      @kotlin.jvm.JvmName("getTipId")
+        get() = _builder.tipId
+      @kotlin.jvm.JvmName("setTipId")
+        set(value) {
+        _builder.tipId = value
+      }
+    /**
+     * ```
+     * Current chain tip id (store as the next `after` anchor).
+     * ```
+     *
+     * `string tip_id = 4 [json_name = "tipId"];`
+     */
+    public fun clearTipId() {
+      _builder.clearTipId()
+    }
   }
 }
 public inline fun agent.v1.Agent.ListMessagesResponse.copy(block: `agent.v1`.ListMessagesResponseKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesResponse =

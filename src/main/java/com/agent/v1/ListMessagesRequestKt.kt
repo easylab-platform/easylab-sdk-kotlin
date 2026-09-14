@@ -11,6 +11,21 @@ package agent.v1;
 public inline fun listMessagesRequest(block: agent.v1.ListMessagesRequestKt.Dsl.() -> kotlin.Unit): agent.v1.Agent.ListMessagesRequest =
   agent.v1.ListMessagesRequestKt.Dsl._create(agent.v1.Agent.ListMessagesRequest.newBuilder()).apply { block() }._build()
 /**
+ * ```
+ * ListMessages reads a session's message chain. Two modes:
+ * * ANCHORED / incremental: `after` is a message id ANCHOR (a pin) the
+ * client already has. The response is the chain segment AFTER it, i.e. the
+ * walk from the current tip back to (excluding) that anchor — the messages
+ * appended since the client last synced. If the anchor is NOT on the
+ * current chain (it was withdrawn via undo, or the chain was forked), the
+ * response sets `resync=true` and the client must drop its cache and
+ * re-fetch. `tip_id` always echoes the current tip so the client can store
+ * it as the next anchor.
+ * * BACKWARD paging (existing): with `before` set (and `after` empty) the
+ * chain is read oldest→newest for `limit` messages BEFORE that cursor;
+ * with neither set, the newest `limit` messages.
+ * ```
+ *
  * Protobuf type `agent.v1.ListMessagesRequest`
  */
 public object ListMessagesRequestKt {
@@ -64,6 +79,10 @@ public object ListMessagesRequestKt {
     }
 
     /**
+     * ```
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * ```
+     *
      * `string before = 3 [json_name = "before"];`
      */
     public var before: kotlin.String
@@ -74,10 +93,41 @@ public object ListMessagesRequestKt {
         _builder.before = value
       }
     /**
+     * ```
+     * Backward-paging cursor (exclusive): return messages before this id.
+     * ```
+     *
      * `string before = 3 [json_name = "before"];`
      */
     public fun clearBefore() {
       _builder.clearBefore()
+    }
+
+    /**
+     * ```
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * ```
+     *
+     * `string after = 4 [json_name = "after"];`
+     */
+    public var after: kotlin.String
+      @kotlin.jvm.JvmName("getAfter")
+        get() = _builder.after
+      @kotlin.jvm.JvmName("setAfter")
+        set(value) {
+        _builder.after = value
+      }
+    /**
+     * ```
+     * Incremental anchor (exclusive): return messages after this id. When the
+     * anchor is absent from the current chain, the server signals `resync`.
+     * ```
+     *
+     * `string after = 4 [json_name = "after"];`
+     */
+    public fun clearAfter() {
+      _builder.clearAfter()
     }
   }
 }

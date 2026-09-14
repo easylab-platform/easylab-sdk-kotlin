@@ -55,4 +55,27 @@ public interface SandboxServiceClientInterface {
   public suspend fun fileWrite(request: Easylab.FileWriteRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileWriteResponse>
 
   public suspend fun fileList(request: Easylab.FileListRequest, headers: Headers = emptyMap()): ResponseMessage<Worker.FileListResponse>
+
+  /**
+   *  RegisterExternalSandbox adopts an externally-run worker (not launched by
+   *  easylab). It either claims the worker with its one-time enrollment code
+   *  (exclusive; the worker then issues a bearer token), or accepts a token
+   *  already provisioned on the worker. easylab persists the token + address so
+   *  its worker passthroughs keep working across restarts.
+   */
+  public suspend fun registerExternalSandbox(request: Easylab.RegisterExternalSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.RegisterExternalSandboxResponse>
+
+  /**
+   *  ListExternalSandboxes returns the externally-registered workers (mode =
+   *  external), including address and owner — managed sandboxes are excluded.
+   */
+  public suspend fun listExternalSandboxes(request: Easylab.ListExternalSandboxesRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListExternalSandboxesResponse>
+
+  /**
+   *  ReleaseExternalSandbox revokes easylab's token on the worker and returns
+   *  the worker to the claimable state with a fresh one-time code. After a
+   *  release any caller presenting the new code may claim it. Managed sandboxes
+   *  cannot be released.
+   */
+  public suspend fun releaseExternalSandbox(request: Easylab.ReleaseExternalSandboxRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ReleaseExternalSandboxResponse>
 }

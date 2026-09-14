@@ -16,9 +16,14 @@ public inline fun providerModel(block: agent.v1.ProviderModelKt.Dsl.() -> kotlin
  * carry only text models: `context_limit` (> 0) is REQUIRED and drives
  * compaction budgets. The single `vercel-compatible-gateway` provider is a
  * SUPERSET — it may carry text models (context_limit > 0) AND multimodal
- * models used by tools (image/video/speech/transcription, context_limit 0);
- * which capability a multimodal model serves is implied by the tool's config
- * knob (image_model / video_model / tts_model / asr_model), not stored here.
+ * models used by tools (image/video/speech/transcription, context_limit 0).
+ *
+ * `model_type` is the model's KIND as advertised by the gateway `/config`
+ * (`language` / `image` / `video` / `speech` / `transcription` / `embedding` /
+ * `reranking` / `realtime`), normalized to a short tag (`text` for language).
+ * It is DISPLAY/classification metadata only: which tool serves a given
+ * multimodal model is still implied by the tool's config knob
+ * (image_model / video_model / tts_model / asr_model). Empty when unknown.
  * ```
  *
  * Protobuf type `agent.v1.ProviderModel`
@@ -88,6 +93,35 @@ public object ProviderModelKt {
      */
     public fun clearContextLimit() {
       _builder.clearContextLimit()
+    }
+
+    /**
+     * ```
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * ```
+     *
+     * `string model_type = 4 [json_name = "modelType"];`
+     */
+    public var modelType: kotlin.String
+      @kotlin.jvm.JvmName("getModelType")
+        get() = _builder.modelType
+      @kotlin.jvm.JvmName("setModelType")
+        set(value) {
+        _builder.modelType = value
+      }
+    /**
+     * ```
+     * Display-only kind: text | image | video | speech | transcription |
+     * embedding | reranking | realtime (normalized from the gateway /config
+     * modelType). Empty for a plain text provider or an unknown kind.
+     * ```
+     *
+     * `string model_type = 4 [json_name = "modelType"];`
+     */
+    public fun clearModelType() {
+      _builder.clearModelType()
     }
   }
 }

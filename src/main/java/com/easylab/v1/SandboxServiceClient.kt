@@ -219,4 +219,57 @@ public class SandboxServiceClient(
     ),
   )
 
+
+  /**
+   *  RegisterExternalSandbox adopts an externally-run worker (not launched by
+   *  easylab). It either claims the worker with its one-time enrollment code
+   *  (exclusive; the worker then issues a bearer token), or accepts a token
+   *  already provisioned on the worker. easylab persists the token + address so
+   *  its worker passthroughs keep working across restarts.
+   */
+  override suspend fun registerExternalSandbox(request: Easylab.RegisterExternalSandboxRequest, headers: Headers): ResponseMessage<Easylab.RegisterExternalSandboxResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.SandboxService/RegisterExternalSandbox",
+      easylab.v1.Easylab.RegisterExternalSandboxRequest::class,
+      easylab.v1.Easylab.RegisterExternalSandboxResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  /**
+   *  ListExternalSandboxes returns the externally-registered workers (mode =
+   *  external), including address and owner — managed sandboxes are excluded.
+   */
+  override suspend fun listExternalSandboxes(request: Easylab.ListExternalSandboxesRequest, headers: Headers): ResponseMessage<Easylab.ListExternalSandboxesResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.SandboxService/ListExternalSandboxes",
+      easylab.v1.Easylab.ListExternalSandboxesRequest::class,
+      easylab.v1.Easylab.ListExternalSandboxesResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
+
+  /**
+   *  ReleaseExternalSandbox revokes easylab's token on the worker and returns
+   *  the worker to the claimable state with a fresh one-time code. After a
+   *  release any caller presenting the new code may claim it. Managed sandboxes
+   *  cannot be released.
+   */
+  override suspend fun releaseExternalSandbox(request: Easylab.ReleaseExternalSandboxRequest, headers: Headers): ResponseMessage<Easylab.ReleaseExternalSandboxResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.SandboxService/ReleaseExternalSandbox",
+      easylab.v1.Easylab.ReleaseExternalSandboxRequest::class,
+      easylab.v1.Easylab.ReleaseExternalSandboxResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
 }
