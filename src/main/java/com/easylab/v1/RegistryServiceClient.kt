@@ -99,4 +99,20 @@ public class RegistryServiceClient(
     ),
   )
 
+
+  /**
+   *  SetPackageVisibility flips a package's visibility (public|private). Requires
+   *  maintainer+ on the package's scope (mapped repository, else owning user).
+   */
+  override suspend fun setPackageVisibility(request: Easylab.SetPackageVisibilityRequest, headers: Headers): ResponseMessage<Easylab.SetPackageVisibilityResponse> = client.unary(
+    request,
+    headers,
+    MethodSpec(
+    "easylab.v1.RegistryService/SetPackageVisibility",
+      easylab.v1.Easylab.SetPackageVisibilityRequest::class,
+      easylab.v1.Easylab.SetPackageVisibilityResponse::class,
+      StreamType.UNARY,
+    ),
+  )
+
 }

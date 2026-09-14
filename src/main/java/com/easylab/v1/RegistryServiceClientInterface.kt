@@ -24,4 +24,10 @@ public interface RegistryServiceClientInterface {
   public suspend fun listPublishSpecs(request: Easylab.ListPublishSpecsRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.ListPublishSpecsResponse>
 
   public suspend fun oCICatalog(request: Easylab.OCICatalogRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.OCICatalogResponse>
+
+  /**
+   *  SetPackageVisibility flips a package's visibility (public|private). Requires
+   *  maintainer+ on the package's scope (mapped repository, else owning user).
+   */
+  public suspend fun setPackageVisibility(request: Easylab.SetPackageVisibilityRequest, headers: Headers = emptyMap()): ResponseMessage<Easylab.SetPackageVisibilityResponse>
 }
